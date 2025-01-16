@@ -1,3 +1,26 @@
-[gd_scene format=3 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=4 format=3 uid="uid://kkvobhj88d7l"]
+
+[ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
+[ext_resource type="Texture2D" uid="uid://jpnmugmsoapn" path="res://assets/sprites/art gallery/herrko/herrko art pebble reference.png" id="1_pbg45"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
+size = Vector2(484, 20)
 
 [node name="level 01" type="Node2D"]
+
+[node name="HerrkoArtPebbleReference" type="Sprite2D" parent="."]
+position = Vector2(675, 220)
+texture = ExtResource("1_pbg45")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(248, 292)
+shape = SubResource("RectangleShape2D_jkb0p")
+
+[node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
+position = Vector2(172, 211)
+
+[node name="Camera2D" type="Camera2D" parent="PlayerTest"]
+zoom = Vector2(3, 3)

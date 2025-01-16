@@ -20,5 +20,5 @@ position = Vector2(474, 273)
 texture = ExtResource("2_irlx3")
 
 [node name="HerrkoArtPebbleReference" type="Sprite2D" parent="."]
-position = Vector2(663, 333)
+position = Vector2(617, 306)
 texture = ExtResource("3_dt68l")
