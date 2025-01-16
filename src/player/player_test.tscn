@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://14kmh83iodhf"]
+[gd_scene load_steps=4 format=3 uid="uid://14kmh83iodhf"]
 
 [ext_resource type="Script" path="res://src/player/player_test.gd" id="1_c6uwj"]
+[ext_resource type="Texture2D" uid="uid://dvjvjsbaswkio" path="res://assets/sprites/play actor/simple leon test.png" id="2_05tia"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l45je"]
 
@@ -8,7 +9,10 @@
 collision_mask = 4
 script = ExtResource("1_c6uwj")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="SimpleLeonTest" type="Sprite2D" parent="."]
+position = Vector2(0.489654, -2.75)
+scale = Vector2(0.0913793, 0.0913793)
+texture = ExtResource("2_05tia")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_l45je")
