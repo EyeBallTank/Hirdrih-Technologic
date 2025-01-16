@@ -20,18 +20,19 @@ position = Vector2(852, 215)
 texture = ExtResource("1_pbg45")
 
 [node name="HeightCharPropTest" type="Sprite2D" parent="."]
-position = Vector2(439, 153)
+position = Vector2(368, 262)
+scale = Vector2(0.140261, 0.140261)
 texture = ExtResource("2_recn4")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(692, 292)
+position = Vector2(692, 298)
 shape = SubResource("RectangleShape2D_jkb0p")
 
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
-position = Vector2(196, 267)
+position = Vector2(364, 277)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerTest"]
 zoom = Vector2(4, 4)
