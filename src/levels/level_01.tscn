@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=7 format=3 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://b8bq1nw7apyqx" path="res://assets/sprites/another screenshot test.png" id="1_5nq8r"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://jpnmugmsoapn" path="res://assets/sprites/art gallery/herrko/herrko art pebble reference.png" id="1_pbg45"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="5_x33fc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -40,3 +41,15 @@ position = Vector2(364, 277)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerTest"]
 zoom = Vector2(3, 3)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 28.0
+offset_top = 24.0
+offset_right = 152.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0, 1, 0.416667, 1)
+theme_override_fonts/font = ExtResource("5_x33fc")
+theme_override_font_sizes/font_size = 36
+text = "TEST"
