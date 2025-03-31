@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd3lj5fi5yaep"
-path="res://.godot/imported/beach image 2.png-0c676720b0bd7697705e4162f793afdb.ctex"
+uid="uid://cyxjdb4ci3o6b"
+path="res://.godot/imported/beach image 2 v2.png-5c0986197e0ae3570f501552da181189.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden beach images/beach image 2.png"
-dest_files=["res://.godot/imported/beach image 2.png-0c676720b0bd7697705e4162f793afdb.ctex"]
+source_file="res://assets/sprites/art gallery/hidden beach images/beach image 2 v2.png"
+dest_files=["res://.godot/imported/beach image 2 v2.png-5c0986197e0ae3570f501552da181189.ctex"]
 
 [params]
 
