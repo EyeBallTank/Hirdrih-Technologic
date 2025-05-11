@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq0k8r46ugtmw"
-path="res://.godot/imported/hidden character art dexter.png-b9ae2f151a52deca901b92ae347407d1.ctex"
+uid="uid://dnhqpb01ijlqx"
+path="res://.godot/imported/hidden character art dexter v2.png-75f1d153be825dd137f4a18d67517edf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/hidden character art dexter.png"
-dest_files=["res://.godot/imported/hidden character art dexter.png-b9ae2f151a52deca901b92ae347407d1.ctex"]
+source_file="res://assets/sprites/art gallery/hidden characters/hidden character art dexter v2.png"
+dest_files=["res://.godot/imported/hidden character art dexter v2.png-75f1d153be825dd137f4a18d67517edf.ctex"]
 
 [params]
 
