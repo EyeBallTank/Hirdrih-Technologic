@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ngaoxpagh3af"
-path="res://.godot/imported/design experimentation 2.png-8f064341475af423ba1e9f147889c289.ctex"
+uid="uid://blktkhu4cy4al"
+path="res://.godot/imported/design experimentation 2 v2.png-07fae2370bb38622bcc9c53c45cae186.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/design experimentation 2.png"
-dest_files=["res://.godot/imported/design experimentation 2.png-8f064341475af423ba1e9f147889c289.ctex"]
+source_file="res://assets/sprites/art gallery/hidden characters/design experimentation 2 v2.png"
+dest_files=["res://.godot/imported/design experimentation 2 v2.png-07fae2370bb38622bcc9c53c45cae186.ctex"]
 
 [params]
 
