@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=12 format=3 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://b8bq1nw7apyqx" path="res://assets/sprites/another screenshot test.png" id="1_5nq8r"]
 [ext_resource type="Texture2D" uid="uid://dh6n3ujhoiicc" path="res://assets/sprites/art gallery/hidden beach images/beach image 1  fix.png" id="1_im1ng"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dk8p65a8beihx" path="res://assets/sprites/art gallery/hidden beach images/beach image 3 fix v2.png" id="3_h1ly5"]
 [ext_resource type="Texture2D" uid="uid://kcbx0irhws05" path="res://assets/sprites/art gallery/hidden beach images/beach image 4.png" id="4_h5qbf"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="5_x33fc"]
+[ext_resource type="Texture2D" uid="uid://detnh0rv21v63" path="res://assets/sprites/tiles_packed.png" id="8_nlb0o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -48,6 +49,10 @@ texture = ExtResource("2_recn4")
 [node name="HeightCharPropTest2" type="Sprite2D" parent="."]
 position = Vector2(431, 76)
 texture = ExtResource("2_recn4")
+
+[node name="TilesPacked" type="Sprite2D" parent="."]
+position = Vector2(583, 277)
+texture = ExtResource("8_nlb0o")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 4
