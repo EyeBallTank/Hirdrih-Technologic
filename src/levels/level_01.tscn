@@ -1,9 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=11 format=3 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://b8bq1nw7apyqx" path="res://assets/sprites/another screenshot test.png" id="1_5nq8r"]
 [ext_resource type="Texture2D" uid="uid://dh6n3ujhoiicc" path="res://assets/sprites/art gallery/hidden beach images/beach image 1  fix.png" id="1_im1ng"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
-[ext_resource type="Texture2D" uid="uid://8k02vkdwsu3f" path="res://assets/sprites/another test image please.png" id="1_n74dj"]
 [ext_resource type="Texture2D" uid="uid://jpnmugmsoapn" path="res://assets/sprites/art gallery/herrko/herrko art pebble reference.png" id="1_pbg45"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
 [ext_resource type="Texture2D" uid="uid://cyxjdb4ci3o6b" path="res://assets/sprites/art gallery/hidden beach images/beach image 2 v2.png" id="2_uxa1g"]
@@ -15,10 +14,6 @@
 size = Vector2(1372, 20)
 
 [node name="level 01" type="Node2D"]
-
-[node name="AnotherTestImagePlease" type="Sprite2D" parent="."]
-position = Vector2(622, 265)
-texture = ExtResource("1_n74dj")
 
 [node name="BeachImage1Fix" type="Sprite2D" parent="."]
 position = Vector2(1025, 3946)
@@ -66,6 +61,7 @@ position = Vector2(364, 277)
 
 [node name="Camera2D" type="Camera2D" parent="PlayerTest"]
 zoom = Vector2(3, 3)
+process_callback = 0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

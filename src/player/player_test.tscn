@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://14kmh83iodhf"]
+[gd_scene load_steps=7 format=3 uid="uid://14kmh83iodhf"]
 
 [ext_resource type="Script" path="res://src/player/player_test.gd" id="1_c6uwj"]
 [ext_resource type="Texture2D" uid="uid://dvjvjsbaswkio" path="res://assets/sprites/play actor/simple leon test.png" id="2_05tia"]
 [ext_resource type="Texture2D" uid="uid://b44dq2yv68dde" path="res://assets/sprites/play actor/sprite test 1.png" id="2_iqxoj"]
 [ext_resource type="Texture2D" uid="uid://bir5w0b1jimpy" path="res://assets/sprites/play actor/sprite test 2.png" id="3_71wk7"]
+[ext_resource type="Texture2D" uid="uid://bbpbjyivjqgk1" path="res://assets/sprites/sprite from kinematic demo.png" id="5_m8loq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l45je"]
 
@@ -26,3 +27,7 @@ texture = ExtResource("2_05tia")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_l45je")
+
+[node name="SpriteFromKinematicDemo" type="Sprite2D" parent="."]
+position = Vector2(1, -4)
+texture = ExtResource("5_m8loq")
