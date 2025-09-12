@@ -17,9 +17,10 @@ size = Vector2(1372, 20)
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bms3y"]
 texture = ExtResource("8_nlb0o")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSet" id="TileSet_sodwt"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_bms3y")
 
 [node name="level 01" type="Node2D"]
@@ -63,7 +64,7 @@ position = Vector2(583, 277)
 texture = ExtResource("8_nlb0o")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_layer = 4
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(692, 298)
