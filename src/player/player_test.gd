@@ -8,7 +8,7 @@ extends CharacterBody2D
 
 
 enum state {IDLE, RUNNING, JUMPUP, JUMPDOWN, HURT}
-
+#PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
 var anim_state = state.IDLE
 
 #@onready var animator = $AnimatedSprite2D

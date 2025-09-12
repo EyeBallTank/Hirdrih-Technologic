@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=14 format=3 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://b8bq1nw7apyqx" path="res://assets/sprites/another screenshot test.png" id="1_5nq8r"]
 [ext_resource type="Texture2D" uid="uid://dh6n3ujhoiicc" path="res://assets/sprites/art gallery/hidden beach images/beach image 1  fix.png" id="1_im1ng"]
@@ -13,6 +13,14 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bms3y"]
+texture = ExtResource("8_nlb0o")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_sodwt"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_bms3y")
 
 [node name="level 01" type="Node2D"]
 
@@ -79,3 +87,7 @@ theme_override_colors/font_color = Color(0, 1, 0.416667, 1)
 theme_override_fonts/font = ExtResource("5_x33fc")
 theme_override_font_sizes/font_size = 36
 text = "TEST"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray(0, 0, 24, 0, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_sodwt")
