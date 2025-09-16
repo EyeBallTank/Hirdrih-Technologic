@@ -1,0 +1,155 @@
+[gd_scene load_steps=13 format=3 uid="uid://rkxohx8p0k83"]
+
+[ext_resource type="Script" path="res://src/level items/health_item.gd" id="1_rf0u1"]
+[ext_resource type="Texture2D" uid="uid://cbmli5gwhyqe5" path="res://assets/sprites/HEALTH ITEM ANIMATION SPRITE TEST.png" id="2_5veo5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3uhi"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(0, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkdru"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(24, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yk1ny"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(48, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn12x"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(72, 0, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc141"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(0, 20, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_247vt"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(24, 20, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qph51"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(48, 20, 24, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iks18"]
+atlas = ExtResource("2_5veo5")
+region = Rect2(72, 20, 24, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e4oso"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3uhi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkdru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk1ny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jn12x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mc141")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_247vt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qph51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iks18")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="HealthItem" type="Area2D"]
+script = ExtResource("1_rf0u1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fswyh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_e4oso")
+autoplay = "default"
