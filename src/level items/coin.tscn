@@ -3,8 +3,6 @@
 [ext_resource type="Script" path="res://src/level items/coin.gd" id="1_pd4oa"]
 [ext_resource type="Texture2D" uid="uid://y8208cv0twn1" path="res://assets/sprites/COIN ANIMATION SPRITE TEST.png" id="2_ooon7"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_6gw02"]
 atlas = ExtResource("2_ooon7")
 region = Rect2(0, 0, 10, 15)
@@ -313,12 +311,14 @@ animations = [{
 "speed": 19.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
+
 [node name="Coin" type="Area2D"]
 script = ExtResource("1_pd4oa")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_fswyh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")
 autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fswyh")

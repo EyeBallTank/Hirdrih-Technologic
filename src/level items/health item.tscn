@@ -3,8 +3,6 @@
 [ext_resource type="Script" path="res://src/level items/health_item.gd" id="1_rf0u1"]
 [ext_resource type="Texture2D" uid="uid://cbmli5gwhyqe5" path="res://assets/sprites/HEALTH ITEM ANIMATION SPRITE TEST.png" id="2_5veo5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_w3uhi"]
 atlas = ExtResource("2_5veo5")
 region = Rect2(0, 0, 24, 20)
@@ -144,12 +142,14 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
+
 [node name="HealthItem" type="Area2D"]
 script = ExtResource("1_rf0u1")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_fswyh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")
 autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_fswyh")

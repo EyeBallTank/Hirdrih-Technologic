@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://0ubg1yl6f1qq"]
+
+[ext_resource type="Script" path="res://src/player/magic_arrow.gd" id="1_epmcy"]
+[ext_resource type="Texture2D" uid="uid://cweil7oc6x7a2" path="res://assets/sprites/MAIN MAGIC CURSORS PIXEL TEST.png" id="1_evviu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ckxjc"]
+atlas = ExtResource("1_evviu")
+region = Rect2(15, 0, 15, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqgmw"]
+atlas = ExtResource("1_evviu")
+region = Rect2(0, 0, 15, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aojfu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ckxjc")
+}],
+"loop": true,
+"name": &"basicmouse",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqgmw")
+}],
+"loop": true,
+"name": &"clickedmouse",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flve7"]
+
+[node name="MagicArrow" type="CharacterBody2D"]
+collision_mask = 0
+script = ExtResource("1_epmcy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_aojfu")
+animation = &"basicmouse"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_flve7")
