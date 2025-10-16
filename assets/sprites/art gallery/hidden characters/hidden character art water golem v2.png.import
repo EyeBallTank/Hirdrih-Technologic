@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3nwuapkcccmt"
-path="res://.godot/imported/hidden character art water golem.png-bcdd7ffecdcea166149d0c8e3a5e568f.ctex"
+uid="uid://btsw8rpavwrqd"
+path="res://.godot/imported/hidden character art water golem v2.png-68b7646498763d89306e931dffb6a855.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/hidden character art water golem.png"
-dest_files=["res://.godot/imported/hidden character art water golem.png-bcdd7ffecdcea166149d0c8e3a5e568f.ctex"]
+source_file="res://assets/sprites/art gallery/hidden characters/hidden character art water golem v2.png"
+dest_files=["res://.godot/imported/hidden character art water golem v2.png-68b7646498763d89306e931dffb6a855.ctex"]
 
 [params]
 
