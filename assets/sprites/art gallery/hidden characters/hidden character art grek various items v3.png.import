@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb8htx5aey8q3"
-path="res://.godot/imported/hidden character art grek various items v2.png-a56c923f7d59f48d832ce81b0bbe9fa1.ctex"
+uid="uid://c2lv1ic5o71r6"
+path="res://.godot/imported/hidden character art grek various items v3.png-e9f84555729759499686ada32287febb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/hidden character art grek various items v2.png"
-dest_files=["res://.godot/imported/hidden character art grek various items v2.png-a56c923f7d59f48d832ce81b0bbe9fa1.ctex"]
+source_file="res://assets/sprites/art gallery/hidden characters/hidden character art grek various items v3.png"
+dest_files=["res://.godot/imported/hidden character art grek various items v3.png-e9f84555729759499686ada32287febb.ctex"]
 
 [params]
 
