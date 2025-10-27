@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1g2885xwio7g"
-path="res://.godot/imported/hidden character art bonkas toys v2.png-93afd955d7d81a36d1a9c3ddefa28c7d.ctex"
+uid="uid://binw4ee5gi0sw"
+path="res://.godot/imported/hidden character art bonkas toys v3.png-2fcb95a998c52f0f2a1ce5fda0c1b7ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/hidden character art bonkas toys v2.png"
-dest_files=["res://.godot/imported/hidden character art bonkas toys v2.png-93afd955d7d81a36d1a9c3ddefa28c7d.ctex"]
+source_file="res://assets/sprites/art gallery/hidden characters/hidden character art bonkas toys v3.png"
+dest_files=["res://.godot/imported/hidden character art bonkas toys v3.png-2fcb95a998c52f0f2a1ce5fda0c1b7ca.ctex"]
 
 [params]
 
