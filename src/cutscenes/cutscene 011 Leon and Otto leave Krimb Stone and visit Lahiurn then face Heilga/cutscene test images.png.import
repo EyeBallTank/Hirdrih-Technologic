@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4yg77df4h2nn"
-path="res://.godot/imported/cutscene test images.png-3e1bacacb2d23e48901fa3b452ee79bb.ctex"
+uid="uid://cnn1nkm77ltue"
+path="res://.godot/imported/cutscene test images.png-378fa9a952d217ff25289e3e04b54a3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/levels/chapter 005 krimbstone/cutscene test images.png"
-dest_files=["res://.godot/imported/cutscene test images.png-3e1bacacb2d23e48901fa3b452ee79bb.ctex"]
+source_file="res://src/cutscenes/cutscene 011 Leon and Otto leave Krimb Stone and visit Lahiurn then face Heilga/cutscene test images.png"
+dest_files=["res://.godot/imported/cutscene test images.png-378fa9a952d217ff25289e3e04b54a3e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://biw77seyxc7qs"
-path="res://.godot/imported/cutscene test images.png-097edd4348db4c4a6ba3587da4ec0433.ctex"
+uid="uid://cb40qvp43slf3"
+path="res://.godot/imported/cutscene test images.png-91b52f33aae096bb8daedf10d951dd8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/levels/chapter 004 massagcoav/cutscene test images.png"
-dest_files=["res://.godot/imported/cutscene test images.png-097edd4348db4c4a6ba3587da4ec0433.ctex"]
+source_file="res://src/levels/chapter 006 herrko/cutscene test images.png"
+dest_files=["res://.godot/imported/cutscene test images.png-91b52f33aae096bb8daedf10d951dd8c.ctex"]
 
 [params]
 

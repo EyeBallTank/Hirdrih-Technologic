@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cb40qvp43slf3"
-path="res://.godot/imported/cutscene test images.png-dfbc0b3cebaaca8a361213b1fbec9aca.ctex"
+uid="uid://cavwjycnbak28"
+path="res://.godot/imported/cutscene test images.png-9e6432944b1b88b74072646bfb1e5f8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/levels/chapter 006 lahiurn/cutscene test images.png"
-dest_files=["res://.godot/imported/cutscene test images.png-dfbc0b3cebaaca8a361213b1fbec9aca.ctex"]
+source_file="res://src/cutscenes/cutscene 013 Leon and Otto finally return to Hirdrih/cutscene test images.png"
+dest_files=["res://.godot/imported/cutscene test images.png-9e6432944b1b88b74072646bfb1e5f8a.ctex"]
 
 [params]
 

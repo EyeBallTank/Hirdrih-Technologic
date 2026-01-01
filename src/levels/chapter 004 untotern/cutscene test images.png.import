@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cu2jstg35onni"
-path="res://.godot/imported/cutscene test images.png-0b997248ead95378bbf19d1ac439fc97.ctex"
+uid="uid://biw77seyxc7qs"
+path="res://.godot/imported/cutscene test images.png-8bcc01d6ab23bb695c5e22af70650cb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/levels/chapter 008 greklovick/cutscene test images.png"
-dest_files=["res://.godot/imported/cutscene test images.png-0b997248ead95378bbf19d1ac439fc97.ctex"]
+source_file="res://src/levels/chapter 004 untotern/cutscene test images.png"
+dest_files=["res://.godot/imported/cutscene test images.png-8bcc01d6ab23bb695c5e22af70650cb3.ctex"]
 
 [params]
 

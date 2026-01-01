@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wuwqm1wk53eo"
-path="res://.godot/imported/cutscene test images.png-275ca4908b500cd7f491e591c23ea9cd.ctex"
+uid="uid://daa7hkifckt50"
+path="res://.godot/imported/cutscene test images.png-b92095e8d81e6bc2a7b527ebbebad3e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/levels/chapter 007 herrko/cutscene test images.png"
-dest_files=["res://.godot/imported/cutscene test images.png-275ca4908b500cd7f491e591c23ea9cd.ctex"]
+source_file="res://src/cutscenes/cutscene 005 Leon and Otto face Baalphomette/cutscene test images.png"
+dest_files=["res://.godot/imported/cutscene test images.png-b92095e8d81e6bc2a7b527ebbebad3e6.ctex"]
 
 [params]
 

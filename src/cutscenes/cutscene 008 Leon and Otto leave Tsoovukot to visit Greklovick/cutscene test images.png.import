@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpt5sbye5n35y"
-path="res://.godot/imported/cutscene test images.png-f8231dbbeb70629783bbcc0614ac8afb.ctex"
+uid="uid://ddp5gfh2cq5gv"
+path="res://.godot/imported/cutscene test images.png-af080cc17cd57249f5e648465d47695a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/levels/chapter 009 untotern/cutscene test images.png"
-dest_files=["res://.godot/imported/cutscene test images.png-f8231dbbeb70629783bbcc0614ac8afb.ctex"]
+source_file="res://src/cutscenes/cutscene 008 Leon and Otto leave Tsoovukot to visit Greklovick/cutscene test images.png"
+dest_files=["res://.godot/imported/cutscene test images.png-af080cc17cd57249f5e648465d47695a.ctex"]
 
 [params]
 
