@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b1obfbq1n5eba"
+path="res://.godot/imported/level 06 brinkaedea.ogg-b337017221124ca8882b74b51fb02f8f.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 06 brinkaedea.ogg"
+dest_files=["res://.godot/imported/level 06 brinkaedea.ogg-b337017221124ca8882b74b51fb02f8f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
