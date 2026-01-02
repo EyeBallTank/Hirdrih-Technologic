@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ctlv5cnyxt747"
+path="res://.godot/imported/level 07 untotern 1.ogg-8e55095e62fa84cd57a834612d38ba29.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 07 untotern 1.ogg"
+dest_files=["res://.godot/imported/level 07 untotern 1.ogg-8e55095e62fa84cd57a834612d38ba29.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
