@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b33q747hbg1qi"
+path="res://.godot/imported/level 16 pluto.ogg-7c9d7e1c04de8dbcca7813259ce1e9d4.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 16 pluto.ogg"
+dest_files=["res://.godot/imported/level 16 pluto.ogg-7c9d7e1c04de8dbcca7813259ce1e9d4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
