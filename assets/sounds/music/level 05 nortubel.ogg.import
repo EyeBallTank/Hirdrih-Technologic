@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dtcn432et1vka"
+path="res://.godot/imported/level 05 nortubel.ogg-2a88f93afaa3b2a29887eb8f27aaa180.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 05 nortubel.ogg"
+dest_files=["res://.godot/imported/level 05 nortubel.ogg-2a88f93afaa3b2a29887eb8f27aaa180.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
