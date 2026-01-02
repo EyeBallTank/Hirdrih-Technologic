@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dq70kvp434d2f"
+path="res://.godot/imported/level 10 massagcoav.ogg-515c883d29403856adf201b2d92fd8a1.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 10 massagcoav.ogg"
+dest_files=["res://.godot/imported/level 10 massagcoav.ogg-515c883d29403856adf201b2d92fd8a1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
