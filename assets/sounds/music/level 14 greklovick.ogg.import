@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b2xg7rglmd88e"
+path="res://.godot/imported/level 14 greklovick.ogg-e5cc0b400f1930ee0db3a4903352f1cc.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 14 greklovick.ogg"
+dest_files=["res://.godot/imported/level 14 greklovick.ogg-e5cc0b400f1930ee0db3a4903352f1cc.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
