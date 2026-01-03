@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dem538t0t83xx"
+path="res://.godot/imported/level 11 farm.ogg-6d209bf6c27f5c91feeb5b3b197f5bb0.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 11 farm.ogg"
+dest_files=["res://.godot/imported/level 11 farm.ogg-6d209bf6c27f5c91feeb5b3b197f5bb0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
