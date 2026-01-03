@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cy0isyib2vhp6"
+path="res://.godot/imported/level 09 untotern baalphomette.ogg-465df041862c072ebb5351794d546b2b.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 09 untotern baalphomette.ogg"
+dest_files=["res://.godot/imported/level 09 untotern baalphomette.ogg-465df041862c072ebb5351794d546b2b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
