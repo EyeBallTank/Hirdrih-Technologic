@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cw6b4f3swghne"
+path="res://.godot/imported/level 15 zharkryazneniye.ogg-a2979fed64474376353f467157ea54aa.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 15 zharkryazneniye.ogg"
+dest_files=["res://.godot/imported/level 15 zharkryazneniye.ogg-a2979fed64474376353f467157ea54aa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
