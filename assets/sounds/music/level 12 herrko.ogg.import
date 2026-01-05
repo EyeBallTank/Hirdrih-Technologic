@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bxs66kmhc2bmu"
+path="res://.godot/imported/level 12 herrko.ogg-e74113156cc0a72f3a93c3285e60ee69.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/music/level 12 herrko.ogg"
+dest_files=["res://.godot/imported/level 12 herrko.ogg-e74113156cc0a72f3a93c3285e60ee69.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
