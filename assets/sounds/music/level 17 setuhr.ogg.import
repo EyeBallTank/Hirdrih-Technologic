@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/level 17 setuhr.ogg-de96de3e6937a48f1a4a7cd15
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

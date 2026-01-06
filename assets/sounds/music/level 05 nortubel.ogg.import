@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/level 05 nortubel.ogg-2a88f93afaa3b2a29887eb8
 [params]
 
 loop=false
-loop_offset=0
-bpm=0
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4
