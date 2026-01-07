@@ -13,3 +13,29 @@ extends CharacterBody2D
 #And even grab pushable objects and drop them.
 #But if Leon/Otto quit the "MOUSEACTIVE" state, the magic mouse simply returns to its invisible state.
 #The system needs to be worked on.
+
+@export var movement_speed : float = 200
+var character_direction : Vector2
+
+enum {UNACTIVE, ACTIVE}
+
+var state = UNACTIVE
+
+func _physics_process(delta):
+	match state:
+		UNACTIVE:
+			if Input.is_action_just_pressed("activatemouse"):
+				state = ACTIVE
+		ACTIVE:
+			
+			character_direction.x = Input.get_axis("left", "right")
+			character_direction.y = Input.get_axis("jump", "climbdown")
+
+			if character_direction:
+				velocity = character_direction * movement_speed 
+			else:
+				velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
+
+			move_and_slide()
+			if Input.is_action_just_pressed("activatemouse"):
+				state = UNACTIVE
