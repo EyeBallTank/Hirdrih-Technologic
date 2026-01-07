@@ -1,75 +1,49 @@
 extends CharacterBody2D
+class_name PlayerController
 
+@export var speed = 10.0
+@export var jump_power = 10.0
 
-@export var speed = 300.0
-@export var jump_velocity = -400.0
-@export var acceleration : float = 15.0
-@export var jumps = 1
+var speed_multiplier = 30.0
+var jump_multiplier = -35.0
+var direction = 0
 
 var redkey = false
 var bluekey = false
 var yellowkey = false
 
-
 enum state {IDLE, RUNNING, JUMPUP, JUMPDOWN, HURT}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
-var anim_state = state.IDLE
 
-#@onready var animator = $AnimatedSprite2D
-#@onready var animation_player = $AnimationPlayer
+#const SPEED = 300.0
+#const JUMP_VELOCITY = -400.0
 
-func update_state():
-	if anim_state == state.HURT:
-		return
-	if is_on_floor():
-		if velocity == Vector2.ZERO:
-			anim_state = state.IDLE
-		elif velocity.x != 0:
-			anim_state = state.RUNNING
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+func _input(event):
+	# Handle jump.
+	if event.is_action_pressed("jump") and is_on_floor():
+		velocity.y = jump_power * jump_multiplier
+	# Handle jump down
+	if event.is_action_pressed("climbdown"):
+		set_collision_mask_value(10, false)
 	else:
-		if velocity.y < 0:
-			anim_state = state.JUMPUP
-		else:
-			anim_state = state.JUMPDOWN
+		set_collision_mask_value(10, true)
 
-#func update_animation(direction):
-	#if direction > 0:
-		#animator.flip_h = false
-	#elif direction < 0:
-		#animator.flip_h = true
-	#match anim_state:
-		#state.IDLE:
-			#animation_player.play("idle")
-		#state.RUNNING:
-			#animation_player.play("run")
-		#state.JUMPUP:
-			#animation_player.play("jump_up")
-		#state.JUMPDOWN:
-			#animation_player.play("jump_down")
-		#state.HURT:
-			#animation_player.play("hurt")
-
-
-
-
-func _physics_process(delta: float) -> void:
+func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
-		velocity += get_gravity() * delta
+		velocity.y += gravity * delta
 
-	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump_velocity
+
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("left", "right")
+	direction = Input.get_axis("left", "right")
 	if direction:
-		velocity.x = move_toward(velocity.x, direction * speed, acceleration)
-	else:
-		velocity.x = move_toward(velocity.x, 0, acceleration/2)
+		velocity.x = direction * speed * speed_multiplier
+	else:           
+		velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 
-
-	update_state()
-	#update_animation(direction)
 	move_and_slide()

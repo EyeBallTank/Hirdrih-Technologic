@@ -7,6 +7,7 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 # CREDITS
 
 luke_rs (Used a Godot 4 platformer tutorial as reference for some code and other stuff)
+PaperMouseGames (Used another Godot 4 platformer tutorial as reference for stuff like the new player code and tiles)
 Chequered Ink (Fontspace) (The font I'm using for now)
 KinematicBody2D demo (Used some of its sprites as placeholder/test stuff).
 Kenney (Also used sprites for testing stuff)
