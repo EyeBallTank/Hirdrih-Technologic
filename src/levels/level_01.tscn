@@ -45,11 +45,13 @@ position = Vector2(1019, 1247)
 texture = ExtResource("4_h5qbf")
 
 [node name="AnotherScreenshotTest" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(190, 260)
 scale = Vector2(0.281667, 0.281667)
 texture = ExtResource("1_5nq8r")
 
 [node name="HerrkoArtPebbleReference" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(852, 215)
 texture = ExtResource("1_pbg45")
 
@@ -59,10 +61,12 @@ scale = Vector2(0.140261, 0.140261)
 texture = ExtResource("2_recn4")
 
 [node name="HeightCharPropTest2" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(431, 76)
 texture = ExtResource("2_recn4")
 
 [node name="TilesPacked" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(583, 277)
 texture = ExtResource("8_nlb0o")
 

@@ -6,6 +6,10 @@ extends CharacterBody2D
 @export var acceleration : float = 15.0
 @export var jumps = 1
 
+var redkey = false
+var bluekey = false
+var yellowkey = false
+
 
 enum state {IDLE, RUNNING, JUMPUP, JUMPDOWN, HURT}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
