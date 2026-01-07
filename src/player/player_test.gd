@@ -1,6 +1,6 @@
 extends CharacterBody2D
 class_name PlayerController
-
+#BTW  a lot of this code was taken from a GitHub project by PaperMouseGames
 @export var speed = 10.0
 @export var jump_power = 10.0
 
@@ -12,7 +12,7 @@ var redkey = false
 var bluekey = false
 var yellowkey = false
 
-enum state {IDLE, RUNNING, JUMPUP, JUMPDOWN, HURT}
+enum state {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
 
 #const SPEED = 300.0
@@ -21,15 +21,10 @@ enum state {IDLE, RUNNING, JUMPUP, JUMPDOWN, HURT}
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-func _input(event):
+#func _input(event):
 	# Handle jump.
-	if event.is_action_pressed("jump") and is_on_floor():
-		velocity.y = jump_power * jump_multiplier
-	# Handle jump down
-	if event.is_action_pressed("climbdown"):
-		set_collision_mask_value(10, false)
-	else:
-		set_collision_mask_value(10, true)
+
+#var state = MAINSTATE
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -37,13 +32,24 @@ func _physics_process(delta):
 		velocity.y += gravity * delta
 
 
+	if Input.is_action_pressed("jump") and is_on_floor():
+		velocity.y = jump_power * jump_multiplier
+	# Handle jump down
+	if Input.is_action_pressed("climbdown"):
+		set_collision_mask_value(10, false)
+	else:
+		set_collision_mask_value(10, true)
+
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	direction = Input.get_axis("left", "right")
-	if direction:
+	#if direction:
+	if Input.is_action_pressed("left"):
 		velocity.x = direction * speed * speed_multiplier
-	else:           
+	elif Input.is_action_pressed("right"):
+		velocity.x = direction * -speed * -speed_multiplier
+	else:	           
 		velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 
 	move_and_slide()

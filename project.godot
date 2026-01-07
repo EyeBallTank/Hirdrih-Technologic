@@ -78,8 +78,6 @@ climbdown={
 2d_physics/layer_7="pushable"
 2d_physics/layer_8="ladder"
 2d_physics/layer_9="hazard"
-2d_physics/layer_10="exit"
-2d_physics/layer_11="arrow"
 
 [rendering]
 
