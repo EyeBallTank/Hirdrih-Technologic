@@ -31,9 +31,11 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flve7"]
+size = Vector2(14, 20)
 
 [node name="MagicArrow" type="CharacterBody2D"]
-collision_mask = 0
+collision_layer = 512
+collision_mask = 1024
 script = ExtResource("1_epmcy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

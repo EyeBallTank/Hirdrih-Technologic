@@ -17,6 +17,8 @@ extends CharacterBody2D
 @export var movement_speed : float = 200
 var character_direction : Vector2
 
+#onready var Player = get_parent().get_node("PlayerTest")
+
 enum {UNACTIVE, ACTIVE}
 
 var state = UNACTIVE
@@ -24,12 +26,15 @@ var state = UNACTIVE
 func _physics_process(delta):
 	match state:
 		UNACTIVE:
+			visible = false
 			if Input.is_action_just_pressed("activatemouse"):
 				state = ACTIVE
 		ACTIVE:
+			visible = true
 			
 			character_direction.x = Input.get_axis("left", "right")
 			character_direction.y = Input.get_axis("jump", "climbdown")
+			character_direction = character_direction.normalized()
 
 			if character_direction:
 				velocity = character_direction * movement_speed 

@@ -86,10 +86,6 @@ shape = SubResource("RectangleShape2D_jkb0p")
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
 position = Vector2(364, 277)
 
-[node name="Camera2D" type="Camera2D" parent="PlayerTest"]
-zoom = Vector2(3, 3)
-process_callback = 0
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
