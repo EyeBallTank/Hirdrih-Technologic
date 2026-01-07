@@ -1,34 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://0ubg1yl6f1qq"]
+[gd_scene load_steps=4 format=3 uid="uid://0ubg1yl6f1qq"]
 
 [ext_resource type="Script" path="res://src/player/magic_arrow.gd" id="1_epmcy"]
-[ext_resource type="Texture2D" uid="uid://cweil7oc6x7a2" path="res://assets/sprites/MAIN MAGIC CURSORS PIXEL TEST.png" id="1_evviu"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ckxjc"]
-atlas = ExtResource("1_evviu")
-region = Rect2(15, 0, 15, 21)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vqgmw"]
-atlas = ExtResource("1_evviu")
-region = Rect2(0, 0, 15, 21)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_aojfu"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ckxjc")
-}],
-"loop": true,
-"name": &"basicmouse",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vqgmw")
-}],
-"loop": true,
-"name": &"clickedmouse",
-"speed": 5.0
-}]
+[ext_resource type="SpriteFrames" uid="uid://fhjgikm0ywk3" path="res://assets/sprites/play actor/leonarrow.tres" id="2_f06wb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flve7"]
 size = Vector2(14, 20)
@@ -39,7 +12,7 @@ collision_mask = 1024
 script = ExtResource("1_epmcy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_aojfu")
+sprite_frames = ExtResource("2_f06wb")
 animation = &"basicmouse"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

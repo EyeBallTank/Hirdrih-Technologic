@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=18 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://b8bq1nw7apyqx" path="res://assets/sprites/another screenshot test.png" id="1_5nq8r"]
 [ext_resource type="Texture2D" uid="uid://dh6n3ujhoiicc" path="res://assets/sprites/art gallery/hidden beach images/beach image 1  fix.png" id="1_im1ng"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://kcbx0irhws05" path="res://assets/sprites/art gallery/hidden beach images/beach image 4.png" id="4_h5qbf"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="5_x33fc"]
 [ext_resource type="Texture2D" uid="uid://detnh0rv21v63" path="res://assets/sprites/tiles_packed.png" id="8_nlb0o"]
+[ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="10_dgw8u"]
 [ext_resource type="Texture2D" uid="uid://dcuii22sn7otd" path="res://assets/sprites/HIRDRIH MAIN TITLE PIXEL TEST.png" id="11_13gfq"]
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="12_id1xq"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="13_5kt7g"]
@@ -85,6 +86,9 @@ shape = SubResource("RectangleShape2D_jkb0p")
 
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
 position = Vector2(364, 277)
+
+[node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
+position = Vector2(-32, -8)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

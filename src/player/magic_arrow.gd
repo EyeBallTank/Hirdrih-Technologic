@@ -13,6 +13,9 @@ extends CharacterBody2D
 #And even grab pushable objects and drop them.
 #But if Leon/Otto quit the "MOUSEACTIVE" state, the magic mouse simply returns to its invisible state.
 #The system needs to be worked on.
+@export var arrowskin = "res://assets/sprites/play actor/leonarrow.tres"
+#res://assets/sprites/play actor/ottoarrow.tres
+@onready var sprite = $AnimatedSprite2D
 
 @export var movement_speed : float = 200
 var character_direction : Vector2
@@ -23,6 +26,9 @@ enum {UNACTIVE, ACTIVE}
 
 var state = UNACTIVE
 
+func ready():
+	sprite.frames = load(arrowskin)
+
 func _physics_process(delta):
 	match state:
 		UNACTIVE:
@@ -30,6 +36,7 @@ func _physics_process(delta):
 			if Input.is_action_just_pressed("activatemouse"):
 				state = ACTIVE
 		ACTIVE:
+			sprite.play("basicmouse")
 			visible = true
 			
 			character_direction.x = Input.get_axis("left", "right")
@@ -42,5 +49,9 @@ func _physics_process(delta):
 				velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
 
 			move_and_slide()
+			if Input.is_action_pressed("shoot"):
+				sprite.play("clickedmouse")
+#E makes Leon and Otto shoot a projectile while the arrows click with E
+			
 			if Input.is_action_just_pressed("activatemouse"):
 				state = UNACTIVE
