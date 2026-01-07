@@ -314,6 +314,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
 
 [node name="Coin" type="Area2D"]
+collision_layer = 4
 script = ExtResource("1_pd4oa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

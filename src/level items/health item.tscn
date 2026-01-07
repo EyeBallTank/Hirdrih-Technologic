@@ -145,6 +145,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
 
 [node name="HealthItem" type="Area2D"]
+collision_layer = 4
 script = ExtResource("1_rf0u1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
