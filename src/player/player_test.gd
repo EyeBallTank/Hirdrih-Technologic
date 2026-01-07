@@ -37,10 +37,10 @@ func _physics_process(delta):
 			if Input.is_action_pressed("jump") and is_on_floor():
 				velocity.y = jump_power * jump_multiplier
 			# Handle jump down
-			if Input.is_action_pressed("climbdown"):
-				set_collision_mask_value(10, false)
-			else:
-				set_collision_mask_value(10, true)
+#			if Input.is_action_pressed("climbdown"):
+#				set_collision_mask_value(10, false)
+#			else:
+#				set_collision_mask_value(10, true)
 
 
 			# Get the input direction and handle the movement/deceleration.
@@ -63,8 +63,10 @@ func _physics_process(delta):
 		PUSH:
 			pass
 		ARROW:
+			velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 			if not is_on_floor():
 				velocity.y += gravity * delta
+			move_and_slide()
 
 
 
