@@ -89,6 +89,7 @@ position = Vector2(364, 277)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
 position = Vector2(-32, -8)
+arrowskin = "res://assets/sprites/play actor/ottoarrow.tres"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

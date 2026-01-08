@@ -13,9 +13,10 @@ extends CharacterBody2D
 #And even grab pushable objects and drop them.
 #But if Leon/Otto quit the "MOUSEACTIVE" state, the magic mouse simply returns to its invisible state.
 #The system needs to be worked on.
+@onready var sprite = $AnimatedSprite2D
 @export var arrowskin = "res://assets/sprites/play actor/leonarrow.tres"
 #res://assets/sprites/play actor/ottoarrow.tres
-@onready var sprite = $AnimatedSprite2D
+
 
 @export var movement_speed : float = 200
 var character_direction : Vector2
