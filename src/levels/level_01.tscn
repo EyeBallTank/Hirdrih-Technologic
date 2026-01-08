@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=16 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://ctqctdo1kijht" path="res://src/level items/yellowkey.tscn" id="11_8eouq"]
 [ext_resource type="Texture2D" uid="uid://dcuii22sn7otd" path="res://assets/sprites/HIRDRIH MAIN TITLE PIXEL TEST.png" id="11_13gfq"]
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="12_id1xq"]
+[ext_resource type="PackedScene" uid="uid://meckl50d6ugr" path="res://src/level objects/jump pad.tscn" id="12_ly5iv"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="13_5kt7g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
@@ -85,3 +86,6 @@ position = Vector2(259, 258)
 
 [node name="Yellowkey" parent="." instance=ExtResource("11_8eouq")]
 position = Vector2(227, 256)
+
+[node name="JumpPad" parent="." instance=ExtResource("12_ly5iv")]
+position = Vector2(177, 266)

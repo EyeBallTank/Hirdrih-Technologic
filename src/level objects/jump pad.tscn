@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://meckl50d6ugr"]
+[gd_scene load_steps=8 format=3 uid="uid://meckl50d6ugr"]
 
 [ext_resource type="Script" path="res://src/level objects/jump_pad.gd" id="1_gxne5"]
 [ext_resource type="Texture2D" uid="uid://b1dkdnuld1cnn" path="res://assets/sprites/JUMPPAD HIRDRIH SPRITE TEST.png" id="2_0j8nv"]
@@ -6,6 +6,10 @@
 [sub_resource type="AtlasTexture" id="AtlasTexture_gl18m"]
 atlas = ExtResource("2_0j8nv")
 region = Rect2(0, 13, 54, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpsdx"]
+atlas = ExtResource("2_0j8nv")
+region = Rect2(0, 0, 54, 13)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bquo8"]
 atlas = ExtResource("2_0j8nv")
@@ -16,30 +20,36 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gl18m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpsdx")
 }],
-"loop": true,
+"loop": false,
 "name": &"JUMPED ON",
-"speed": 5.0
+"speed": 2.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_bquo8")
 }],
-"loop": true,
+"loop": false,
 "name": &"NORMAL",
-"speed": 5.0
+"speed": 0.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
 size = Vector2(54, 14)
 
 [node name="JumpPad" type="Area2D"]
+collision_layer = 2
 script = ExtResource("1_gxne5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")
-animation = &"NORMAL"
+animation = &"JUMPED ON"
 autoplay = "NORMAL"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fswyh")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
