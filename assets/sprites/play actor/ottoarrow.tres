@@ -16,15 +16,15 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_hrdkl")
 }],
-"loop": true,
+"loop": false,
 "name": &"basicmouse",
-"speed": 5.0
+"speed": 0.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wobgx")
 }],
-"loop": true,
+"loop": false,
 "name": &"clickedmouse",
-"speed": 5.0
+"speed": 0.0
 }]

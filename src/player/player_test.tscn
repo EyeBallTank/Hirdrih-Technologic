@@ -9,7 +9,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l45je"]
 size = Vector2(20, 24.4)
 
-[node name="PlayerTest" type="CharacterBody2D"]
+[node name="PlayerTest" type="CharacterBody2D" groups=["playergroup"]]
 collision_mask = 6
 script = ExtResource("1_c6uwj")
 

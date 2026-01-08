@@ -28,7 +28,7 @@ enum {UNACTIVE, ACTIVE}
 var state = UNACTIVE
 
 func ready():
-	sprite.frames = load(arrowskin)
+	sprite.sprite_frames = load(arrowskin)
 
 func _physics_process(delta):
 	match state:
