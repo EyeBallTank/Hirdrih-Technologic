@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=19 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
@@ -12,6 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="12_id1xq"]
 [ext_resource type="PackedScene" uid="uid://meckl50d6ugr" path="res://src/level objects/jump pad.tscn" id="12_ly5iv"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="13_5kt7g"]
+[ext_resource type="PackedScene" uid="uid://bo0jg2beh8fkb" path="res://src/level objects/reddoor.tscn" id="13_l4i53"]
+[ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="14_cd0ll"]
+[ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="15_r4gfa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -69,14 +72,14 @@ tile_map_data = PackedByteArray("AAAYABEAAAAAAAAAAAAYABAAAAAAAAAAAAAaABEAAAAAAAA
 tile_set = SubResource("TileSet_sodwt")
 
 [node name="HirdrihMainTitlePixelTest" type="Sprite2D" parent="."]
-position = Vector2(368, 227)
+position = Vector2(363, 321)
 texture = ExtResource("11_13gfq")
 
 [node name="Coin" parent="." instance=ExtResource("12_id1xq")]
-position = Vector2(426, 256)
+position = Vector2(544, 269)
 
 [node name="HealthItem" parent="." instance=ExtResource("13_5kt7g")]
-position = Vector2(454, 260)
+position = Vector2(572, 267)
 
 [node name="Redkey" parent="." instance=ExtResource("9_vfj0j")]
 position = Vector2(286, 257)
@@ -89,3 +92,12 @@ position = Vector2(227, 256)
 
 [node name="JumpPad" parent="." instance=ExtResource("12_ly5iv")]
 position = Vector2(177, 266)
+
+[node name="RedDoor" parent="." instance=ExtResource("13_l4i53")]
+position = Vector2(403, 238)
+
+[node name="BlueDoor" parent="." instance=ExtResource("14_cd0ll")]
+position = Vector2(435, 255)
+
+[node name="YellowDoor" parent="." instance=ExtResource("15_r4gfa")]
+position = Vector2(480, 251)
