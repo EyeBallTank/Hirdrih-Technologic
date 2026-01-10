@@ -16,7 +16,7 @@ func _on_resumebutton_pressed() -> void:
 	get_tree().paused = false
 
 func _on_optionsbutton_pressed() -> void:
-	pass # Replace with function body.
+	pass
 
 func _on_quitbutton_pressed() -> void:
-	SceneManager.change_scene("level_transition_effect", "res://Screens/main_menu.tscn")
+	SceneTransition.load_scene("res://Screens/main_menu.tscn")

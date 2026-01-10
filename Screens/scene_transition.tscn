@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://bjotr0kfh2ule"]
+
+[ext_resource type="Texture2D" uid="uid://dl6s4rs2bi426" path="res://assets/sprites/scene transition sequence animation sprite.png" id="1_qgamn"]
+[ext_resource type="Script" path="res://Screens/scene_transition.gd" id="1_r5jcr"]
+
+[sub_resource type="Animation" id="Animation_bhupp"]
+resource_name = "Fade"
+length = 0.51
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SceneTransitionSequenceAnimationSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(555.238, -184), Vector2(555.238, 160)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SceneTransitionSequenceAnimationSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(555.238, 832), Vector2(555.238, 499)]
+}
+
+[sub_resource type="Animation" id="Animation_4e0iq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SceneTransitionSequenceAnimationSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(555.238, -184)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SceneTransitionSequenceAnimationSprite2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(555.238, 832)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1xbbp"]
+_data = {
+"Fade": SubResource("Animation_bhupp"),
+"RESET": SubResource("Animation_4e0iq")
+}
+
+[node name="SceneTransition" type="CanvasLayer"]
+process_mode = 3
+layer = 90
+script = ExtResource("1_r5jcr")
+
+[node name="SceneTransitionSequenceAnimationSprite" type="Sprite2D" parent="."]
+position = Vector2(555.238, -184)
+scale = Vector2(4.2619, 4.2619)
+texture = ExtResource("1_qgamn")
+
+[node name="SceneTransitionSequenceAnimationSprite2" type="Sprite2D" parent="."]
+position = Vector2(555.238, 832)
+scale = Vector2(4.2619, 4.2619)
+texture = ExtResource("1_qgamn")
+flip_v = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_1xbbp")
+}

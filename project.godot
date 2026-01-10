@@ -16,8 +16,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SceneManager="*res://Screens/scene_manager.tscn"
 Signals="*res://src/Signals.gd"
+SceneTransition="*res://Screens/scene_transition.tscn"
 
 [display]
 
