@@ -1,9 +1,113 @@
-[gd_scene format=3 uid="uid://dft8tex2m1cws"]
+[gd_scene load_steps=7 format=3 uid="uid://dft8tex2m1cws"]
+
+[ext_resource type="Script" path="res://Screens/pause_menu.gd" id="1_i2bjg"]
+[ext_resource type="Texture2D" uid="uid://b68idbd8wm2ti" path="res://assets/sprites/pause menu board sprite.png" id="2_bkx25"]
+[ext_resource type="Texture2D" uid="uid://c6dr64ddjy5cm" path="res://assets/sprites/texture button 2 normal.png" id="3_yu165"]
+[ext_resource type="Texture2D" uid="uid://5yxo2yabds40" path="res://assets/sprites/texture button 3 pressed.png" id="4_cqs4o"]
+[ext_resource type="Texture2D" uid="uid://couaifd0r2835" path="res://assets/sprites/texture button 1 hover.png" id="5_7b7c4"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_2nteb"]
 
 [node name="PauseMenu" type="Control"]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_i2bjg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenuBoardSprite" type="Sprite2D" parent="."]
+position = Vector2(581, 325)
+scale = Vector2(4.31395, 4.31395)
+texture = ExtResource("2_bkx25")
+
+[node name="Resumebutton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = -214.0
+offset_right = 178.0
+offset_bottom = -79.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_yu165")
+texture_pressed = ExtResource("4_cqs4o")
+texture_hover = ExtResource("5_7b7c4")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Resumebutton"]
+offset_left = 81.0
+offset_top = 44.0
+offset_right = 242.0
+offset_bottom = 86.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "UNPAUSE"
+
+[node name="Optionsbutton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = -72.0
+offset_right = 178.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_yu165")
+texture_pressed = ExtResource("4_cqs4o")
+texture_hover = ExtResource("5_7b7c4")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Optionsbutton"]
+offset_left = 91.0
+offset_top = 49.0
+offset_right = 252.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "OPTIONS"
+
+[node name="Quitbutton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -178.0
+offset_top = 73.0
+offset_right = 178.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_yu165")
+texture_pressed = ExtResource("4_cqs4o")
+texture_hover = ExtResource("5_7b7c4")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Quitbutton"]
+offset_left = 115.0
+offset_top = 47.0
+offset_right = 276.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "QUIT"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="pressed" from="Resumebutton" to="." method="_on_resumebutton_pressed"]

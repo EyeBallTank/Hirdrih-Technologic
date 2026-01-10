@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=20 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://bo0jg2beh8fkb" path="res://src/level objects/reddoor.tscn" id="13_l4i53"]
 [ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="14_cd0ll"]
 [ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="15_r4gfa"]
+[ext_resource type="PackedScene" uid="uid://dft8tex2m1cws" path="res://Screens/pause_menu.tscn" id="16_6sgfg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -35,6 +36,7 @@ physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_bms3y")
 
 [node name="level 01" type="Node2D"]
+position = Vector2(1420, 20)
 
 [node name="HeightCharPropTest" type="Sprite2D" parent="."]
 position = Vector2(368, 262)
@@ -56,6 +58,8 @@ position = Vector2(-32, -8)
 arrowskin = "res://assets/sprites/play actor/ottoarrow.tres"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="CanvasLayer" instance=ExtResource("16_6sgfg")]
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 offset_left = 28.0
