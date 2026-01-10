@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbkbudl8fh4mu"]
+
+[ext_resource type="Script" path="res://Screens/scene_manager.gd" id="1_6byo5"]
+[ext_resource type="Texture2D" uid="uid://dl6s4rs2bi426" path="res://assets/sprites/scene transition sequence animation sprite.png" id="2_iqbf3"]
+
+[sub_resource type="Animation" id="Animation_4cb21"]
+resource_name = "level_transition_effect"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6yiw1"]
+_data = {
+"level_transition_effect": SubResource("Animation_4cb21")
+}
+
+[node name="SceneManager" type="Node"]
+script = ExtResource("1_6byo5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SceneTransitionSequenceAnimationSprite" type="Sprite2D" parent="CanvasLayer/Control"]
+position = Vector2(595, -193)
+scale = Vector2(4.14286, 4.14286)
+texture = ExtResource("2_iqbf3")
+
+[node name="SceneTransitionSequenceAnimationSprite2" type="Sprite2D" parent="CanvasLayer/Control"]
+position = Vector2(595, 832)
+scale = Vector2(4.14286, 4.14286)
+texture = ExtResource("2_iqbf3")
+flip_v = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_6yiw1")
+}

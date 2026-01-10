@@ -111,3 +111,5 @@ text = "QUIT"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [connection signal="pressed" from="Resumebutton" to="." method="_on_resumebutton_pressed"]
+[connection signal="pressed" from="Optionsbutton" to="." method="_on_optionsbutton_pressed"]
+[connection signal="pressed" from="Quitbutton" to="." method="_on_quitbutton_pressed"]
