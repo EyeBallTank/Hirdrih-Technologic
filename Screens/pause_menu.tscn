@@ -24,17 +24,23 @@ position = Vector2(581, 325)
 scale = Vector2(4.31395, 4.31395)
 texture = ExtResource("2_bkx25")
 
-[node name="Resumebutton" type="TextureButton" parent="."]
+[node name="pausemenupart" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Resumebutton" type="TextureButton" parent="pausemenupart"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -178.0
-offset_top = -214.0
-offset_right = 178.0
-offset_bottom = -79.0
+offset_left = 378.0
+offset_top = 90.0
+offset_right = 734.0
+offset_bottom = 225.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_yu165")
@@ -42,7 +48,8 @@ texture_pressed = ExtResource("4_cqs4o")
 texture_hover = ExtResource("5_7b7c4")
 stretch_mode = 0
 
-[node name="Label2" type="Label" parent="Resumebutton"]
+[node name="Label2" type="Label" parent="pausemenupart/Resumebutton"]
+layout_mode = 0
 offset_left = 81.0
 offset_top = 44.0
 offset_right = 242.0
@@ -52,17 +59,17 @@ theme_override_fonts/font = ExtResource("6_2nteb")
 theme_override_font_sizes/font_size = 23
 text = "UNPAUSE"
 
-[node name="Optionsbutton" type="TextureButton" parent="."]
+[node name="Optionsbutton" type="TextureButton" parent="pausemenupart"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -178.0
-offset_top = -72.0
-offset_right = 178.0
-offset_bottom = 63.0
+offset_left = 378.0
+offset_top = 232.0
+offset_right = 734.0
+offset_bottom = 367.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_yu165")
@@ -70,7 +77,8 @@ texture_pressed = ExtResource("4_cqs4o")
 texture_hover = ExtResource("5_7b7c4")
 stretch_mode = 0
 
-[node name="Label2" type="Label" parent="Optionsbutton"]
+[node name="Label2" type="Label" parent="pausemenupart/Optionsbutton"]
+layout_mode = 0
 offset_left = 91.0
 offset_top = 49.0
 offset_right = 252.0
@@ -80,17 +88,17 @@ theme_override_fonts/font = ExtResource("6_2nteb")
 theme_override_font_sizes/font_size = 23
 text = "OPTIONS"
 
-[node name="Quitbutton" type="TextureButton" parent="."]
+[node name="Quitbutton" type="TextureButton" parent="pausemenupart"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -178.0
-offset_top = 73.0
-offset_right = 178.0
-offset_bottom = 208.0
+offset_left = 378.0
+offset_top = 377.0
+offset_right = 734.0
+offset_bottom = 512.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_yu165")
@@ -98,7 +106,75 @@ texture_pressed = ExtResource("4_cqs4o")
 texture_hover = ExtResource("5_7b7c4")
 stretch_mode = 0
 
-[node name="Label2" type="Label" parent="Quitbutton"]
+[node name="Label2" type="Label" parent="pausemenupart/Quitbutton"]
+layout_mode = 0
+offset_left = 115.0
+offset_top = 47.0
+offset_right = 276.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "QUIT"
+
+[node name="optionsmenupart" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SoundAndMusic" type="Control" parent="optionsmenupart"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sound labels" type="Label" parent="optionsmenupart/SoundAndMusic"]
+layout_mode = 0
+offset_left = 157.0
+offset_top = 145.0
+offset_right = 318.0
+offset_bottom = 187.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "SOUND
+
+MUSIC
+"
+
+[node name="Sound slider" type="HSlider" parent="optionsmenupart/SoundAndMusic"]
+layout_mode = 0
+offset_left = 153.0
+offset_top = 181.0
+offset_right = 442.0
+offset_bottom = 197.0
+
+[node name="Music slider" type="HSlider" parent="optionsmenupart/SoundAndMusic"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 255.0
+offset_right = 439.0
+offset_bottom = 271.0
+
+[node name="Quitbutton2" type="TextureButton" parent="optionsmenupart"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 378.0
+offset_top = 417.0
+offset_right = 734.0
+offset_bottom = 552.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_yu165")
+texture_pressed = ExtResource("4_cqs4o")
+texture_hover = ExtResource("5_7b7c4")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="optionsmenupart/Quitbutton2"]
+layout_mode = 0
 offset_left = 115.0
 offset_top = 47.0
 offset_right = 276.0
@@ -110,6 +186,8 @@ text = "QUIT"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
-[connection signal="pressed" from="Resumebutton" to="." method="_on_resumebutton_pressed"]
-[connection signal="pressed" from="Optionsbutton" to="." method="_on_optionsbutton_pressed"]
-[connection signal="pressed" from="Quitbutton" to="." method="_on_quitbutton_pressed"]
+[connection signal="pressed" from="pausemenupart/Resumebutton" to="." method="_on_resumebutton_pressed"]
+[connection signal="pressed" from="pausemenupart/Optionsbutton" to="." method="_on_optionsbutton_pressed"]
+[connection signal="pressed" from="pausemenupart/Quitbutton" to="." method="_on_quitbutton_pressed"]
+[connection signal="value_changed" from="optionsmenupart/SoundAndMusic/Sound slider" to="." method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="optionsmenupart/Quitbutton2" to="." method="_on_quitbutton_2_pressed"]

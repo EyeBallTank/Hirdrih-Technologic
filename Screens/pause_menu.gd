@@ -1,5 +1,8 @@
 extends Control
 
+@onready var pausemenupart = $pausemenupart
+@onready var optionsmenupart = $optionsmenupart
+
 func _process(_delta):
 	if Input.is_action_just_pressed("pause"):
 		toggle()
@@ -9,14 +12,26 @@ func toggle():
 	get_tree().paused = visible
 
 func _ready():
+	pausemenupart.visible = true
+	optionsmenupart.visible = false
 	hide()
+
+func show_and_hide(first, second):
+	first.show()
+	second.hide()
 
 func _on_resumebutton_pressed() -> void:
 	hide()
 	get_tree().paused = false
 
 func _on_optionsbutton_pressed() -> void:
-	pass
+	show_and_hide(optionsmenupart, pausemenupart)
 
 func _on_quitbutton_pressed() -> void:
 	SceneTransition.load_scene("res://Screens/main_menu.tscn")
+
+func _on_quitbutton_2_pressed() -> void:
+	show_and_hide(pausemenupart, optionsmenupart)
+
+func _on_sound_slider_value_changed(value: float) -> void:
+	AudioServer.set_bus_volume_db(0,value)

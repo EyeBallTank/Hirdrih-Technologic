@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://d3iht275tp2n8"]
+[gd_scene load_steps=7 format=3 uid="uid://d3iht275tp2n8"]
 
 [ext_resource type="Script" path="res://Screens/main_menu.gd" id="1_dykc1"]
-[ext_resource type="Texture2D" uid="uid://d076lbj6c6ftr" path="res://assets/sprites/art gallery/herrko/herrko art lulu reference.png" id="2_irlx3"]
-[ext_resource type="Texture2D" uid="uid://jpnmugmsoapn" path="res://assets/sprites/art gallery/herrko/herrko art pebble reference.png" id="3_dt68l"]
+[ext_resource type="Texture2D" uid="uid://dcuii22sn7otd" path="res://assets/sprites/HIRDRIH MAIN TITLE PIXEL TEST.png" id="2_qqsby"]
+[ext_resource type="Texture2D" uid="uid://c6dr64ddjy5cm" path="res://assets/sprites/texture button 2 normal.png" id="3_pvp5o"]
+[ext_resource type="Texture2D" uid="uid://5yxo2yabds40" path="res://assets/sprites/texture button 3 pressed.png" id="4_w78ss"]
+[ext_resource type="Texture2D" uid="uid://couaifd0r2835" path="res://assets/sprites/texture button 1 hover.png" id="5_xvjyl"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_0mtvm"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -15,10 +18,167 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dykc1")
 
-[node name="HerrkoArtLuluReference" type="Sprite2D" parent="."]
-position = Vector2(474, 273)
-texture = ExtResource("2_irlx3")
+[node name="HirdrihMainTitlePixelTest" type="Sprite2D" parent="."]
+position = Vector2(603, 110)
+scale = Vector2(5.025, 5.025)
+texture = ExtResource("2_qqsby")
 
-[node name="HerrkoArtPebbleReference" type="Sprite2D" parent="."]
-position = Vector2(617, 306)
-texture = ExtResource("3_dt68l")
+[node name="mainmenupart" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StartButton" type="TextureButton" parent="mainmenupart"]
+layout_mode = 2
+offset_left = 432.0
+offset_top = 235.0
+offset_right = 730.0
+offset_bottom = 342.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="mainmenupart/StartButton"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 36.0
+offset_right = 255.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "STAR"
+
+[node name="OptionsButton" type="TextureButton" parent="mainmenupart"]
+layout_mode = 2
+offset_left = 60.0
+offset_top = 307.0
+offset_right = 358.0
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="mainmenupart/OptionsButton"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 36.0
+offset_right = 228.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "OTPIONS
+"
+
+[node name="LevelSelectButton" type="TextureButton" parent="mainmenupart"]
+layout_mode = 2
+offset_left = 60.0
+offset_top = 494.0
+offset_right = 358.0
+offset_bottom = 601.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="mainmenupart/LevelSelectButton"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 23.0
+offset_right = 231.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "LEVEL 
+SELECT"
+
+[node name="GalleryButton" type="TextureButton" parent="mainmenupart"]
+layout_mode = 2
+offset_left = 760.0
+offset_top = 307.0
+offset_right = 1058.0
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="mainmenupart/GalleryButton"]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 36.0
+offset_right = 228.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "GALLERY"
+
+[node name="QuitButton" type="TextureButton" parent="mainmenupart"]
+layout_mode = 2
+offset_left = 760.0
+offset_top = 494.0
+offset_right = 1058.0
+offset_bottom = 601.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="mainmenupart/QuitButton"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 23.0
+offset_right = 231.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "QUIT"
+
+[node name="optionsmenupart" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="QuitButton2" type="TextureButton" parent="optionsmenupart"]
+offset_left = 418.0
+offset_top = 528.0
+offset_right = 716.0
+offset_bottom = 635.0
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="optionsmenupart/QuitButton2"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 23.0
+offset_right = 231.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "QUIT"
+
+[connection signal="pressed" from="mainmenupart/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="mainmenupart/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="mainmenupart/LevelSelectButton" to="." method="_on_level_select_button_pressed"]
+[connection signal="pressed" from="mainmenupart/GalleryButton" to="." method="_on_gallery_button_pressed"]
+[connection signal="pressed" from="mainmenupart/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="optionsmenupart/QuitButton2" to="." method="_on_quit_button_2_pressed"]
