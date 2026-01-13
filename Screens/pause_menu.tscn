@@ -57,7 +57,7 @@ offset_bottom = 86.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_2nteb")
 theme_override_font_sizes/font_size = 23
-text = "UNPAUSE"
+text = "T_UNPAUSE"
 
 [node name="Optionsbutton" type="TextureButton" parent="pausemenupart"]
 layout_mode = 1
@@ -173,6 +173,46 @@ offset_top = 192.0
 offset_right = 1024.0
 offset_bottom = 216.0
 
+[node name="PTLangButton" type="TextureButton" parent="optionsmenupart/SoundAndMusic"]
+offset_left = 404.0
+offset_top = 332.0
+offset_right = 539.0
+offset_bottom = 417.0
+texture_normal = ExtResource("3_yu165")
+texture_pressed = ExtResource("4_cqs4o")
+texture_hover = ExtResource("5_7b7c4")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="optionsmenupart/SoundAndMusic/PTLangButton"]
+offset_left = 33.0
+offset_top = 22.0
+offset_right = 194.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "PT"
+
+[node name="ENLangButton" type="TextureButton" parent="optionsmenupart/SoundAndMusic"]
+offset_left = 614.0
+offset_top = 332.0
+offset_right = 749.0
+offset_bottom = 417.0
+texture_normal = ExtResource("3_yu165")
+texture_pressed = ExtResource("4_cqs4o")
+texture_hover = ExtResource("5_7b7c4")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="optionsmenupart/SoundAndMusic/ENLangButton"]
+offset_left = 33.0
+offset_top = 22.0
+offset_right = 194.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "EN"
+
 [node name="Quitbutton2" type="TextureButton" parent="optionsmenupart"]
 layout_mode = 1
 anchors_preset = 8
@@ -210,4 +250,6 @@ text = "QUIT"
 [connection signal="value_changed" from="optionsmenupart/SoundAndMusic/Sound slider" to="." method="_on_sound_slider_value_changed"]
 [connection signal="value_changed" from="optionsmenupart/SoundAndMusic/Music slider" to="." method="_on_music_slider_value_changed"]
 [connection signal="toggled" from="optionsmenupart/SoundAndMusic/CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="pressed" from="optionsmenupart/SoundAndMusic/PTLangButton" to="." method="_on_pt_lang_button_pressed"]
+[connection signal="pressed" from="optionsmenupart/SoundAndMusic/ENLangButton" to="." method="_on_en_lang_button_pressed"]
 [connection signal="pressed" from="optionsmenupart/Quitbutton2" to="." method="_on_quitbutton_2_pressed"]

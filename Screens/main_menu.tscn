@@ -51,7 +51,7 @@ offset_bottom = 78.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_0mtvm")
 theme_override_font_sizes/font_size = 23
-text = "STAR"
+text = "T_START"
 
 [node name="OptionsButton" type="TextureButton" parent="mainmenupart"]
 layout_mode = 2
@@ -157,6 +157,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Sound labels" type="Label" parent="optionsmenupart"]
+layout_mode = 0
 offset_left = 157.0
 offset_top = 241.0
 offset_right = 318.0
@@ -170,18 +171,21 @@ MUSIC
 "
 
 [node name="Sound slider" type="HSlider" parent="optionsmenupart"]
+layout_mode = 0
 offset_left = 153.0
 offset_top = 277.0
 offset_right = 442.0
 offset_bottom = 293.0
 
 [node name="Music slider" type="HSlider" parent="optionsmenupart"]
+layout_mode = 0
 offset_left = 150.0
 offset_top = 351.0
 offset_right = 439.0
 offset_bottom = 367.0
 
 [node name="fullscreen label" type="Label" parent="optionsmenupart"]
+layout_mode = 0
 offset_left = 789.0
 offset_top = 241.0
 offset_right = 1019.0
@@ -192,12 +196,56 @@ theme_override_font_sizes/font_size = 23
 text = "FULLSCREEN"
 
 [node name="CheckBox" type="CheckButton" parent="optionsmenupart"]
+layout_mode = 0
 offset_left = 980.0
 offset_top = 288.0
 offset_right = 1024.0
 offset_bottom = 312.0
 
+[node name="PTLangButton" type="TextureButton" parent="optionsmenupart"]
+layout_mode = 0
+offset_left = 404.0
+offset_top = 408.0
+offset_right = 539.0
+offset_bottom = 493.0
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="optionsmenupart/PTLangButton"]
+offset_left = 33.0
+offset_top = 22.0
+offset_right = 194.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "PT"
+
+[node name="ENLangButton" type="TextureButton" parent="optionsmenupart"]
+layout_mode = 0
+offset_left = 614.0
+offset_top = 408.0
+offset_right = 749.0
+offset_bottom = 493.0
+texture_normal = ExtResource("3_pvp5o")
+texture_pressed = ExtResource("4_w78ss")
+texture_hover = ExtResource("5_xvjyl")
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="optionsmenupart/ENLangButton"]
+offset_left = 33.0
+offset_top = 22.0
+offset_right = 194.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "EN"
+
 [node name="QuitButton2" type="TextureButton" parent="optionsmenupart"]
+layout_mode = 0
 offset_left = 418.0
 offset_top = 528.0
 offset_right = 716.0
@@ -226,4 +274,6 @@ text = "QUIT"
 [connection signal="value_changed" from="optionsmenupart/Sound slider" to="." method="_on_sound_slider_value_changed"]
 [connection signal="value_changed" from="optionsmenupart/Music slider" to="." method="_on_music_slider_value_changed"]
 [connection signal="toggled" from="optionsmenupart/CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="pressed" from="optionsmenupart/PTLangButton" to="." method="_on_pt_lang_button_pressed"]
+[connection signal="pressed" from="optionsmenupart/ENLangButton" to="." method="_on_en_lang_button_pressed"]
 [connection signal="pressed" from="optionsmenupart/QuitButton2" to="." method="_on_quit_button_2_pressed"]

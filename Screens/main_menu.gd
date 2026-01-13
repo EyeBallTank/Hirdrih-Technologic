@@ -4,6 +4,7 @@ extends Control
 @onready var optionsmenupart = $optionsmenupart
 
 func _ready() -> void:
+	TranslationServer.set_locale("en")
 	get_tree().paused = false
 	mainmenupart.visible = true
 	optionsmenupart.visible = false
@@ -50,3 +51,10 @@ func _on_check_box_toggled(toggled_on: bool) -> void:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	else:
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+
+
+func _on_pt_lang_button_pressed() -> void:
+	TranslationServer.set_locale("pt")
+
+func _on_en_lang_button_pressed() -> void:
+	TranslationServer.set_locale("en")
