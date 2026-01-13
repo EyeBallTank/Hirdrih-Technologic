@@ -1,7 +1,8 @@
-[gd_scene load_steps=20 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=21 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
+[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="4_l4shw"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="5_x33fc"]
 [ext_resource type="Texture2D" uid="uid://detnh0rv21v63" path="res://assets/sprites/tiles_packed.png" id="8_nlb0o"]
 [ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="9_vfj0j"]
@@ -55,7 +56,7 @@ position = Vector2(364, 277)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
 position = Vector2(-32, -8)
-arrowskin = "res://assets/sprites/play actor/ottoarrow.tres"
+sprite_frames = ExtResource("4_l4shw")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

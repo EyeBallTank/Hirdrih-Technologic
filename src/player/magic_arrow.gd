@@ -14,7 +14,8 @@ extends CharacterBody2D
 #But if Leon/Otto quit the "MOUSEACTIVE" state, the magic mouse simply returns to its invisible state.
 #The system needs to be worked on.
 @onready var sprite = $AnimatedSprite2D
-@export var arrowskin = "res://assets/sprites/play actor/leonarrow.tres"
+#@export var arrowskin = "res://assets/sprites/play actor/leonarrow.tres"
+@export var sprite_frames: SpriteFrames
 #res://assets/sprites/play actor/ottoarrow.tres
 
 
@@ -28,7 +29,9 @@ enum {UNACTIVE, ACTIVE}
 var state = UNACTIVE
 
 func ready():
-	sprite.sprite_frames = load(arrowskin)
+	sprite_frames = load("res://assets/sprites/play actor/leonarrow.tres")
+	sprite.set_sprite_frames()
+	#sprite.sprite_frames = load(arrowskin)
 
 func _physics_process(delta):
 	match state:
