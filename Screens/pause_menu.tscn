@@ -155,6 +155,24 @@ offset_top = 255.0
 offset_right = 439.0
 offset_bottom = 271.0
 
+[node name="fullscreen label" type="Label" parent="optionsmenupart/SoundAndMusic"]
+layout_mode = 0
+offset_left = 789.0
+offset_top = 145.0
+offset_right = 1019.0
+offset_bottom = 247.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_2nteb")
+theme_override_font_sizes/font_size = 23
+text = "FULLSCREEN"
+
+[node name="CheckBox" type="CheckButton" parent="optionsmenupart/SoundAndMusic"]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 192.0
+offset_right = 1024.0
+offset_bottom = 216.0
+
 [node name="Quitbutton2" type="TextureButton" parent="optionsmenupart"]
 layout_mode = 1
 anchors_preset = 8
@@ -190,4 +208,6 @@ text = "QUIT"
 [connection signal="pressed" from="pausemenupart/Optionsbutton" to="." method="_on_optionsbutton_pressed"]
 [connection signal="pressed" from="pausemenupart/Quitbutton" to="." method="_on_quitbutton_pressed"]
 [connection signal="value_changed" from="optionsmenupart/SoundAndMusic/Sound slider" to="." method="_on_sound_slider_value_changed"]
+[connection signal="value_changed" from="optionsmenupart/SoundAndMusic/Music slider" to="." method="_on_music_slider_value_changed"]
+[connection signal="toggled" from="optionsmenupart/SoundAndMusic/CheckBox" to="." method="_on_check_box_toggled"]
 [connection signal="pressed" from="optionsmenupart/Quitbutton2" to="." method="_on_quitbutton_2_pressed"]

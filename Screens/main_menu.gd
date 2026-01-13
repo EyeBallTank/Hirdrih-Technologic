@@ -34,3 +34,19 @@ func _on_quit_button_pressed() -> void:
 
 func _on_quit_button_2_pressed() -> void:
 	show_and_hide(mainmenupart, optionsmenupart)
+
+func volume(bus_index, value):
+	AudioServer.set_bus_volume_db(bus_index, linear_to_db(value)-30)
+
+func _on_sound_slider_value_changed(value: float) -> void:
+	#AudioServer.set_bus_volume_db(0,value)
+	volume(1,value)
+
+func _on_music_slider_value_changed(value: float) -> void:
+	volume(2,value)
+
+func _on_check_box_toggled(toggled_on: bool) -> void:
+	if toggled_on == true:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
