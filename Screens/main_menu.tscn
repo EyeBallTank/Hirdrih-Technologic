@@ -81,9 +81,9 @@ text = "OTPIONS
 [node name="LevelSelectButton" type="TextureButton" parent="mainmenupart"]
 layout_mode = 2
 offset_left = 60.0
-offset_top = 494.0
+offset_top = 428.0
 offset_right = 358.0
-offset_bottom = 601.0
+offset_bottom = 535.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_pvp5o")
@@ -130,9 +130,9 @@ text = "GALLERY"
 [node name="QuitButton" type="TextureButton" parent="mainmenupart"]
 layout_mode = 2
 offset_left = 760.0
-offset_top = 494.0
+offset_top = 428.0
 offset_right = 1058.0
-offset_bottom = 601.0
+offset_bottom = 535.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_pvp5o")
@@ -150,6 +150,17 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_0mtvm")
 theme_override_font_sizes/font_size = 23
 text = "QUIT"
+
+[node name="Label2" type="Label" parent="mainmenupart"]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 578.0
+offset_right = 958.0
+offset_bottom = 620.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "FROM THE CREATOR OF PROJECT NORTUBEL"
 
 [node name="optionsmenupart" type="Control" parent="."]
 anchors_preset = 0
@@ -214,6 +225,7 @@ texture_hover = ExtResource("5_xvjyl")
 stretch_mode = 0
 
 [node name="Label2" type="Label" parent="optionsmenupart/PTLangButton"]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 22.0
 offset_right = 194.0
@@ -235,6 +247,7 @@ texture_hover = ExtResource("5_xvjyl")
 stretch_mode = 0
 
 [node name="Label2" type="Label" parent="optionsmenupart/ENLangButton"]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 22.0
 offset_right = 194.0

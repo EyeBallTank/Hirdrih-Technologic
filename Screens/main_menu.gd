@@ -22,7 +22,7 @@ func _on_options_button_pressed() -> void:
 
 
 func _on_level_select_button_pressed() -> void:
-	pass # SceneTransition.load_scene("NOT NOW")
+	SceneTransition.load_scene("res://Screens/levelselect.tscn")
 
 
 func _on_gallery_button_pressed() -> void:

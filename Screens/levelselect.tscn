@@ -1,0 +1,549 @@
+[gd_scene load_steps=6 format=3 uid="uid://be4h2g1lnma5c"]
+
+[ext_resource type="Script" path="res://Screens/levelselect.gd" id="1_a5681"]
+[ext_resource type="Texture2D" uid="uid://c6dr64ddjy5cm" path="res://assets/sprites/texture button 2 normal.png" id="2_h20a4"]
+[ext_resource type="Texture2D" uid="uid://5yxo2yabds40" path="res://assets/sprites/texture button 3 pressed.png" id="3_c6pqt"]
+[ext_resource type="Texture2D" uid="uid://couaifd0r2835" path="res://assets/sprites/texture button 1 hover.png" id="4_mp32t"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="5_pv673"]
+
+[node name="levelselect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a5681")
+
+[node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 535.0
+offset_right = 605.0
+offset_bottom = 615.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="QuitButton"]
+offset_left = 46.0
+offset_top = 25.0
+offset_right = 207.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "QUIT
+"
+
+[node name="ButtonForLevel1" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 40.0
+offset_right = 226.0
+offset_bottom = 129.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel1"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "01"
+
+[node name="ButtonForLevel2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 40.0
+offset_right = 390.0
+offset_bottom = 129.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel2"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "02"
+
+[node name="ButtonForLevel3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 40.0
+offset_right = 548.0
+offset_bottom = 129.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel3"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "03"
+
+[node name="ButtonForLevel4" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 40.0
+offset_right = 710.0
+offset_bottom = 129.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel4"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "04"
+
+[node name="ButtonForLevel5" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 738.0
+offset_top = 40.0
+offset_right = 877.0
+offset_bottom = 129.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel5"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "05"
+
+[node name="ButtonForLevel6" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 918.0
+offset_top = 40.0
+offset_right = 1057.0
+offset_bottom = 129.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel6"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "06"
+
+[node name="ButtonForLevel7" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 166.0
+offset_right = 226.0
+offset_bottom = 255.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel7"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "07"
+
+[node name="ButtonForLevel8" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 166.0
+offset_right = 390.0
+offset_bottom = 255.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel8"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "08"
+
+[node name="ButtonForLevel9" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 166.0
+offset_right = 548.0
+offset_bottom = 255.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel9"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "09"
+
+[node name="ButtonForLevel10" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 166.0
+offset_right = 710.0
+offset_bottom = 255.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel10"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "10"
+
+[node name="ButtonForLevel11" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 738.0
+offset_top = 166.0
+offset_right = 877.0
+offset_bottom = 255.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel11"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "11"
+
+[node name="ButtonForLevel12" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 918.0
+offset_top = 166.0
+offset_right = 1057.0
+offset_bottom = 255.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel12"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "12"
+
+[node name="ButtonForLevel13" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 291.0
+offset_right = 226.0
+offset_bottom = 380.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel13"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "13"
+
+[node name="ButtonForLevel14" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 291.0
+offset_right = 390.0
+offset_bottom = 380.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel14"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "14"
+
+[node name="ButtonForLevel15" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 291.0
+offset_right = 548.0
+offset_bottom = 380.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel15"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "15
+"
+
+[node name="ButtonForLevel16" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 291.0
+offset_right = 710.0
+offset_bottom = 380.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel16"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "16"
+
+[node name="ButtonForLevel17" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 738.0
+offset_top = 291.0
+offset_right = 877.0
+offset_bottom = 380.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel17"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "17"
+
+[node name="ButtonForLevel18" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 918.0
+offset_top = 291.0
+offset_right = 1057.0
+offset_bottom = 380.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel18"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "18
+"
+
+[node name="ButtonForLevel19" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 423.0
+offset_right = 226.0
+offset_bottom = 512.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel19"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "19
+"
+
+[node name="ButtonForLevel20" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 423.0
+offset_right = 390.0
+offset_bottom = 512.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel20"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "20"
+
+[node name="ButtonForLevel21" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 423.0
+offset_right = 548.0
+offset_bottom = 512.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel21"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "21"
+
+[node name="ButtonForLevel22" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 423.0
+offset_right = 710.0
+offset_bottom = 512.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel22"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "22"
+
+[node name="ButtonForLevel23" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 738.0
+offset_top = 423.0
+offset_right = 877.0
+offset_bottom = 512.0
+texture_normal = ExtResource("2_h20a4")
+texture_pressed = ExtResource("3_c6pqt")
+texture_hover = ExtResource("4_mp32t")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ButtonForLevel23"]
+offset_left = 42.0
+offset_top = 28.0
+offset_right = 203.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_pv673")
+theme_override_font_sizes/font_size = 23
+text = "23"
+
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="ButtonForLevel1" to="." method="_on_button_for_level_1_pressed"]
+[connection signal="pressed" from="ButtonForLevel2" to="." method="_on_button_for_level_2_pressed"]
+[connection signal="pressed" from="ButtonForLevel3" to="." method="_on_button_for_level_3_pressed"]
+[connection signal="pressed" from="ButtonForLevel4" to="." method="_on_button_for_level_4_pressed"]
+[connection signal="pressed" from="ButtonForLevel5" to="." method="_on_button_for_level_5_pressed"]
+[connection signal="pressed" from="ButtonForLevel6" to="." method="_on_button_for_level_6_pressed"]
+[connection signal="pressed" from="ButtonForLevel7" to="." method="_on_button_for_level_7_pressed"]
+[connection signal="pressed" from="ButtonForLevel8" to="." method="_on_button_for_level_8_pressed"]
+[connection signal="pressed" from="ButtonForLevel9" to="." method="_on_button_for_level_9_pressed"]
+[connection signal="pressed" from="ButtonForLevel10" to="." method="_on_button_for_level_10_pressed"]
+[connection signal="pressed" from="ButtonForLevel11" to="." method="_on_button_for_level_11_pressed"]
+[connection signal="pressed" from="ButtonForLevel12" to="." method="_on_button_for_level_12_pressed"]
+[connection signal="pressed" from="ButtonForLevel13" to="." method="_on_button_for_level_13_pressed"]
+[connection signal="pressed" from="ButtonForLevel14" to="." method="_on_button_for_level_14_pressed"]
+[connection signal="pressed" from="ButtonForLevel15" to="." method="_on_button_for_level_15_pressed"]
+[connection signal="pressed" from="ButtonForLevel16" to="." method="_on_button_for_level_16_pressed"]
+[connection signal="pressed" from="ButtonForLevel17" to="." method="_on_button_for_level_17_pressed"]
+[connection signal="pressed" from="ButtonForLevel18" to="." method="_on_button_for_level_18_pressed"]
+[connection signal="pressed" from="ButtonForLevel19" to="." method="_on_button_for_level_19_pressed"]
+[connection signal="pressed" from="ButtonForLevel20" to="." method="_on_button_for_level_20_pressed"]
+[connection signal="pressed" from="ButtonForLevel21" to="." method="_on_button_for_level_21_pressed"]
+[connection signal="pressed" from="ButtonForLevel22" to="." method="_on_button_for_level_22_pressed"]
+[connection signal="pressed" from="ButtonForLevel23" to="." method="_on_button_for_level_23_pressed"]
