@@ -25,9 +25,9 @@ func _on_level_select_button_pressed() -> void:
 	SceneTransition.load_scene("res://Screens/levelselect.tscn")
 
 
-func _on_gallery_button_pressed() -> void:
-	pass # SceneTransition.load_scene("NOT NOW")
 
+func _on_gallery_button_pressed() -> void:
+	SceneTransition.load_scene("res://Screens/art_gallery_main.tscn")
 
 func _on_quit_button_pressed() -> void:
 	get_tree().quit()

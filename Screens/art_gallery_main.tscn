@@ -1,0 +1,260 @@
+[gd_scene load_steps=6 format=3 uid="uid://308pc4sqw3ey"]
+
+[ext_resource type="Script" path="res://Screens/art_gallery_main.gd" id="1_npbnt"]
+[ext_resource type="Texture2D" uid="uid://c6dr64ddjy5cm" path="res://assets/sprites/texture button 2 normal.png" id="2_ek2xt"]
+[ext_resource type="Texture2D" uid="uid://5yxo2yabds40" path="res://assets/sprites/texture button 3 pressed.png" id="3_n4a32"]
+[ext_resource type="Texture2D" uid="uid://couaifd0r2835" path="res://assets/sprites/texture button 1 hover.png" id="4_q2vga"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="5_7jhra"]
+
+[node name="ArtGalleryMain" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_npbnt")
+
+[node name="HirdrihButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 17.0
+offset_right = 241.0
+offset_bottom = 91.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="HirdrihButton"]
+offset_left = 36.0
+offset_top = 18.0
+offset_right = 197.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "HIRDRIH"
+
+[node name="NortubelButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 17.0
+offset_right = 494.0
+offset_bottom = 91.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="NortubelButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "NORTUBEL"
+
+[node name="BrinkaedeaButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 511.0
+offset_top = 17.0
+offset_right = 775.0
+offset_bottom = 91.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BrinkaedeaButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "BRINKAEDEA"
+
+[node name="Untotern" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 804.0
+offset_top = 17.0
+offset_right = 1030.0
+offset_bottom = 91.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Untotern"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "UNTOTERN"
+
+[node name="MassagcoavButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 191.0
+offset_right = 319.0
+offset_bottom = 265.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="MassagcoavButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "MASSAG-COAV"
+
+[node name="HerrkoButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 346.0
+offset_top = 191.0
+offset_right = 526.0
+offset_bottom = 265.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="HerrkoButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "HERRKO"
+
+[node name="GreklovickButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 551.0
+offset_top = 191.0
+offset_right = 814.0
+offset_bottom = 265.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="GreklovickButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "GREKLOVICK
+"
+
+[node name="KrimbstoneButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 378.0
+offset_right = 306.0
+offset_bottom = 452.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="KrimbstoneButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "KRIMB-STONE"
+
+[node name="LahiurnButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 378.0
+offset_right = 545.0
+offset_bottom = 452.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="LahiurnButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "LAHIURN"
+
+[node name="OtherButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 581.0
+offset_top = 377.0
+offset_right = 782.0
+offset_bottom = 451.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="OtherButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "OTHER"
+
+[node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 549.0
+offset_right = 158.0
+offset_bottom = 623.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="QuitButton"]
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "QUIT"
+
+[connection signal="pressed" from="HirdrihButton" to="." method="_on_hirdrih_button_pressed"]
+[connection signal="pressed" from="NortubelButton" to="." method="_on_nortubel_button_pressed"]
+[connection signal="pressed" from="BrinkaedeaButton" to="." method="_on_brinkaedea_button_pressed"]
+[connection signal="pressed" from="Untotern" to="." method="_on_untotern_pressed"]
+[connection signal="pressed" from="MassagcoavButton" to="." method="_on_massagcoav_button_pressed"]
+[connection signal="pressed" from="HerrkoButton" to="." method="_on_herrko_button_pressed"]
+[connection signal="pressed" from="GreklovickButton" to="." method="_on_greklovick_button_pressed"]
+[connection signal="pressed" from="KrimbstoneButton" to="." method="_on_krimbstone_button_pressed"]
+[connection signal="pressed" from="LahiurnButton" to="." method="_on_lahiurn_button_pressed"]
+[connection signal="pressed" from="OtherButton" to="." method="_on_other_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
