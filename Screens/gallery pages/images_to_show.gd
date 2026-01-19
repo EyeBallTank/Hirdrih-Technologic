@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var movement_speed : float = 500
 var character_direction : Vector2
 
-@export var number = 4
+@export var number = 9
 var currentFrame: int = 0
 
 var scale_speed = .5

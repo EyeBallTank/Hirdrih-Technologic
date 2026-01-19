@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b51eq48ltvwb8"
-path="res://.godot/imported/hidden character art suki.png-477fc28ab56791e3ee89b9322cc57ea1.ctex"
+uid="uid://bb82qi30po3ve"
+path="res://.godot/imported/09 hirdrih art showcase.png-d6cf653cee00d1a6de69b5c89d8807af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/hidden character art suki.png"
-dest_files=["res://.godot/imported/hidden character art suki.png-477fc28ab56791e3ee89b9322cc57ea1.ctex"]
+source_file="res://assets/sprites/art gallery/hirdrih/09 hirdrih art showcase.png"
+dest_files=["res://.godot/imported/09 hirdrih art showcase.png-d6cf653cee00d1a6de69b5c89d8807af.ctex"]
 
 [params]
 

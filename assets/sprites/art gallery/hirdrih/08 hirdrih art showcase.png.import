@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvvxdtwhwom2g"
-path="res://.godot/imported/hidden character art rosetron file.png-334c7f3b8fa13323f587a8fb5e364357.ctex"
+uid="uid://d3cfefn6uk1mv"
+path="res://.godot/imported/08 hirdrih art showcase.png-e5e37516817ad49955deb32b4d4ec175.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/hidden character art rosetron file.png"
-dest_files=["res://.godot/imported/hidden character art rosetron file.png-334c7f3b8fa13323f587a8fb5e364357.ctex"]
+source_file="res://assets/sprites/art gallery/hirdrih/08 hirdrih art showcase.png"
+dest_files=["res://.godot/imported/08 hirdrih art showcase.png-e5e37516817ad49955deb32b4d4ec175.ctex"]
 
 [params]
 

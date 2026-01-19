@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=18 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://drbby1wnlnxmq" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v2.png" id="2_fy8d7"]
@@ -6,6 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://cvayjnvjtw3fb" path="res://assets/sprites/art gallery/hirdrih/03 hirdrih art showcase.png" id="4_07fhf"]
 [ext_resource type="Texture2D" uid="uid://mh7argjed7tm" path="res://assets/sprites/art gallery/hirdrih/04 hirdrih art showcase.png" id="5_gdk52"]
 [ext_resource type="Texture2D" uid="uid://ebi10mrv3lg8" path="res://assets/sprites/art gallery/hirdrih/05 hirdrih art showcase.png" id="6_702dr"]
+[ext_resource type="Texture2D" uid="uid://dam3mvekkl8yp" path="res://assets/sprites/art gallery/hirdrih/06 hirdrih art showcase.png" id="7_gt365"]
+[ext_resource type="Texture2D" uid="uid://3ari1d5td8ep" path="res://assets/sprites/art gallery/hirdrih/07 hirdrih art showcase.png" id="8_fwl4e"]
+[ext_resource type="Texture2D" uid="uid://d3cfefn6uk1mv" path="res://assets/sprites/art gallery/hirdrih/08 hirdrih art showcase.png" id="9_py88i"]
+[ext_resource type="Texture2D" uid="uid://bb82qi30po3ve" path="res://assets/sprites/art gallery/hirdrih/09 hirdrih art showcase.png" id="10_u71qs"]
+[ext_resource type="Texture2D" uid="uid://dd7b7c7dpxr0i" path="res://assets/sprites/art gallery/hirdrih/10 hirdrih art showcase.png" id="11_0kayu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5gala"]
 atlas = ExtResource("2_fy8d7")
@@ -40,6 +45,21 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_702dr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gt365")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fwl4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_py88i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_u71qs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0kayu")
 }],
 "loop": false,
 "name": &"hirdrih",

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2ahk7ulv01k4"
-path="res://.godot/imported/hidden character art time controller.png-c6f6d17b1874ee26eaea6a39868dc203.ctex"
+uid="uid://3ari1d5td8ep"
+path="res://.godot/imported/07 hirdrih art showcase.png-f32bcba5a9109cabf688185a2c7d00e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hidden characters/hidden character art time controller.png"
-dest_files=["res://.godot/imported/hidden character art time controller.png-c6f6d17b1874ee26eaea6a39868dc203.ctex"]
+source_file="res://assets/sprites/art gallery/hirdrih/07 hirdrih art showcase.png"
+dest_files=["res://.godot/imported/07 hirdrih art showcase.png-f32bcba5a9109cabf688185a2c7d00e4.ctex"]
 
 [params]
 
