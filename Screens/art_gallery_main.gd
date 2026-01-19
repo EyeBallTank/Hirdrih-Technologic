@@ -5,8 +5,7 @@ func _ready() -> void:
 
 
 func _on_hirdrih_button_pressed() -> void:
-	pass # Replace with function body.
-
+	SceneTransition.load_scene("res://Screens/gallery pages/art_galllery_01_hirdrih.tscn")
 
 func _on_nortubel_button_pressed() -> void:
 	pass # Replace with function body.

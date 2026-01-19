@@ -1,0 +1,60 @@
+[gd_scene load_steps=13 format=3 uid="uid://w3he56eg4uvx"]
+
+[ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
+[ext_resource type="Texture2D" uid="uid://drbby1wnlnxmq" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v2.png" id="2_fy8d7"]
+[ext_resource type="Texture2D" uid="uid://bvayxmatn2212" path="res://assets/sprites/art gallery/hirdrih/02 hirdrih art showcase.png" id="3_s72yf"]
+[ext_resource type="Texture2D" uid="uid://cvayjnvjtw3fb" path="res://assets/sprites/art gallery/hirdrih/03 hirdrih art showcase.png" id="4_07fhf"]
+[ext_resource type="Texture2D" uid="uid://mh7argjed7tm" path="res://assets/sprites/art gallery/hirdrih/04 hirdrih art showcase.png" id="5_gdk52"]
+[ext_resource type="Texture2D" uid="uid://ebi10mrv3lg8" path="res://assets/sprites/art gallery/hirdrih/05 hirdrih art showcase.png" id="6_702dr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gala"]
+atlas = ExtResource("2_fy8d7")
+region = Rect2(0, 0, 749, 1034)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
+atlas = ExtResource("3_s72yf")
+region = Rect2(0, 0, 749, 487)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_728dn"]
+atlas = ExtResource("4_07fhf")
+region = Rect2(0, 0, 749, 1085)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8j0g"]
+atlas = ExtResource("5_gdk52")
+region = Rect2(0, 0, 749, 582)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o0jxm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gala")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rk531")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_728dn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8j0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_702dr")
+}],
+"loop": false,
+"name": &"hirdrih",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6c1n"]
+
+[node name="ImagesToShow" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_lcmba")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_o0jxm")
+animation = &"hirdrih"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_u6c1n")

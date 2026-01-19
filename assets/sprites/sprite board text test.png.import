@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cliaxumkf21jp"
-path="res://.godot/imported/hird art borhr reference.png-94e98e8c82a443ea9d8ef1d2ecc975f5.ctex"
+uid="uid://bmkqfj1nom6rb"
+path="res://.godot/imported/sprite board text test.png-12830cc2b1801d7d218553cfe45816b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hirdrih/hird art borhr reference.png"
-dest_files=["res://.godot/imported/hird art borhr reference.png-94e98e8c82a443ea9d8ef1d2ecc975f5.ctex"]
+source_file="res://assets/sprites/sprite board text test.png"
+dest_files=["res://.godot/imported/sprite board text test.png-12830cc2b1801d7d218553cfe45816b0.ctex"]
 
 [params]
 
