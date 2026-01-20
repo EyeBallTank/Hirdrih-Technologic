@@ -15,6 +15,21 @@ size = Vector2(223.938, 14096.1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_md850"]
 size = Vector2(14762, 191.5)
 
+[sub_resource type="Animation" id="Animation_7o40y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("infotext:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 664)]
+}
+
 [sub_resource type="Animation" id="Animation_s8eqg"]
 resource_name = "showbox"
 length = 0.5
@@ -29,21 +44,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(0, 664), Vector2(0, 5)]
-}
-
-[sub_resource type="Animation" id="Animation_7o40y"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("infotext:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 664)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b6hsl"]
@@ -121,8 +121,7 @@ offset_top = 17.0
 offset_right = 1072.0
 offset_bottom = 129.0
 theme_override_fonts/font = ExtResource("4_c80yb")
-text = "ARROWS:MOVING  Z/X: ZOOM  SCAPE: RESET   C: CHANGE IMAGE
-Q: TEXT W: TEXT DOWN"
+text = "T_TEXT_FOR_ART_GALLERY_BUTTONS"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
