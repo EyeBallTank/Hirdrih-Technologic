@@ -17,3 +17,10 @@ func _process(delta: float) -> void:
 
 func _on_quit_button_pressed() -> void:
 	SceneTransition.load_scene("res://Screens/art_gallery_main.tscn")
+
+
+func _on_pt_lang_button_pressed() -> void:
+	TranslationServer.set_locale("pt")
+
+func _on_en_lang_button_pressed() -> void:
+	TranslationServer.set_locale("en")

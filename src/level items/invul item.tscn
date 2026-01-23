@@ -1,6 +1,7 @@
-[gd_scene load_steps=22 format=3 uid="uid://dpt1qojm73dsb"]
+[gd_scene load_steps=23 format=3 uid="uid://dpt1qojm73dsb"]
 
 [ext_resource type="Texture2D" uid="uid://yq34hoy1puwf" path="res://assets/sprites/INVUL ITEM ANIMATION SPRITE TEST.png" id="1_bb031"]
+[ext_resource type="Script" path="res://src/level items/invul_item.gd" id="1_j2r10"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yqjas"]
 atlas = ExtResource("1_bb031")
@@ -188,6 +189,7 @@ animations = [{
 
 [node name="InvulItem" type="Area2D"]
 collision_layer = 4
+script = ExtResource("1_j2r10")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")

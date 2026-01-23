@@ -156,106 +156,57 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_c80yb")
-text = "
-== LEON AND OTTO ==
+text = "T_HIRDRIH_WIKI_INFO"
 
-The two heros of Hirdrih.
-Created by Borhr to help around the people of Hirdrih and fight
-any outside threats when possible.
+[node name="language" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1170.0
+offset_bottom = 77.0
 
+[node name="PTLangButton" type="TextureButton" parent="language"]
+layout_mode = 2
+offset_left = 1066.0
+offset_top = 6.0
+offset_right = 1132.0
+offset_bottom = 56.0
+texture_normal = ExtResource("1_nypbw")
+texture_pressed = ExtResource("2_4okgr")
+texture_hover = ExtResource("3_ag4yx")
+stretch_mode = 0
 
-== AVIETTA ==
+[node name="Label2" type="Label" parent="language/PTLangButton"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 10.0
+offset_right = 172.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_c80yb")
+theme_override_font_sizes/font_size = 23
+text = "PT"
 
-A good friend of Leon and Otto.
-She takes care of some rides in the world, 
-that revolve around sphere shaped vehicles connected to certain tracks.
+[node name="ENLangButton" type="TextureButton" parent="language"]
+layout_mode = 2
+offset_left = 995.0
+offset_top = 6.0
+offset_right = 1061.0
+offset_bottom = 56.0
+texture_normal = ExtResource("1_nypbw")
+texture_pressed = ExtResource("2_4okgr")
+texture_hover = ExtResource("3_ag4yx")
+stretch_mode = 0
 
-
-== BORHR ==
-
-The creator of Hirdrih and essentially, its god.
-
-He did not know who made him or why he exists.
-Only that he had to create Hirdrih.
-
-
-== ROBBIO ==
-
-A citizen from one of the oldest parts of Hirdrih.
-
-
-== ELECTRIC SHEEP ==
-
-A common animal in the world of Hirdrih.
-
-
-== TIME CONTROLLER ==
-
-The robots responsible for the cycle of day and night.
-
-
-== HIRDRIH HAXI ==
-
-One must compress their files to enter a Hirdrih Taxi cab.
-
-
-== SERVANT OF BORHR ==
-
-Once loyal to Borhr, now corrupted by a virus and attacking those
-they should otherwise protect.
-
-
-== SPIDER CHIP ==
-
-Another species native to Hirdrh, also unsafe from corruption.
-
-
-== HIRDRIO ==
-
-Yet another Hirdrih species, turned against its world due to viruses
-and outside corruption.
-
-
-== TRASH COLLECTOR ==
-
-Once meant to organize trash and clean up Hirdrih, now corrupted by
-a force of evil.
-
-
-== TIME DECIDER ==
-
-The main head of the time controlling section of Hirdrih.
-She's one of the oldest robots of the world that came into existence after Borhr 
-(Who's the very first).
-
-
-== DAVY PLIMSOLL DUTCH DOT LOCK ==
-
-Once tied of his job of organizing files, he became a pirate.
-Setaling from others and causing trouble.
-Though he's just bitter and not evil, unlike some of the threats from outside.
-
-
-== SUKI ==
-
-He has the ability to communicate with anyone, whenever he wants.
-No matter how annoying.
-
-
-== ROSETRON FILE ==
-
-An important artifact of Hirdrih.
-Containing information about the languages of various other worlds.
-
-
-== SNAKE SHIP ==
-
-A vehicle that can be used to come accross different worlds and universes.
-
-
-
-
-
-"
+[node name="Label2" type="Label" parent="language/ENLangButton"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 8.0
+offset_right = 173.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_c80yb")
+theme_override_font_sizes/font_size = 23
+text = "EN"
 
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="language/PTLangButton" to="." method="_on_pt_lang_button_pressed"]
+[connection signal="pressed" from="language/ENLangButton" to="." method="_on_en_lang_button_pressed"]
