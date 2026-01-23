@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=22 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="9_vfj0j"]
 [ext_resource type="PackedScene" uid="uid://cnw80sasfqhmb" path="res://src/level items/bluekey.tscn" id="10_247id"]
 [ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="10_dgw8u"]
+[ext_resource type="PackedScene" uid="uid://dpt1qojm73dsb" path="res://src/level items/invul item.tscn" id="11_3pl5b"]
 [ext_resource type="PackedScene" uid="uid://ctqctdo1kijht" path="res://src/level items/yellowkey.tscn" id="11_8eouq"]
 [ext_resource type="Texture2D" uid="uid://dcuii22sn7otd" path="res://assets/sprites/HIRDRIH MAIN TITLE PIXEL TEST.png" id="11_13gfq"]
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="12_id1xq"]
@@ -85,6 +86,9 @@ position = Vector2(544, 269)
 
 [node name="HealthItem" parent="." instance=ExtResource("13_5kt7g")]
 position = Vector2(572, 267)
+
+[node name="InvulItem" parent="." instance=ExtResource("11_3pl5b")]
+position = Vector2(526, 239)
 
 [node name="Redkey" parent="." instance=ExtResource("9_vfj0j")]
 position = Vector2(286, 257)
