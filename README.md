@@ -12,7 +12,7 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 # CREDITS
 
 * luke_rs (Used a Godot 4 platformer tutorial as reference for some code and other stuff)
-* PaperMouseGames (Used another Godot 4 platformer tutorial as reference for stuff like the new player code and tiles)
+* PaperMouseGames (Used another Godot 4 platformer tutorial as reference for stuff like the new player code, moving platforms and tiles)
 * RookDev (Used tutorial video for the arrow's "top down" movement)
 * theyellowdude69 (Used tutorial video for scene transition)
 * actuallyKron (Used tutorial for the fullscreen check button)

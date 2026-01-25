@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=26 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
@@ -37,6 +37,27 @@ texture = ExtResource("8_nlb0o")
 [sub_resource type="TileSet" id="TileSet_sodwt"]
 physics_layer_0/collision_layer = 2
 sources/0 = SubResource("TileSetAtlasSource_bms3y")
+
+[sub_resource type="Curve2D" id="Curve2D_f2qaw"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 101, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_vmbcf"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -70)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_md0pj"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -70, 0, 0, 0, 0, -51, -80, 0, 0, 0, 0, -86, -73, 0, 0, 0, 0, -114, -78)
+}
+point_count = 5
 
 [node name="level 01" type="Node2D"]
 position = Vector2(1420, 20)
@@ -92,13 +113,13 @@ position = Vector2(572, 267)
 position = Vector2(526, 239)
 
 [node name="Redkey" parent="." instance=ExtResource("9_vfj0j")]
-position = Vector2(286, 257)
+position = Vector2(246, 217)
 
 [node name="Bluekey" parent="." instance=ExtResource("10_247id")]
-position = Vector2(259, 258)
+position = Vector2(232, 218)
 
 [node name="Yellowkey" parent="." instance=ExtResource("11_8eouq")]
-position = Vector2(227, 256)
+position = Vector2(214, 219)
 
 [node name="JumpPad" parent="." instance=ExtResource("12_ly5iv")]
 position = Vector2(177, 266)
@@ -112,5 +133,20 @@ position = Vector2(435, 255)
 [node name="YellowDoor" parent="." instance=ExtResource("15_r4gfa")]
 position = Vector2(480, 251)
 
-[node name="MovPlatVerti" parent="." instance=ExtResource("19_dm0jd")]
-position = Vector2(309, 261)
+[node name="Path2D" parent="." instance=ExtResource("19_dm0jd")]
+position = Vector2(350, 173)
+curve = SubResource("Curve2D_f2qaw")
+time_of_path = 2.0
+looping = true
+spritename = "HIRDRIH HORIZONTAL"
+
+[node name="Path2D2" parent="." instance=ExtResource("19_dm0jd")]
+position = Vector2(304, 258)
+curve = SubResource("Curve2D_vmbcf")
+time_of_path = 2.0
+looping = true
+
+[node name="Path2D3" parent="." instance=ExtResource("19_dm0jd")]
+position = Vector2(476, 179)
+curve = SubResource("Curve2D_md0pj")
+time_of_path = 2.0
