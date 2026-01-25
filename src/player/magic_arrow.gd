@@ -1,5 +1,9 @@
 extends CharacterBody2D
 
+#reminder: due to the pickable arrow scene, the magic arrow must be placed
+#above leon/otto in the sense that the second collission matches that
+#of the player character
+
 #PLANS:
 #The magic mouse is a scene under the Player, meaning its future script
 #will have to refer to its parent scene at some point.

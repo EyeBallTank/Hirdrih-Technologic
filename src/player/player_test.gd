@@ -14,6 +14,9 @@ var yellowkey = false
 
 var caniusearrow = false
 
+var antivirusison = false
+@onready var antivirus_sprite = $AntivursShieldSprite
+
 enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
 
@@ -27,6 +30,9 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 	# Handle jump.
 
 var state = MAINSTATE
+
+func _ready():
+	antivirus_sprite.visible = false
 
 func _physics_process(delta):
 	match state:
