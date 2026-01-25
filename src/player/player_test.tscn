@@ -10,7 +10,7 @@
 size = Vector2(20, 24.4)
 
 [node name="PlayerTest" type="CharacterBody2D" groups=["playergroup"]]
-collision_mask = 6
+collision_mask = 2054
 script = ExtResource("1_c6uwj")
 
 [node name="SpriteTest1" type="Sprite2D" parent="."]

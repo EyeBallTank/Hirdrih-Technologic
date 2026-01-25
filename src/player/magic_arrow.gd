@@ -27,18 +27,26 @@ var character_direction : Vector2
 enum {UNACTIVE, ACTIVE}
 
 var state = UNACTIVE
+var canibeused = false
 
 func ready():
+#	Signals.Callable("playerpickeduparrow", self, "_thearrowworksnow")
+#	Signals.playerpickeduparrow.connect(_thearrowworksnow)
 	sprite_frames = load("res://assets/sprites/play actor/leonarrow.tres")
 	sprite.set_sprite_frames()
+	
 	#sprite.sprite_frames = load(arrowskin)
 
 func _physics_process(delta):
 	match state:
+		
 		UNACTIVE:
 			visible = false
-			if Input.is_action_just_pressed("activatemouse"):
+			if Input.is_action_just_pressed("activatemouse") and canibeused == true:
 				state = ACTIVE
+			elif Input.is_action_just_pressed("activatemouse") and canibeused == false:
+				pass
+
 		ACTIVE:
 			sprite.play("basicmouse")
 			visible = true
@@ -58,4 +66,12 @@ func _physics_process(delta):
 #E makes Leon and Otto shoot a projectile while the arrows click with E
 			
 			if Input.is_action_just_pressed("activatemouse"):
-				state = UNACTIVE
+					state = UNACTIVE
+
+#func _thearrowworksnow():
+#	state = UNACTIVE
+
+
+func _on_can_arrow_be_selected_area_entered(area: Area2D) -> void:
+	if area.name == "PickableArrow":
+		canibeused = true

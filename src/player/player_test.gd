@@ -12,6 +12,8 @@ var redkey = false
 var bluekey = false
 var yellowkey = false
 
+var caniusearrow = false
+
 enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
 
@@ -56,8 +58,11 @@ func _physics_process(delta):
 
 			move_and_slide()
 			
-			if Input.is_action_just_pressed("activatemouse"):
+			if Input.is_action_just_pressed("activatemouse") and caniusearrow == true:
 				state = ARROW
+			elif Input.is_action_just_pressed("activatemouse") and caniusearrow == false:
+				pass
+
 		CLIMB:
 			pass
 		PUSH:

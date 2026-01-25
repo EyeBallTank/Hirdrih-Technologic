@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://0ubg1yl6f1qq"]
+[gd_scene load_steps=5 format=3 uid="uid://0ubg1yl6f1qq"]
 
 [ext_resource type="Script" path="res://src/player/magic_arrow.gd" id="1_epmcy"]
 [ext_resource type="SpriteFrames" uid="uid://fhjgikm0ywk3" path="res://assets/sprites/play actor/leonarrow.tres" id="2_f06wb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flve7"]
 size = Vector2(14, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kw1c8"]
+size = Vector2(20, 25)
 
 [node name="MagicArrow" type="CharacterBody2D"]
 collision_layer = 512
@@ -17,3 +20,12 @@ animation = &"basicmouse"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_flve7")
+
+[node name="CanArrowBeSelected" type="Area2D" parent="."]
+collision_layer = 512
+collision_mask = 2048
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanArrowBeSelected"]
+shape = SubResource("RectangleShape2D_kw1c8")
+
+[connection signal="area_entered" from="CanArrowBeSelected" to="." method="_on_can_arrow_be_selected_area_entered"]

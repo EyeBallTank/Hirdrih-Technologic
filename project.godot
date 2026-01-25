@@ -111,6 +111,7 @@ locale/test="pt"
 2d_physics/layer_9="hazard"
 2d_physics/layer_10="arrow"
 2d_physics/layer_11="arrowblocking"
+2d_physics/layer_12="pickablearrow"
 
 [rendering]
 

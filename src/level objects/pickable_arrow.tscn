@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://t17qn6yhp3h1"]
+
+[ext_resource type="Script" path="res://src/level objects/pickable_arrow.gd" id="1_0isiu"]
+[ext_resource type="Texture2D" uid="uid://cn7nhwabdq3x7" path="res://assets/sprites/pickable arrow sprite.png" id="1_4rava"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72rwk"]
+atlas = ExtResource("1_4rava")
+region = Rect2(0, 0, 12, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6x5uh"]
+atlas = ExtResource("1_4rava")
+region = Rect2(12, 0, 12, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70vds"]
+atlas = ExtResource("1_4rava")
+region = Rect2(24, 0, 12, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aru20"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72rwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6x5uh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70vds")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6x5uh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ywguj"]
+size = Vector2(10, 19)
+
+[node name="PickableArrow" type="Area2D"]
+collision_layer = 2048
+collision_mask = 513
+script = ExtResource("1_0isiu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_aru20")
+autoplay = "default"
+frame_progress = 0.862133
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_ywguj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=27 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="15_r4gfa"]
 [ext_resource type="PackedScene" uid="uid://dft8tex2m1cws" path="res://Screens/pause_menu.tscn" id="16_6sgfg"]
 [ext_resource type="PackedScene" uid="uid://bqtgekff4fdnm" path="res://src/level objects/mov_plat_verti.tscn" id="19_dm0jd"]
+[ext_resource type="PackedScene" uid="uid://t17qn6yhp3h1" path="res://src/level objects/pickable_arrow.tscn" id="20_6gdw4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -78,8 +79,11 @@ shape = SubResource("RectangleShape2D_jkb0p")
 position = Vector2(364, 277)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
-position = Vector2(-32, -8)
+position = Vector2(0, -2)
 sprite_frames = ExtResource("4_l4shw")
+
+[node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
+position = Vector2(0, -0.5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -150,3 +154,8 @@ looping = true
 position = Vector2(476, 179)
 curve = SubResource("Curve2D_md0pj")
 time_of_path = 2.0
+
+[node name="PickableArrow" parent="." instance=ExtResource("20_6gdw4")]
+position = Vector2(236, 281)
+
+[editable path="PlayerTest/MagicArrow"]
