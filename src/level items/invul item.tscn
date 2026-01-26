@@ -187,33 +187,6 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
 
-[sub_resource type="Animation" id="Animation_6v61o"]
-resource_name = "defaultstate"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
 [sub_resource type="Animation" id="Animation_r7cvr"]
 length = 0.001
 tracks/0/type = "value"
@@ -283,6 +256,33 @@ tracks/2/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_6v61o"]
+resource_name = "defaultstate"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_iwkje"]
 _data = {
 "RESET": SubResource("Animation_r7cvr"),
@@ -291,7 +291,8 @@ _data = {
 }
 
 [node name="InvulItem" type="Area2D"]
-collision_layer = 4
+collision_layer = 4096
+collision_mask = 8192
 script = ExtResource("1_j2r10")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

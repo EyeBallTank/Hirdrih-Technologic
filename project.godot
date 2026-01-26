@@ -112,6 +112,8 @@ locale/test="pt"
 2d_physics/layer_10="arrow"
 2d_physics/layer_11="arrowblocking"
 2d_physics/layer_12="pickablearrow"
+2d_physics/layer_13="invulpowerup"
+2d_physics/layer_14="playerhurtbox"
 
 [rendering]
 

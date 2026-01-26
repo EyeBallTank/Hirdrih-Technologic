@@ -13,5 +13,7 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerTest":
-		body.yellowkey = true
-		animation.play("caught")
+		if Signals.lives < Signals.max_lives:
+#			Signals.emit_signal("coin_was_captured")
+			Signals.coin_was_captured.emit()
+			animation.play("caught")

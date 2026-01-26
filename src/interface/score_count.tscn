@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1gdadf8f6il0"]
+
+[ext_resource type="Script" path="res://src/interface/score_count.gd" id="1_dk0y4"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="1_skctn"]
+
+[node name="ScoreCount" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dk0y4")
+
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 7.0
+offset_right = 47.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_skctn")
+text = "0"

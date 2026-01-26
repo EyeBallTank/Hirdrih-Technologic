@@ -13,5 +13,8 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerTest":
-		body.yellowkey = true
-		animation.play("caught")
+		if body.health < 100:
+			body.health += 10
+			animation.play("caught")
+		else:
+			pass

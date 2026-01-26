@@ -8,14 +8,19 @@ var speed_multiplier = 30.0
 var jump_multiplier = -35.0
 var direction = 0
 
+var health : int = 100
+
 var redkey = false
 var bluekey = false
 var yellowkey = false
 
 var caniusearrow = false
 
+var ouch = false
 var antivirusison = false
 @onready var antivirus_sprite = $AntivursShieldSprite
+@onready var healthbar = $CanvasLayer/ProgressBar
+@onready var invul_animation = $InvulAnimation
 
 enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
@@ -32,7 +37,9 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var state = MAINSTATE
 
 func _ready():
-	antivirus_sprite.visible = false
+	invul_animation.play("RESET")
+#	antivirus_sprite.visible = false
+	healthbar.max_value = health
 
 func _physics_process(delta):
 	match state:
@@ -86,3 +93,8 @@ func _physics_process(delta):
 				
 		DEAD:
 			pass
+
+
+func _on_hurt_box_area_entered(area: Area2D) -> void:
+	if area.name == "InvulItem":
+		invul_animation.play("Invulnerability")
