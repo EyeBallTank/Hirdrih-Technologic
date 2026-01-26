@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://14kmh83iodhf"]
+[gd_scene load_steps=10 format=3 uid="uid://14kmh83iodhf"]
 
 [ext_resource type="Script" path="res://src/player/player_test.gd" id="1_c6uwj"]
 [ext_resource type="Texture2D" uid="uid://b44dq2yv68dde" path="res://assets/sprites/play actor/sprite test 1.png" id="2_iqxoj"]
@@ -10,67 +10,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l45je"]
 size = Vector2(20, 24.4)
-
-[sub_resource type="Animation" id="Animation_1bn3o"]
-resource_name = "Invulnerability"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("HurtBox/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AntivursShieldSprite:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
-}
-
-[sub_resource type="Animation" id="Animation_6pt6k"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("HurtBox/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AntivursShieldSprite:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ev62s"]
-_data = {
-"Invulnerability": SubResource("Animation_1bn3o"),
-"RESET": SubResource("Animation_6pt6k")
-}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hengc"]
 size = Vector2(20, 24)
@@ -94,11 +33,6 @@ shape = SubResource("RectangleShape2D_l45je")
 [node name="LeonPixelSpriteTest" type="Sprite2D" parent="."]
 position = Vector2(0, -4)
 texture = ExtResource("6_nvsu1")
-
-[node name="InvulAnimation" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_ev62s")
-}
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
@@ -132,6 +66,8 @@ value = 100.0
 [node name="AntiVirusTimer" type="Timer" parent="."]
 wait_time = 2.0
 one_shot = true
+
+[node name="PainAnimation" type="AnimationPlayer" parent="."]
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="timeout" from="AntiVirusTimer" to="." method="_on_anti_virus_timer_timeout"]

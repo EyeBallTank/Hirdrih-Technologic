@@ -20,7 +20,6 @@ var ouch = false
 var antivirusison = false
 @onready var antivirus_sprite = $AntivursShieldSprite
 @onready var healthbar = $CanvasLayer/ProgressBar
-@onready var invul_animation = $InvulAnimation
 @onready var hurtcollision = $HurtBox/CollisionShape2D
 @onready var antivirustimer = $AntiVirusTimer
 
@@ -105,20 +104,25 @@ func _physics_process(delta):
 
 func receive_damage(attack):
 	health -= attack
-	if health <= 0:
+	if health <= 0 and Signals.lives > 0:
+		health = 100
+		Signals.lives -= 1
+		Signals.life_lost.emit()
+	elif  health <= 0 and Signals.lives == 0:
 		state = DEAD
 
 func invincible():
-	
+	antivirustimer.start()
 	antivirusison = true
 	antivirus_sprite.visible = true
-#	if antivirustimer.time_left == 0:
-
+	#if antivirustimer.time_left == 0:
+		#antivirusison = false
+		#antivirus_sprite.visible = true
 
 
 func _on_hurt_box_area_entered(area: Area2D) -> void:
 	if area.name == "InvulItem" and antivirusison == false:
-		antivirustimer.start()
+		
 		invincible()
 	elif area.name == "InvulItem" and antivirusison == true:
 		pass
@@ -134,4 +138,4 @@ func _on_hurt_box_area_entered(area: Area2D) -> void:
 
 func _on_anti_virus_timer_timeout() -> void:
 	antivirusison = false
-	antivirus_sprite.visible = true
+	antivirus_sprite.visible = false
