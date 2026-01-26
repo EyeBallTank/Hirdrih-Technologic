@@ -21,6 +21,8 @@ var antivirusison = false
 @onready var antivirus_sprite = $AntivursShieldSprite
 @onready var healthbar = $CanvasLayer/ProgressBar
 @onready var invul_animation = $InvulAnimation
+@onready var hurtcollision = $HurtBox/CollisionShape2D
+@onready var antivirustimer = $AntiVirusTimer
 
 enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
@@ -37,11 +39,18 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var state = MAINSTATE
 
 func _ready():
-	invul_animation.play("RESET")
-#	antivirus_sprite.visible = false
+#	antivirustimer.paused = false
+	hurtcollision.disabled = false
+#	invul_animation.play("RESET")
+	antivirus_sprite.visible = false
 	healthbar.max_value = health
 
 func _physics_process(delta):
+#	if antivirusison == true:
+#		antivirustimer.start(2)
+#		invincible()
+	
+	healthbar.value = health
 	match state:
 		MAINSTATE:
 			# Add the gravity.
@@ -94,7 +103,35 @@ func _physics_process(delta):
 		DEAD:
 			pass
 
+func receive_damage(attack):
+	health -= attack
+	if health <= 0:
+		state = DEAD
+
+func invincible():
+	
+	antivirusison = true
+	antivirus_sprite.visible = true
+#	if antivirustimer.time_left == 0:
+
+
 
 func _on_hurt_box_area_entered(area: Area2D) -> void:
-	if area.name == "InvulItem":
-		invul_animation.play("Invulnerability")
+	if area.name == "InvulItem" and antivirusison == false:
+		antivirustimer.start()
+		invincible()
+	elif area.name == "InvulItem" and antivirusison == true:
+		pass
+		#antivirus_sprite.visible = true
+#		invul_animation.play("Invulnerability")
+		#pass
+##
+	#if area.name == "HazardTest" and antivirusison == false:
+		#receive_damage(10)
+	#elif  area.name == "HazardTest" and antivirusison == true:
+		#pass
+
+
+func _on_anti_virus_timer_timeout() -> void:
+	antivirusison = false
+	antivirus_sprite.visible = true
