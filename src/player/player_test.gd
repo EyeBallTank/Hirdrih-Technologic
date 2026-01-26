@@ -21,7 +21,9 @@ var antivirusison = false
 @onready var antivirus_sprite = $AntivursShieldSprite
 @onready var healthbar = $CanvasLayer/ProgressBar
 @onready var hurtcollision = $HurtBox/CollisionShape2D
+@onready var hurtboxarea = $HurtBox
 @onready var antivirustimer = $AntiVirusTimer
+@onready var painanimation = $PainAnimation
 
 enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
@@ -115,27 +117,40 @@ func invincible():
 	antivirustimer.start()
 	antivirusison = true
 	antivirus_sprite.visible = true
+	hurtboxarea.set_deferred("monitoring", false)
 	#if antivirustimer.time_left == 0:
 		#antivirusison = false
 		#antivirus_sprite.visible = true
 
 
 func _on_hurt_box_area_entered(area: Area2D) -> void:
-	if area.name == "InvulItem" and antivirusison == false:
-		
-		invincible()
-	elif area.name == "InvulItem" and antivirusison == true:
-		pass
+	#if area.name == "InvulItem" and antivirusison == false:
+		#
+		#invincible()
+	#elif area.name == "InvulItem" and antivirusison == true:
+		#pass
 		#antivirus_sprite.visible = true
 #		invul_animation.play("Invulnerability")
 		#pass
-##
-	#if area.name == "HazardTest" and antivirusison == false:
-		#receive_damage(10)
-	#elif  area.name == "HazardTest" and antivirusison == true:
-		#pass
+
+	if area.name == "HazardTest" and antivirusison == false:
+		if state != DEAD:
+			receive_damage(area.hazarddamage)
+			painanimation.play("playerhurt")
+		elif state == DEAD:
+			pass
+#want to make sure pain animation stops playing when the player dies
+	elif  area.name == "HazardTest" and antivirusison == true:
+		pass
 
 
 func _on_anti_virus_timer_timeout() -> void:
 	antivirusison = false
 	antivirus_sprite.visible = false
+	hurtboxarea.set_deferred("monitoring", true)
+
+func painhappened():
+	hurtboxarea.set_deferred("monitoring", false)
+
+func painwillhappenagain():
+	hurtboxarea.set_deferred("monitoring", true)

@@ -10,6 +10,9 @@ func die():
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.name == "PlayerTest":
-		body.antivirusison = true
+	if body.name == "PlayerTest" and body.antivirusison == false:
+		body.invincible()
+#		body.antivirusison = true
 		animation.play("caught")
+	elif body.name == "PlayerTest" and body.antivirusison == true:
+		pass

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://14kmh83iodhf"]
+[gd_scene load_steps=13 format=3 uid="uid://14kmh83iodhf"]
 
 [ext_resource type="Script" path="res://src/player/player_test.gd" id="1_c6uwj"]
 [ext_resource type="Texture2D" uid="uid://b44dq2yv68dde" path="res://assets/sprites/play actor/sprite test 1.png" id="2_iqxoj"]
@@ -13,6 +13,59 @@ size = Vector2(20, 24.4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hengc"]
 size = Vector2(20, 24)
+
+[sub_resource type="Animation" id="Animation_opx62"]
+resource_name = "playerhurt"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeonPixelSpriteTest:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"painhappened"
+}, {
+"args": [],
+"method": &"painwillhappenagain"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_tym4k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeonPixelSpriteTest:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bno8p"]
+_data = {
+"RESET": SubResource("Animation_tym4k"),
+"playerhurt": SubResource("Animation_opx62")
+}
 
 [node name="PlayerTest" type="CharacterBody2D" groups=["playergroup"]]
 collision_mask = 2310
@@ -51,6 +104,7 @@ collision_mask = 4368
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
 position = Vector2(0, -3)
 shape = SubResource("RectangleShape2D_hengc")
+disabled = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 17
@@ -64,10 +118,14 @@ theme_override_fonts/font = ExtResource("7_cvrnq")
 value = 100.0
 
 [node name="AntiVirusTimer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 10.0
 one_shot = true
 
 [node name="PainAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bno8p")
+}
+autoplay = "RESET"
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="timeout" from="AntiVirusTimer" to="." method="_on_anti_virus_timer_timeout"]
