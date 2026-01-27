@@ -30,6 +30,11 @@ var antivirusison = false
 @onready var hasyellowkey_indicator = $CanvasLayer/HasYellowKey
 @onready var hasarrow_indicator = $CanvasLayer/HasArrow
 
+@onready var playersprite = $LeonPixelSpriteTest
+
+@onready var marker2d = $Marker2D
+@onready var projectile = preload("res://src/player/player_projectile.tscn")
+
 enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
 
@@ -83,9 +88,11 @@ func _physics_process(delta):
 			#if direction:
 			if Input.is_action_pressed("left"):
 				velocity.x = direction * speed * speed_multiplier
+				playersprite.flip_h = true
 			elif Input.is_action_pressed("right"):
 				velocity.x = direction * -speed * -speed_multiplier
-			else:	           
+				playersprite.flip_h = false
+			else:
 				velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 
 			move_and_slide()
@@ -94,6 +101,10 @@ func _physics_process(delta):
 				state = ARROW
 			elif Input.is_action_just_pressed("activatemouse") and caniusearrow == false:
 				pass
+
+			if Input.is_action_just_pressed("shoot"):
+				green_attack()
+
 
 		CLIMB:
 			pass
@@ -177,3 +188,20 @@ func painhappened():
 
 func painwillhappenagain():
 	hurtboxarea.set_deferred("monitoring", true)
+
+func green_attack():
+	var greenball = projectile.instantiate()
+	add_child(greenball)
+	greenball.global_position = marker2d.global_position
+
+	if playersprite.flip_h == false:
+		greenball.velocity.x = greenball.speed * 10
+
+	elif playersprite.flip_h == true:
+		greenball.velocity.x = greenball.speed * -10
+
+
+	#if direction == Vector2.RIGHT:
+		#greenball.velocity.x = greenball.speed * 10
+	#elif direction == Vector2.LEFT:
+		#greenball.velocity.x = greenball.speed * -10

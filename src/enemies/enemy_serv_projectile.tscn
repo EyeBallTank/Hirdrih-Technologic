@@ -1,0 +1,124 @@
+[gd_scene load_steps=10 format=3 uid="uid://dx126kiu24i5x"]
+
+[ext_resource type="Texture2D" uid="uid://clporyvrqvfup" path="res://assets/sprites/ENEMY HIRDRIH SERV SPRITE.png" id="1_rvwli"]
+[ext_resource type="Script" path="res://src/enemies/enemy_serv_projectile.gd" id="1_w4wum"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjnyo"]
+atlas = ExtResource("1_rvwli")
+region = Rect2(0, 0, 22, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qx3ao"]
+atlas = ExtResource("1_rvwli")
+region = Rect2(0, 18, 22, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nsnof"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjnyo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qx3ao")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ox1u"]
+radius = 8.0
+
+[sub_resource type="Animation" id="Animation_fs30k"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_rrksp"]
+resource_name = "dying"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(2),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"die"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ljiql"]
+_data = {
+"RESET": SubResource("Animation_fs30k"),
+"dying": SubResource("Animation_rrksp")
+}
+
+[node name="EnemyServProjectile" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 3
+script = ExtResource("1_w4wum")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(5, 3)
+sprite_frames = SubResource("SpriteFrames_nsnof")
+autoplay = "default"
+frame = 1
+frame_progress = 0.0733849
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2ox1u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ljiql")
+}
