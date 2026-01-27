@@ -177,6 +177,15 @@ func _on_hurt_box_area_entered(area: Area2D) -> void:
 	elif  area.name == "HazardTest" and antivirusison == true:
 		pass
 
+	if area.is_in_group("enemyhitbox") and antivirusison == false:
+		if state != DEAD:
+			receive_damage(5)#guess no custom values from enemies yet
+			painanimation.play("playerhurt")
+		elif state == DEAD:
+			pass
+#want to make sure pain animation stops playing when the player dies
+	elif area.is_in_group("enemyhitbox") and antivirusison == true:
+		pass
 
 func _on_anti_virus_timer_timeout() -> void:
 	antivirusison = false
