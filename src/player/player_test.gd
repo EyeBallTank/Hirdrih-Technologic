@@ -4,6 +4,9 @@ class_name PlayerController
 @export var speed = 10.0
 @export var jump_power = 10.0
 
+@export var movement_speed : float = 100
+var character_direction : Vector2
+
 var speed_multiplier = 30.0
 var jump_multiplier = -35.0
 var direction = 0
@@ -107,7 +110,16 @@ func _physics_process(delta):
 
 
 		CLIMB:
-			pass
+			character_direction.x = Input.get_axis("left", "right")
+			character_direction.y = Input.get_axis("jump", "climbdown")
+			character_direction = character_direction.normalized()
+
+			if character_direction:
+				velocity = character_direction * movement_speed 
+			else:
+				velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
+
+			move_and_slide()
 		PUSH:
 			pass
 		ARROW:

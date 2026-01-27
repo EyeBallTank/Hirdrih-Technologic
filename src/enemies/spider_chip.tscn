@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://bvl3ssp2evnll"]
+
+[ext_resource type="Texture2D" uid="uid://x106useu42ox" path="res://assets/sprites/ENEMY SPIDER CHIP SPRITE.png" id="1_sm7h5"]
+[ext_resource type="Script" path="res://src/enemies/spider_chip.gd" id="1_xdq1u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6v8g0"]
+atlas = ExtResource("1_sm7h5")
+region = Rect2(0, 0, 28, 23)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2w147"]
+atlas = ExtResource("1_sm7h5")
+region = Rect2(0, 23, 28, 23)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bxwks"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6v8g0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2w147")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_amq4l"]
+size = Vector2(20, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ngeqn"]
+size = Vector2(26, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uciyn"]
+size = Vector2(26, 26)
+
+[node name="SpiderChip" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("1_xdq1u")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bxwks")
+autoplay = "default"
+frame_progress = 0.17588
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_amq4l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+shape = SubResource("RectangleShape2D_ngeqn")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("RectangleShape2D_uciyn")

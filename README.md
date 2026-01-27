@@ -7,7 +7,9 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 
 # CURRENT ISSUES
 
-* I can't use resources on the AnimatedSprite2D node of the magic arrow, so the sprites don't change when changing the name on the resource in the editor.
+* I can't use resources on the AnimatedSprite2D node of the magic arrow, so the sprites don't change when changing the name on the resource in the editor https://forum.godotengine.org/t/having-an-issue-with-using-sprite-resources-on-animatedsprite2d-godot-4-3-stable/130693/5
+* I want to have the Magic Arrow become disabled when the player dies
+* Both the player projectile and enemy projectile so far are tied to the sources, so they don't move freely when the source entities move (Meaning the projectiles are still "dragged")
 
 # CREDITS
 

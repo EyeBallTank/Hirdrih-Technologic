@@ -1,12 +1,10 @@
 extends CharacterBody2D
 
-
 @onready var animationplayer = $AnimationPlayer
-
 
 var direction = Vector2.RIGHT
 #var height = Vector2.UP
-var speed = 25
+var speed = 18
 
 func _ready():
 	animationplayer.play("RESET")
