@@ -26,14 +26,15 @@ extends CharacterBody2D
 @export var movement_speed : float = 200
 var character_direction : Vector2
 
-#onready var Player = get_parent().get_node("PlayerTest")
+#@onready var Player = get_parent().get_node("PlayerTest")
 
-enum {UNACTIVE, ACTIVE}
+enum {UNACTIVE, ACTIVE, DEAD}
 
 var state = UNACTIVE
 var canibeused = false
 
 func ready():
+	Signals.player_died.connect(_even_arrow_dies)
 #	Signals.Callable("playerpickeduparrow", self, "_thearrowworksnow")
 #	Signals.playerpickeduparrow.connect(_thearrowworksnow)
 	sprite_frames = load("res://assets/sprites/play actor/leonarrow.tres")
@@ -42,7 +43,14 @@ func ready():
 	#sprite.sprite_frames = load(arrowskin)
 
 func _physics_process(delta):
+
+#	if Player.health <= 0 and Signals.lives == 0:
+#		state = DEAD
+
 	match state:
+		DEAD:
+			canibeused = false
+			visible = false
 		
 		UNACTIVE:
 			visible = false
@@ -75,6 +83,8 @@ func _physics_process(delta):
 #func _thearrowworksnow():
 #	state = UNACTIVE
 
+func _even_arrow_dies():
+	state = DEAD
 
 func _on_can_arrow_be_selected_area_entered(area: Area2D) -> void:
 	if area.name == "PickableArrow":

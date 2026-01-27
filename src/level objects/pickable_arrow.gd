@@ -10,6 +10,7 @@ func _process(delta: float) -> void:
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerTest":
 		body.caniusearrow = true
+		body.hasarrow_indicator.play("yes")
 #		Signals.playerpickeduparrow.emit()
 
 #		Signals.emit_signal("playerpickeduparrow")

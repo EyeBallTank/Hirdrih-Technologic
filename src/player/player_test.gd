@@ -25,6 +25,11 @@ var antivirusison = false
 @onready var antivirustimer = $AntiVirusTimer
 @onready var painanimation = $PainAnimation
 
+@onready var hasredkey_indicator = $CanvasLayer/HasRedKey
+@onready var hasbluekey_indicator = $CanvasLayer/HasBlueKey
+@onready var hasyellowkey_indicator = $CanvasLayer/HasYellowKey
+@onready var hasarrow_indicator = $CanvasLayer/HasArrow
+
 enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
 
@@ -40,6 +45,10 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var state = MAINSTATE
 
 func _ready():
+	hasredkey_indicator.play("no")
+	hasbluekey_indicator.play("no")
+	hasyellowkey_indicator.play("no")
+	hasarrow_indicator.play("no")
 #	antivirustimer.paused = false
 	hurtcollision.disabled = false
 #	invul_animation.play("RESET")
@@ -102,7 +111,15 @@ func _physics_process(delta):
 				state = MAINSTATE
 				
 		DEAD:
-			pass
+			
+			caniusearrow = false
+
+			velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
+			if not is_on_floor():
+				velocity.y += gravity * delta
+			move_and_slide()
+			#if Input.is_action_just_pressed("activatemouse") and caniusearrow == false:
+				#pass
 
 func receive_damage(attack):
 	health -= attack
@@ -110,8 +127,14 @@ func receive_damage(attack):
 		health = 100
 		Signals.lives -= 1
 		Signals.life_lost.emit()
-	elif  health <= 0 and Signals.lives == 0:
+	elif health <= 0 and Signals.lives == 0:
+		kill_the_arrow()
 		state = DEAD
+		
+
+func kill_the_arrow():
+	#Signals.emit_signal("player_died")
+	Signals.player_died.emit()
 
 func invincible():
 	antivirustimer.start()

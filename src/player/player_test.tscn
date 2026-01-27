@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://14kmh83iodhf"]
+[gd_scene load_steps=27 format=3 uid="uid://14kmh83iodhf"]
 
 [ext_resource type="Script" path="res://src/player/player_test.gd" id="1_c6uwj"]
 [ext_resource type="Texture2D" uid="uid://b44dq2yv68dde" path="res://assets/sprites/play actor/sprite test 1.png" id="2_iqxoj"]
@@ -7,12 +7,137 @@
 [ext_resource type="Texture2D" uid="uid://cqcojyol43kqa" path="res://assets/sprites/LEON PIXEL SPRITE TEST.png" id="6_nvsu1"]
 [ext_resource type="Texture2D" uid="uid://biqwi7stfqp3v" path="res://assets/sprites/antivurs shield sprite.png" id="6_xl2fb"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="7_cvrnq"]
+[ext_resource type="Texture2D" uid="uid://ykeby00hmwni" path="res://assets/sprites/UI TEST HEALTH BOLTS LIVES.png" id="8_y0btw"]
+[ext_resource type="Texture2D" uid="uid://dw3ciuv2u6lmv" path="res://assets/sprites/UI TEST KEYS AND ARROW.png" id="9_m1ddd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l45je"]
 size = Vector2(20, 24.4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hengc"]
 size = Vector2(20, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oj6hc"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(0, 0, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xujsf"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(0, 18, 18, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w3qio"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oj6hc")
+}],
+"loop": false,
+"name": &"no",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xujsf")
+}],
+"loop": false,
+"name": &"yes",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcuvp"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(18, 0, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ybd1"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(18, 18, 18, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mtpk6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcuvp")
+}],
+"loop": false,
+"name": &"no",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ybd1")
+}],
+"loop": false,
+"name": &"yes",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eb01c"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(36, 0, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mppmt"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(36, 18, 18, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_43sc8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eb01c")
+}],
+"loop": false,
+"name": &"no",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mppmt")
+}],
+"loop": false,
+"name": &"yes",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24i7j"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(54, 0, 18, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2r4r5"]
+atlas = ExtResource("9_m1ddd")
+region = Rect2(54, 18, 18, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pxxvx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24i7j")
+}],
+"loop": false,
+"name": &"no",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2r4r5")
+}],
+"loop": false,
+"name": &"yes",
+"speed": 0.0
+}]
+
+[sub_resource type="Animation" id="Animation_tym4k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeonPixelSpriteTest:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_opx62"]
 resource_name = "playerhurt"
@@ -44,21 +169,6 @@ tracks/1/keys = {
 "args": [],
 "method": &"painwillhappenagain"
 }]
-}
-
-[sub_resource type="Animation" id="Animation_tym4k"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("LeonPixelSpriteTest:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bno8p"]
@@ -111,11 +221,40 @@ layer = 17
 
 [node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
 offset_left = 11.0
-offset_top = 9.0
+offset_top = 12.0
 offset_right = 119.0
-offset_bottom = 36.0
+offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("7_cvrnq")
 value = 100.0
+
+[node name="UiTestHealthBoltsLives" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(206, 22.125)
+scale = Vector2(3, 3)
+texture = ExtResource("8_y0btw")
+
+[node name="HasRedKey" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(997, 28)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_w3qio")
+animation = &"yes"
+
+[node name="HasBlueKey" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(1038, 28)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_mtpk6")
+animation = &"yes"
+
+[node name="HasYellowKey" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(1077, 28)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_43sc8")
+animation = &"yes"
+
+[node name="HasArrow" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(1120, 28)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_pxxvx")
+animation = &"yes"
 
 [node name="AntiVirusTimer" type="Timer" parent="."]
 wait_time = 10.0

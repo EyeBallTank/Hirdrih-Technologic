@@ -15,4 +15,5 @@ func die():
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerTest":
 		body.redkey = true
+		body.hasredkey_indicator.play("yes")
 		animation.play("caught")
