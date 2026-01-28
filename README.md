@@ -11,6 +11,7 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 * I want to have the Magic Arrow become disabled when the player dies
 * Both the player projectile and enemy projectile so far are tied to the sources, so they don't move freely when the source entities move (Meaning the projectiles are still "dragged")
 * When the player jumps on top of the PushableCharacter, the Pushable is pushed to the floor, almost noclipping it, when ideally: I want the player to stand on top of the Pushable as if it was a solid object when it's not being pushed.
+* (I could say I thought of a solution for the above but it's very weird and not recommended as of now).
 
 # CREDITS
 

@@ -78,7 +78,7 @@ position = Vector2(692, 298)
 shape = SubResource("RectangleShape2D_jkb0p")
 
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
-position = Vector2(771, 225)
+position = Vector2(852, 270)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
 position = Vector2(0, -2)
@@ -194,7 +194,7 @@ position = Vector2(275, 264)
 position = Vector2(718, 266)
 
 [node name="PushableCharacter" parent="." instance=ExtResource("22_rb8i7")]
-position = Vector2(852, 176)
+position = Vector2(901, 246)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

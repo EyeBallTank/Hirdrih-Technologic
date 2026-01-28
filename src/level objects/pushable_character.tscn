@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8mesd33vmisn"]
+[gd_scene load_steps=8 format=3 uid="uid://b8mesd33vmisn"]
 
 [ext_resource type="Script" path="res://src/level objects/pushable_character.gd" id="1_6h66c"]
 [ext_resource type="Texture2D" uid="uid://cgjbrliy8v8he" path="res://assets/sprites/PUSHABLE HIRDRIH SPRITE TEST.png" id="1_lcucw"]
+[ext_resource type="PackedScene" uid="uid://cama45aurtcme" path="res://src/level objects/top_of_pushable.tscn" id="3_aeart"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jyi5j"]
 atlas = ExtResource("1_lcucw")
@@ -52,7 +53,14 @@ collision_layer = 64
 position = Vector2(-9, 4)
 shape = SubResource("RectangleShape2D_tmc0a")
 
+[node name="TopOfPushable" parent="." instance=ExtResource("3_aeart")]
+
+[node name="CollisionShape2D" parent="TopOfPushable" index="0"]
+position = Vector2(0, -14.5)
+
 [connection signal="body_entered" from="LeftSide" to="." method="_on_left_side_body_entered"]
 [connection signal="body_exited" from="LeftSide" to="." method="_on_left_side_body_exited"]
 [connection signal="body_entered" from="RightSide" to="." method="_on_right_side_body_entered"]
 [connection signal="body_exited" from="RightSide" to="." method="_on_right_side_body_exited"]
+
+[editable path="TopOfPushable"]
