@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=29 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://t17qn6yhp3h1" path="res://src/level objects/pickable_arrow.tscn" id="20_6gdw4"]
 [ext_resource type="PackedScene" uid="uid://ccn1b1x3fmnil" path="res://src/enemies/hazard_test.tscn" id="20_kpf7v"]
 [ext_resource type="PackedScene" uid="uid://d3iglloqsqd6q" path="res://src/enemies/hirdrih_servant.tscn" id="21_pys5d"]
+[ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="22_rb8i7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -77,7 +78,7 @@ position = Vector2(692, 298)
 shape = SubResource("RectangleShape2D_jkb0p")
 
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
-position = Vector2(615, 276)
+position = Vector2(771, 225)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
 position = Vector2(0, -2)
@@ -191,6 +192,9 @@ position = Vector2(275, 264)
 
 [node name="HirdrihServant" parent="." instance=ExtResource("21_pys5d")]
 position = Vector2(718, 266)
+
+[node name="PushableCharacter" parent="." instance=ExtResource("22_rb8i7")]
+position = Vector2(852, 176)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
