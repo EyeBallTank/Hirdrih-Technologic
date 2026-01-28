@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://dxf3c2bh0m1jp"]
+
+[ext_resource type="Texture2D" uid="uid://clcreluisn1xm" path="res://assets/sprites/BUTTON SPRITE TEST BLUE BUTTON.png" id="1_jwq6f"]
+[ext_resource type="Script" path="res://src/level objects/blue_button.gd" id="1_yi5cu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dfwm1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6oc1"]
+atlas = ExtResource("1_jwq6f")
+region = Rect2(0, 20, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfxty"]
+atlas = ExtResource("1_jwq6f")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ktjwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6oc1")
+}],
+"loop": false,
+"name": &"off",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qfxty")
+}],
+"loop": false,
+"name": &"on",
+"speed": 0.0
+}]
+
+[node name="BlueButton" type="Area2D"]
+collision_layer = 34
+collision_mask = 513
+script = ExtResource("1_yi5cu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dfwm1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ktjwj")
+animation = &"off"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
