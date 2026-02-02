@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://cggqkyfykildb"]
+
+[ext_resource type="Script" path="res://src/level objects/clickable_box.gd" id="1_dq2vk"]
+[ext_resource type="Texture2D" uid="uid://debl2cb217wpu" path="res://assets/sprites/clickable object sprites 1.png" id="1_t5pq5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7buii"]
+atlas = ExtResource("1_t5pq5")
+region = Rect2(0, 31, 37, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bx51h"]
+atlas = ExtResource("1_t5pq5")
+region = Rect2(0, 0, 37, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_swyel"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7buii")
+}],
+"loop": false,
+"name": &"clicked",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bx51h")
+}],
+"loop": false,
+"name": &"normal",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nl8v5"]
+size = Vector2(36, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ktv7"]
+size = Vector2(14, 13)
+
+[node name="ClickableBox" type="StaticBody2D"]
+collision_layer = 2
+script = ExtResource("1_dq2vk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_swyel")
+animation = &"normal"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_nl8v5")
+
+[node name="ClickArea" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 512
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
+position = Vector2(0, 6.5)
+shape = SubResource("RectangleShape2D_6ktv7")
