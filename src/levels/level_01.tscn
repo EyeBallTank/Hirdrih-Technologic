@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=31 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://ccn1b1x3fmnil" path="res://src/enemies/hazard_test.tscn" id="20_kpf7v"]
 [ext_resource type="PackedScene" uid="uid://d3iglloqsqd6q" path="res://src/enemies/hirdrih_servant.tscn" id="21_pys5d"]
 [ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="22_rb8i7"]
+[ext_resource type="PackedScene" uid="uid://bvl3ssp2evnll" path="res://src/enemies/spider_chip.tscn" id="24_ei5et"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -204,7 +205,14 @@ position = Vector2(275, 264)
 position = Vector2(718, 266)
 
 [node name="PushableCharacter" parent="." instance=ExtResource("22_rb8i7")]
-position = Vector2(901, 246)
+position = Vector2(937, 261)
+
+[node name="SpiderChip" parent="." instance=ExtResource("24_ei5et")]
+position = Vector2(805, 265)
+
+[node name="SpiderChip2" parent="." instance=ExtResource("24_ei5et")]
+position = Vector2(882, 265)
+animationname = "RESET_2"
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
