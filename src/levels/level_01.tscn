@@ -1,5 +1,6 @@
-[gd_scene load_steps=29 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=30 format=4 uid="uid://kkvobhj88d7l"]
 
+[ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
 [ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="4_l4shw"]
@@ -64,6 +65,15 @@ point_count = 5
 
 [node name="level 01" type="Node2D"]
 position = Vector2(1420, 20)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(-2630, 75)
+
+[node name="LevelBackgroundSpriteTest" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(1784, 234)
+scale = Vector2(0.991151, 0.99115)
+texture = ExtResource("1_7pwmp")
 
 [node name="HeightCharPropTest" type="Sprite2D" parent="."]
 position = Vector2(368, 262)
