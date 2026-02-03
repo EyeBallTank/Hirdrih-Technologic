@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=33 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="22_rb8i7"]
 [ext_resource type="PackedScene" uid="uid://bvl3ssp2evnll" path="res://src/enemies/spider_chip.tscn" id="24_ei5et"]
 [ext_resource type="PackedScene" uid="uid://d3fceax6m5pw5" path="res://src/enemies/hirdrio.tscn" id="25_usg61"]
+[ext_resource type="PackedScene" uid="uid://cggqkyfykildb" path="res://src/level objects/clickable_box.tscn" id="26_w0jdq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -90,7 +91,7 @@ position = Vector2(692, 298)
 shape = SubResource("RectangleShape2D_jkb0p")
 
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
-position = Vector2(852, 270)
+position = Vector2(1114, 168)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
 position = Vector2(0, -2)
@@ -183,7 +184,7 @@ curve = SubResource("Curve2D_md0pj")
 time_of_path = 2.0
 
 [node name="PickableArrow" parent="." instance=ExtResource("20_6gdw4")]
-position = Vector2(236, 281)
+position = Vector2(1072, 175)
 
 [node name="CurrentUI" parent="." instance=ExtResource("19_qpm7p")]
 
@@ -217,6 +218,9 @@ animationname = "RESET_2"
 
 [node name="hirdrio" parent="." instance=ExtResource("25_usg61")]
 position = Vector2(1118, 244)
+
+[node name="ClickableBox" parent="." instance=ExtResource("26_w0jdq")]
+position = Vector2(1187, 168)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

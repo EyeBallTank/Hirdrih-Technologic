@@ -1,11 +1,22 @@
 extends StaticBody2D
 
 
-# Called when the node enters the scene tree for the first time.
+@onready var hurtbox = $ClickArea
+@onready var animationplayer = $AnimationPlayer
+
 func _ready() -> void:
-	pass # Replace with function body.
+	animationplayer.play("RESET")
+
+func die():
+	queue_free()
+
+func pain_is_off():
+	hurtbox.set_deferred("monitoring", false)
+
+func pain_is_on():
+	hurtbox.set_deferred("monitoring", true)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_click_area_body_entered(body: Node2D) -> void:
+	if body.name == "MagicArrow":
+		animationplayer.play("DIE")
