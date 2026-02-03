@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://0ubg1yl6f1qq"]
+[gd_scene load_steps=9 format=3 uid="uid://0ubg1yl6f1qq"]
 
 [ext_resource type="Script" path="res://src/player/magic_arrow.gd" id="1_epmcy"]
 [ext_resource type="SpriteFrames" uid="uid://fhjgikm0ywk3" path="res://assets/sprites/play actor/leonarrow.tres" id="2_f06wb"]
@@ -8,6 +8,74 @@ size = Vector2(14, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kw1c8"]
 size = Vector2(20, 25)
+
+[sub_resource type="Animation" id="Animation_dnec2"]
+resource_name = "RESET"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"clicking_is_off"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AreaThatClicks/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_n3ge0"]
+resource_name = "clicking"
+length = 0.2
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"clicking_is_on"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AreaThatClicks/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a2w50"]
+_data = {
+"RESET": SubResource("Animation_dnec2"),
+"clicking": SubResource("Animation_n3ge0")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5nqoo"]
+size = Vector2(14, 20)
 
 [node name="MagicArrow" type="CharacterBody2D"]
 collision_layer = 512
@@ -27,5 +95,18 @@ collision_mask = 2048
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CanArrowBeSelected"]
 shape = SubResource("RectangleShape2D_kw1c8")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_a2w50")
+}
+
+[node name="AreaThatClicks" type="Area2D" parent="." groups=["trueclickablearea"]]
+collision_layer = 16384
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaThatClicks"]
+shape = SubResource("RectangleShape2D_5nqoo")
+disabled = true
 
 [connection signal="area_entered" from="CanArrowBeSelected" to="." method="_on_can_arrow_be_selected_area_entered"]

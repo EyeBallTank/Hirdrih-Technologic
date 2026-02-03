@@ -17,6 +17,15 @@ func pain_is_on():
 	hurtbox.set_deferred("monitoring", true)
 
 
-func _on_click_area_body_entered(body: Node2D) -> void:
-	if body.name == "MagicArrow":
+#func _on_click_area_body_entered(body: Node2D) -> void:
+	#if body.name == "MagicArrow":
+		#pass
+		#if body.amiclicking == true:
+			#animationplayer.play("DIE")
+		#elif body.amiclicking == false:
+			#pass
+
+
+func _on_click_area_area_exited(area: Area2D) -> void:
+	if area.is_in_group("trueclickablearea"):
 		animationplayer.play("DIE")

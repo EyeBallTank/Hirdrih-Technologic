@@ -21,6 +21,8 @@ extends CharacterBody2D
 #@export var arrowskin = "res://assets/sprites/play actor/leonarrow.tres"
 @export var sprite_frames: SpriteFrames
 #res://assets/sprites/play actor/ottoarrow.tres
+@onready var areathatclicks = $AreaThatClicks
+@onready var animationplayer = $AnimationPlayer
 
 
 @export var movement_speed : float = 200
@@ -30,10 +32,12 @@ var character_direction : Vector2
 
 enum {UNACTIVE, ACTIVE, DEAD}
 
+#var amiclicking = false
 var state = UNACTIVE
 var canibeused = false
 
 func ready():
+	animationplayer.play("RESET")
 	Signals.player_died.connect(_even_arrow_dies)
 #	Signals.Callable("playerpickeduparrow", self, "_thearrowworksnow")
 #	Signals.playerpickeduparrow.connect(_thearrowworksnow)
@@ -61,6 +65,7 @@ func _physics_process(delta):
 
 		ACTIVE:
 			sprite.play("basicmouse")
+			#clicking_is_off()
 			visible = true
 			
 			character_direction.x = Input.get_axis("left", "right")
@@ -75,6 +80,13 @@ func _physics_process(delta):
 			move_and_slide()
 			if Input.is_action_pressed("shoot"):
 				sprite.play("clickedmouse")
+				animationplayer.play("clicking")
+				#clicking_is_on()
+				#amiclicking = true
+
+			if Input.is_action_just_released("shoot"):
+				animationplayer.play("RESET")
+
 #E makes Leon and Otto shoot a projectile while the arrows click with E
 			
 			if Input.is_action_just_pressed("activatemouse"):
@@ -82,6 +94,12 @@ func _physics_process(delta):
 
 #func _thearrowworksnow():
 #	state = UNACTIVE
+
+func clicking_is_off():
+	areathatclicks.set_deferred("monitoring", false)
+
+func clicking_is_on():
+	areathatclicks.set_deferred("monitoring", true)
 
 func _even_arrow_dies():
 	state = DEAD
