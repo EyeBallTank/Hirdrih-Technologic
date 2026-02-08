@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b8mesd33vmisn"]
+[gd_scene load_steps=7 format=3 uid="uid://b8mesd33vmisn"]
 
 [ext_resource type="Script" path="res://src/level objects/pushable_character.gd" id="1_6h66c"]
 [ext_resource type="Texture2D" uid="uid://cgjbrliy8v8he" path="res://assets/sprites/PUSHABLE HIRDRIH SPRITE TEST.png" id="1_lcucw"]
@@ -22,12 +22,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pp145"]
 size = Vector2(26, 30)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmc0a"]
-size = Vector2(9, 25)
-
 [node name="PushableCharacter" type="CharacterBody2D"]
 collision_layer = 64
-collision_mask = 3
+collision_mask = 2
 script = ExtResource("1_6h66c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -37,30 +34,12 @@ animation = &"hirdrih"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_pp145")
-
-[node name="LeftSide" type="Area2D" parent="."]
-collision_layer = 64
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftSide"]
-position = Vector2(-9.5, 3.5)
-shape = SubResource("RectangleShape2D_tmc0a")
-
-[node name="RightSide" type="Area2D" parent="."]
-position = Vector2(19, 0)
-collision_layer = 64
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RightSide"]
-position = Vector2(-9, 4)
-shape = SubResource("RectangleShape2D_tmc0a")
+one_way_collision = true
 
 [node name="TopOfPushable" parent="." instance=ExtResource("3_aeart")]
 
 [node name="CollisionShape2D" parent="TopOfPushable" index="0"]
 position = Vector2(0, -14.5)
-
-[connection signal="body_entered" from="LeftSide" to="." method="_on_left_side_body_entered"]
-[connection signal="body_exited" from="LeftSide" to="." method="_on_left_side_body_exited"]
-[connection signal="body_entered" from="RightSide" to="." method="_on_right_side_body_entered"]
-[connection signal="body_exited" from="RightSide" to="." method="_on_right_side_body_exited"]
+one_way_collision = true
 
 [editable path="TopOfPushable"]

@@ -207,7 +207,7 @@ position = Vector2(275, 264)
 position = Vector2(718, 266)
 
 [node name="PushableCharacter" parent="." instance=ExtResource("22_rb8i7")]
-position = Vector2(937, 261)
+position = Vector2(1043, 97)
 
 [node name="SpiderChip" parent="." instance=ExtResource("24_ei5et")]
 position = Vector2(805, 265)
