@@ -231,8 +231,8 @@ position = Vector2(987, 183)
 [node name="PushableBarrier" parent="." instance=ExtResource("28_7a0jm")]
 position = Vector2(1144, 161)
 
-[node name="ClickableBox2" parent="." instance=ExtResource("29_norvc")]
-position = Vector2(935, 191)
+[node name="ClickableMoxingObject" parent="." instance=ExtResource("29_norvc")]
+position = Vector2(949, 192)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

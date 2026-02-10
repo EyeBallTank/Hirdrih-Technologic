@@ -326,7 +326,7 @@ _data = {
 "RESET": SubResource("Animation_dkaj5")
 }
 
-[node name="ClickableBox" type="StaticBody2D"]
+[node name="ClickableMoxingObject" type="StaticBody2D"]
 collision_layer = 2
 script = ExtResource("1_toxo6")
 
