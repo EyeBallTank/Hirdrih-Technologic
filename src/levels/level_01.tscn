@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=36 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://cggqkyfykildb" path="res://src/level objects/clickable_box.tscn" id="26_w0jdq"]
 [ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="27_3udn8"]
 [ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="28_7a0jm"]
+[ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="29_norvc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -229,6 +230,9 @@ position = Vector2(987, 183)
 
 [node name="PushableBarrier" parent="." instance=ExtResource("28_7a0jm")]
 position = Vector2(1144, 161)
+
+[node name="ClickableBox2" parent="." instance=ExtResource("29_norvc")]
+position = Vector2(935, 191)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
