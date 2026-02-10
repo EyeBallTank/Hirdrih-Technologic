@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8mesd33vmisn"]
+[gd_scene load_steps=12 format=3 uid="uid://b8mesd33vmisn"]
 
 [ext_resource type="Script" path="res://src/level objects/pushable_character.gd" id="1_6h66c"]
 [ext_resource type="Texture2D" uid="uid://cgjbrliy8v8he" path="res://assets/sprites/PUSHABLE HIRDRIH SPRITE TEST.png" id="1_lcucw"]
@@ -22,6 +22,106 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pp145"]
 size = Vector2(26, 30)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kn3ca"]
+size = Vector2(26, 34)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_st1si"]
+size = Vector2(26, 34)
+
+[sub_resource type="Animation" id="Animation_lhse7"]
+resource_name = "RESET"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionWhenDragged/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"be_normal"
+}]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"pain_is_on"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ann8b"]
+resource_name = "being_dragged"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionWhenDragged/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"be_dragged"
+}]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"pain_is_off"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rqee4"]
+_data = {
+"RESET": SubResource("Animation_lhse7"),
+"being_dragged": SubResource("Animation_ann8b")
+}
+
 [node name="PushableCharacter" type="CharacterBody2D"]
 collision_layer = 64
 collision_mask = 2
@@ -41,5 +141,30 @@ one_way_collision = true
 [node name="CollisionShape2D" parent="TopOfPushable" index="0"]
 position = Vector2(0, -14.5)
 one_way_collision = true
+
+[node name="CollisionWhenDragged" type="CharacterBody2D" parent="."]
+collision_layer = 64
+collision_mask = 1024
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionWhenDragged"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_kn3ca")
+disabled = true
+
+[node name="ClickArea" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 16384
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_st1si")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_rqee4")
+}
+
+[connection signal="area_entered" from="ClickArea" to="." method="_on_click_area_area_entered"]
+[connection signal="area_exited" from="ClickArea" to="." method="_on_click_area_area_exited"]
 
 [editable path="TopOfPushable"]
