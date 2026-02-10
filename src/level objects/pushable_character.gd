@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @onready var animationplayer = $AnimationPlayer
 @onready var hurtbox = $ClickArea
+@onready var collisionwhendragged = $CollisionWhenDragged/CollisionShape2D
 
 var push = false
 var direction = 0
@@ -63,9 +64,13 @@ func _physics_process(delta: float) -> void:
 
 func be_normal():
 	state = NORMAL
+	set_collision_mask_value(11, false)
+	#collisionwhendragged.disabled = true
 
 func be_dragged():
 	state = DRAGGED
+	set_collision_mask_value(11, true)
+	#collisionwhendragged.disabled = false
 
 func pain_is_off():
 	hurtbox.set_deferred("monitoring", false)
