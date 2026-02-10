@@ -7,9 +7,6 @@ extends Area2D
 func _ready() -> void:
 	animationplayer.play("RESET")
 
-
-
-
 func bring_up_the_signal():
 	Signals.pushable_button_pressed.emit()
 

@@ -18,3 +18,8 @@ signal you_are_invincible
 signal player_died
 
 signal pushable_button_pressed
+
+signal blue_button_was_pressed
+signal yellow_button_was_pressed
+signal green_one_button_was_pressed
+signal green_two_button_was_pressed

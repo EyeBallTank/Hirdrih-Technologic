@@ -13,6 +13,7 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 * When the player jumps on top of the PushableCharacter, the Pushable is pushed to the floor, almost noclipping it, when ideally: I want the player to stand on top of the Pushable as if it was a solid object when it's not being pushed.
 * (I could say I thought of a solution for the above but it's very weird and not recommended as of now).
 * I couldn't find a way to make the enemy Hirdrio actually move and bounce off surfaces as they did in Project Nortubel.
+* Sometimes, enemies resist the player's projectile attack so it seems their "hurtbox" collisions don't always work.
 
 # CREDITS
 
