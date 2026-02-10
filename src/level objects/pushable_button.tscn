@@ -1,0 +1,128 @@
+[gd_scene load_steps=10 format=3 uid="uid://bhh06pctg58g6"]
+
+[ext_resource type="Texture2D" uid="uid://lxkfak0kc5wu" path="res://assets/sprites/PUSHABLE BUTTON SPRITE.png" id="1_fdfyi"]
+[ext_resource type="Script" path="res://src/level objects/pushable_button.gd" id="1_nbpva"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0t2wd"]
+atlas = ExtResource("1_fdfyi")
+region = Rect2(0, 0, 36, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77dqi"]
+atlas = ExtResource("1_fdfyi")
+region = Rect2(0, 18, 36, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bl744"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0t2wd")
+}],
+"loop": false,
+"name": &"active",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77dqi")
+}],
+"loop": false,
+"name": &"inactive",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_konht"]
+size = Vector2(26, 10)
+
+[sub_resource type="Animation" id="Animation_4jx0g"]
+resource_name = "RESET"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"active"]
+}
+
+[sub_resource type="Animation" id="Animation_67d03"]
+resource_name = "pressed"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"inactive"]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"bring_up_the_signal"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_56up6"]
+_data = {
+"RESET": SubResource("Animation_4jx0g"),
+"pressed": SubResource("Animation_67d03")
+}
+
+[node name="PushableButton" type="Area2D"]
+collision_layer = 2
+collision_mask = 64
+script = ExtResource("1_nbpva")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bl744")
+animation = &"active"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_konht")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_56up6")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

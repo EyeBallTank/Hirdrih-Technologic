@@ -16,3 +16,5 @@ var max_lives = 10
 signal you_are_invincible
 
 signal player_died
+
+signal pushable_button_pressed
