@@ -57,6 +57,9 @@ func _physics_process(delta: float) -> void:
 			if Input.is_action_just_pressed("activatemouse"):
 				animationplayer.play("RESET")
 
+			#if canibedragged == false:
+				#animationplayer.play("RESET")
+
 
 func be_normal():
 	state = NORMAL

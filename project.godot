@@ -115,6 +115,7 @@ locale/test="pt"
 2d_physics/layer_13="invulpowerup"
 2d_physics/layer_14="playerhurtbox"
 2d_physics/layer_15="thearrowsclickingarea"
+2d_physics/layer_16="ifpushabletouchcameraborders"
 
 [rendering]
 
