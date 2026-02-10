@@ -3,8 +3,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_54k4l"]
 size = Vector2(426.5, 6)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ul65l"]
-size = Vector2(6.5, 255)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sji83"]
+size = Vector2(255, 7.00001)
 
 [node name="ArrowBlocker" type="StaticBody2D"]
 collision_layer = 1024
@@ -12,16 +12,23 @@ collision_mask = 33280
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3.75, -111)
+rotation = 3.14159
 shape = SubResource("RectangleShape2D_54k4l")
+one_way_collision = true
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(13.5, 129)
 shape = SubResource("RectangleShape2D_54k4l")
+one_way_collision = true
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+[node name="new_left" type="CollisionShape2D" parent="."]
 position = Vector2(-194.5, 4.5)
-shape = SubResource("RectangleShape2D_ul65l")
+rotation = 1.57079
+shape = SubResource("RectangleShape2D_sji83")
+one_way_collision = true
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+[node name="new_right" type="CollisionShape2D" parent="."]
 position = Vector2(208, 10)
-shape = SubResource("RectangleShape2D_ul65l")
+rotation = -1.57079
+shape = SubResource("RectangleShape2D_sji83")
+one_way_collision = true
