@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=42 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -32,6 +32,8 @@
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="30_8kff2"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="31_g4a3l"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="32_vxvcm"]
+[ext_resource type="PackedScene" uid="uid://dxf3c2bh0m1jp" path="res://src/level objects/blue_button.tscn" id="33_lwe5v"]
+[ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="34_tr3hg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -72,6 +74,13 @@ _data = {
 }
 point_count = 5
 
+[sub_resource type="Curve2D" id="Curve2D_m10qo"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -70)
+}
+point_count = 2
+
 [node name="level 01" type="Node2D"]
 position = Vector2(1420, 20)
 
@@ -97,7 +106,7 @@ position = Vector2(692, 298)
 shape = SubResource("RectangleShape2D_jkb0p")
 
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
-position = Vector2(1242, 268)
+position = Vector2(885, 171)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
 position = Vector2(0, -2)
@@ -190,7 +199,7 @@ curve = SubResource("Curve2D_md0pj")
 time_of_path = 2.0
 
 [node name="PickableArrow" parent="." instance=ExtResource("20_6gdw4")]
-position = Vector2(1274, 277)
+position = Vector2(902, 172)
 
 [node name="CurrentUI" parent="." instance=ExtResource("19_qpm7p")]
 
@@ -250,6 +259,14 @@ position = Vector2(1264, 223)
 
 [node name="GreenTwoButton" parent="." instance=ExtResource("32_vxvcm")]
 position = Vector2(1311, 220)
+
+[node name="BlueButton" parent="." instance=ExtResource("33_lwe5v")]
+position = Vector2(923, 160)
+
+[node name="HirdrihSphereVehicle" parent="." instance=ExtResource("34_tr3hg")]
+position = Vector2(832, 198)
+curve = SubResource("Curve2D_m10qo")
+looping = true
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

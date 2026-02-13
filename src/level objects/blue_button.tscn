@@ -1,9 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dxf3c2bh0m1jp"]
+[gd_scene load_steps=11 format=3 uid="uid://dxf3c2bh0m1jp"]
 
 [ext_resource type="Texture2D" uid="uid://clcreluisn1xm" path="res://assets/sprites/BUTTON SPRITE TEST BLUE BUTTON.png" id="1_jwq6f"]
 [ext_resource type="Script" path="res://src/level objects/blue_button.gd" id="1_yi5cu"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dfwm1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k6oc1"]
 atlas = ExtResource("1_jwq6f")
@@ -32,16 +30,112 @@ animations = [{
 "speed": 0.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dfwm1"]
+
+[sub_resource type="Animation" id="Animation_exiaa"]
+resource_name = "NORMAL"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"on"]
+}
+
+[sub_resource type="Animation" id="Animation_0qtu7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"on"]
+}
+
+[sub_resource type="Animation" id="Animation_3457p"]
+resource_name = "CLICKED"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"off"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_65a0o"]
+_data = {
+"CLICKED": SubResource("Animation_3457p"),
+"NORMAL": SubResource("Animation_exiaa"),
+"RESET": SubResource("Animation_0qtu7")
+}
+
 [node name="BlueButton" type="Area2D"]
 collision_layer = 34
-collision_mask = 513
+collision_mask = 16897
 script = ExtResource("1_yi5cu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ktjwj")
+animation = &"on"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_dfwm1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_ktjwj")
-animation = &"off"
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_65a0o")
+}
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
