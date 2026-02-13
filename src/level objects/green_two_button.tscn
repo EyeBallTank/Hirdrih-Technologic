@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://dv4c7bsmmlr52"]
+
+[ext_resource type="Script" path="res://src/level objects/green_two_button.gd" id="1_0alc0"]
+[ext_resource type="Texture2D" uid="uid://c0waf6pu3hn8r" path="res://assets/sprites/BUTTON SPRITE TEST GREEN BUTTON 2.png" id="3_n5lj7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ai18w"]
+atlas = ExtResource("3_n5lj7")
+region = Rect2(0, 35, 16, 35)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06an0"]
+atlas = ExtResource("3_n5lj7")
+region = Rect2(0, 0, 16, 35)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ktjwj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ai18w")
+}],
+"loop": false,
+"name": &"off",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06an0")
+}],
+"loop": false,
+"name": &"on",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dfwm1"]
+size = Vector2(13, 30.5)
+
+[node name="GreenTwoButton" type="Area2D"]
+collision_layer = 34
+collision_mask = 513
+script = ExtResource("1_0alc0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ktjwj")
+animation = &"on"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.25)
+shape = SubResource("RectangleShape2D_dfwm1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

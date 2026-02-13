@@ -1,0 +1,184 @@
+[gd_scene load_steps=11 format=3 uid="uid://bj3cs8jc8ema"]
+
+[ext_resource type="Texture2D" uid="uid://doryu1d3t2wgy" path="res://assets/sprites/BARRIER FOR GREEN BUTTON SPRITE.png" id="1_ahcre"]
+[ext_resource type="Script" path="res://src/level objects/green_barrier.gd" id="1_hylys"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1ny5"]
+atlas = ExtResource("1_ahcre")
+region = Rect2(9, 0, 9, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7h07"]
+atlas = ExtResource("1_ahcre")
+region = Rect2(0, 0, 9, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m8lui"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1ny5")
+}],
+"loop": false,
+"name": &"active",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7h07")
+}],
+"loop": false,
+"name": &"deactive",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_62piw"]
+size = Vector2(36, 10)
+
+[sub_resource type="Animation" id="Animation_77fd4"]
+resource_name = "ACTIVE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D2:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"active"]
+}
+
+[sub_resource type="Animation" id="Animation_ahf70"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D2:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"active"]
+}
+
+[sub_resource type="Animation" id="Animation_2iqra"]
+resource_name = "DEACTIVE"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D2:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"deactive"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3uu70"]
+_data = {
+"ACTIVE": SubResource("Animation_77fd4"),
+"DEACTIVE": SubResource("Animation_2iqra"),
+"RESET": SubResource("Animation_ahf70")
+}
+
+[node name="GreenBarrier" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_hylys")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m8lui")
+animation = &"active"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.76837e-07, 0)
+rotation = -1.5708
+shape = SubResource("RectangleShape2D_62piw")
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-4.76837e-07, 0)
+rotation = -4.71239
+shape = SubResource("RectangleShape2D_62piw")
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_3uu70")
+}
