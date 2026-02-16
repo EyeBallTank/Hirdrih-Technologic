@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://c08yalyhib3i5"]
+
+[ext_resource type="Script" path="res://src/level objects/end_level_door.gd" id="1_xw7c1"]
+[ext_resource type="Texture2D" uid="uid://ca5ubw554dnr7" path="res://assets/sprites/ENDLEVEL DOOR SPRITE TEST.png" id="2_4wtje"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5uq5"]
+atlas = ExtResource("2_4wtje")
+region = Rect2(0, 0, 28, 55)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mvy52"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5uq5")
+}],
+"loop": false,
+"name": &"hirdrih",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3afbf"]
+size = Vector2(28, 54)
+
+[node name="EndLevelDoor" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_xw7c1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mvy52")
+animation = &"hirdrih"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3afbf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

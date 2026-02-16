@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=43 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="32_vxvcm"]
 [ext_resource type="PackedScene" uid="uid://dxf3c2bh0m1jp" path="res://src/level objects/blue_button.tscn" id="33_lwe5v"]
 [ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="34_tr3hg"]
+[ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="35_xpb5q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
 size = Vector2(1372, 20)
@@ -267,6 +268,9 @@ position = Vector2(923, 160)
 position = Vector2(832, 198)
 curve = SubResource("Curve2D_m10qo")
 looping = true
+
+[node name="EndLevelDoor" parent="." instance=ExtResource("35_xpb5q")]
+position = Vector2(59, 246)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
