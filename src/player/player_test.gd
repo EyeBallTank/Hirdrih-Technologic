@@ -27,6 +27,7 @@ var antivirusison = false
 @onready var hurtboxarea = $HurtBox
 @onready var antivirustimer = $AntiVirusTimer
 @onready var painanimation = $PainAnimation
+@onready var gameovertimer = $GameOverTimer
 
 @onready var hasredkey_indicator = $CanvasLayer/HasRedKey
 @onready var hasbluekey_indicator = $CanvasLayer/HasBlueKey
@@ -184,7 +185,7 @@ func _on_hurt_box_area_entered(area: Area2D) -> void:
 			receive_damage(area.hazarddamage)
 			painanimation.play("playerhurt")
 		elif state == DEAD:
-			pass
+			gameovertimer.start()
 #want to make sure pain animation stops playing when the player dies
 	elif  area.name == "HazardTest" and antivirusison == true:
 		pass
@@ -226,3 +227,7 @@ func green_attack():
 		#greenball.velocity.x = greenball.speed * 10
 	#elif direction == Vector2.LEFT:
 		#greenball.velocity.x = greenball.speed * -10
+
+
+func _on_game_over_timer_timeout() -> void:
+	SceneTransition.load_scene("res://Screens/game_over_screen.tscn")
