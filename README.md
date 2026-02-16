@@ -13,6 +13,7 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 * I couldn't find a way to make the enemy Hirdrio actually move and bounce off surfaces as they did in Project Nortubel.
 * Sometimes, enemies resist the player's projectile attack so it seems their "hurtbox" collisions don't always work.
 * The "end level door" scene has this error:
+
 E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for more info.
   <C++ Error>    Method/function failed. Returning: false
   <C++ Source>   scene/animation/tween.cpp:366 @ step()
