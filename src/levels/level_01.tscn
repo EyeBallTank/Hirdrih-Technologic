@@ -1,10 +1,10 @@
-[gd_scene load_steps=43 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=42 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="Texture2D" uid="uid://rf582qh6o6lu" path="res://assets/sprites/tile sets/HEIGHT CHAR PROP TEST.png" id="2_recn4"]
 [ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="4_l4shw"]
-[ext_resource type="Texture2D" uid="uid://detnh0rv21v63" path="res://assets/sprites/tiles_packed.png" id="8_nlb0o"]
+[ext_resource type="Texture2D" uid="uid://bgoyu8arp3gch" path="res://assets/sprites/basic four tiles test.png" id="6_01s8r"]
 [ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="9_vfj0j"]
 [ext_resource type="PackedScene" uid="uid://cnw80sasfqhmb" path="res://src/level items/bluekey.tscn" id="10_247id"]
 [ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="10_dgw8u"]
@@ -36,23 +36,22 @@
 [ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="34_tr3hg"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="35_xpb5q"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkb0p"]
-size = Vector2(1372, 20)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bms3y"]
-texture = ExtResource("8_nlb0o")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk7u0"]
+texture = ExtResource("6_01s8r")
+texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-2:0/0 = 0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-10:0/0 = 0
-10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_0/polygon_0/one_way = true
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSet" id="TileSet_sodwt"]
 physics_layer_0/collision_layer = 2
-sources/0 = SubResource("TileSetAtlasSource_bms3y")
+sources/1 = SubResource("TileSetAtlasSource_wk7u0")
 
 [sub_resource type="Curve2D" id="Curve2D_f2qaw"]
 resource_local_to_scene = true
@@ -99,13 +98,6 @@ position = Vector2(368, 262)
 scale = Vector2(0.140261, 0.140261)
 texture = ExtResource("2_recn4")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_layer = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(692, 298)
-shape = SubResource("RectangleShape2D_jkb0p")
-
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
 position = Vector2(885, 171)
 
@@ -117,7 +109,7 @@ sprite_frames = ExtResource("4_l4shw")
 position = Vector2(0, -0.5)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAAYABEAAAAAAAAAAAAYABAAAAAAAAAAAAAaABEAAAAAAAAAAAAcABEAAAABAAAAAAAeABEAAAACAAAAAAAgABEAAAAKAAAAAAAjABEAAAAAAAAAAAAwABEAAAAAAAAAAABLABEAAAACAAAAAABLABAAAAACAAAAAABLAA8AAAACAAAAAABLAA4AAAACAAAAAABLAA0AAAACAAAAAABLAAwAAAACAAAAAABKAAwAAAACAAAAAABJAAwAAAACAAAAAABIAAwAAAACAAAAAABHAAwAAAACAAAAAABGAAwAAAACAAAAAABFAAwAAAACAAAAAABEAAwAAAACAAAAAABDAAwAAAACAAAAAABCAAwAAAACAAAAAABBAAwAAAACAAAAAABAAAwAAAACAAAAAAA/AAwAAAACAAAAAAA+AAwAAAACAAAAAAA9AAwAAAACAAAAAAA8AAwAAAACAAAAAAA7AAwAAAACAAAAAAA6AAwAAAACAAAAAAA5AAwAAAACAAAAAAA4AAwAAAACAAAAAAA3AAwAAAACAAAAAAA2AAwAAAACAAAAAAA=")
+tile_map_data = PackedByteArray("AAAYABEAAQABAAAAAAAYABAAAQABAAAAAAAaABEAAQABAAAAAAAcABEAAQABAAAAAAAeABEAAQABAAAAAAAgABEAAQABAAAAAAAjABEAAQABAAAAAAAwABEAAQABAAAAAABLABEAAQABAAAAAABLABAAAQABAAAAAABLAA8AAQABAAAAAABLAA4AAQABAAAAAABLAA0AAQABAAAAAABLAAwAAQABAAAAAABKAAwAAQABAAAAAABJAAwAAQABAAAAAABIAAwAAQABAAAAAABHAAwAAQABAAAAAABGAAwAAQABAAAAAABFAAwAAQABAAAAAABEAAwAAQABAAAAAABDAAwAAQABAAAAAABCAAwAAQABAAAAAABBAAwAAQABAAAAAABAAAwAAQABAAAAAAA/AAwAAQABAAAAAAA+AAwAAQABAAAAAAA9AAwAAQABAAAAAAA8AAwAAQABAAAAAAA7AAwAAQABAAAAAAA6AAwAAQABAAAAAAA5AAwAAQABAAAAAAA3AAwAAQABAAAAAAA2AAwAAQABAAAAAAA4AAwAAQABAAAAAABLABIAAQABAAAAAABMABIAAQABAAAAAABNABIAAQABAAAAAABOABIAAQABAAAAAABPABIAAQABAAAAAABQABIAAQABAAAAAABRABIAAQABAAAAAABSABIAAQABAAAAAABTABIAAQABAAAAAABUABIAAQABAAAAAABVABIAAQABAAAAAABKABIAAQABAAAAAABJABIAAQABAAAAAABIABIAAQABAAAAAABHABIAAQABAAAAAABGABIAAQABAAAAAABFABIAAQABAAAAAABEABIAAQABAAAAAABDABIAAQABAAAAAABCABIAAQABAAAAAABBABIAAQABAAAAAABAABIAAQABAAAAAAA/ABIAAQABAAAAAAA+ABIAAQABAAAAAAA9ABIAAQABAAAAAAA8ABIAAQABAAAAAAA7ABIAAQABAAAAAAA6ABIAAQABAAAAAAA5ABIAAQABAAAAAAA4ABIAAQABAAAAAAA3ABIAAQABAAAAAAA2ABIAAQABAAAAAAA1ABIAAQABAAAAAAA0ABIAAQABAAAAAAAzABIAAQABAAAAAAAyABIAAQABAAAAAAAxABIAAQABAAAAAAAwABIAAQABAAAAAAAvABIAAQABAAAAAAAuABIAAQABAAAAAAAtABIAAQABAAAAAAAsABIAAQABAAAAAAArABIAAQABAAAAAAAqABIAAQABAAAAAAApABIAAQABAAAAAAAoABIAAQABAAAAAAAnABIAAQABAAAAAAAmABIAAQABAAAAAAAlABIAAQABAAAAAAAkABIAAQABAAAAAAAjABIAAQABAAAAAAAiABIAAQABAAAAAAAhABIAAQABAAAAAAAgABIAAQABAAAAAAAfABIAAQABAAAAAAAeABIAAQABAAAAAAAdABIAAQABAAAAAAAcABIAAQABAAAAAAAbABIAAQABAAAAAAAaABIAAQABAAAAAAAZABIAAQABAAAAAAAYABIAAQABAAAAAAAXABIAAQABAAAAAAAWABIAAQABAAAAAAAVABIAAQABAAAAAAAUABIAAQABAAAAAAATABIAAQABAAAAAAASABIAAQABAAAAAAARABIAAQABAAAAAAAQABIAAQABAAAAAAAPABIAAQABAAAAAAAOABIAAQABAAAAAAANABIAAQABAAAAAAAMABIAAQABAAAAAAALABIAAQABAAAAAAAKABIAAQABAAAAAAAJABIAAQABAAAAAAAIABIAAQABAAAAAAAHABIAAQABAAAAAAAGABIAAQABAAAAAAAFABIAAQABAAAAAAAEABIAAQABAAAAAAADABIAAQABAAAAAAACABIAAQABAAAAAAABABIAAQABAAAAAAAAABIAAQABAAAAAAA1AAgAAQAAAAEAAAA0AAgAAQAAAAEAAAAzAAgAAQAAAAEAAAAyAAgAAQAAAAEAAAA2AAgAAQABAAEAAAAxAAgAAQABAAEAABA=")
 tile_set = SubResource("TileSet_sodwt")
 
 [node name="HirdrihMainTitlePixelTest" type="Sprite2D" parent="."]

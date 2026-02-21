@@ -22,6 +22,7 @@ scale = Vector2(3.9908, 3.9908)
 texture = ExtResource("1_ssygc")
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = 431.0
 offset_top = 275.0
 offset_right = 687.0
@@ -32,6 +33,7 @@ theme_override_font_sizes/font_size = 23
 text = "GAME_OVER_T"
 
 [node name="QuitButton" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 481.0
 offset_top = 535.0
 offset_right = 654.0
