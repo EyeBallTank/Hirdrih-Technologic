@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvccx3d2q78l4"
-path="res://.godot/imported/basic virus single tile test.png-7ebd2ed74cd70d5cbebf876907b10cbe.ctex"
+uid="uid://bgoyu8arp3gch"
+path="res://.godot/imported/basic four tiles test.png-5a288a3662905c34e5f78b574d38cd6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/basic virus single tile test.png"
-dest_files=["res://.godot/imported/basic virus single tile test.png-7ebd2ed74cd70d5cbebf876907b10cbe.ctex"]
+source_file="res://assets/sprites/basic four tiles test.png"
+dest_files=["res://.godot/imported/basic four tiles test.png-5a288a3662905c34e5f78b574d38cd6a.ctex"]
 
 [params]
 
