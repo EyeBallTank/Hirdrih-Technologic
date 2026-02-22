@@ -10,4 +10,4 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerTest":
-		SceneTransition.load_scene(nextlevel)
+		Signals.the_player_won_the_level.emit()

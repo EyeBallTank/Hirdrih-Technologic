@@ -23,3 +23,6 @@ signal blue_button_was_pressed
 signal yellow_button_was_pressed
 signal green_one_button_was_pressed
 signal green_two_button_was_pressed
+
+signal the_player_won_the_level
+signal the_player_lost_the_level
