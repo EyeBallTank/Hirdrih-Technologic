@@ -93,10 +93,12 @@ remote_path = NodePath("../../AnimatableBody2D")
 collision_layer = 2
 
 [node name="HirdrihSphereFrontBack" type="Sprite2D" parent="AnimatableBody2D"]
+z_index = 9
 position = Vector2(0, -10)
 texture = ExtResource("2_8t582")
 
 [node name="HirdrihSphereFrontSprite" type="Sprite2D" parent="AnimatableBody2D"]
+z_index = 15
 position = Vector2(0, -10)
 texture = ExtResource("3_0acd6")
 

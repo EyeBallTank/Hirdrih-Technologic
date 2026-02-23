@@ -178,6 +178,7 @@ _data = {
 }
 
 [node name="PlayerTest" type="CharacterBody2D" groups=["playergroup"]]
+z_index = 10
 collision_mask = 2310
 script = ExtResource("1_c6uwj")
 

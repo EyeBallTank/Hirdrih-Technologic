@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://q1yplk5nvfb" path="res://Screens/victory_or_loss_check.tscn" id="4_26cef"]
 
 [node name="CurrentUI" type="CanvasLayer"]
+layer = 89
 
 [node name="LifeCount" parent="." instance=ExtResource("1_jnk26")]
 offset_left = 185.0
