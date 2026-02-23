@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=46 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -35,6 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://dxf3c2bh0m1jp" path="res://src/level objects/blue_button.tscn" id="33_lwe5v"]
 [ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="34_tr3hg"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="35_xpb5q"]
+[ext_resource type="AudioStream" uid="uid://bgxyg78chvfrj" path="res://assets/sounds/music/level 01 hirdrih 1.ogg" id="36_1os10"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk7u0"]
 texture = ExtResource("6_01s8r")
@@ -80,6 +81,44 @@ _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -70)
 }
 point_count = 2
+
+[sub_resource type="Animation" id="Animation_jjat1"]
+resource_name = "PlayMusic"
+length = 59.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_kmgop"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_76qul"]
+_data = {
+"PlayMusic": SubResource("Animation_jjat1"),
+"RESET": SubResource("Animation_kmgop")
+}
 
 [node name="level 01" type="Node2D"]
 position = Vector2(1420, 20)
@@ -267,6 +306,17 @@ looping = true
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("35_xpb5q")]
 position = Vector2(59, 246)
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_76qul")
+}
+autoplay = "PlayMusic"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_1os10")
+volume_db = 4.574
+bus = &"Music"
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
