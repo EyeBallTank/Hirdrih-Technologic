@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://5lcutsookf3j"]
+
+[ext_resource type="Texture2D" uid="uid://cg04vpragx242" path="res://assets/sprites/texture button 2 retry normal.png" id="1_oys0f"]
+[ext_resource type="Script" path="res://Screens/retry_button.gd" id="1_s7j2q"]
+[ext_resource type="Texture2D" uid="uid://ck8n0jxfrlsv3" path="res://assets/sprites/texture button 1 retry hover.png" id="2_jmgi6"]
+[ext_resource type="Texture2D" uid="uid://vcahlfmkg4r2" path="res://assets/sprites/texture button 3 retry pressed.png" id="3_w0snn"]
+
+[node name="RetryButton" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s7j2q")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1103.0
+offset_top = 597.0
+offset_right = 1143.0
+offset_bottom = 637.0
+texture_normal = ExtResource("1_oys0f")
+texture_pressed = ExtResource("2_jmgi6")
+texture_hover = ExtResource("3_w0snn")
+stretch_mode = 0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

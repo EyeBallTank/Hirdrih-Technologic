@@ -3,6 +3,7 @@ extends Control
 @onready var pausemenupart = $pausemenupart
 @onready var optionsmenupart = $optionsmenupart
 
+
 func _process(_delta):
 	if Input.is_action_just_pressed("pause"):
 		toggle()
@@ -58,3 +59,6 @@ func _on_pt_lang_button_pressed() -> void:
 
 func _on_en_lang_button_pressed() -> void:
 	TranslationServer.set_locale("en")
+
+#func _on_texture_button_pressed() -> void:
+	#SceneTransition.reload_scene()

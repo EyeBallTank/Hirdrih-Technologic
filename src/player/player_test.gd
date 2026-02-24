@@ -118,7 +118,10 @@ func _physics_process(delta):
 
 			
 			if ladderCollider:
-				state = CLIMB
+				if Input.is_action_just_pressed("attachtoladder"):
+					state = CLIMB
+				else:
+					pass
 			else:
 				pass
 
@@ -148,6 +151,9 @@ func _physics_process(delta):
 				state = MAINSTATE
 			else:
 				pass
+			if Input.is_action_just_pressed("attachtoladder"):
+				state = MAINSTATE
+
 
 		PUSH:
 			pass
