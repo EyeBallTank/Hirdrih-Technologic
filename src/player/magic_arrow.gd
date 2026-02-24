@@ -24,6 +24,7 @@ extends CharacterBody2D
 @onready var areathatclicks = $AreaThatClicks
 @onready var animationplayer = $AnimationPlayer
 
+@onready var soundplayer = $AudioStreamPlayer
 
 @export var movement_speed : float = 200
 var character_direction : Vector2
@@ -83,6 +84,9 @@ func _physics_process(delta):
 				animationplayer.play("clicking")
 				#clicking_is_on()
 				#amiclicking = true
+			if Input.is_action_just_pressed("shoot"):
+				soundplayer.play()
+
 
 			if Input.is_action_just_released("shoot"):
 				animationplayer.play("RESET")

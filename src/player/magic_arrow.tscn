@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://0ubg1yl6f1qq"]
+[gd_scene load_steps=10 format=3 uid="uid://0ubg1yl6f1qq"]
 
 [ext_resource type="Script" path="res://src/player/magic_arrow.gd" id="1_epmcy"]
 [ext_resource type="SpriteFrames" uid="uid://fhjgikm0ywk3" path="res://assets/sprites/play actor/leonarrow.tres" id="2_f06wb"]
+[ext_resource type="AudioStream" uid="uid://6hacv12f11ru" path="res://assets/sounds/player/456394__webs206__click-mouse-computer.mp3" id="3_06si3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flve7"]
 size = Vector2(14, 20)
@@ -109,5 +110,9 @@ collision_mask = 32
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreaThatClicks"]
 shape = SubResource("RectangleShape2D_5nqoo")
 disabled = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_06si3")
+bus = &"Sounds"
 
 [connection signal="area_entered" from="CanArrowBeSelected" to="." method="_on_can_arrow_be_selected_area_entered"]
