@@ -40,6 +40,9 @@ var canibeused = false
 func ready():
 	animationplayer.play("RESET")
 	Signals.player_died.connect(_even_arrow_dies)
+	
+#	Signals.can_the_arrow_disappear_when_climb.connect(_arrow_no_when_climb)
+#	Signals.can_the_arrow_appear_when_mainstate.connect(_arrow_yes_when_mainstate)
 #	Signals.Callable("playerpickeduparrow", self, "_thearrowworksnow")
 #	Signals.playerpickeduparrow.connect(_thearrowworksnow)
 	sprite_frames = load("res://assets/sprites/play actor/leonarrow.tres")
@@ -65,6 +68,11 @@ func _physics_process(delta):
 				pass
 
 		ACTIVE:
+			if Signals.can_i_turn_off_the_arrow == false:
+				pass
+			elif Signals.can_i_turn_off_the_arrow == true:
+				state = UNACTIVE
+
 			sprite.play("basicmouse")
 			#clicking_is_off()
 			visible = true
@@ -111,3 +119,9 @@ func _even_arrow_dies():
 func _on_can_arrow_be_selected_area_entered(area: Area2D) -> void:
 	if area.name == "PickableArrow":
 		canibeused = true
+
+#func _arrow_no_when_climb():
+	#state = UNACTIVE
+#
+#func _arrow_yes_when_mainstate():
+	#state = ACTIVE

@@ -76,6 +76,8 @@ func _physics_process(delta):
 	healthbar.value = health
 	match state:
 		MAINSTATE:
+			#Signals.can_the_arrow_appear_when_mainstate.emit()
+			Signals.can_i_turn_off_the_arrow = false
 			# Add the gravity.
 			if not is_on_floor():
 				velocity.y += gravity * delta
@@ -123,6 +125,8 @@ func _physics_process(delta):
 
 
 		CLIMB:
+			#Signals.can_the_arrow_disappear_when_climb.emit()
+			Signals.can_i_turn_off_the_arrow = true
 			character_direction.x = Input.get_axis("left", "right")
 			character_direction.y = Input.get_axis("jump", "climbdown")
 			character_direction = character_direction.normalized()
@@ -132,11 +136,11 @@ func _physics_process(delta):
 			else:
 				velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
 
-			if Input.is_action_just_pressed("activatemouse") and caniusearrow == true:
-				state = ARROW_WHEN_CLIMB
-			elif Input.is_action_just_pressed("activatemouse") and caniusearrow == false:
-				pass
-
+			#if Input.is_action_just_pressed("activatemouse") and caniusearrow == true:
+				#state = ARROW_WHEN_CLIMB
+			#elif Input.is_action_just_pressed("activatemouse") and caniusearrow == false:
+				#pass
+#
 
 			move_and_slide()
 

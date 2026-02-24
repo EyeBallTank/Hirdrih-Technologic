@@ -26,3 +26,8 @@ signal green_two_button_was_pressed
 
 signal the_player_won_the_level
 signal the_player_lost_the_level
+
+#signal can_the_arrow_disappear_when_climb
+#signal can_the_arrow_appear_when_mainstate
+
+var can_i_turn_off_the_arrow = false

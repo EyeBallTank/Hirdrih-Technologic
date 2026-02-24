@@ -31,6 +31,7 @@ E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for
 * RookDev (Used tutorial video for the arrow's "top down" movement)
 * theyellowdude69 (Used tutorial video for scene transition)
 * actuallyKron (Used tutorial for the fullscreen check button)
+* DevDrache (Used tutorial video for climb controls)
 * Chequered Ink (Fontspace) (The font I'm using for now)
 * KinematicBody2D demo (Used some of its sprites as placeholder/test stuff).
 * Kenney (Also used sprites for testing stuff)
