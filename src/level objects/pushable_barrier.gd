@@ -9,3 +9,6 @@ func _ready() -> void:
 
 func _Pushable_Barrier_Down():
 	animation.play("opening")
+
+func die():
+	queue_free()
