@@ -21,6 +21,7 @@ E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for
   <C++ Source>   scene/animation/tween.cpp:366 @ step()
 
 * The game over implementation also has a similar error as the one mentioned above.
+* Turns out the red text also shows up when quitting to the main menu, from the pause menu.
 
 
 # CREDITS

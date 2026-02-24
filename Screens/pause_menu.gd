@@ -7,6 +7,10 @@ func _process(_delta):
 	if Input.is_action_just_pressed("pause"):
 		toggle()
 
+	if get_tree().paused == true:
+		if Input.is_action_just_pressed("menuvisible"):
+			visible = !visible
+
 func toggle():
 	visible = !visible
 	get_tree().paused = visible
