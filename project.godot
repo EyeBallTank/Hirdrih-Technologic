@@ -121,6 +121,8 @@ locale/test="pt"
 2d_physics/layer_14="playerhurtbox"
 2d_physics/layer_15="thearrowsclickingarea"
 2d_physics/layer_16="ifpushabletouchcameraborders"
+2d_physics/layer_17="ladderfinder"
+2d_physics/layer_18="laddertiles"
 
 [rendering]
 

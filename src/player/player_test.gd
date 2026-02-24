@@ -39,7 +39,9 @@ var antivirusison = false
 @onready var marker2d = $Marker2D
 @onready var projectile = preload("res://src/player/player_projectile.tscn")
 
-enum {MAINSTATE, CLIMB, PUSH, ARROW, DEAD}
+@onready var climb_raycast = $RayCast2D
+
+enum {MAINSTATE, CLIMB, PUSH, ARROW, ARROW_WHEN_CLIMB, DEAD}
 #PUSH, CLIMB, MOUSEACTIVE, PROJECTILE
 
 #const SPEED = 300.0
@@ -65,6 +67,8 @@ func _ready():
 	healthbar.max_value = health
 
 func _physics_process(delta):
+	var ladderCollider = climb_raycast.get_collider()
+
 #	if antivirusison == true:
 #		antivirustimer.start(2)
 #		invincible()
@@ -110,6 +114,14 @@ func _physics_process(delta):
 				green_attack()
 
 
+			
+			if ladderCollider:
+				state = CLIMB
+			else:
+				pass
+
+
+
 		CLIMB:
 			character_direction.x = Input.get_axis("left", "right")
 			character_direction.y = Input.get_axis("jump", "climbdown")
@@ -120,7 +132,19 @@ func _physics_process(delta):
 			else:
 				velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
 
+			if Input.is_action_just_pressed("activatemouse") and caniusearrow == true:
+				state = ARROW_WHEN_CLIMB
+			elif Input.is_action_just_pressed("activatemouse") and caniusearrow == false:
+				pass
+
+
 			move_and_slide()
+
+			if not ladderCollider:
+				state = MAINSTATE
+			else:
+				pass
+
 		PUSH:
 			pass
 		ARROW:
@@ -133,7 +157,16 @@ func _physics_process(delta):
 
 			if Input.is_action_just_pressed("activatemouse"):
 				state = MAINSTATE
-				
+
+		ARROW_WHEN_CLIMB:
+			velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
+			
+			move_and_slide()
+
+			if Input.is_action_just_pressed("activatemouse"):
+				state = ARROW
+
+
 		DEAD:
 			
 			caniusearrow = false
