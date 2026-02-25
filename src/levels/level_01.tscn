@@ -49,25 +49,25 @@
 texture = ExtResource("3_lm1o2")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
-0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 1:0/0 = 0
-1:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 0:1/0 = 0
-0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 1:1/0 = 0
-1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk7u0"]
 texture = ExtResource("6_01s8r")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
 1:0/0 = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 1:1/0/physics_layer_0/polygon_0/one_way = true
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 0:1/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSet" id="TileSet_sodwt"]
