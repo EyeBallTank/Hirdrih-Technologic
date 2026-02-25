@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=55 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="12_id1xq"]
 [ext_resource type="PackedScene" uid="uid://meckl50d6ugr" path="res://src/level objects/jump pad.tscn" id="12_ly5iv"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="13_5kt7g"]
+[ext_resource type="Texture2D" uid="uid://d0nge3mx1lyjf" path="res://assets/sprites/TUTORIAL BOARD SPRITE 10.png" id="13_5xc3s"]
 [ext_resource type="PackedScene" uid="uid://bo0jg2beh8fkb" path="res://src/level objects/reddoor.tscn" id="13_l4i53"]
 [ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="14_cd0ll"]
 [ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="15_r4gfa"]
@@ -162,7 +163,7 @@ position = Vector2(414, -280)
 texture = ExtResource("5_wne5j")
 
 [node name="TutorialBoardSprite03" type="Sprite2D" parent="."]
-position = Vector2(414, -239)
+position = Vector2(526, -275)
 texture = ExtResource("6_lsmb3")
 
 [node name="TutorialBoardSprite04" type="Sprite2D" parent="."]
@@ -189,9 +190,13 @@ texture = ExtResource("11_t3p2t")
 position = Vector2(699, -563)
 texture = ExtResource("12_aaxs6")
 
+[node name="TutorialBoardSprite10" type="Sprite2D" parent="."]
+position = Vector2(414, -244)
+texture = ExtResource("13_5xc3s")
+
 [node name="FrontTiles" type="TileMapLayer" parent="."]
 z_index = 17
-tile_map_data = PackedByteArray("AAB6AOL/AQABAAEAABB7AOL/AQAAAAEAAAB8AOL/AQAAAAEAAAB9AOL/AQAAAAEAAAB+AOL/AQAAAAEAAAB/AOL/AQAAAAEAAACAAOL/AQAAAAEAAACBAOL/AQAAAAEAAACqANf/AQAAAAEAAACpANf/AQAAAAEAAACoANf/AQAAAAEAAACnANf/AQABAAEAABA=")
+tile_map_data = PackedByteArray("AAB6AOL/AQABAAEAABB7AOL/AQAAAAEAAAB8AOL/AQAAAAEAAAB9AOL/AQAAAAEAAAB+AOL/AQAAAAEAAAB/AOL/AQAAAAEAAACAAOL/AQAAAAEAAACBAOL/AQAAAAEAAACqANf/AQAAAAEAAACpANf/AQAAAAEAAACoANf/AQABAAEAABA=")
 tile_set = SubResource("TileSet_sodwt")
 
 [node name="PlayerTest" parent="." instance=ExtResource("1_mapnb")]
