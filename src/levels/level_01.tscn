@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=56 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -45,6 +45,7 @@
 [ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="34_tr3hg"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="35_xpb5q"]
 [ext_resource type="AudioStream" uid="uid://bgxyg78chvfrj" path="res://assets/sounds/music/level 01 hirdrih 1.ogg" id="36_1os10"]
+[ext_resource type="PackedScene" uid="uid://daldjw1o8k88p" path="res://src/npc characters/hint_book_scene.tscn" id="46_iw4ow"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj02y"]
 texture = ExtResource("3_lm1o2")
@@ -363,6 +364,9 @@ autoplay = "PlayMusic"
 stream = ExtResource("36_1os10")
 volume_db = 4.574
 bus = &"Music"
+
+[node name="HintBookScene" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(334, -236)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
