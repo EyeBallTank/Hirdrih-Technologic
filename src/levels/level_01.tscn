@@ -195,6 +195,34 @@ texture = ExtResource("12_aaxs6")
 position = Vector2(414, -244)
 texture = ExtResource("13_5xc3s")
 
+[node name="HintBookScene" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(279, -236)
+customtext = "Control the Magic Arrow with arrow keys. E to click."
+
+[node name="HintBookScene2" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(338, -236)
+customtext = "Q to switch between arrow and Leon/Otto."
+
+[node name="HintBookScene3" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(578, -236)
+customtext = "The Magic Arrow can interact with some objects."
+
+[node name="HintBookScene4" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(753, -560)
+customtext = "Anti-Virus Software protects you for some time."
+
+[node name="HintBookScene5" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(986, -576)
+customtext = "E can be used to attack enemies."
+
+[node name="HintBookScene6" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(1494, -489)
+customtext = "Use the Magic Arrow to grab the battery and drop it on the yellow socket."
+
+[node name="HintBookScene7" parent="." instance=ExtResource("46_iw4ow")]
+position = Vector2(2163, -486)
+customtext = "Press R tp climb on stuff and R again to quit."
+
 [node name="FrontTiles" type="TileMapLayer" parent="."]
 z_index = 17
 tile_map_data = PackedByteArray("AAB6AOL/AQABAAEAABB7AOL/AQAAAAEAAAB8AOL/AQAAAAEAAAB9AOL/AQAAAAEAAAB+AOL/AQAAAAEAAAB/AOL/AQAAAAEAAACAAOL/AQAAAAEAAACBAOL/AQAAAAEAAACqANf/AQAAAAEAAACpANf/AQAAAAEAAACoANf/AQABAAEAABA=")
@@ -364,9 +392,6 @@ autoplay = "PlayMusic"
 stream = ExtResource("36_1os10")
 volume_db = 4.574
 bus = &"Music"
-
-[node name="HintBookScene" parent="." instance=ExtResource("46_iw4ow")]
-position = Vector2(334, -236)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

@@ -23,6 +23,8 @@ E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for
 * The game over implementation also has a similar error as the one mentioned above.
 * Turns out the red text also shows up when quitting to the main menu, from the pause menu.
 * The "retry level" button also shows some similar errors, so I need help on how to implement it better.
+* Can't find a way to have the yellow tutorial text boxes actually show localized text, so they're in English now.
+* And apparently, the text in an instanced scene like that is limited, even compared to the scene itself in the editor?
 
 
 # CREDITS

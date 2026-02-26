@@ -154,13 +154,25 @@ text = "QUIT"
 [node name="Label2" type="Label" parent="mainmenupart"]
 layout_mode = 0
 offset_left = 191.0
-offset_top = 578.0
+offset_top = 544.0
 offset_right = 958.0
-offset_bottom = 620.0
+offset_bottom = 586.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_0mtvm")
 theme_override_font_sizes/font_size = 23
 text = "FROM THE CREATOR OF PROJECT NORTUBEL"
+
+[node name="Label3" type="Label" parent="mainmenupart"]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 577.0
+offset_right = 1075.0
+offset_bottom = 644.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_0mtvm")
+theme_override_font_sizes/font_size = 23
+text = "(Please share my game so other people know about it;
+Also help me with issues mentioned in the GitHub page if possible)"
 
 [node name="optionsmenupart" type="Control" parent="."]
 anchors_preset = 0

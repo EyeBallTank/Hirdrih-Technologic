@@ -9,14 +9,12 @@ extends Area2D
 
 func _ready() -> void:
 	textbox.visible = false
-	textboxdialogue.text = customtext
+	textboxdialogue.text = str (customtext)
 	sprite.play("hirdrihbox")
-
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("playergroup"):
 		textbox.visible = true
-
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("playergroup"):
