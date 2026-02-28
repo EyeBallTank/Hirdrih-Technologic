@@ -113,6 +113,7 @@ disabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_06si3")
+volume_db = 3.448
 bus = &"Sounds"
 
 [connection signal="area_entered" from="CanArrowBeSelected" to="." method="_on_can_arrow_be_selected_area_entered"]

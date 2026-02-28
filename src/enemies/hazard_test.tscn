@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://src/enemies/hazard_test.gd" id="1_0b1sr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oofa7"]
+size = Vector2(198, 36)
 
 [node name="HazardTest" type="Area2D"]
 collision_layer = 256

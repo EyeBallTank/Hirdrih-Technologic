@@ -328,6 +328,9 @@ offset_bottom = 14.0
 [node name="HazardTest" parent="." instance=ExtResource("20_kpf7v")]
 position = Vector2(809, -371)
 
+[node name="CollisionShape2D" parent="HazardTest" index="0"]
+position = Vector2(82, 11)
+
 [node name="HirdrihServant" parent="." instance=ExtResource("21_pys5d")]
 position = Vector2(2480, -726)
 
@@ -335,10 +338,10 @@ position = Vector2(2480, -726)
 position = Vector2(1645, -443)
 
 [node name="SpiderChip" parent="." instance=ExtResource("24_ei5et")]
-position = Vector2(1329, -511)
+position = Vector2(1329, -492)
 
 [node name="SpiderChip2" parent="." instance=ExtResource("24_ei5et")]
-position = Vector2(1421, -508)
+position = Vector2(1421, -538)
 animationname = "RESET_2"
 
 [node name="hirdrio" parent="." instance=ExtResource("25_usg61")]
@@ -396,3 +399,4 @@ bus = &"Music"
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
 [editable path="CurrentUI"]
+[editable path="HazardTest"]
