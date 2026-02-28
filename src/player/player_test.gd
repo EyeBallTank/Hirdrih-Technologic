@@ -273,4 +273,5 @@ func green_attack():
 
 
 func _on_game_over_timer_timeout() -> void:
-	Signals.the_player_lost_the_level.emit()
+	#Signals.the_player_lost_the_level.emit()
+	SceneTransition.load_scene("res://Screens/game_over_screen.tscn")
