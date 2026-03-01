@@ -128,6 +128,7 @@ theme_override_font_sizes/font_size = 23
 text = "GALLERY"
 
 [node name="QuitButton" type="TextureButton" parent="mainmenupart"]
+visible = false
 layout_mode = 2
 offset_left = 760.0
 offset_top = 428.0

@@ -147,7 +147,7 @@ scroll_scale = Vector2(0, 0)
 scroll_offset = Vector2(-2630, 75)
 
 [node name="LevelBackgroundSpriteTest" type="Sprite2D" parent="Parallax2D"]
-position = Vector2(1784, 234)
+position = Vector2(1784, 233)
 scale = Vector2(0.991151, 0.99115)
 texture = ExtResource("1_7pwmp")
 
