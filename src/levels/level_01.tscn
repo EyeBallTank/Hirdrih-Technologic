@@ -384,6 +384,7 @@ looping = true
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("35_xpb5q")]
 position = Vector2(3352, -729)
+nextlevel = "res://src/levels/level_02.tscn"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 libraries = {

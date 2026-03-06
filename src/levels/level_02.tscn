@@ -45,7 +45,7 @@
 [ext_resource type="PackedScene" uid="uid://dxf3c2bh0m1jp" path="res://src/level objects/blue_button.tscn" id="43_q1nc0"]
 [ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="44_ibt18"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="45_behh5"]
-[ext_resource type="AudioStream" uid="uid://bgxyg78chvfrj" path="res://assets/sounds/music/level 01 hirdrih 1.ogg" id="46_163ee"]
+[ext_resource type="AudioStream" uid="uid://nx2oc4c03o6b" path="res://assets/sounds/music/level 02 hirdrih 2.mp3" id="46_1i5ki"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj02y"]
 texture = ExtResource("2_w4scp")
@@ -103,7 +103,7 @@ point_count = 3
 
 [sub_resource type="Animation" id="Animation_jjat1"]
 resource_name = "PlayMusic"
-length = 59.5
+length = 125.9
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -139,7 +139,7 @@ _data = {
 "RESET": SubResource("Animation_kmgop")
 }
 
-[node name="level 01" type="Node2D"]
+[node name="level 02" type="Node2D"]
 position = Vector2(1420, 20)
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
@@ -392,7 +392,7 @@ libraries = {
 autoplay = "PlayMusic"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("46_163ee")
+stream = ExtResource("46_1i5ki")
 volume_db = 4.574
 bus = &"Music"
 
