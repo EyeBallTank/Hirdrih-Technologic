@@ -25,6 +25,8 @@ E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for
 * The "retry level" button also shows some similar errors, so I need help on how to implement it better.
 * Can't find a way to have the yellow tutorial text boxes actually show localized text, so they're in English now.
 * And apparently, the text in an instanced scene like that is limited, even compared to the scene itself in the editor?
+* I want to add tiles that block the Pushable but for some reason, rotating them doesn't rotate their collisions.
+* And when I tried making specific passable tiles for each direction, the one way collision is still the same direction.
 
 
 # CREDITS
