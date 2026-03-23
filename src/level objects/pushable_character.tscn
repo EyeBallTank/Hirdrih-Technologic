@@ -151,7 +151,7 @@ _data = {
 
 [node name="PushableCharacter" type="CharacterBody2D"]
 collision_layer = 64
-collision_mask = 2
+collision_mask = 262146
 script = ExtResource("1_6h66c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
