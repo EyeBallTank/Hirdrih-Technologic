@@ -129,6 +129,8 @@ locale/test="pt"
 2d_physics/layer_17="ladderfinder"
 2d_physics/layer_18="laddertiles"
 2d_physics/layer_19="tilesthatblockpushable"
+2d_physics/layer_20="playerprojectilehitbox"
+2d_physics/layer_21="enemyhurtbox"
 
 [rendering]
 

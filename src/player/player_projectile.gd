@@ -17,3 +17,8 @@ func _physics_process(delta):
 
 func die():
 	queue_free()
+
+
+func _on_player_projectile_hitbox_area_entered(area: Area2D) -> void:
+	if area.is_in_group("EnemyHurtboxArea"):
+		animationplayer.play("dying")
