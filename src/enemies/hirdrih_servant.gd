@@ -55,7 +55,7 @@ func _physics_process(delta):
 
 func attack():
 	var redball = projectile.instantiate()
-	add_child(redball)
+	get_parent().add_child(redball)
 	redball.global_position = marker2d.global_position
 	redball.velocity.x = redball.speed * -10
 	animatedsprite.play("shoot")

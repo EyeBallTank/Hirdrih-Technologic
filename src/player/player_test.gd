@@ -256,7 +256,7 @@ func painwillhappenagain():
 
 func green_attack():
 	var greenball = projectile.instantiate()
-	add_child(greenball)
+	get_parent().add_child(greenball)
 	greenball.global_position = marker2d.global_position
 
 	if playersprite.flip_h == false:
