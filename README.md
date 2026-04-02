@@ -11,7 +11,6 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 * I want to have the Magic Arrow become disabled when the player dies
 * Both the player projectile and enemy projectile so far are tied to the sources, so they don't move freely when the source entities move (Meaning the projectiles are still "dragged")
 * I couldn't find a way to make the enemy Hirdrio actually move and bounce off surfaces as they did in Project Nortubel.
-* Sometimes, enemies resist the player's projectile attack so it seems their "hurtbox" collisions don't always work.
 * The "end level door" scene has this error:
 
 E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for more info.
@@ -27,6 +26,12 @@ E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for
 * And apparently, the text in an instanced scene like that is limited, even compared to the scene itself in the editor?
 * I want to add tiles that block the Pushable but for some reason, rotating them doesn't rotate their collisions.
 * And when I tried making specific passable tiles for each direction, the one way collision is still the same direction.
+
+# FIXED (Maybe)
+
+* "Sometimes, enemies resist the player's projectile attack so it seems their "hurtbox" collisions don't always work."
+Right now, I made it so enemy hurtboxes finally react to the projectile. 
+
 
 
 # CREDITS
