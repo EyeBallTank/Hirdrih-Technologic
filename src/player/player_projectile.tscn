@@ -154,4 +154,8 @@ collision_mask = 1048576
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerProjectileHitbox"]
 shape = SubResource("CircleShape2D_ggqgf")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
 [connection signal="area_entered" from="PlayerProjectileHitbox" to="." method="_on_player_projectile_hitbox_area_entered"]

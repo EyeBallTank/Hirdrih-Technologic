@@ -7,15 +7,18 @@ var hazarddamage = 5
 var direction = Vector2.RIGHT
 #var height = Vector2.UP
 var speed = 15
+@onready var timer = $Timer
 
 func _ready():
 	animationplayer.play("RESET")
-	pass
+	timer.start()
 
 func _physics_process(delta):
 	if is_on_wall():
 		animationplayer.play("dying")
 	move_and_slide()
+	if timer.time_left == 0:
+		animationplayer.play("dying")
 
 func die():
 	queue_free()

@@ -145,7 +145,7 @@ z_index = 17
 tile_set = SubResource("TileSet_sodwt")
 
 [node name="PlayerTest" parent="." instance=ExtResource("15_w3ljp")]
-position = Vector2(-86, -165)
+position = Vector2(-55, -150)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("16_he6g8")]
 position = Vector2(0, -2)
@@ -242,7 +242,7 @@ offset_right = 162.0
 offset_bottom = 14.0
 
 [node name="HirdrihServant" parent="." instance=ExtResource("32_qwrdt")]
-position = Vector2(1489, -416)
+position = Vector2(48, -179)
 
 [node name="SpiderChip" parent="." instance=ExtResource("34_g10ob")]
 position = Vector2(1329, -492)
