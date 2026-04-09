@@ -4,8 +4,10 @@ extends StaticBody2D
 @onready var hurtbox = $ClickArea
 @onready var animationplayer = $AnimationPlayer
 
+@export var animationname = "RESET"
+
 func _ready() -> void:
-	animationplayer.play("RESET")
+	animationplayer.play(animationname)
 
 func die():
 	queue_free()
