@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cr8n43msi8gib"]
+[gd_scene load_steps=35 format=3 uid="uid://cr8n43msi8gib"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_jkvc6"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_xqb7a"]
@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://bqtgekff4fdnm" path="res://src/level objects/mov_plat_verti.tscn" id="16_jf4ok"]
 [ext_resource type="PackedScene" uid="uid://t17qn6yhp3h1" path="res://src/level objects/pickable_arrow.tscn" id="17_3255k"]
 [ext_resource type="PackedScene" uid="uid://e4v4r1jgolmy" path="res://src/interface/current_ui.tscn" id="18_m6fgx"]
-[ext_resource type="PackedScene" uid="uid://d3iglloqsqd6q" path="res://src/enemies/hirdrih_servant.tscn" id="19_iy027"]
 [ext_resource type="PackedScene" uid="uid://bvl3ssp2evnll" path="res://src/enemies/spider_chip.tscn" id="20_hvf7l"]
 [ext_resource type="PackedScene" uid="uid://cggqkyfykildb" path="res://src/level objects/clickable_box.tscn" id="21_obaxj"]
 [ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="22_y55k6"]
@@ -217,7 +216,7 @@ time_of_path = 2.0
 looping = true
 
 [node name="PickableArrow" parent="." instance=ExtResource("17_3255k")]
-position = Vector2(261, -367)
+position = Vector2(-33, -120)
 
 [node name="CurrentUI" parent="." instance=ExtResource("18_m6fgx")]
 
@@ -233,15 +232,6 @@ offset_top = 14.0
 offset_right = 162.0
 offset_bottom = 14.0
 
-[node name="HirdrihServant" parent="." instance=ExtResource("19_iy027")]
-position = Vector2(48, -179)
-
-[node name="HirdrihServant2" parent="." instance=ExtResource("19_iy027")]
-position = Vector2(165, -462)
-
-[node name="HirdrihServant3" parent="." instance=ExtResource("19_iy027")]
-position = Vector2(380, -459)
-
 [node name="SpiderChip" parent="." instance=ExtResource("20_hvf7l")]
 position = Vector2(298, -286)
 
@@ -255,7 +245,11 @@ position = Vector2(965, -495)
 position = Vector2(65, -263)
 
 [node name="ClickableMoxingObject" parent="." instance=ExtResource("22_y55k6")]
-position = Vector2(136, -360)
+position = Vector2(-141, -115)
+
+[node name="ClickableMoxingObject2" parent="." instance=ExtResource("22_y55k6")]
+position = Vector2(-99, -115)
+animationname = "RESET_2"
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_7jcop")]
 position = Vector2(661, -351)
