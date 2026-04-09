@@ -251,6 +251,7 @@ position = Vector2(136, -360)
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("45_behh5")]
 position = Vector2(661, -351)
+nextlevel = "res://src/levels/level_03.tscn"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 libraries = {

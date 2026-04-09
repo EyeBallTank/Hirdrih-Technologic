@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cr8n43msi8gib"]
+[gd_scene load_steps=36 format=3 uid="uid://cr8n43msi8gib"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_jkvc6"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_xqb7a"]
@@ -24,6 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="22_y55k6"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="23_7jcop"]
 [ext_resource type="AudioStream" uid="uid://rvspgknvo02c" path="res://assets/sounds/music/level 03 hirdrih 3.ogg" id="24_ub1ol"]
+[ext_resource type="PackedScene" uid="uid://dxf3c2bh0m1jp" path="res://src/level objects/blue_button.tscn" id="25_iqips"]
+[ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="26_8u718"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj02y"]
 texture = ExtResource("2_xqb7a")
@@ -109,6 +111,13 @@ _data = {
 "PlayMusic": SubResource("Animation_jjat1"),
 "RESET": SubResource("Animation_kmgop")
 }
+
+[sub_resource type="Curve2D" id="Curve2D_5oejn"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 77, -42, 0, 0, 0, 0, 0, -166, 0, 0, 0, 0, 131, -166)
+}
+point_count = 4
 
 [node name="level 03" type="Node2D"]
 position = Vector2(1420, 20)
@@ -265,6 +274,15 @@ bus = &"Music"
 [node name="SpiderChip3" parent="." instance=ExtResource("20_hvf7l")]
 position = Vector2(894, -554)
 animationname = "RESET_2"
+
+[node name="BlueButton" parent="." instance=ExtResource("25_iqips")]
+position = Vector2(-2, -137)
+
+[node name="HirdrihSphereVehicle" parent="." instance=ExtResource("26_8u718")]
+position = Vector2(115, -88)
+curve = SubResource("Curve2D_5oejn")
+time_of_path = 3.0
+looping = true
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
