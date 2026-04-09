@@ -1,0 +1,271 @@
+[gd_scene load_steps=33 format=3 uid="uid://cr8n43msi8gib"]
+
+[ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_jkvc6"]
+[ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_xqb7a"]
+[ext_resource type="Texture2D" uid="uid://bgoyu8arp3gch" path="res://assets/sprites/basic four tiles test.png" id="3_i5ycc"]
+[ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="4_2jhxc"]
+[ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="5_go18x"]
+[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="6_t6vch"]
+[ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="7_85smn"]
+[ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="8_2mcn8"]
+[ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="9_23hfr"]
+[ext_resource type="PackedScene" uid="uid://cnw80sasfqhmb" path="res://src/level items/bluekey.tscn" id="10_h552b"]
+[ext_resource type="PackedScene" uid="uid://ctqctdo1kijht" path="res://src/level items/yellowkey.tscn" id="11_djv6n"]
+[ext_resource type="PackedScene" uid="uid://meckl50d6ugr" path="res://src/level objects/jump pad.tscn" id="12_3wk3r"]
+[ext_resource type="PackedScene" uid="uid://bo0jg2beh8fkb" path="res://src/level objects/reddoor.tscn" id="13_1b1b6"]
+[ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="14_rfu3l"]
+[ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="15_hbcti"]
+[ext_resource type="PackedScene" uid="uid://bqtgekff4fdnm" path="res://src/level objects/mov_plat_verti.tscn" id="16_jf4ok"]
+[ext_resource type="PackedScene" uid="uid://t17qn6yhp3h1" path="res://src/level objects/pickable_arrow.tscn" id="17_3255k"]
+[ext_resource type="PackedScene" uid="uid://e4v4r1jgolmy" path="res://src/interface/current_ui.tscn" id="18_m6fgx"]
+[ext_resource type="PackedScene" uid="uid://d3iglloqsqd6q" path="res://src/enemies/hirdrih_servant.tscn" id="19_iy027"]
+[ext_resource type="PackedScene" uid="uid://bvl3ssp2evnll" path="res://src/enemies/spider_chip.tscn" id="20_hvf7l"]
+[ext_resource type="PackedScene" uid="uid://cggqkyfykildb" path="res://src/level objects/clickable_box.tscn" id="21_obaxj"]
+[ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="22_y55k6"]
+[ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="23_7jcop"]
+[ext_resource type="AudioStream" uid="uid://rvspgknvo02c" path="res://assets/sounds/music/level 03 hirdrih 3.ogg" id="24_ub1ol"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj02y"]
+texture = ExtResource("2_xqb7a")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:0/0 = 0
+1:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+0:1/0 = 0
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0 = 0
+1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk7u0"]
+texture = ExtResource("3_i5ycc")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0/physics_layer_0/polygon_0/one_way = true
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+0:1/0/physics_layer_0/polygon_0/one_way = true
+
+[sub_resource type="TileSet" id="TileSet_sodwt"]
+tile_size = Vector2i(18, 18)
+physics_layer_0/collision_layer = 2
+physics_layer_1/collision_layer = 131072
+physics_layer_1/collision_mask = 65536
+sources/1 = SubResource("TileSetAtlasSource_wk7u0")
+sources/0 = SubResource("TileSetAtlasSource_rj02y")
+
+[sub_resource type="Curve2D" id="Curve2D_f2qaw"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 225, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_vmbcf"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -136)
+}
+point_count = 2
+
+[sub_resource type="Animation" id="Animation_jjat1"]
+resource_name = "PlayMusic"
+length = 122.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_kmgop"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_76qul"]
+_data = {
+"PlayMusic": SubResource("Animation_jjat1"),
+"RESET": SubResource("Animation_kmgop")
+}
+
+[node name="level 03" type="Node2D"]
+position = Vector2(1420, 20)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(-2630, 75)
+
+[node name="LevelBackgroundSpriteTest" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(1784, 233)
+scale = Vector2(0.991151, 0.99115)
+texture = ExtResource("1_jkvc6")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray(0, 0, 254, 255, 250, 255, 1, 0, 1, 0, 0, 0, 0, 0, 253, 255, 250, 255, 1, 0, 1, 0, 0, 0, 0, 0, 252, 255, 250, 255, 1, 0, 1, 0, 0, 0, 0, 0, 251, 255, 250, 255, 1, 0, 1, 0, 0, 0, 0, 0, 250, 255, 250, 255, 1, 0, 1, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_sodwt")
+
+[node name="FrontTiles" type="TileMapLayer" parent="."]
+z_index = 17
+tile_set = SubResource("TileSet_sodwt")
+
+[node name="PlayerTest" parent="." instance=ExtResource("4_2jhxc")]
+position = Vector2(-55, -150)
+
+[node name="MagicArrow" parent="PlayerTest" instance=ExtResource("5_go18x")]
+position = Vector2(0, -2)
+sprite_frames = ExtResource("6_t6vch")
+
+[node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
+position = Vector2(0, -0.5)
+
+[node name="Coin" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(354, -273)
+
+[node name="Coin2" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(886, -450)
+
+[node name="Coin3" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(1053, -525)
+
+[node name="Coin4" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(57, -377)
+
+[node name="Coin5" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(938, -457)
+
+[node name="Coin6" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(212, -237)
+
+[node name="Coin7" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(121, -234)
+
+[node name="Coin8" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(65, -262)
+
+[node name="Coin9" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(303, -452)
+
+[node name="Coin10" parent="." instance=ExtResource("7_85smn")]
+position = Vector2(-38, -304)
+
+[node name="HealthItem" parent="." instance=ExtResource("8_2mcn8")]
+position = Vector2(178, -522)
+
+[node name="Redkey" parent="." instance=ExtResource("9_23hfr")]
+position = Vector2(1095, -533)
+
+[node name="Bluekey" parent="." instance=ExtResource("10_h552b")]
+position = Vector2(204, -456)
+
+[node name="Yellowkey" parent="." instance=ExtResource("11_djv6n")]
+position = Vector2(66, -291)
+
+[node name="JumpPad" parent="." instance=ExtResource("12_3wk3r")]
+position = Vector2(467, -278)
+
+[node name="RedDoor" parent="." instance=ExtResource("13_1b1b6")]
+position = Vector2(603, -342)
+
+[node name="BlueDoor" parent="." instance=ExtResource("14_rfu3l")]
+position = Vector2(657, -522)
+
+[node name="YellowDoor" parent="." instance=ExtResource("15_hbcti")]
+position = Vector2(639, -522)
+
+[node name="Path2D" parent="." instance=ExtResource("16_jf4ok")]
+position = Vector2(775, -522)
+curve = SubResource("Curve2D_f2qaw")
+time_of_path = 2.0
+looping = true
+spritename = "HIRDRIH HORIZONTAL"
+
+[node name="Path2D2" parent="." instance=ExtResource("16_jf4ok")]
+position = Vector2(541, -352)
+curve = SubResource("Curve2D_vmbcf")
+time_of_path = 2.0
+looping = true
+
+[node name="PickableArrow" parent="." instance=ExtResource("17_3255k")]
+position = Vector2(261, -367)
+
+[node name="CurrentUI" parent="." instance=ExtResource("18_m6fgx")]
+
+[node name="LifeCount" parent="CurrentUI" index="0"]
+offset_left = 228.0
+offset_top = 14.0
+offset_right = 228.0
+offset_bottom = 14.0
+
+[node name="ScoreCount" parent="CurrentUI" index="1"]
+offset_left = 162.0
+offset_top = 14.0
+offset_right = 162.0
+offset_bottom = 14.0
+
+[node name="HirdrihServant" parent="." instance=ExtResource("19_iy027")]
+position = Vector2(48, -179)
+
+[node name="HirdrihServant2" parent="." instance=ExtResource("19_iy027")]
+position = Vector2(165, -462)
+
+[node name="HirdrihServant3" parent="." instance=ExtResource("19_iy027")]
+position = Vector2(380, -459)
+
+[node name="SpiderChip" parent="." instance=ExtResource("20_hvf7l")]
+position = Vector2(298, -286)
+
+[node name="SpiderChip2" parent="." instance=ExtResource("20_hvf7l")]
+position = Vector2(815, -495)
+
+[node name="SpiderChip4" parent="." instance=ExtResource("20_hvf7l")]
+position = Vector2(965, -495)
+
+[node name="ClickableBox" parent="." instance=ExtResource("21_obaxj")]
+position = Vector2(65, -263)
+
+[node name="ClickableMoxingObject" parent="." instance=ExtResource("22_y55k6")]
+position = Vector2(136, -360)
+
+[node name="EndLevelDoor" parent="." instance=ExtResource("23_7jcop")]
+position = Vector2(661, -351)
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_76qul")
+}
+autoplay = "PlayMusic"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_ub1ol")
+volume_db = 4.574
+bus = &"Music"
+
+[node name="SpiderChip3" parent="." instance=ExtResource("20_hvf7l")]
+position = Vector2(894, -554)
+animationname = "RESET_2"
+
+[editable path="PlayerTest"]
+[editable path="PlayerTest/MagicArrow"]
+[editable path="CurrentUI"]
