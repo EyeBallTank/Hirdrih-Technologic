@@ -49,7 +49,7 @@
 [ext_resource type="AudioStream" uid="uid://bgxyg78chvfrj" path="res://assets/sounds/music/level 01 hirdrih 1.ogg" id="36_1os10"]
 [ext_resource type="PackedScene" uid="uid://daldjw1o8k88p" path="res://src/npc characters/hint_book_scene.tscn" id="46_iw4ow"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj02y"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_im4qm"]
 texture = ExtResource("3_lm1o2")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
@@ -61,7 +61,7 @@ texture_region_size = Vector2i(18, 18)
 1:1/0 = 0
 1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk7u0"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_32r7w"]
 texture = ExtResource("6_01s8r")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
@@ -76,7 +76,7 @@ texture_region_size = Vector2i(18, 18)
 0:1/0/physics_layer_0/polygon_0/one_way = true
 0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0odvx"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k18pu"]
 texture = ExtResource("4_fcxuh")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
@@ -84,7 +84,7 @@ texture_region_size = Vector2i(18, 18)
 1:0/0 = 0
 1:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjv3f"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1678f"]
 texture = ExtResource("5_6u3ge")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
@@ -127,10 +127,10 @@ physics_layer_1/collision_layer = 131072
 physics_layer_1/collision_mask = 65536
 physics_layer_2/collision_layer = 262144
 physics_layer_2/collision_mask = 64
-sources/1 = SubResource("TileSetAtlasSource_wk7u0")
-sources/0 = SubResource("TileSetAtlasSource_rj02y")
-sources/2 = SubResource("TileSetAtlasSource_0odvx")
-sources/3 = SubResource("TileSetAtlasSource_bjv3f")
+sources/1 = SubResource("TileSetAtlasSource_32r7w")
+sources/0 = SubResource("TileSetAtlasSource_im4qm")
+sources/2 = SubResource("TileSetAtlasSource_k18pu")
+sources/3 = SubResource("TileSetAtlasSource_1678f")
 
 [sub_resource type="Curve2D" id="Curve2D_f2qaw"]
 resource_local_to_scene = true
