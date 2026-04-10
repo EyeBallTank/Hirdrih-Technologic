@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://cy7ibp6sc5aws"]
+[gd_scene load_steps=36 format=4 uid="uid://cy7ibp6sc5aws"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_w2onm"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_b3abo"]
@@ -23,7 +23,10 @@
 [ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="21_oteue"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="22_wywsq"]
 [ext_resource type="AudioStream" uid="uid://bxltrlio12dkm" path="res://assets/sounds/music/level 04 hirdrih 4.mp3" id="23_wycje"]
+[ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="25_60vjo"]
+[ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="26_11fuc"]
 [ext_resource type="PackedScene" uid="uid://ccn1b1x3fmnil" path="res://src/enemies/hazard_test.tscn" id="26_doc0y"]
+[ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="27_iwyd2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj02y"]
 texture = ExtResource("2_b3abo")
@@ -285,6 +288,15 @@ position = Vector2(504, -10)
 
 [node name="CollisionShape2D" parent="HazardTest" index="0"]
 position = Vector2(82, 11)
+
+[node name="PushableCharacter" parent="." instance=ExtResource("25_60vjo")]
+position = Vector2(240, 52)
+
+[node name="PushableButton" parent="." instance=ExtResource("26_11fuc")]
+position = Vector2(333, 109)
+
+[node name="PushableBarrier" parent="." instance=ExtResource("27_iwyd2")]
+position = Vector2(394, 46)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
