@@ -267,6 +267,7 @@ animationname = "RESET_2"
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_7jcop")]
 position = Vector2(309, -369)
+nextlevel = "res://src/levels/level_04.tscn"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 libraries = {
