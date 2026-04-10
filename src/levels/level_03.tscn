@@ -296,7 +296,7 @@ position = Vector2(-23, -167)
 [node name="HirdrihSphereVehicle" parent="." instance=ExtResource("26_8u718")]
 position = Vector2(11, -89)
 curve = SubResource("Curve2D_5oejn")
-time_of_path = 23.0
+time_of_path = 22.0
 looping = true
 
 [node name="HazardTest" parent="." instance=ExtResource("26_gxtwh")]
