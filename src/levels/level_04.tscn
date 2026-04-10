@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://cy7ibp6sc5aws"]
+[gd_scene load_steps=46 format=4 uid="uid://cy7ibp6sc5aws"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_w2onm"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_b3abo"]
@@ -29,6 +29,9 @@
 [ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="26_11fuc"]
 [ext_resource type="PackedScene" uid="uid://ccn1b1x3fmnil" path="res://src/enemies/hazard_test.tscn" id="26_doc0y"]
 [ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="27_iwyd2"]
+[ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="30_u682g"]
+[ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="31_gcoa3"]
+[ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="32_3fbf2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_b3abo")
@@ -382,6 +385,20 @@ position = Vector2(671, -160)
 
 [node name="PushableBarrier" parent="." instance=ExtResource("27_iwyd2")]
 position = Vector2(732, -223)
+
+[node name="GreenBarrier" parent="." instance=ExtResource("30_u682g")]
+position = Vector2(226, -95)
+
+[node name="GreenBarrier2" parent="." instance=ExtResource("30_u682g")]
+position = Vector2(288, -95)
+animationname = "DEACTIVE"
+otheranimationname = "ACTIVE"
+
+[node name="GreenOneButton" parent="." instance=ExtResource("31_gcoa3")]
+position = Vector2(173, -95)
+
+[node name="GreenTwoButton" parent="." instance=ExtResource("32_3fbf2")]
+position = Vector2(346, -96)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
