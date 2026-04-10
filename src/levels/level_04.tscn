@@ -134,7 +134,7 @@ z_index = 17
 tile_set = SubResource("TileSet_sodwt")
 
 [node name="PlayerTest" parent="." instance=ExtResource("4_x38eo")]
-position = Vector2(-56, -120)
+position = Vector2(-56, -108)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("5_10pjy")]
 position = Vector2(0, -2)
@@ -208,13 +208,13 @@ looping = true
 spritename = "HIRDRIH HORIZONTAL"
 
 [node name="Path2D2" parent="." instance=ExtResource("16_cld23")]
-position = Vector2(-120, -135)
+position = Vector2(210, -28)
 curve = SubResource("Curve2D_vmbcf")
 time_of_path = 2.0
 looping = true
 
 [node name="PickableArrow" parent="." instance=ExtResource("17_2hxo5")]
-position = Vector2(-27, -115)
+position = Vector2(-25, -96)
 
 [node name="CurrentUI" parent="." instance=ExtResource("18_8khl7")]
 
@@ -290,7 +290,7 @@ position = Vector2(504, -10)
 position = Vector2(82, 11)
 
 [node name="PushableCharacter" parent="." instance=ExtResource("25_60vjo")]
-position = Vector2(240, 52)
+position = Vector2(5, -150)
 
 [node name="PushableButton" parent="." instance=ExtResource("26_11fuc")]
 position = Vector2(333, 109)
