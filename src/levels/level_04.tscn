@@ -347,7 +347,7 @@ position = Vector2(489, -608)
 animationname = "RESET_2"
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("22_wywsq")]
-position = Vector2(335, -761)
+position = Vector2(692, -317)
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 libraries = {
