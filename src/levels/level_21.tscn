@@ -327,10 +327,10 @@ position = Vector2(-546, -713)
 position = Vector2(-471, -620)
 
 [node name="ClickableMoxingObject" parent="." instance=ExtResource("22_fgkc6")]
-position = Vector2(-703, -683)
+position = Vector2(521, -359)
 
 [node name="ClickableMoxingObject2" parent="." instance=ExtResource("22_fgkc6")]
-position = Vector2(-616, -683)
+position = Vector2(608, -359)
 animationname = "RESET_2"
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_php2d")]
