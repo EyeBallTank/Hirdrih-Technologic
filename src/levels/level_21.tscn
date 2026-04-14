@@ -152,13 +152,6 @@ physics_layer_1/collision_mask = 65536
 sources/1 = SubResource("TileSetAtlasSource_wk7u0")
 sources/0 = SubResource("TileSetAtlasSource_rj02y")
 
-[sub_resource type="Curve2D" id="Curve2D_f2qaw"]
-resource_local_to_scene = true
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 177, -4, 0, 0, 0, 0, -4, -4)
-}
-point_count = 2
-
 [sub_resource type="Animation" id="Animation_jjat1"]
 resource_name = "PlayMusic"
 length = 109.5
@@ -211,6 +204,13 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="Curve2D" id="Curve2D_ku41o"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0)
+}
+point_count = 2
+
 [node name="level 21" type="Node2D"]
 position = Vector2(1420, 20)
 
@@ -252,7 +252,7 @@ position = Vector2(-170, -181)
 position = Vector2(904, -451)
 
 [node name="Coin4" parent="." instance=ExtResource("9_kmmpf")]
-position = Vector2(428, -702)
+position = Vector2(555, -579)
 
 [node name="Coin5" parent="." instance=ExtResource("9_kmmpf")]
 position = Vector2(902, -251)
@@ -270,7 +270,7 @@ position = Vector2(492, -452)
 position = Vector2(-788, -502)
 
 [node name="Coin10" parent="." instance=ExtResource("9_kmmpf")]
-position = Vector2(483, -756)
+position = Vector2(600, -581)
 
 [node name="HealthItem" parent="." instance=ExtResource("10_qgnb1")]
 position = Vector2(-791, -396)
@@ -288,20 +288,13 @@ position = Vector2(-684, -549)
 position = Vector2(755, -385)
 
 [node name="RedDoor" parent="." instance=ExtResource("14_3r8k8")]
-position = Vector2(486, -593)
+position = Vector2(441, -576)
 
 [node name="BlueDoor" parent="." instance=ExtResource("15_vo5sa")]
-position = Vector2(544, -595)
+position = Vector2(513, -576)
 
 [node name="YellowDoor" parent="." instance=ExtResource("16_a8s7w")]
-position = Vector2(526, -595)
-
-[node name="Path2D" parent="." instance=ExtResource("17_0sabt")]
-position = Vector2(847, -629)
-curve = SubResource("Curve2D_f2qaw")
-time_of_path = 4.0
-looping = true
-spritename = "HIRDRIH HORIZONTAL"
+position = Vector2(477, -576)
 
 [node name="PickableArrow" parent="." instance=ExtResource("18_yrnex")]
 position = Vector2(-73, -133)
@@ -450,6 +443,13 @@ position = Vector2(710, -391)
 
 [node name="HirdrihServant2" parent="." instance=ExtResource("35_u3ppm")]
 position = Vector2(332, -244)
+
+[node name="Path2D" parent="." instance=ExtResource("17_0sabt")]
+position = Vector2(667, -587)
+curve = SubResource("Curve2D_ku41o")
+time_of_path = 2.0
+looping = true
+spritename = "HIRDRIH HORIZONTAL"
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
