@@ -13,19 +13,19 @@ func _on_quit_button_pressed() -> void:
 
 
 func _on_button_for_level_1_pressed() -> void:
-	pass # Replace with function body.
+	SceneTransition.load_scene("res://src/levels/level_01.tscn")
 
 
 func _on_button_for_level_2_pressed() -> void:
-	pass # Replace with function body.
+	SceneTransition.load_scene("res://src/levels/level_02.tscn")
 
 
 func _on_button_for_level_3_pressed() -> void:
-	pass # Replace with function body.
+	SceneTransition.load_scene("res://src/levels/level_03.tscn")
 
 
 func _on_button_for_level_4_pressed() -> void:
-	pass # Replace with function body.
+	SceneTransition.load_scene("res://src/levels/level_04.tscn")
 
 
 func _on_button_for_level_5_pressed() -> void:
@@ -93,7 +93,7 @@ func _on_button_for_level_20_pressed() -> void:
 
 
 func _on_button_for_level_21_pressed() -> void:
-	pass # Replace with function body.
+	SceneTransition.load_scene("res://src/levels/level_21.tscn")
 
 
 func _on_button_for_level_22_pressed() -> void:
