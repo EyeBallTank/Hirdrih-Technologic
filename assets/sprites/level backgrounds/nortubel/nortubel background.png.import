@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwcfx5r12q5t4"
-path="res://.godot/imported/cutscene 33 nortpartnine ending panel 1.png-c67aab396d6c119f19c959418f9bd627.ctex"
+uid="uid://cufy446jw1r4p"
+path="res://.godot/imported/nortubel background.png-a813419b02cc51d8e3f3d8f0f2112d9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level backgrounds/nortubel/cutscene 33 nortpartnine ending panel 1.png"
-dest_files=["res://.godot/imported/cutscene 33 nortpartnine ending panel 1.png-c67aab396d6c119f19c959418f9bd627.ctex"]
+source_file="res://assets/sprites/level backgrounds/nortubel/nortubel background.png"
+dest_files=["res://.godot/imported/nortubel background.png-a813419b02cc51d8e3f3d8f0f2112d9a.ctex"]
 
 [params]
 
