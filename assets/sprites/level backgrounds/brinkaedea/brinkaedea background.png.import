@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv2xrprfeqbe5"
-path="res://.godot/imported/brinklevel1 bg v2.png-3014c406f922888b523622869059a54a.ctex"
+uid="uid://0k433g8pk10o"
+path="res://.godot/imported/brinkaedea background.png-de0a9b931266638e1c94c91af66ea288.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level backgrounds/brinkaedea/brinklevel1 bg v2.png"
-dest_files=["res://.godot/imported/brinklevel1 bg v2.png-3014c406f922888b523622869059a54a.ctex"]
+source_file="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png"
+dest_files=["res://.godot/imported/brinkaedea background.png-de0a9b931266638e1c94c91af66ea288.ctex"]
 
 [params]
 
