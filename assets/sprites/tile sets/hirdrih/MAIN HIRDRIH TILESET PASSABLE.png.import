@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5t6iqtrgo7eq"
-path="res://.godot/imported/hirdprop speaker 2.png-44851f674ee26fe514736907a9204234.ctex"
+uid="uid://coemy1yscysqk"
+path="res://.godot/imported/MAIN HIRDRIH TILESET PASSABLE.png-752e3c97ff81a399b6723af7c8428047.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/tile sets/hirdrih/hirdprop speaker 2.png"
-dest_files=["res://.godot/imported/hirdprop speaker 2.png-44851f674ee26fe514736907a9204234.ctex"]
+source_file="res://assets/sprites/tile sets/hirdrih/MAIN HIRDRIH TILESET PASSABLE.png"
+dest_files=["res://.godot/imported/MAIN HIRDRIH TILESET PASSABLE.png-752e3c97ff81a399b6723af7c8428047.ctex"]
 
 [params]
 
