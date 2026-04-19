@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://b8mesd33vmisn"]
+[gd_scene load_steps=17 format=3 uid="uid://b8mesd33vmisn"]
 
 [ext_resource type="Script" path="res://src/level objects/pushable_character.gd" id="1_6h66c"]
 [ext_resource type="Texture2D" uid="uid://cgjbrliy8v8he" path="res://assets/sprites/PUSHABLE HIRDRIH SPRITE TEST.png" id="1_lcucw"]
 [ext_resource type="PackedScene" uid="uid://cama45aurtcme" path="res://src/level objects/top_of_pushable.tscn" id="3_aeart"]
+[ext_resource type="Texture2D" uid="uid://cxbimhuhy4abb" path="res://assets/sprites/SELECTED PUSHABLE HIRDRIH SPRITE TEST.png" id="4_wo44f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jyi5j"]
 atlas = ExtResource("1_lcucw")
@@ -149,6 +150,28 @@ _data = {
 "being_dragged": SubResource("Animation_ann8b")
 }
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_rywsd"]
+atlas = ExtResource("4_wo44f")
+region = Rect2(0, 0, 36, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8khp"]
+atlas = ExtResource("4_wo44f")
+region = Rect2(36, 0, 36, 46)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r5ejn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rywsd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8khp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.5
+}]
+
 [node name="PushableCharacter" type="CharacterBody2D"]
 collision_layer = 64
 collision_mask = 262146
@@ -208,6 +231,11 @@ shape = SubResource("RectangleShape2D_st1si")
 libraries = {
 "": SubResource("AnimationLibrary_rqee4")
 }
+
+[node name="selectedanimation" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r5ejn")
+autoplay = "default"
+frame_progress = 0.179112
 
 [connection signal="area_entered" from="ClickArea" to="." method="_on_click_area_area_entered"]
 [connection signal="area_exited" from="ClickArea" to="." method="_on_click_area_area_exited"]

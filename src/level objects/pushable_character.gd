@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var animationplayer = $AnimationPlayer
 @onready var hurtbox = $ClickArea
 @onready var collisionwhendragged = $CollisionWhenDragged/CollisionShape2D
+@onready var selectedsprite = $selectedanimation
 
 var push = false
 var direction = 0
@@ -19,11 +20,13 @@ var state = DRAGGED
 
 func _ready() -> void:
 	animationplayer.play("RESET")
+	selectedsprite.visible = false
 
 func _physics_process(delta: float) -> void:
 
 	match state:
 		NORMAL:
+			selectedsprite.visible = false
 
 			if not is_on_floor():
 				velocity += get_gravity() * delta
@@ -41,6 +44,7 @@ func _physics_process(delta: float) -> void:
 			
 			
 		DRAGGED:
+			selectedsprite.visible = true
 			character_direction.x = Input.get_axis("left", "right")
 			character_direction.y = Input.get_axis("jump", "climbdown")
 			character_direction = character_direction.normalized()
@@ -82,8 +86,10 @@ func pain_is_on():
 func _on_click_area_area_entered(area: Area2D) -> void:
 	if area.is_in_group("trueclickablearea"):
 		canibedragged = true
+		
 
 
 func _on_click_area_area_exited(area: Area2D) -> void:
 	if area.is_in_group("trueclickablearea"):
 		canibedragged = false
+		
