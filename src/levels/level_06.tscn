@@ -222,38 +222,8 @@ position = Vector2(0, -0.5)
 [node name="Coin" parent="." instance=ExtResource("9_judhj")]
 position = Vector2(70, -416)
 
-[node name="Coin2" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(18, -419)
-
-[node name="Coin3" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(314, -477)
-
-[node name="Coin4" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(435, -379)
-
-[node name="Coin5" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(131, -562)
-
-[node name="Coin6" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(-45, -417)
-
-[node name="Coin7" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(111, -416)
-
-[node name="Coin8" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(198, -381)
-
-[node name="Coin9" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(-40, -573)
-
-[node name="Coin10" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(490, -433)
-
 [node name="HealthItem" parent="." instance=ExtResource("10_3xf2v")]
 position = Vector2(618, -485)
-
-[node name="HealthItem2" parent="." instance=ExtResource("10_3xf2v")]
-position = Vector2(316, -513)
 
 [node name="Redkey" parent="." instance=ExtResource("11_bcdh2")]
 position = Vector2(625, -433)
