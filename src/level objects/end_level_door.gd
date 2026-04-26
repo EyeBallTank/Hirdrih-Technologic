@@ -5,7 +5,7 @@ extends Area2D
 @export var nextlevel = "res://Screens/main_menu.tscn"
 
 func _ready() -> void:
-	sprites.play("hirdrih")
+	sprites.play(spritename)
 
 
 func _on_body_entered(body: Node2D) -> void:

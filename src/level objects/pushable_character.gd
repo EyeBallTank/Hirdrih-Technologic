@@ -5,6 +5,9 @@ extends CharacterBody2D
 @onready var collisionwhendragged = $CollisionWhenDragged/CollisionShape2D
 @onready var selectedsprite = $selectedanimation
 
+@export var spritename = "hirdrih"
+@onready var animatedsprite = $AnimatedSprite2D
+
 var push = false
 var direction = 0
 
@@ -19,6 +22,7 @@ enum {NORMAL, DRAGGED}
 var state = DRAGGED
 
 func _ready() -> void:
+	animatedsprite.play(spritename)
 	animationplayer.play("RESET")
 	selectedsprite.visible = false
 
