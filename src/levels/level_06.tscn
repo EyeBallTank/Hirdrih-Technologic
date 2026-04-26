@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=4 uid="uid://dvpp0ncynvjit"]
+[gd_scene load_steps=51 format=4 uid="uid://dvpp0ncynvjit"]
 
 [ext_resource type="Texture2D" uid="uid://0k433g8pk10o" path="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png" id="1_q6ayw"]
 [ext_resource type="Texture2D" uid="uid://hu7cmp7hfpqa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 01.png" id="2_svb3t"]
@@ -791,6 +791,13 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="Curve2D" id="Curve2D_ybwxu"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -70)
+}
+point_count = 2
+
 [sub_resource type="Animation" id="Animation_jjat1"]
 resource_name = "PlayMusic"
 length = 54.0
@@ -887,12 +894,19 @@ spritename = "brinkaedea"
 position = Vector2(-198, -186)
 spritename = "brinkaedea"
 
-[node name="Path2D" parent="." instance=ExtResource("17_be12s")]
-position = Vector2(-55, -383)
+[node name="Path2D2" parent="." instance=ExtResource("17_be12s")]
+position = Vector2(-127, -23)
 curve = SubResource("Curve2D_f2qaw")
 time_of_path = 4.0
 looping = true
-spritename = "HIRDRIH HORIZONTAL"
+spritename = "BRINKAEDEA HORIZONTAL"
+
+[node name="Path2D" parent="." instance=ExtResource("17_be12s")]
+position = Vector2(-137, -35)
+curve = SubResource("Curve2D_ybwxu")
+time_of_path = 3.0
+looping = true
+spritename = "BRINKAEDEA VERTICAL"
 
 [node name="PickableArrow" parent="." instance=ExtResource("18_ar2o3")]
 position = Vector2(-81, -133)

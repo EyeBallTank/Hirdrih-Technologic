@@ -1,8 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://bqtgekff4fdnm"]
+[gd_scene load_steps=14 format=3 uid="uid://bqtgekff4fdnm"]
 
 [ext_resource type="Texture2D" uid="uid://cdfxxe4ia13vk" path="res://assets/sprites/MOVING PLATFORM TEST SPRITE.png" id="1_8qt7v"]
 [ext_resource type="Script" path="res://src/level objects/mov_plat_verti.gd" id="1_sjoo1"]
+[ext_resource type="Texture2D" uid="uid://vx3u7fie362h" path="res://assets/sprites/level objects/brinkaedea/A MOVING PLAT HORIZONTAL BRINKAEDEA.png" id="2_olprj"]
 [ext_resource type="Texture2D" uid="uid://cjnfab6ahnfc3" path="res://assets/sprites/MOVING PLATFORM TEST SPRITE horiz.png" id="2_x7ehp"]
+[ext_resource type="Texture2D" uid="uid://b7lp884ng7sa1" path="res://assets/sprites/level objects/brinkaedea/A MOVING PLAT VERTICAL BRINKAEDEA.png" id="3_hnfxq"]
 
 [sub_resource type="Curve2D" id="Curve2D_fgrpp"]
 resource_local_to_scene = true
@@ -11,8 +13,32 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pakul"]
+atlas = ExtResource("2_olprj")
+region = Rect2(0, 0, 31, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cat46"]
+atlas = ExtResource("3_hnfxq")
+region = Rect2(0, 0, 31, 19)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ph5r2"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pakul")
+}],
+"loop": false,
+"name": &"BRINKAEDEA HORIZONTAL",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cat46")
+}],
+"loop": false,
+"name": &"BRINKAEDEA VERTICAL",
+"speed": 0.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_x7ehp")
@@ -110,7 +136,7 @@ collision_layer = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AnimatableBody2D"]
 sprite_frames = SubResource("SpriteFrames_ph5r2")
-animation = &"HIRDRIH VERTICAL"
+animation = &"BRINKAEDEA VERTICAL"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
 position = Vector2(0, -0.5)

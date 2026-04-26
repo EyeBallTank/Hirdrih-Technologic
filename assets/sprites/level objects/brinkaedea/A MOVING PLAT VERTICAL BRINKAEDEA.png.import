@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://diffrk0i1e7m7"
-path="res://.godot/imported/MovingPlatHoriz Brinkaedea.png-a92befe3fc3cc572c61a3bad5f2f6ed7.ctex"
+uid="uid://b7lp884ng7sa1"
+path="res://.godot/imported/A MOVING PLAT VERTICAL BRINKAEDEA.png-3b27e11199e66cf1bc03f7641e006e88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level objects/brinkaedea/MovingPlatHoriz Brinkaedea.png"
-dest_files=["res://.godot/imported/MovingPlatHoriz Brinkaedea.png-a92befe3fc3cc572c61a3bad5f2f6ed7.ctex"]
+source_file="res://assets/sprites/level objects/brinkaedea/A MOVING PLAT VERTICAL BRINKAEDEA.png"
+dest_files=["res://.godot/imported/A MOVING PLAT VERTICAL BRINKAEDEA.png-3b27e11199e66cf1bc03f7641e006e88.ctex"]
 
 [params]
 
