@@ -1,7 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://boqh3dn4ii0ql"]
+[gd_scene load_steps=13 format=3 uid="uid://boqh3dn4ii0ql"]
 
 [ext_resource type="Script" path="res://src/level objects/yellowdoor.gd" id="1_per3i"]
 [ext_resource type="Texture2D" uid="uid://doualq6mp2v0u" path="res://assets/sprites/DOOR COLORS SPRITE TEST.png" id="2_qcr1v"]
+[ext_resource type="Texture2D" uid="uid://clj4btks2jxdp" path="res://assets/sprites/level objects/brinkaedea/A COLORED DOORS BRINKAEDEA.png" id="2_wis12"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iq4go"]
+atlas = ExtResource("2_wis12")
+region = Rect2(18, 0, 18, 36)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5jv4r"]
 atlas = ExtResource("2_qcr1v")
@@ -9,6 +14,14 @@ region = Rect2(18, 0, 18, 36)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8oa05"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iq4go")
+}],
+"loop": false,
+"name": &"brinkaedea",
+"speed": 0.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5jv4r")
@@ -169,6 +182,7 @@ script = ExtResource("1_per3i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8oa05")
+animation = &"brinkaedea"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_rijbg")
