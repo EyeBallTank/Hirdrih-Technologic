@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=4 uid="uid://dvpp0ncynvjit"]
+[gd_scene load_steps=52 format=4 uid="uid://dvpp0ncynvjit"]
 
 [ext_resource type="Texture2D" uid="uid://0k433g8pk10o" path="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png" id="1_q6ayw"]
 [ext_resource type="Texture2D" uid="uid://hu7cmp7hfpqa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 01.png" id="2_svb3t"]
@@ -34,6 +34,7 @@
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="26_qhyv2"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="27_o8jn6"]
 [ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="34_ahfyw"]
+[ext_resource type="PackedScene" uid="uid://cmwu4en8mgqga" path="res://src/level objects/brinkaedea jumppad.tscn" id="35_0eela"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_svb3t")
@@ -942,7 +943,7 @@ position = Vector2(171, -539)
 animationname = "RESET_2"
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_arqo6")]
-position = Vector2(-47, -125)
+position = Vector2(157, -108)
 spritename = "brinkaedea"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
@@ -985,6 +986,9 @@ position = Vector2(497, -378)
 [node name="PushableCharacter" parent="." instance=ExtResource("34_ahfyw")]
 position = Vector2(6, -121)
 spritename = "brinkaedea"
+
+[node name="JumpPad" parent="." instance=ExtResource("35_0eela")]
+position = Vector2(-48, -112)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
