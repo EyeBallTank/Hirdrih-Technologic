@@ -35,6 +35,8 @@ Right now, I made it so enemy hurtboxes finally react to the projectile.
 
 Thanks to dragonforge-dev, I added "get_parent" to where it said "add_child(projectile)" in some code.
 
+* Hirdrio can finally move around and bounce of walls, thanks to a tutorial by NADLABS
+
 
 # CREDITS
 
