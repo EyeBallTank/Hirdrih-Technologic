@@ -1,7 +1,20 @@
-[gd_scene load_steps=17 format=3 uid="uid://rkxohx8p0k83"]
+[gd_scene load_steps=21 format=3 uid="uid://rkxohx8p0k83"]
 
 [ext_resource type="Script" path="res://src/level items/health_item.gd" id="1_rf0u1"]
 [ext_resource type="Texture2D" uid="uid://cbmli5gwhyqe5" path="res://assets/sprites/HEALTH ITEM ANIMATION SPRITE TEST.png" id="2_5veo5"]
+[ext_resource type="Texture2D" uid="uid://beog0lri61yjs" path="res://assets/sprites/level items/brinkaedea/A HEALTH PICKUP BRINKAEDEA.png" id="2_tsk1o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyl8k"]
+atlas = ExtResource("2_tsk1o")
+region = Rect2(0, 0, 22, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbx7l"]
+atlas = ExtResource("2_tsk1o")
+region = Rect2(0, 33, 22, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oht3s"]
+atlas = ExtResource("2_tsk1o")
+region = Rect2(0, 66, 22, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w3uhi"]
 atlas = ExtResource("2_5veo5")
@@ -37,6 +50,38 @@ region = Rect2(72, 20, 24, 20)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e4oso"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyl8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyl8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyl8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbx7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oht3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbx7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oht3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbx7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oht3s")
+}],
+"loop": true,
+"name": &"brinkaedea",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_w3uhi")
@@ -253,7 +298,7 @@ script = ExtResource("1_rf0u1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")
-autoplay = "default"
+animation = &"brinkaedea"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fswyh")

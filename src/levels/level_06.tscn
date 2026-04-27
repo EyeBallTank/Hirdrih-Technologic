@@ -869,19 +869,21 @@ sprite_frames = ExtResource("8_25gl0")
 position = Vector2(0, -0.5)
 
 [node name="Coin" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(70, -416)
+position = Vector2(-307, -135)
+spritename = "brinkaedea"
 
 [node name="HealthItem" parent="." instance=ExtResource("10_3xf2v")]
-position = Vector2(618, -485)
+position = Vector2(-279, -136)
+spritename = "brinkaedea"
 
 [node name="Redkey" parent="." instance=ExtResource("11_bcdh2")]
-position = Vector2(625, -433)
+position = Vector2(-250, -114)
 
 [node name="Bluekey" parent="." instance=ExtResource("12_qteh1")]
-position = Vector2(580, -488)
+position = Vector2(-278, -111)
 
 [node name="Yellowkey" parent="." instance=ExtResource("13_uu5te")]
-position = Vector2(-5, -571)
+position = Vector2(-307, -110)
 
 [node name="RedDoor" parent="." instance=ExtResource("14_5ob8j")]
 position = Vector2(-227, -185)

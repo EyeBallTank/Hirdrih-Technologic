@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cytl1c2l6udds"
-path="res://.godot/imported/Lifeguard Floater brinkaedea.PNG-3a59b7fd3f2bf560871fa0d832b8463f.ctex"
+uid="uid://de7jkqs5bx1rj"
+path="res://.godot/imported/A COIN BRINKAEDEA.png-e7678cb4d3be8036830b28e64caee1da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level items/brinkaedea/Lifeguard Floater brinkaedea.PNG"
-dest_files=["res://.godot/imported/Lifeguard Floater brinkaedea.PNG-3a59b7fd3f2bf560871fa0d832b8463f.ctex"]
+source_file="res://assets/sprites/level items/brinkaedea/A COIN BRINKAEDEA.png"
+dest_files=["res://.godot/imported/A COIN BRINKAEDEA.png-e7678cb4d3be8036830b28e64caee1da.ctex"]
 
 [params]
 

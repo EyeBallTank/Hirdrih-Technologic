@@ -1,7 +1,32 @@
-[gd_scene load_steps=33 format=3 uid="uid://cxsgrjmyftcxj"]
+[gd_scene load_steps=40 format=3 uid="uid://cxsgrjmyftcxj"]
 
 [ext_resource type="Script" path="res://src/level items/coin.gd" id="1_pd4oa"]
+[ext_resource type="Texture2D" uid="uid://de7jkqs5bx1rj" path="res://assets/sprites/level items/brinkaedea/A COIN BRINKAEDEA.png" id="2_gyy3u"]
 [ext_resource type="Texture2D" uid="uid://y8208cv0twn1" path="res://assets/sprites/COIN ANIMATION SPRITE TEST.png" id="2_ooon7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8v55a"]
+atlas = ExtResource("2_gyy3u")
+region = Rect2(0, 0, 10, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpl01"]
+atlas = ExtResource("2_gyy3u")
+region = Rect2(10, 0, 10, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_um4ie"]
+atlas = ExtResource("2_gyy3u")
+region = Rect2(20, 0, 10, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_of667"]
+atlas = ExtResource("2_gyy3u")
+region = Rect2(0, 15, 10, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pni8s"]
+atlas = ExtResource("2_gyy3u")
+region = Rect2(10, 15, 10, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64tom"]
+atlas = ExtResource("2_gyy3u")
+region = Rect2(20, 15, 10, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6gw02"]
 atlas = ExtResource("2_ooon7")
@@ -101,6 +126,38 @@ region = Rect2(70, 30, 10, 15)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e4oso"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8v55a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8v55a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8v55a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8v55a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xpl01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_um4ie")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_of667")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pni8s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_64tom")
+}],
+"loop": true,
+"name": &"brinkaedea",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6gw02")
@@ -422,7 +479,7 @@ script = ExtResource("1_pd4oa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")
-autoplay = "default"
+animation = &"brinkaedea"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fswyh")
