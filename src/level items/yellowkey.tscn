@@ -1,7 +1,28 @@
-[gd_scene load_steps=21 format=3 uid="uid://ctqctdo1kijht"]
+[gd_scene load_steps=27 format=3 uid="uid://ctqctdo1kijht"]
 
 [ext_resource type="Script" path="res://src/level items/yellowkey.gd" id="1_n7gtv"]
+[ext_resource type="Texture2D" uid="uid://bxnhm8l6tu18r" path="res://assets/sprites/level items/brinkaedea/A YELLOW KEY BRINKAEDEA.png" id="2_akcst"]
 [ext_resource type="Texture2D" uid="uid://cm74c2h666lmp" path="res://assets/sprites/KEYS ANIMATION SPRITE TEST.png" id="2_q1oq0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omq4u"]
+atlas = ExtResource("2_akcst")
+region = Rect2(0, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dty6"]
+atlas = ExtResource("2_akcst")
+region = Rect2(15, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qdkb"]
+atlas = ExtResource("2_akcst")
+region = Rect2(30, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0jc3c"]
+atlas = ExtResource("2_akcst")
+region = Rect2(45, 0, 15, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fis0k"]
+atlas = ExtResource("2_akcst")
+region = Rect2(60, 0, 15, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m1aam"]
 atlas = ExtResource("2_q1oq0")
@@ -55,6 +76,35 @@ region = Rect2(54, 330, 27, 30)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_omq4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omq4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omq4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omq4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dty6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qdkb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0jc3c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fis0k")
+}],
+"loop": true,
+"name": &"brinkaedea",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_m1aam")
 }, {
 "duration": 1.0,
@@ -91,7 +141,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_i42il")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"default",
 "speed": 8.0
 }]
 
@@ -231,9 +281,7 @@ script = ExtResource("1_n7gtv")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -1)
 sprite_frames = SubResource("SpriteFrames_e4oso")
-animation = &"new_animation"
-autoplay = "new_animation"
-frame_progress = 0.378764
+animation = &"brinkaedea"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fswyh")

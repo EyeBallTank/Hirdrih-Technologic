@@ -2,7 +2,11 @@ extends Area2D
 
 @onready var animation = $AnimationPlayer
 
+@onready var animatedsprite = $AnimatedSprite2D
+@export var spritename = "default"
+
 func _ready() -> void:
+	animatedsprite.play(spritename)
 	animation.play("defaultstate")
 
 

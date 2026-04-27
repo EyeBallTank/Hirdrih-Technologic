@@ -881,9 +881,11 @@ position = Vector2(-250, -114)
 
 [node name="Bluekey" parent="." instance=ExtResource("12_qteh1")]
 position = Vector2(-278, -111)
+spritename = "brinkaedea"
 
 [node name="Yellowkey" parent="." instance=ExtResource("13_uu5te")]
 position = Vector2(-307, -110)
+spritename = "brinkaedea"
 
 [node name="RedDoor" parent="." instance=ExtResource("14_5ob8j")]
 position = Vector2(-227, -185)
