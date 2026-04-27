@@ -9,7 +9,6 @@ https://docs.google.com/document/d/1MhkxslTsY92BH1echrjFv-l5uSzD3a8X_YbwzBAt_5Y/
 
 * I can't use resources on the AnimatedSprite2D node of the magic arrow, so the sprites don't change when changing the name on the resource in the editor https://forum.godotengine.org/t/having-an-issue-with-using-sprite-resources-on-animatedsprite2d-godot-4-3-stable/130693/5
 * I want to have the Magic Arrow become disabled when the player dies
-* I couldn't find a way to make the enemy Hirdrio actually move and bounce off surfaces as they did in Project Nortubel.
 * The "end level door" scene has this error:
 
 E 0:00:18:0702   step: Infinite loop detected. Check set_loops() description for more info.
@@ -50,3 +49,4 @@ Thanks to dragonforge-dev, I added "get_parent" to where it said "add_child(proj
 * Kenney (Also used sprites for testing stuff)
 * Webs206 on Freesound (Sound effect for clicking arrow)
 * dragonforge-dev (Helped me fix the issue with projectiles not moving independently from source entities)
+* NADLABS (Used a tutorial to make working code for the Hirdrio enemy)

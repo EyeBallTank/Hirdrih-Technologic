@@ -6,15 +6,22 @@ extends CharacterBody2D
 
 @export var animationname = "RESET"
 
+const SPEED := 1.0
+
 func _ready():
 	animatedsprite.play("idle")
 	animationplayer.play(animationname)
+	velocity = Vector2(-SPEED, 1)
 
 func _physics_process(delta):
+	var col = move_and_collide(velocity)
+	if col:
+		var normal := col.get_normal()
+		velocity = velocity.bounce(normal)
 
-	var collision_info = move_and_collide(velocity * delta)
-	if collision_info:
-		velocity = velocity.bounce(collision_info.normal)
+	#var collision_info = move_and_collide(velocity * delta)
+	#if collision_info:
+		#velocity = velocity.bounce(collision_info.normal)
 
 func die():
 	queue_free()
