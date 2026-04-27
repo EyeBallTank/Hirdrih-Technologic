@@ -878,6 +878,7 @@ spritename = "brinkaedea"
 
 [node name="Redkey" parent="." instance=ExtResource("11_bcdh2")]
 position = Vector2(-250, -114)
+spritename = "brinkaedea"
 
 [node name="Bluekey" parent="." instance=ExtResource("12_qteh1")]
 position = Vector2(-278, -111)
