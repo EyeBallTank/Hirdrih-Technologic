@@ -1,0 +1,331 @@
+[gd_scene load_steps=40 format=4 uid="uid://dud0pgsva7far"]
+
+[ext_resource type="Texture2D" uid="uid://cufy446jw1r4p" path="res://assets/sprites/level backgrounds/nortubel/nortubel background.png" id="1_wln3s"]
+[ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_ni2wt"]
+[ext_resource type="Texture2D" uid="uid://bgoyu8arp3gch" path="res://assets/sprites/basic four tiles test.png" id="3_081ga"]
+[ext_resource type="Texture2D" uid="uid://m8bieeq1ed0d" path="res://assets/sprites/tiles that block pushable sprites.png" id="4_ujmkm"]
+[ext_resource type="Texture2D" uid="uid://b2548n3ogjk8r" path="res://assets/sprites/crossable tiles that block pushable sprites.png" id="5_5dnxr"]
+[ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="6_yxqep"]
+[ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="7_ckpfj"]
+[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="8_b63hm"]
+[ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="9_yp658"]
+[ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="10_n5rlg"]
+[ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="11_a5g15"]
+[ext_resource type="PackedScene" uid="uid://cnw80sasfqhmb" path="res://src/level items/bluekey.tscn" id="12_8n55d"]
+[ext_resource type="PackedScene" uid="uid://ctqctdo1kijht" path="res://src/level items/yellowkey.tscn" id="13_psemg"]
+[ext_resource type="PackedScene" uid="uid://bo0jg2beh8fkb" path="res://src/level objects/reddoor.tscn" id="14_sldkn"]
+[ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="15_opstp"]
+[ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="16_1r4p6"]
+[ext_resource type="PackedScene" uid="uid://bqtgekff4fdnm" path="res://src/level objects/mov_plat_verti.tscn" id="17_85rmp"]
+[ext_resource type="PackedScene" uid="uid://t17qn6yhp3h1" path="res://src/level objects/pickable_arrow.tscn" id="18_ne6cb"]
+[ext_resource type="PackedScene" uid="uid://e4v4r1jgolmy" path="res://src/interface/current_ui.tscn" id="19_0ypyv"]
+[ext_resource type="PackedScene" uid="uid://bvl3ssp2evnll" path="res://src/enemies/spider_chip.tscn" id="20_6h1py"]
+[ext_resource type="PackedScene" uid="uid://cggqkyfykildb" path="res://src/level objects/clickable_box.tscn" id="21_d5bby"]
+[ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="22_krhjx"]
+[ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="23_h38vn"]
+[ext_resource type="AudioStream" uid="uid://ctlv5cnyxt747" path="res://assets/sounds/music/level 07 untotern 1.ogg" id="24_avpyc"]
+[ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="25_s78de"]
+[ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="26_8sgdg"]
+[ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="27_w7mwe"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
+texture = ExtResource("2_ni2wt")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:0/0 = 0
+1:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+0:1/0 = 0
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0 = 0
+1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5hxeg"]
+texture = ExtResource("3_081ga")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0/physics_layer_0/polygon_0/one_way = true
+1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+0:1/0/physics_layer_0/polygon_0/one_way = true
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wd08s"]
+texture = ExtResource("4_ujmkm")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:0/0 = 0
+1:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rolhe"]
+texture = ExtResource("5_5dnxr")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+0:0/0/physics_layer_2/polygon_0/one_way = true
+0:0/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+1:0/0/physics_layer_2/polygon_0/one_way = true
+1:0/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+2:0/0/physics_layer_2/polygon_0/one_way = true
+2:0/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+3:0/0 = 0
+3:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+3:0/0/physics_layer_2/polygon_0/one_way = true
+3:0/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+0:1/0/physics_layer_2/polygon_0/one_way = true
+0:1/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+1:1/0/physics_layer_2/polygon_0/one_way = true
+1:1/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+2:1/0/physics_layer_2/polygon_0/one_way = true
+2:1/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+3:1/0 = 0
+3:1/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, -9, 9, 9, 9, 9, -9)
+3:1/0/physics_layer_2/polygon_0/one_way = true
+3:1/0/physics_layer_2/polygon_0/one_way_margin = 0.0
+
+[sub_resource type="TileSet" id="TileSet_0olp1"]
+tile_size = Vector2i(18, 18)
+physics_layer_0/collision_layer = 2
+physics_layer_1/collision_layer = 131072
+physics_layer_1/collision_mask = 65536
+physics_layer_2/collision_layer = 262144
+physics_layer_2/collision_mask = 64
+sources/1 = SubResource("TileSetAtlasSource_5hxeg")
+sources/0 = SubResource("TileSetAtlasSource_slerl")
+sources/2 = SubResource("TileSetAtlasSource_wd08s")
+sources/3 = SubResource("TileSetAtlasSource_rolhe")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj02y"]
+texture = ExtResource("2_ni2wt")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:0/0 = 0
+1:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+0:1/0 = 0
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0 = 0
+1:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wk7u0"]
+texture = ExtResource("3_081ga")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+1:1/0/physics_layer_0/polygon_0/one_way = true
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+0:1/0/physics_layer_0/polygon_0/one_way = true
+
+[sub_resource type="TileSet" id="TileSet_sodwt"]
+tile_size = Vector2i(18, 18)
+physics_layer_0/collision_layer = 2
+physics_layer_1/collision_layer = 131072
+physics_layer_1/collision_mask = 65536
+sources/1 = SubResource("TileSetAtlasSource_wk7u0")
+sources/0 = SubResource("TileSetAtlasSource_rj02y")
+
+[sub_resource type="Curve2D" id="Curve2D_f2qaw"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 177, -4, 0, 0, 0, 0, -4, -4)
+}
+point_count = 2
+
+[sub_resource type="Animation" id="Animation_jjat1"]
+resource_name = "PlayMusic"
+length = 110.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_kmgop"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_76qul"]
+_data = {
+"PlayMusic": SubResource("Animation_jjat1"),
+"RESET": SubResource("Animation_kmgop")
+}
+
+[node name="level 07" type="Node2D"]
+position = Vector2(1420, 20)
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+scroll_scale = Vector2(0, 0)
+scroll_offset = Vector2(-2630, 75)
+
+[node name="LevelBackgroundSpriteTest" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(1784, 233)
+scale = Vector2(0.991151, 0.99115)
+texture = ExtResource("1_wln3s")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAAA=")
+tile_set = SubResource("TileSet_0olp1")
+
+[node name="FrontTiles" type="TileMapLayer" parent="."]
+z_index = 17
+tile_set = SubResource("TileSet_sodwt")
+
+[node name="PlayerTest" parent="." instance=ExtResource("6_yxqep")]
+position = Vector2(-103, -153)
+
+[node name="MagicArrow" parent="PlayerTest" instance=ExtResource("7_ckpfj")]
+position = Vector2(0, -2)
+sprite_frames = ExtResource("8_b63hm")
+
+[node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
+position = Vector2(0, -0.5)
+
+[node name="Coin" parent="." instance=ExtResource("9_yp658")]
+position = Vector2(70, -416)
+
+[node name="HealthItem" parent="." instance=ExtResource("10_n5rlg")]
+position = Vector2(618, -485)
+
+[node name="HealthItem2" parent="." instance=ExtResource("10_n5rlg")]
+position = Vector2(316, -513)
+
+[node name="Redkey" parent="." instance=ExtResource("11_a5g15")]
+position = Vector2(625, -433)
+
+[node name="Bluekey" parent="." instance=ExtResource("12_8n55d")]
+position = Vector2(580, -488)
+
+[node name="Yellowkey" parent="." instance=ExtResource("13_psemg")]
+position = Vector2(-5, -571)
+
+[node name="RedDoor" parent="." instance=ExtResource("14_sldkn")]
+position = Vector2(531, -486)
+
+[node name="BlueDoor" parent="." instance=ExtResource("15_opstp")]
+position = Vector2(621, -378)
+
+[node name="YellowDoor" parent="." instance=ExtResource("16_1r4p6")]
+position = Vector2(603, -378)
+
+[node name="Path2D" parent="." instance=ExtResource("17_85rmp")]
+position = Vector2(-55, -383)
+curve = SubResource("Curve2D_f2qaw")
+time_of_path = 4.0
+looping = true
+spritename = "HIRDRIH HORIZONTAL"
+
+[node name="PickableArrow" parent="." instance=ExtResource("18_ne6cb")]
+position = Vector2(-81, -133)
+
+[node name="CurrentUI" parent="." instance=ExtResource("19_0ypyv")]
+
+[node name="LifeCount" parent="CurrentUI" index="0"]
+offset_left = 228.0
+offset_top = 14.0
+offset_right = 228.0
+offset_bottom = 14.0
+
+[node name="ScoreCount" parent="CurrentUI" index="1"]
+offset_left = 162.0
+offset_top = 14.0
+offset_right = 162.0
+offset_bottom = 14.0
+
+[node name="SpiderChip2" parent="." instance=ExtResource("20_6h1py")]
+position = Vector2(38, -570)
+
+[node name="SpiderChip4" parent="." instance=ExtResource("20_6h1py")]
+position = Vector2(241, -569)
+
+[node name="ClickableBox" parent="." instance=ExtResource("21_d5bby")]
+position = Vector2(316, -476)
+
+[node name="ClickableMoxingObject" parent="." instance=ExtResource("22_krhjx")]
+position = Vector2(84, -539)
+
+[node name="ClickableMoxingObject2" parent="." instance=ExtResource("22_krhjx")]
+position = Vector2(171, -539)
+animationname = "RESET_2"
+
+[node name="EndLevelDoor" parent="." instance=ExtResource("23_h38vn")]
+position = Vector2(699, -387)
+
+[node name="MusicPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_76qul")
+}
+autoplay = "PlayMusic"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_avpyc")
+volume_db = 4.574
+bus = &"Music"
+
+[node name="SpiderChip3" parent="." instance=ExtResource("20_6h1py")]
+position = Vector2(132, -629)
+animationname = "RESET_2"
+
+[node name="GreenBarrier2" parent="." instance=ExtResource("25_s78de")]
+position = Vector2(435, -432)
+animationname = "DEACTIVE"
+otheranimationname = "ACTIVE"
+
+[node name="GreenBarrier3" parent="." instance=ExtResource("25_s78de")]
+position = Vector2(570, -432)
+animationname = "DEACTIVE"
+otheranimationname = "ACTIVE"
+
+[node name="GreenBarrier4" parent="." instance=ExtResource("25_s78de")]
+position = Vector2(545, -378)
+
+[node name="GreenOneButton" parent="." instance=ExtResource("26_8sgdg")]
+position = Vector2(415, -433)
+
+[node name="GreenOneButton2" parent="." instance=ExtResource("26_8sgdg")]
+position = Vector2(550, -433)
+
+[node name="GreenTwoButton" parent="." instance=ExtResource("27_w7mwe")]
+position = Vector2(497, -378)
+
+[editable path="PlayerTest"]
+[editable path="PlayerTest/MagicArrow"]
+[editable path="CurrentUI"]
