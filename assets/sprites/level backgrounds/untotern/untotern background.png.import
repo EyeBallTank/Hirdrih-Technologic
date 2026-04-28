@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0ixaxwr5hyag"
-path="res://.godot/imported/unto level 1 bg.png-019cc0f6c183a1d5c2829a59299c6e01.ctex"
+uid="uid://o6bofgr1riem"
+path="res://.godot/imported/untotern background.png-63caca84f60a18f2627cba55bab48513.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level backgrounds/untotern/unto level 1 bg.png"
-dest_files=["res://.godot/imported/unto level 1 bg.png-019cc0f6c183a1d5c2829a59299c6e01.ctex"]
+source_file="res://assets/sprites/level backgrounds/untotern/untotern background.png"
+dest_files=["res://.godot/imported/untotern background.png-63caca84f60a18f2627cba55bab48513.ctex"]
 
 [params]
 

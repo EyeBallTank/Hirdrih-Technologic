@@ -1,6 +1,6 @@
 [gd_scene load_steps=40 format=4 uid="uid://dud0pgsva7far"]
 
-[ext_resource type="Texture2D" uid="uid://cufy446jw1r4p" path="res://assets/sprites/level backgrounds/nortubel/nortubel background.png" id="1_wln3s"]
+[ext_resource type="Texture2D" uid="uid://o6bofgr1riem" path="res://assets/sprites/level backgrounds/untotern/untotern background.png" id="1_lohtr"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_ni2wt"]
 [ext_resource type="Texture2D" uid="uid://bgoyu8arp3gch" path="res://assets/sprites/basic four tiles test.png" id="3_081ga"]
 [ext_resource type="Texture2D" uid="uid://m8bieeq1ed0d" path="res://assets/sprites/tiles that block pushable sprites.png" id="4_ujmkm"]
@@ -199,7 +199,7 @@ scroll_offset = Vector2(-2630, 75)
 [node name="LevelBackgroundSpriteTest" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(1784, 233)
 scale = Vector2(0.991151, 0.99115)
-texture = ExtResource("1_wln3s")
+texture = ExtResource("1_lohtr")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAAA=")
