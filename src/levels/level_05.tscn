@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=4 uid="uid://c4mcnuxjplwn8"]
+[gd_scene load_steps=41 format=4 uid="uid://c4mcnuxjplwn8"]
 
 [ext_resource type="Texture2D" uid="uid://cufy446jw1r4p" path="res://assets/sprites/level backgrounds/nortubel/nortubel background.png" id="1_ewlqd"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_ewlnt"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="22_5onm6"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="23_mlatk"]
 [ext_resource type="AudioStream" uid="uid://dtcn432et1vka" path="res://assets/sounds/music/level 05 nortubel.ogg" id="24_76egk"]
+[ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="28_j5dr5"]
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="28_ueib0"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="29_704ag"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="30_40sd1"]
@@ -325,6 +326,12 @@ position = Vector2(550, -433)
 
 [node name="GreenTwoButton" parent="." instance=ExtResource("30_40sd1")]
 position = Vector2(497, -378)
+
+[node name="PushableCharacter" parent="." instance=ExtResource("28_j5dr5")]
+position = Vector2(-69, -188)
+
+[node name="PushableCharacter2" parent="." instance=ExtResource("28_j5dr5")]
+position = Vector2(-69, -285)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
