@@ -1,8 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://cnw80sasfqhmb"]
+[gd_scene load_steps=34 format=3 uid="uid://cnw80sasfqhmb"]
 
 [ext_resource type="Script" path="res://src/level items/bluekey.gd" id="1_ajfjm"]
 [ext_resource type="Texture2D" uid="uid://cm74c2h666lmp" path="res://assets/sprites/KEYS ANIMATION SPRITE TEST.png" id="2_bo4jv"]
 [ext_resource type="Texture2D" uid="uid://cnugde2kk1jkf" path="res://assets/sprites/level items/brinkaedea/A BLUE KEY BRINKAEDEA.png" id="2_q7p4s"]
+[ext_resource type="Texture2D" uid="uid://kinridbkibuu" path="res://assets/sprites/level items/nortubel/A SET OF KEYS NORTUBEL.png" id="4_a6y0g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p23as"]
 atlas = ExtResource("2_q7p4s")
@@ -71,6 +72,30 @@ region = Rect2(27, 300, 27, 30)
 [sub_resource type="AtlasTexture" id="AtlasTexture_u7ucq"]
 atlas = ExtResource("2_bo4jv")
 region = Rect2(27, 330, 27, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibv4q"]
+atlas = ExtResource("4_a6y0g")
+region = Rect2(17, 0, 17, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pa4h7"]
+atlas = ExtResource("4_a6y0g")
+region = Rect2(17, 25, 17, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycqn1"]
+atlas = ExtResource("4_a6y0g")
+region = Rect2(17, 50, 17, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw1a6"]
+atlas = ExtResource("4_a6y0g")
+region = Rect2(17, 75, 17, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbsdu"]
+atlas = ExtResource("4_a6y0g")
+region = Rect2(17, 100, 17, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvqck"]
+atlas = ExtResource("4_a6y0g")
+region = Rect2(17, 125, 17, 25)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e4oso"]
 animations = [{
@@ -143,6 +168,38 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibv4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibv4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibv4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibv4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pa4h7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycqn1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw1a6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbsdu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvqck")
+}],
+"loop": true,
+"name": &"nortubel",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
@@ -281,7 +338,7 @@ script = ExtResource("1_ajfjm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -1)
 sprite_frames = SubResource("SpriteFrames_e4oso")
-animation = &"brinkaedea"
+animation = &"nortubel"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fswyh")

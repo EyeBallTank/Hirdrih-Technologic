@@ -230,12 +230,15 @@ spritename = "nortubel"
 
 [node name="Redkey" parent="." instance=ExtResource("11_uixlq")]
 position = Vector2(-7, -203)
+spritename = "nortubel"
 
 [node name="Bluekey" parent="." instance=ExtResource("12_5hqt8")]
 position = Vector2(-10, -172)
+spritename = "nortubel"
 
 [node name="Yellowkey" parent="." instance=ExtResource("13_bxtqp")]
 position = Vector2(-5, -235)
+spritename = "nortubel"
 
 [node name="RedDoor" parent="." instance=ExtResource("14_af1xe")]
 position = Vector2(122, -178)
