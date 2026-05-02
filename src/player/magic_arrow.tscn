@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://0ubg1yl6f1qq"]
+[gd_scene load_steps=15 format=3 uid="uid://0ubg1yl6f1qq"]
 
 [ext_resource type="Script" path="res://src/player/magic_arrow.gd" id="1_epmcy"]
 [ext_resource type="SpriteFrames" uid="uid://fhjgikm0ywk3" path="res://assets/sprites/play actor/leonarrow.tres" id="2_f06wb"]
 [ext_resource type="AudioStream" uid="uid://6hacv12f11ru" path="res://assets/sounds/player/456394__webs206__click-mouse-computer.mp3" id="3_06si3"]
+[ext_resource type="Texture2D" uid="uid://dnyg6fox0s17p" path="res://assets/sprites/MAIN MAGIC CURSORS PIXEL TEST warning thing.png" id="4_t681n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flve7"]
 size = Vector2(14, 20)
@@ -78,6 +79,31 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5nqoo"]
 size = Vector2(14, 20)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnw2i"]
+atlas = ExtResource("4_t681n")
+region = Rect2(0, 0, 5, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3c6j2"]
+atlas = ExtResource("4_t681n")
+region = Rect2(5, 0, 5, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0hx24"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnw2i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3c6j2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_166sk"]
+size = Vector2(14, 20)
+
 [node name="MagicArrow" type="CharacterBody2D"]
 z_index = 13
 collision_layer = 512
@@ -116,4 +142,18 @@ stream = ExtResource("3_06si3")
 volume_db = 3.448
 bus = &"Sounds"
 
+[node name="FeedbackSign" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, -11)
+sprite_frames = SubResource("SpriteFrames_0hx24")
+autoplay = "default"
+
+[node name="FeedbackDetector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 96
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FeedbackDetector"]
+shape = SubResource("RectangleShape2D_166sk")
+
 [connection signal="area_entered" from="CanArrowBeSelected" to="." method="_on_can_arrow_be_selected_area_entered"]
+[connection signal="area_entered" from="FeedbackDetector" to="." method="_on_feedback_detector_area_entered"]
+[connection signal="area_exited" from="FeedbackDetector" to="." method="_on_feedback_detector_area_exited"]

@@ -25,6 +25,7 @@ extends CharacterBody2D
 @onready var animationplayer = $AnimationPlayer
 
 @onready var soundplayer = $AudioStreamPlayer
+@onready var feedbacksign = $FeedbackSign
 
 @export var movement_speed : float = 200
 var character_direction : Vector2
@@ -38,6 +39,7 @@ var state = UNACTIVE
 var canibeused = false
 
 func ready():
+	feedbacksign.visible = false
 	animationplayer.play("RESET")
 	Signals.player_died.connect(_even_arrow_dies)
 	
@@ -59,8 +61,10 @@ func _physics_process(delta):
 		DEAD:
 			canibeused = false
 			visible = false
+			feedbacksign.visible = false
 		
 		UNACTIVE:
+			feedbacksign.visible = false
 			visible = false
 			if Input.is_action_just_pressed("activatemouse") and canibeused == true:
 				state = ACTIVE
@@ -125,3 +129,22 @@ func _on_can_arrow_be_selected_area_entered(area: Area2D) -> void:
 #
 #func _arrow_yes_when_mainstate():
 	#state = ACTIVE
+
+#
+#func _on_area_that_clicks_area_entered(area: Area2D) -> void:
+	#if area.is_in_group("clickable_warns_the_arrow"):
+		#feedbacksign.visible = true
+#
+#
+#func _on_area_that_clicks_area_exited(area: Area2D) -> void:
+
+
+
+func _on_feedback_detector_area_entered(area: Area2D) -> void:
+	if area.is_in_group("clickable_warns_the_arrow"):
+		feedbacksign.visible = true
+
+
+func _on_feedback_detector_area_exited(area: Area2D) -> void:
+	if area.is_in_group("clickable_warns_the_arrow"):
+		feedbacksign.visible = false

@@ -120,7 +120,7 @@ _data = {
 "RESET": SubResource("Animation_0qtu7")
 }
 
-[node name="BlueButton" type="Area2D"]
+[node name="BlueButton" type="Area2D" groups=["clickable_warns_the_arrow"]]
 collision_layer = 34
 collision_mask = 16897
 script = ExtResource("1_yi5cu")

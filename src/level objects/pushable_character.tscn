@@ -241,7 +241,7 @@ position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_kn3ca")
 disabled = true
 
-[node name="ClickArea" type="Area2D" parent="."]
+[node name="ClickArea" type="Area2D" parent="." groups=["clickable_warns_the_arrow"]]
 collision_layer = 64
 collision_mask = 16384
 

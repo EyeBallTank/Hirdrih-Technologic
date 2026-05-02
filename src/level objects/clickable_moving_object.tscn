@@ -515,7 +515,7 @@ position = Vector2(0, -11)
 sprite_frames = SubResource("SpriteFrames_swyel")
 animation = &"normal"
 
-[node name="ClickArea" type="Area2D" parent="."]
+[node name="ClickArea" type="Area2D" parent="." groups=["clickable_warns_the_arrow"]]
 position = Vector2(0, -18)
 collision_layer = 32
 collision_mask = 16384
