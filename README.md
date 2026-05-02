@@ -52,3 +52,4 @@ Thanks to dragonforge-dev, I added "get_parent" to where it said "add_child(proj
 * Webs206 on Freesound (Sound effect for clicking arrow)
 * dragonforge-dev (Helped me fix the issue with projectiles not moving independently from source entities)
 * NADLABS (Used a tutorial to make working code for the Hirdrio enemy)
+* JuicyChickenDev (For feedback, such as indication for something clickable by the arrow)

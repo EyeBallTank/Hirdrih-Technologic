@@ -130,14 +130,6 @@ func _on_can_arrow_be_selected_area_entered(area: Area2D) -> void:
 #func _arrow_yes_when_mainstate():
 	#state = ACTIVE
 
-#
-#func _on_area_that_clicks_area_entered(area: Area2D) -> void:
-	#if area.is_in_group("clickable_warns_the_arrow"):
-		#feedbacksign.visible = true
-#
-#
-#func _on_area_that_clicks_area_exited(area: Area2D) -> void:
-
 
 
 func _on_feedback_detector_area_entered(area: Area2D) -> void:
