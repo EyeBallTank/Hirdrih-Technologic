@@ -293,7 +293,8 @@ position = Vector2(171, -539)
 animationname = "RESET_2"
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_mlatk")]
-position = Vector2(699, -387)
+position = Vector2(161, -161)
+spritename = "nortubel"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -334,9 +335,11 @@ position = Vector2(497, -378)
 
 [node name="PushableCharacter" parent="." instance=ExtResource("28_j5dr5")]
 position = Vector2(-69, -188)
+spritename = "nortubel"
 
 [node name="PushableCharacter2" parent="." instance=ExtResource("28_j5dr5")]
 position = Vector2(-69, -285)
+spritename = "nortubel"
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

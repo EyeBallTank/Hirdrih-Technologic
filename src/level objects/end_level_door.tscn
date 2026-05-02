@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://c08yalyhib3i5"]
+[gd_scene load_steps=10 format=3 uid="uid://c08yalyhib3i5"]
 
 [ext_resource type="Script" path="res://src/level objects/end_level_door.gd" id="1_xw7c1"]
 [ext_resource type="Texture2D" uid="uid://ca5ubw554dnr7" path="res://assets/sprites/ENDLEVEL DOOR SPRITE TEST.png" id="2_4wtje"]
 [ext_resource type="Texture2D" uid="uid://c3w4mk5cjjdye" path="res://assets/sprites/level objects/brinkaedea/A END DOOR BRINKAEDEA.png" id="2_h1tdo"]
+[ext_resource type="Texture2D" uid="uid://dshq7h7x24kl1" path="res://assets/sprites/level objects/nortubel/A END DOOR NORTUBEL.png" id="4_18tah"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fwpr5"]
 atlas = ExtResource("2_h1tdo")
@@ -10,6 +11,10 @@ region = Rect2(0, 0, 28, 55)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g5uq5"]
 atlas = ExtResource("2_4wtje")
+region = Rect2(0, 0, 28, 55)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6kwv"]
+atlas = ExtResource("4_18tah")
 region = Rect2(0, 0, 28, 55)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mvy52"]
@@ -29,6 +34,14 @@ animations = [{
 "loop": false,
 "name": &"hirdrih",
 "speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6kwv")
+}],
+"loop": false,
+"name": &"nortubel",
+"speed": 0.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3afbf"]
@@ -40,7 +53,7 @@ script = ExtResource("1_xw7c1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mvy52")
-animation = &"brinkaedea"
+animation = &"nortubel"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_3afbf")
