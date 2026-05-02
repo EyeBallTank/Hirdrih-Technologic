@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwoouhxmhsvc8"
-path="res://.godot/imported/NORT TILE PASSABLE.png-db5cd7c9838f3c566416a7a7f2c1051c.ctex"
+uid="uid://3n8y13ghpuaf"
+path="res://.godot/imported/MAIN NORTUBEL TILES SPECIFIC.png-45b942ee653be0b81adea7c618565935.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/tile sets/nortubel/NORT TILE PASSABLE.png"
-dest_files=["res://.godot/imported/NORT TILE PASSABLE.png-db5cd7c9838f3c566416a7a7f2c1051c.ctex"]
+source_file="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES SPECIFIC.png"
+dest_files=["res://.godot/imported/MAIN NORTUBEL TILES SPECIFIC.png-45b942ee653be0b81adea7c618565935.ctex"]
 
 [params]
 

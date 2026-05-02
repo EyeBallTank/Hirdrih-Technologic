@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ve4ki002y8j0"
-path="res://.godot/imported/SINGLE NORT TILE DOORWAY.png-c54e174fc1af4e5e29f173f599cf228f.ctex"
+uid="uid://pqtsmo04tp5o"
+path="res://.godot/imported/MAIN NORTUBEL TILES JUMPABLE.png-2beb731eb3d22b8496442206d01fdb1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/tile sets/nortubel/SINGLE NORT TILE DOORWAY.png"
-dest_files=["res://.godot/imported/SINGLE NORT TILE DOORWAY.png-c54e174fc1af4e5e29f173f599cf228f.ctex"]
+source_file="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES JUMPABLE.png"
+dest_files=["res://.godot/imported/MAIN NORTUBEL TILES JUMPABLE.png-2beb731eb3d22b8496442206d01fdb1c.ctex"]
 
 [params]
 

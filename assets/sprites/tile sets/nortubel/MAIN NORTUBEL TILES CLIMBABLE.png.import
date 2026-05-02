@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://s1wwkdhqo6vv"
-path="res://.godot/imported/nortprop flag nortubel.png-393efc0f3babff7e200599fa208cb5a6.ctex"
+uid="uid://cn6mtjgxbet6r"
+path="res://.godot/imported/MAIN NORTUBEL TILES CLIMBABLE.png-53d686f4b6d83a0f325066e9d76207c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/tile sets/nortubel/nortprop flag nortubel.png"
-dest_files=["res://.godot/imported/nortprop flag nortubel.png-393efc0f3babff7e200599fa208cb5a6.ctex"]
+source_file="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES CLIMBABLE.png"
+dest_files=["res://.godot/imported/MAIN NORTUBEL TILES CLIMBABLE.png-53d686f4b6d83a0f325066e9d76207c1.ctex"]
 
 [params]
 
