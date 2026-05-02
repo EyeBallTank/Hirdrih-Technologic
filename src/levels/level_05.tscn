@@ -203,7 +203,7 @@ scale = Vector2(0.991151, 0.99115)
 texture = ExtResource("1_ewlqd")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAAA=")
+tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAAD9//n/AQABAAAAAAD+//n/AQABAAAAAAD///n/AQABAAAAAAAAAPn/AQABAAAAAAABAPn/AQABAAAAAAACAPn/AQABAAAAAAADAPn/AQABAAAAAAAEAPn/AQABAAAAAAAFAPn/AQABAAAAAAAGAPn/AQABAAAAAAAHAPn/AQABAAAAAAA=")
 tile_set = SubResource("TileSet_0olp1")
 
 [node name="FrontTiles" type="TileMapLayer" parent="."]
@@ -221,31 +221,31 @@ sprite_frames = ExtResource("8_hrn3v")
 position = Vector2(0, -0.5)
 
 [node name="Coin" parent="." instance=ExtResource("9_1l060")]
-position = Vector2(70, -416)
+position = Vector2(73, -222)
 
 [node name="HealthItem" parent="." instance=ExtResource("10_702g2")]
 position = Vector2(618, -485)
 
 [node name="HealthItem2" parent="." instance=ExtResource("10_702g2")]
-position = Vector2(316, -513)
+position = Vector2(42, -228)
 
 [node name="Redkey" parent="." instance=ExtResource("11_uixlq")]
-position = Vector2(625, -433)
+position = Vector2(-7, -203)
 
 [node name="Bluekey" parent="." instance=ExtResource("12_5hqt8")]
-position = Vector2(580, -488)
+position = Vector2(-10, -172)
 
 [node name="Yellowkey" parent="." instance=ExtResource("13_bxtqp")]
-position = Vector2(-5, -571)
+position = Vector2(-5, -235)
 
 [node name="RedDoor" parent="." instance=ExtResource("14_af1xe")]
-position = Vector2(531, -486)
+position = Vector2(122, -178)
 
 [node name="BlueDoor" parent="." instance=ExtResource("15_0lu77")]
-position = Vector2(621, -378)
+position = Vector2(63, -177)
 
 [node name="YellowDoor" parent="." instance=ExtResource("16_08g78")]
-position = Vector2(603, -378)
+position = Vector2(27, -178)
 
 [node name="Path2D" parent="." instance=ExtResource("17_j75wa")]
 position = Vector2(-55, -383)
