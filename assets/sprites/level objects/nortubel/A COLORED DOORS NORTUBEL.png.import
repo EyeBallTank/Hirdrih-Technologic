@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e31dmhhhpfdi"
-path="res://.godot/imported/red key.PNG-40a7f2891be9205ed08ac68c9e458b74.ctex"
+uid="uid://dy31uisisp055"
+path="res://.godot/imported/A COLORED DOORS NORTUBEL.png-d684e3c282875e5bcaa19c88de492136.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level items/nortubel/red key.PNG"
-dest_files=["res://.godot/imported/red key.PNG-40a7f2891be9205ed08ac68c9e458b74.ctex"]
+source_file="res://assets/sprites/level objects/nortubel/A COLORED DOORS NORTUBEL.png"
+dest_files=["res://.godot/imported/A COLORED DOORS NORTUBEL.png-d684e3c282875e5bcaa19c88de492136.ctex"]
 
 [params]
 

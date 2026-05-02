@@ -242,12 +242,15 @@ spritename = "nortubel"
 
 [node name="RedDoor" parent="." instance=ExtResource("14_af1xe")]
 position = Vector2(122, -178)
+spritename = "nortubel"
 
 [node name="BlueDoor" parent="." instance=ExtResource("15_0lu77")]
 position = Vector2(63, -177)
+spritename = "nortubel"
 
 [node name="YellowDoor" parent="." instance=ExtResource("16_08g78")]
 position = Vector2(27, -178)
+spritename = "nortubel"
 
 [node name="Path2D" parent="." instance=ExtResource("17_j75wa")]
 position = Vector2(-55, -383)
