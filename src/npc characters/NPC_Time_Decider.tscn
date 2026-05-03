@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bovsvbppyup44"]
+[gd_scene load_steps=9 format=3 uid="uid://bovsvbppyup44"]
 
 [ext_resource type="Script" path="res://src/npc characters/npc_time_decider.gd" id="1_qsk2t"]
 [ext_resource type="Texture2D" uid="uid://b7y6quby75f8x" path="res://assets/sprites/npc actors/hirdrih/NPC SPRITE TIME DECIDER.png" id="1_re7rc"]
+[ext_resource type="Texture2D" uid="uid://dej14as0gh87" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT TIME DECIDER.png" id="3_qm0jd"]
 [ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="3_soik4"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="4_g2jw3"]
 
@@ -37,6 +38,11 @@ shape = SubResource("RectangleShape2D_vkhlk")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="NPCPortrait" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(141, 264)
+scale = Vector2(4.40741, 4.40741)
+texture = ExtResource("3_qm0jd")
+
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
 offset_top = 445.0
@@ -54,6 +60,25 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("4_g2jw3")
 theme_override_font_sizes/font_size = 23
 text = "TIME_DECIDER_LINE_T"
+
+[node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 399.0
+offset_right = 415.0
+offset_bottom = 440.0
+texture = ExtResource("3_soik4")
+region_rect = Rect2(0, 0, 224, 41)
+
+[node name="Label2" type="Label" parent="CanvasLayer/NameTitle"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 1065.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_g2jw3")
+theme_override_font_sizes/font_size = 20
+text = "TIME_DECIDER_NAME_T"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
