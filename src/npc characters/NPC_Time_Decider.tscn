@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bovsvbppyup44"]
+[gd_scene load_steps=10 format=3 uid="uid://bovsvbppyup44"]
 
 [ext_resource type="Script" path="res://src/npc characters/npc_time_decider.gd" id="1_qsk2t"]
 [ext_resource type="Texture2D" uid="uid://b7y6quby75f8x" path="res://assets/sprites/npc actors/hirdrih/NPC SPRITE TIME DECIDER.png" id="1_re7rc"]
+[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="3_abuv8"]
 [ext_resource type="Texture2D" uid="uid://dej14as0gh87" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT TIME DECIDER.png" id="3_qm0jd"]
 [ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="3_soik4"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="4_g2jw3"]
@@ -35,6 +36,10 @@ animation = &"new_animation"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_vkhlk")
+
+[node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
+position = Vector2(14, -22)
+texture = ExtResource("3_abuv8")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
