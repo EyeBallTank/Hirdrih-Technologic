@@ -1,47 +1,48 @@
-[gd_scene load_steps=8 format=3 uid="uid://daldjw1o8k88p"]
+[gd_scene load_steps=8 format=3 uid="uid://bovsvbppyup44"]
 
-[ext_resource type="Script" path="res://src/npc characters/hint_book_scene.gd" id="1_558ar"]
-[ext_resource type="Texture2D" uid="uid://bjiqon3hoh57p" path="res://assets/sprites/HINT BOX TEST SPRITE.png" id="1_kgn57"]
-[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="2_ljqyq"]
-[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="4_qv38e"]
+[ext_resource type="Script" path="res://src/npc characters/npc_time_decider.gd" id="1_qsk2t"]
+[ext_resource type="Texture2D" uid="uid://b7y6quby75f8x" path="res://assets/sprites/npc actors/hirdrih/NPC SPRITE TIME DECIDER.png" id="1_re7rc"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="3_soik4"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="4_g2jw3"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_57ywo"]
-atlas = ExtResource("1_kgn57")
-region = Rect2(0, 0, 37, 24)
+[sub_resource type="AtlasTexture" id="AtlasTexture_nxaf7"]
+atlas = ExtResource("1_re7rc")
+region = Rect2(0, 0, 10, 27)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p25ly"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_57ywo")
+"texture": SubResource("AtlasTexture_nxaf7")
 }],
 "loop": false,
-"name": &"hirdrihbox",
+"name": &"new_animation",
 "speed": 0.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
-size = Vector2(36, 24)
+size = Vector2(21, 24)
 
-[node name="HintBookScene" type="Area2D"]
+[node name="NPCTimeDecider" type="Area2D"]
 collision_layer = 8
-script = ExtResource("1_558ar")
+script = ExtResource("1_qsk2t")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_p25ly")
-animation = &"hirdrihbox"
+animation = &"new_animation"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_vkhlk")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
-offset_top = 519.0
+offset_top = 445.0
 offset_right = 1131.0
 offset_bottom = 631.0
-texture = ExtResource("2_ljqyq")
+texture = ExtResource("3_soik4")
 
 [node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect"]
 layout_mode = 0
@@ -50,9 +51,9 @@ offset_top = 16.0
 offset_right = 1083.0
 offset_bottom = 96.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("4_qv38e")
+theme_override_fonts/font = ExtResource("4_g2jw3")
 theme_override_font_sizes/font_size = 23
-text = "HIRDRIH_TUTORIAL_TEXT_1"
+text = "TIME_DECIDER_LINE_T"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
