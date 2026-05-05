@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=3 uid="uid://2oam4kmqc272"]
+
+[ext_resource type="Script" path="res://src/npc characters/npc_time_decider.gd" id="1_r8yjr"]
+[ext_resource type="Texture2D" uid="uid://bu4ph2a5nr4c1" path="res://assets/sprites/npc actors/hirdrih/NPC SPRITE DAVY LOCK.png" id="2_uib20"]
+[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="3_j4kbn"]
+[ext_resource type="Texture2D" uid="uid://bvbvud0fc1xpr" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT DAVY LOCK.png" id="4_fvnq5"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="5_op6og"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_oo13j"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p25ly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uib20")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
+size = Vector2(21, 24)
+
+[node name="NPCDavyLock" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_r8yjr")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p25ly")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_vkhlk")
+
+[node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
+position = Vector2(14, -22)
+texture = ExtResource("3_j4kbn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NPCPortrait" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(141, 264)
+scale = Vector2(4.40741, 4.40741)
+texture = ExtResource("4_fvnq5")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 631.0
+texture = ExtResource("5_op6og")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_oo13j")
+theme_override_font_sizes/font_size = 23
+text = "DAVY_LOCK_NPC_TALK_T"
+
+[node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 399.0
+offset_right = 430.0
+offset_bottom = 440.0
+texture = ExtResource("5_op6og")
+region_rect = Rect2(0, 0, 224, 41)
+
+[node name="Label2" type="Label" parent="CanvasLayer/NameTitle"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 1065.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_oo13j")
+theme_override_font_sizes/font_size = 20
+text = "Davy Plimsoll Dutch dot Lock"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
