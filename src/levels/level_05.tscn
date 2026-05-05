@@ -916,6 +916,8 @@ spritename = "nortubel"
 
 [node name="PushableBarrier" parent="." instance=ExtResource("30_gkc11")]
 position = Vector2(88, -159)
+spriteforclosed = "defaultnortubel"
+spriteforopen = "opennortubel"
 
 [node name="PushableButton" parent="." instance=ExtResource("31_kxtny")]
 position = Vector2(-34, -135)

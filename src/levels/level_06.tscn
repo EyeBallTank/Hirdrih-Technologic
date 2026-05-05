@@ -999,6 +999,8 @@ position = Vector2(-48, -112)
 
 [node name="PushableBarrier" parent="." instance=ExtResource("35_kw100")]
 position = Vector2(-177, -134)
+spriteforclosed = "defaultbrinkaedea"
+spriteforopen = "openbrinkaedea"
 
 [node name="PushableButton" parent="." instance=ExtResource("36_or26u")]
 position = Vector2(-151, -103)
