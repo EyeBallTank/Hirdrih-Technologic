@@ -146,7 +146,7 @@ position = Vector2(321, -290)
 position = Vector2(495, -290)
 
 [node name="HealthItem" parent="." instance=ExtResource("8_2mcn8")]
-position = Vector2(131, -57)
+position = Vector2(-21, -57)
 
 [node name="HealthItem2" parent="." instance=ExtResource("8_2mcn8")]
 position = Vector2(554, -50)
@@ -272,7 +272,7 @@ position = Vector2(504, -10)
 position = Vector2(82, 11)
 
 [node name="Convo_Borhr_Otto" parent="." instance=ExtResource("25_bv5vk")]
-position = Vector2(-251, -499)
+position = Vector2(125, -48.5)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

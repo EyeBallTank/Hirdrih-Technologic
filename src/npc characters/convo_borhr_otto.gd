@@ -26,6 +26,10 @@ func _physics_process(delta: float) -> void:
 		#portrait.visible = true
 		canvaslayer.visible = true
 		animation.play("Conversation")
+		#animation.seek(0)
+		#animation.stop()
+		#if Input.is_action_just_pressed("climbdown"):
+			#animation.advance(4)
 	elif talk_to_me == false:
 		#textbox.visible = false
 		#the_name.visible = false
