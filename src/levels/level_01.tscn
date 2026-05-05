@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=54 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -46,6 +46,7 @@
 [ext_resource type="AudioStream" uid="uid://bgxyg78chvfrj" path="res://assets/sounds/music/level 01 hirdrih 1.ogg" id="36_1os10"]
 [ext_resource type="PackedScene" uid="uid://bovsvbppyup44" path="res://src/npc characters/NPC_Time_Decider.tscn" id="46_itgr8"]
 [ext_resource type="PackedScene" uid="uid://daldjw1o8k88p" path="res://src/npc characters/hint_book_scene.tscn" id="46_iw4ow"]
+[ext_resource type="PackedScene" uid="uid://fgm43uh0jb4x" path="res://src/npc characters/NPC_Avietta.tscn" id="47_b2iat"]
 
 [sub_resource type="Curve2D" id="Curve2D_f2qaw"]
 resource_local_to_scene = true
@@ -366,6 +367,9 @@ bus = &"Music"
 
 [node name="NPCTimeDecider" parent="." instance=ExtResource("46_itgr8")]
 position = Vector2(50, -157.5)
+
+[node name="NPCAvietta" parent="." instance=ExtResource("47_b2iat")]
+position = Vector2(2053, -480.5)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

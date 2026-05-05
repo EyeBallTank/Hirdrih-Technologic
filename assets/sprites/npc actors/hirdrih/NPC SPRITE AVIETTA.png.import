@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caw4md86us0t1"
-path="res://.godot/imported/AVIETTA SPRITES NPC.png-87d51ff8bbe0197f780fba5852366e43.ctex"
+uid="uid://dj0s7qqogoym3"
+path="res://.godot/imported/NPC SPRITE AVIETTA.png-98c94f2fe6a94b0faa1c1b582ffbbce7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/hirdrih/AVIETTA SPRITES NPC.png"
-dest_files=["res://.godot/imported/AVIETTA SPRITES NPC.png-87d51ff8bbe0197f780fba5852366e43.ctex"]
+source_file="res://assets/sprites/npc actors/hirdrih/NPC SPRITE AVIETTA.png"
+dest_files=["res://.godot/imported/NPC SPRITE AVIETTA.png-98c94f2fe6a94b0faa1c1b582ffbbce7.ctex"]
 
 [params]
 
