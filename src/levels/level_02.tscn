@@ -1,10 +1,9 @@
-[gd_scene load_steps=31 format=4 uid="uid://ck7da5ydeqbug"]
+[gd_scene load_steps=30 format=4 uid="uid://ck7da5ydeqbug"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_oblxw"]
 [ext_resource type="TileSet" uid="uid://wlkcvgc22c57" path="res://assets/sprites/tile sets/hirdrih/hirdrih_tileset.tres" id="2_v788c"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="15_w3ljp"]
 [ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="16_he6g8"]
-[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="17_wtvyi"]
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="18_b1noj"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="19_g8x27"]
 [ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="21_6vk32"]
@@ -104,7 +103,8 @@ position = Vector2(-55, -150)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("16_he6g8")]
 position = Vector2(0, -2)
-sprite_frames = ExtResource("17_wtvyi")
+nonclicksprite = "basicmouseotto"
+yesclicksprite = "clickedmouseotto"
 
 [node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
 position = Vector2(0, -0.5)

@@ -112,7 +112,7 @@ script = ExtResource("1_epmcy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_f06wb")
-animation = &"basicmouse"
+animation = &"clickedmouseotto"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_flve7")

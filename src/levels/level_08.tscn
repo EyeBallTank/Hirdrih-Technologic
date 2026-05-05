@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=4 uid="uid://c4epnqayi3uev"]
+[gd_scene load_steps=39 format=4 uid="uid://c4epnqayi3uev"]
 
 [ext_resource type="Texture2D" uid="uid://o6bofgr1riem" path="res://assets/sprites/level backgrounds/untotern/untotern background.png" id="1_bhta3"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_6aiq4"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://b2548n3ogjk8r" path="res://assets/sprites/crossable tiles that block pushable sprites.png" id="5_hny8w"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="6_2xrot"]
 [ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="7_u4mns"]
-[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="8_upv5p"]
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="9_rnrls"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="10_4a8uy"]
 [ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="11_y1jy5"]
@@ -214,7 +213,6 @@ position = Vector2(-103, -153)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("7_u4mns")]
 position = Vector2(0, -2)
-sprite_frames = ExtResource("8_upv5p")
 
 [node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
 position = Vector2(0, -0.5)

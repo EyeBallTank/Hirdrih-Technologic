@@ -19,13 +19,16 @@ extends CharacterBody2D
 #The system needs to be worked on.
 @onready var sprite = $AnimatedSprite2D
 #@export var arrowskin = "res://assets/sprites/play actor/leonarrow.tres"
-@export var sprite_frames: SpriteFrames
+#@export var sprite_frames: SpriteFrames
 #res://assets/sprites/play actor/ottoarrow.tres
 @onready var areathatclicks = $AreaThatClicks
 @onready var animationplayer = $AnimationPlayer
 
 @onready var soundplayer = $AudioStreamPlayer
 @onready var feedbacksign = $FeedbackSign
+
+@export var nonclicksprite = "basicmouseleon"
+@export var yesclicksprite = "clickedmouseleon"
 
 @export var movement_speed : float = 200
 var character_direction : Vector2
@@ -47,8 +50,8 @@ func ready():
 #	Signals.can_the_arrow_appear_when_mainstate.connect(_arrow_yes_when_mainstate)
 #	Signals.Callable("playerpickeduparrow", self, "_thearrowworksnow")
 #	Signals.playerpickeduparrow.connect(_thearrowworksnow)
-	sprite_frames = load("res://assets/sprites/play actor/leonarrow.tres")
-	sprite.set_sprite_frames()
+	#sprite_frames = load("res://assets/sprites/play actor/leonarrow.tres")
+	#sprite.set_sprite_frames()
 	
 	#sprite.sprite_frames = load(arrowskin)
 
@@ -77,7 +80,7 @@ func _physics_process(delta):
 			elif Signals.can_i_turn_off_the_arrow == true:
 				state = UNACTIVE
 
-			sprite.play("basicmouse")
+			sprite.play(nonclicksprite)
 			#clicking_is_off()
 			visible = true
 			
@@ -92,7 +95,7 @@ func _physics_process(delta):
 
 			move_and_slide()
 			if Input.is_action_pressed("shoot"):
-				sprite.play("clickedmouse")
+				sprite.play(yesclicksprite)
 				animationplayer.play("clicking")
 				#clicking_is_on()
 				#amiclicking = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://c4mcnuxjplwn8"]
+[gd_scene load_steps=41 format=4 uid="uid://c4mcnuxjplwn8"]
 
 [ext_resource type="Texture2D" uid="uid://cufy446jw1r4p" path="res://assets/sprites/level backgrounds/nortubel/nortubel background.png" id="1_ewlqd"]
 [ext_resource type="Texture2D" uid="uid://cn6mtjgxbet6r" path="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES CLIMBABLE.png" id="2_qdk2l"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://ea5bfes18os4" path="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES PASSABLE.png" id="6_t273p"]
 [ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="7_55d40"]
 [ext_resource type="Texture2D" uid="uid://3n8y13ghpuaf" path="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES SPECIFIC.png" id="7_g8vfl"]
-[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="8_hrn3v"]
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="9_1l060"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="10_702g2"]
 [ext_resource type="PackedScene" uid="uid://doqfbrrutw3xi" path="res://src/level items/redkey.tscn" id="11_uixlq"]
@@ -787,7 +786,6 @@ position = Vector2(-103, -153)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("7_55d40")]
 position = Vector2(0, -2)
-sprite_frames = ExtResource("8_hrn3v")
 
 [node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
 position = Vector2(0, -0.5)

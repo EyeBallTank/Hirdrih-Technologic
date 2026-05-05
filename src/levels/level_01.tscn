@@ -1,10 +1,9 @@
-[gd_scene load_steps=58 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=57 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
 [ext_resource type="TileSet" uid="uid://wlkcvgc22c57" path="res://assets/sprites/tile sets/hirdrih/hirdrih_tileset.tres" id="2_c3aba"]
 [ext_resource type="Texture2D" uid="uid://on3la5p4yc07" path="res://assets/sprites/TUTORIAL BOARD SPRITE 01.png" id="4_kko2p"]
-[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="4_l4shw"]
 [ext_resource type="Texture2D" uid="uid://bir1f87b6qfpx" path="res://assets/sprites/TUTORIAL BOARD SPRITE 02.png" id="5_wne5j"]
 [ext_resource type="Texture2D" uid="uid://hg6dafdi7myp" path="res://assets/sprites/TUTORIAL BOARD SPRITE 03.png" id="6_lsmb3"]
 [ext_resource type="Texture2D" uid="uid://deck3loucs6va" path="res://assets/sprites/TUTORIAL BOARD SPRITE 04.png" id="7_ecqel"]
@@ -205,7 +204,6 @@ position = Vector2(-80, -191)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("10_dgw8u")]
 position = Vector2(0, -2)
-sprite_frames = ExtResource("4_l4shw")
 
 [node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
 position = Vector2(0, -0.5)

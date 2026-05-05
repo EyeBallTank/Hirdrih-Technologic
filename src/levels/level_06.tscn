@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=4 uid="uid://dvpp0ncynvjit"]
+[gd_scene load_steps=51 format=4 uid="uid://dvpp0ncynvjit"]
 
 [ext_resource type="Texture2D" uid="uid://0k433g8pk10o" path="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png" id="1_q6ayw"]
 [ext_resource type="Texture2D" uid="uid://hu7cmp7hfpqa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 01.png" id="2_svb3t"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="7_g6wo6"]
 [ext_resource type="Texture2D" uid="uid://d0mpvt2we3kn5" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES PROPS 01.png" id="7_hgv10"]
 [ext_resource type="Texture2D" uid="uid://ba6yat1pt3471" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES PROPS 02.png" id="8_3f65h"]
-[ext_resource type="SpriteFrames" uid="uid://bml3f1gtbsho2" path="res://assets/sprites/play actor/ottoarrow.tres" id="8_25gl0"]
 [ext_resource type="Texture2D" uid="uid://cdcolvcy2nkpa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES SOLID.png" id="9_6egc3"]
 [ext_resource type="PackedScene" uid="uid://cxsgrjmyftcxj" path="res://src/level items/coin.tscn" id="9_judhj"]
 [ext_resource type="PackedScene" uid="uid://rkxohx8p0k83" path="res://src/level items/health item.tscn" id="10_3xf2v"]
@@ -863,7 +862,8 @@ position = Vector2(-103, -153)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("7_g6wo6")]
 position = Vector2(0, -2)
-sprite_frames = ExtResource("8_25gl0")
+nonclicksprite = "basicmouseotto"
+yesclicksprite = "clickedmouseotto"
 
 [node name="CollisionShape2D" parent="PlayerTest/MagicArrow/CanArrowBeSelected" index="0"]
 position = Vector2(0, -0.5)
