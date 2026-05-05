@@ -1,0 +1,116 @@
+[gd_scene load_steps=13 format=3 uid="uid://b7u46a0ulyjcs"]
+
+[ext_resource type="Texture2D" uid="uid://do3dpjiov5bqw" path="res://assets/sprites/npc actors/hirdrih/CONVO SPRITE BORHR OTTO.png" id="1_nhqex"]
+[ext_resource type="Texture2D" uid="uid://1kt260j2fw8i" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT BORHR.png" id="3_5rifj"]
+[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="3_51kyn"]
+[ext_resource type="Texture2D" uid="uid://dfyd0qdgvddbu" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT OTTO.png" id="4_n0jgr"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="5_6wkjy"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_dqemf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sy5x0"]
+atlas = ExtResource("1_nhqex")
+region = Rect2(0, 0, 43, 61)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p25ly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sy5x0")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
+size = Vector2(67, 67)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q5tqb"]
+atlas = ExtResource("3_5rifj")
+region = Rect2(0, 0, 54, 57)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_doh7v"]
+atlas = ExtResource("4_n0jgr")
+region = Rect2(0, 0, 54, 57)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lwhdg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q5tqb")
+}],
+"loop": false,
+"name": &"borhr",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_doh7v")
+}],
+"loop": false,
+"name": &"otto",
+"speed": 0.0
+}]
+
+[node name="Convo_Borhr_Otto" type="Area2D"]
+collision_layer = 8
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -18)
+sprite_frames = SubResource("SpriteFrames_p25ly")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -20.5)
+shape = SubResource("RectangleShape2D_vkhlk")
+
+[node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
+position = Vector2(26, -34)
+texture = ExtResource("3_51kyn")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NPCPortrait" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(141, 264)
+scale = Vector2(4.40741, 4.40741)
+sprite_frames = SubResource("SpriteFrames_lwhdg")
+animation = &"otto"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 631.0
+texture = ExtResource("5_6wkjy")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_dqemf")
+theme_override_font_sizes/font_size = 23
+text = "TIME_DECIDER_LINE_T"
+
+[node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 399.0
+offset_right = 415.0
+offset_bottom = 440.0
+texture = ExtResource("5_6wkjy")
+region_rect = Rect2(0, 0, 224, 41)
+
+[node name="Label2" type="Label" parent="CanvasLayer/NameTitle"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 1065.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_dqemf")
+theme_override_font_sizes/font_size = 20
+text = "TIME_DECIDER_NAME_T"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
