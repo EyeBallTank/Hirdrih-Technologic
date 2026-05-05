@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bv7rclmw422rf"
-path="res://.godot/imported/BORHR SPRITES NPC.png-ee62dc0dbc523c8025c7e0234ffeae1f.ctex"
+uid="uid://bio4bld8wj1xw"
+path="res://.godot/imported/NPC SPRITE BORHR.png-b157e3d69b2867633da76013906e0854.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/hirdrih/BORHR SPRITES NPC.png"
-dest_files=["res://.godot/imported/BORHR SPRITES NPC.png-ee62dc0dbc523c8025c7e0234ffeae1f.ctex"]
+source_file="res://assets/sprites/npc actors/hirdrih/NPC SPRITE BORHR.png"
+dest_files=["res://.godot/imported/NPC SPRITE BORHR.png-b157e3d69b2867633da76013906e0854.ctex"]
 
 [params]
 

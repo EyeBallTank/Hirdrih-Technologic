@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=57 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -49,6 +49,7 @@
 [ext_resource type="PackedScene" uid="uid://fgm43uh0jb4x" path="res://src/npc characters/NPC_Avietta.tscn" id="47_b2iat"]
 [ext_resource type="PackedScene" uid="uid://2oam4kmqc272" path="res://src/npc characters/NPC_Davy_Lock.tscn" id="48_4tekn"]
 [ext_resource type="PackedScene" uid="uid://cuosdmdpbep1p" path="res://src/npc characters/NPC_Suki.tscn" id="49_dd1qg"]
+[ext_resource type="PackedScene" uid="uid://cby8d871xxysq" path="res://src/npc characters/NPC_Borhr.tscn" id="50_36713"]
 
 [sub_resource type="Curve2D" id="Curve2D_f2qaw"]
 resource_local_to_scene = true
@@ -221,7 +222,7 @@ position = Vector2(896, -574)
 position = Vector2(2818, -666)
 
 [node name="Coin5" parent="." instance=ExtResource("12_id1xq")]
-position = Vector2(3296, -726)
+position = Vector2(3212, -755)
 
 [node name="Coin6" parent="." instance=ExtResource("12_id1xq")]
 position = Vector2(87, -251)
@@ -378,6 +379,9 @@ position = Vector2(641, -554.5)
 
 [node name="NPCSuki" parent="." instance=ExtResource("49_dd1qg")]
 position = Vector2(558, -426)
+
+[node name="NPCBorhr" parent="." instance=ExtResource("50_36713")]
+position = Vector2(3304, -740)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
