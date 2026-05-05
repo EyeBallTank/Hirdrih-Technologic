@@ -80,18 +80,6 @@ tracks/1/keys = {
 "update": 1,
 "values": ["Otto", "Borhr", "Otto"]
 }
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CanvasLayer/NinePatchRect/Label2:text")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 4, 8, 8.03333, 12),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 1,
-"values": ["CONVO_BORHR_OTTO_TALK_01", "CONVO_BORHR_OTTO_TALK_02", "CONVO_BORHR_OTTO_TALK_03", "CONVO_BORHR_OTTO_TALK_03", "CONVO_BORHR_OTTO_TALK_04"]
-}
 
 [sub_resource type="Animation" id="Animation_ksy2k"]
 length = 0.001
@@ -118,18 +106,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": ["Otto"]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("CanvasLayer/NinePatchRect/Label2:text")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": ["CONVO_BORHR_OTTO_TALK_01"]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8sxr6"]
@@ -163,14 +139,14 @@ scale = Vector2(4.40741, 4.40741)
 sprite_frames = SubResource("SpriteFrames_lwhdg")
 animation = &"otto"
 
-[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+[node name="NinePatchRect01" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
 offset_top = 445.0
 offset_right = 1131.0
 offset_bottom = 631.0
 texture = ExtResource("5_6wkjy")
 
-[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect"]
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect01"]
 layout_mode = 0
 offset_left = 25.0
 offset_top = 16.0
