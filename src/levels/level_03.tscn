@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://cr8n43msi8gib"]
+[gd_scene load_steps=32 format=4 uid="uid://cr8n43msi8gib"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_jkvc6"]
 [ext_resource type="TileSet" uid="uid://wlkcvgc22c57" path="res://assets/sprites/tile sets/hirdrih/hirdrih_tileset.tres" id="2_aemt7"]
@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="22_y55k6"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="23_7jcop"]
 [ext_resource type="AudioStream" uid="uid://rvspgknvo02c" path="res://assets/sounds/music/level 03 hirdrih 3.ogg" id="24_ub1ol"]
+[ext_resource type="PackedScene" uid="uid://b7u46a0ulyjcs" path="res://src/npc characters/Convo_Borhr_Otto.tscn" id="25_bv5vk"]
 [ext_resource type="PackedScene" uid="uid://dxf3c2bh0m1jp" path="res://src/level objects/blue_button.tscn" id="25_iqips"]
 [ext_resource type="PackedScene" uid="uid://c41aeuedhbpjk" path="res://src/level objects/hirdrih_sphere_vehicle.tscn" id="26_8u718"]
 [ext_resource type="PackedScene" uid="uid://ccn1b1x3fmnil" path="res://src/enemies/hazard_test.tscn" id="26_gxtwh"]
@@ -154,7 +155,7 @@ position = Vector2(554, -50)
 position = Vector2(746, -290)
 
 [node name="Bluekey" parent="." instance=ExtResource("10_h552b")]
-position = Vector2(-233, -501)
+position = Vector2(-161, -434)
 
 [node name="Yellowkey" parent="." instance=ExtResource("11_djv6n")]
 position = Vector2(640, -56)
@@ -269,6 +270,9 @@ position = Vector2(504, -10)
 
 [node name="CollisionShape2D" parent="HazardTest" index="0"]
 position = Vector2(82, 11)
+
+[node name="Convo_Borhr_Otto" parent="." instance=ExtResource("25_bv5vk")]
+position = Vector2(-251, -499)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

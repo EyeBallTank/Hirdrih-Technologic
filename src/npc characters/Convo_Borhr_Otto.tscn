@@ -1,5 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://b7u46a0ulyjcs"]
+[gd_scene load_steps=17 format=3 uid="uid://b7u46a0ulyjcs"]
 
+[ext_resource type="Script" path="res://src/npc characters/convo_borhr_otto.gd" id="1_jxdl1"]
 [ext_resource type="Texture2D" uid="uid://do3dpjiov5bqw" path="res://assets/sprites/npc actors/hirdrih/CONVO SPRITE BORHR OTTO.png" id="1_nhqex"]
 [ext_resource type="Texture2D" uid="uid://1kt260j2fw8i" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT BORHR.png" id="3_5rifj"]
 [ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="3_51kyn"]
@@ -52,8 +53,94 @@ animations = [{
 "speed": 0.0
 }]
 
+[sub_resource type="Animation" id="Animation_gkxkj"]
+resource_name = "Conversation"
+length = 16.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/NPCPortrait:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4, 12),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [&"otto", &"borhr", &"otto"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/NameTitle/Label2:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 4, 12),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": ["Otto", "Borhr", "Otto"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/NinePatchRect/Label2:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 4, 8, 8.03333, 12),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": ["CONVO_BORHR_OTTO_TALK_01", "CONVO_BORHR_OTTO_TALK_02", "CONVO_BORHR_OTTO_TALK_03", "CONVO_BORHR_OTTO_TALK_03", "CONVO_BORHR_OTTO_TALK_04"]
+}
+
+[sub_resource type="Animation" id="Animation_ksy2k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/NPCPortrait:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"otto"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/NameTitle/Label2:text")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Otto"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/NinePatchRect/Label2:text")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["CONVO_BORHR_OTTO_TALK_01"]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8sxr6"]
+_data = {
+"Conversation": SubResource("Animation_gkxkj"),
+"RESET": SubResource("Animation_ksy2k")
+}
+
 [node name="Convo_Borhr_Otto" type="Area2D"]
 collision_layer = 8
+script = ExtResource("1_jxdl1")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -18)
@@ -92,7 +179,7 @@ offset_bottom = 96.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_dqemf")
 theme_override_font_sizes/font_size = 23
-text = "TIME_DECIDER_LINE_T"
+text = "CONVO_BORHR_OTTO_TALK_01"
 
 [node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 23.0
@@ -111,6 +198,12 @@ offset_bottom = 83.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("6_dqemf")
 theme_override_font_sizes/font_size = 20
-text = "TIME_DECIDER_NAME_T"
+text = "Otto"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8sxr6")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

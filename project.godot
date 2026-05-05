@@ -99,7 +99,7 @@ attachtoladder={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://assets/localization/localization.en.translation", "res://assets/localization/localization.pt.translation")
+locale/translations=PackedStringArray("res://assets/localization/localization.pt.translation", "res://assets/localization/localization.en.translation")
 locale/test="pt"
 
 [layer_names]
