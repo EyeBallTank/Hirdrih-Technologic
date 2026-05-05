@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://ck7da5ydeqbug"]
+[gd_scene load_steps=31 format=4 uid="uid://ck7da5ydeqbug"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_oblxw"]
 [ext_resource type="TileSet" uid="uid://wlkcvgc22c57" path="res://assets/sprites/tile sets/hirdrih/hirdrih_tileset.tres" id="2_v788c"]
@@ -11,7 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://cnw80sasfqhmb" path="res://src/level items/bluekey.tscn" id="22_v7mqb"]
 [ext_resource type="PackedScene" uid="uid://ctqctdo1kijht" path="res://src/level items/yellowkey.tscn" id="23_tyvkn"]
 [ext_resource type="PackedScene" uid="uid://meckl50d6ugr" path="res://src/level objects/jump pad.tscn" id="24_4v462"]
+[ext_resource type="PackedScene" uid="uid://d3fceax6m5pw5" path="res://src/enemies/hirdrio.tscn" id="24_ka5hm"]
 [ext_resource type="PackedScene" uid="uid://bo0jg2beh8fkb" path="res://src/level objects/reddoor.tscn" id="25_76e3e"]
+[ext_resource type="PackedScene" uid="uid://dxwlmtanmlocq" path="res://src/npc characters/NPC_Leon.tscn" id="25_ywday"]
 [ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="26_o55j4"]
 [ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="27_jg5m0"]
 [ext_resource type="PackedScene" uid="uid://bqtgekff4fdnm" path="res://src/level objects/mov_plat_verti.tscn" id="28_plit3"]
@@ -233,6 +235,12 @@ bus = &"Music"
 [node name="SpiderChip3" parent="." instance=ExtResource("34_g10ob")]
 position = Vector2(894, -554)
 animationname = "RESET_2"
+
+[node name="hirdrio" parent="." instance=ExtResource("24_ka5hm")]
+position = Vector2(783, -636)
+
+[node name="NPCLeon" parent="." instance=ExtResource("25_ywday")]
+position = Vector2(186, -373.5)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
