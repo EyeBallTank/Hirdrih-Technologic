@@ -194,7 +194,7 @@ animations = [{
 "speed": 2.5
 }]
 
-[node name="PushableCharacter" type="CharacterBody2D"]
+[node name="PushableCharacter" type="CharacterBody2D" groups=["thisbatteryispushable"]]
 collision_layer = 64
 collision_mask = 262210
 script = ExtResource("1_6h66c")

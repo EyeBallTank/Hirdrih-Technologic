@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=4 uid="uid://c4mcnuxjplwn8"]
+[gd_scene load_steps=43 format=4 uid="uid://c4mcnuxjplwn8"]
 
 [ext_resource type="Texture2D" uid="uid://cufy446jw1r4p" path="res://assets/sprites/level backgrounds/nortubel/nortubel background.png" id="1_ewlqd"]
 [ext_resource type="Texture2D" uid="uid://cn6mtjgxbet6r" path="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES CLIMBABLE.png" id="2_qdk2l"]
@@ -29,6 +29,8 @@
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="28_ueib0"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="29_704ag"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="30_40sd1"]
+[ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="30_gkc11"]
+[ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="31_kxtny"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_qdk2l")
@@ -911,6 +913,14 @@ spritename = "nortubel"
 [node name="PushableCharacter2" parent="." instance=ExtResource("28_j5dr5")]
 position = Vector2(-69, -285)
 spritename = "nortubel"
+
+[node name="PushableBarrier" parent="." instance=ExtResource("30_gkc11")]
+position = Vector2(88, -159)
+
+[node name="PushableButton" parent="." instance=ExtResource("31_kxtny")]
+position = Vector2(-34, -135)
+spritenameforactive = "activenortubel"
+spritenameforinactive = "inactivenortubel"
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
