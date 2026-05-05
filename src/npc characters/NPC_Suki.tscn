@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=3 uid="uid://cuosdmdpbep1p"]
+
+[ext_resource type="Script" path="res://src/npc characters/npc_time_decider.gd" id="1_beryy"]
+[ext_resource type="Texture2D" uid="uid://dlqkd8sw1cyr8" path="res://assets/sprites/npc actors/hirdrih/NPC SPRITE SUKI.png" id="2_8r7s3"]
+[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="3_emy4c"]
+[ext_resource type="Texture2D" uid="uid://dju5qa4fmcu3w" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT SUKI.png" id="4_h8cwr"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="5_c7bnw"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_r4p6v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p25ly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8r7s3")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
+size = Vector2(21, 24)
+
+[node name="NPCSuki" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_beryy")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p25ly")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_vkhlk")
+
+[node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
+position = Vector2(14, -22)
+texture = ExtResource("3_emy4c")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NPCPortrait" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(141, 264)
+scale = Vector2(4.40741, 4.40741)
+texture = ExtResource("4_h8cwr")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 631.0
+texture = ExtResource("5_c7bnw")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_r4p6v")
+theme_override_font_sizes/font_size = 23
+text = "SUKI_NPC_TALK_T"
+
+[node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 399.0
+offset_right = 97.0
+offset_bottom = 440.0
+texture = ExtResource("5_c7bnw")
+region_rect = Rect2(0, 0, 224, 41)
+
+[node name="Label2" type="Label" parent="CanvasLayer/NameTitle"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 1065.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_r4p6v")
+theme_override_font_sizes/font_size = 20
+text = "Suki"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
