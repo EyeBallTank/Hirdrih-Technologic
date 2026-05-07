@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://cy7ibp6sc5aws"]
+[gd_scene load_steps=32 format=4 uid="uid://cy7ibp6sc5aws"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_w2onm"]
 [ext_resource type="TileSet" uid="uid://wlkcvgc22c57" path="res://assets/sprites/tile sets/hirdrih/hirdrih_tileset.tres" id="2_76h28"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="25_60vjo"]
 [ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="26_11fuc"]
 [ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="27_iwyd2"]
+[ext_resource type="PackedScene" uid="uid://cbfcln71ldi4f" path="res://src/npc characters/Convo_Borhr_Leon.tscn" id="27_kufpi"]
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="30_u682g"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="31_gcoa3"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="32_3fbf2"]
@@ -94,7 +95,7 @@ tile_map_data = PackedByteArray("AAASAOL/AQABAAEAAAARAOL/AQAAAAEAAAAQAOL/AQAAAAE
 tile_set = ExtResource("2_76h28")
 
 [node name="PlayerTest" parent="." instance=ExtResource("4_x38eo")]
-position = Vector2(-103, -153)
+position = Vector2(402, -511)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("5_10pjy")]
 position = Vector2(0, -2)
@@ -186,7 +187,7 @@ offset_bottom = 14.0
 position = Vector2(38, -570)
 
 [node name="SpiderChip4" parent="." instance=ExtResource("19_e14nw")]
-position = Vector2(241, -569)
+position = Vector2(204, -569)
 
 [node name="ClickableBox" parent="." instance=ExtResource("20_sqleo")]
 position = Vector2(316, -476)
@@ -247,6 +248,9 @@ position = Vector2(550, -432)
 
 [node name="GreenTwoButton" parent="." instance=ExtResource("32_3fbf2")]
 position = Vector2(497, -378)
+
+[node name="Convo_Borhr_Otto" parent="." instance=ExtResource("27_kufpi")]
+position = Vector2(451, -480.5)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
