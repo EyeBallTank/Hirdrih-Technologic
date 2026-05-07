@@ -63,7 +63,7 @@ tracks/0/path = NodePath("CanvasLayer/NPCPortrait:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 4, 12),
+"times": PackedFloat32Array(0, 1, 3),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [&"otto", &"borhr", &"otto"]
@@ -75,7 +75,7 @@ tracks/1/path = NodePath("CanvasLayer/NameTitle/Label2:text")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 4, 12),
+"times": PackedFloat32Array(0, 1, 3),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": ["Otto", "Borhr", "Otto"]
@@ -87,7 +87,7 @@ tracks/2/path = NodePath("CanvasLayer/NinePatchRect04:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 4),
+"times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -99,7 +99,7 @@ tracks/3/path = NodePath("CanvasLayer/NinePatchRect03:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 8),
+"times": PackedFloat32Array(0, 2.03333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -111,7 +111,7 @@ tracks/4/path = NodePath("CanvasLayer/NinePatchRect02:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 12),
+"times": PackedFloat32Array(0, 3),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -123,7 +123,7 @@ tracks/5/path = NodePath("CanvasLayer/NinePatchRect01:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 16),
+"times": PackedFloat32Array(0, 4.03333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -135,7 +135,7 @@ tracks/6/path = NodePath("CanvasLayer/NameTitle:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 16),
+"times": PackedFloat32Array(0, 4.03333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -147,7 +147,7 @@ tracks/7/path = NodePath("CanvasLayer/NPCPortrait:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 16),
+"times": PackedFloat32Array(0, 4.03333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -375,7 +375,6 @@ theme_override_font_sizes/font_size = 20
 text = "Otto"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-callback_mode_process = 2
 libraries = {
 "": SubResource("AnimationLibrary_8sxr6")
 }
