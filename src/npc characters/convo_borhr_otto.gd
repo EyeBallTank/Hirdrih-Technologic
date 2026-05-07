@@ -34,24 +34,6 @@ func _physics_process(delta: float) -> void:
 	elif talk_to_me == false:
 		canvaslayer.visible = false
 
-
-
-#func jump_to_next_keyframe(animationplaything, track_id := 0) -> void:
-	#var animation: Animation = animationplaything.get_animation(animationplaything.current_animation)
-	#for key: int in animation.track_get_key_count(track_id):
-		#var key_time: float = animation.track_get_key_time(track_id, key)
-		#if key_time > animationplaything.current_animation_position:
-			#animationplaything.seek(key_time)
-			#break
-
-#func jump_to_next_keyframe(track_id := 0) -> void:
-	#var animation: Animation = get_animation("Conversation")
-	#for key: int in animation.track_get_key_count(track_id):
-		#var key_time: float = animation.track_get_key_time(track_id, key)
-		#if key_time > current_animation_position:
-			#seek(key_time)
-			#break
-
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("playergroup"):
 		speech_balloon.visible = true
