@@ -13,6 +13,7 @@ extends Area2D
 var talk_to_me = false
 
 func _ready() -> void:
+	animation.get_animation("Conversation")
 	canvaslayer.visible = false
 	speech_balloon.visible = false
 
