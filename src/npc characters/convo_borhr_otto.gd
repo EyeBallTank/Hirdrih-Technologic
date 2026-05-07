@@ -6,35 +6,45 @@ extends Area2D
 #@onready var the_name = $CanvasLayer/NameTitle
 #@onready var portrait = $CanvasLayer/NPCPortrait
 @onready var speech_balloon = $NpcSpeechBalloonSprite
-@onready var animation = $AnimationPlayer
+@onready var animationplayer = $AnimationPlayer
 
 @onready var canvaslayer = $CanvasLayer
+
 
 var talk_to_me = false
 
 func _ready() -> void:
-	animation.get_animation("Conversation")
-	animation.seek(0)
+	#animation.get_animation("Conversation")
+	#animation.seek(0)
 	canvaslayer.visible = false
 	speech_balloon.visible = false
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("attachtoladder") and talk_to_me == true:
 		canvaslayer.visible = true
-		animation.play("Conversation")
+		#animation.play("Conversation")
 		#animation.seek(0)
 		#animation.stop()
 		if Input.is_action_just_pressed("climbdown"):
-			animation.advance(1)
+			jump_to_next_keyframe()
+			#animation.advance(1)
 			#animation.seek(+1)
 	elif talk_to_me == false:
 		canvaslayer.visible = false
+
+func jump_to_next_keyframe(track_id := 0) -> void:
+	var animation: Animation = get_animation("Conversation")
+	for key: int in animation.track_get_key_count(track_id):
+		var key_time: float = animation.track_get_key_time(track_id, key)
+		if key_time > current_animation_position:
+			seek(key_time)
+			break
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("playergroup"):
 		speech_balloon.visible = true
 		talk_to_me = true
-		animation.seek(0)
+		#animation.seek(0)
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("playergroup"):
