@@ -21,16 +21,19 @@ func _ready() -> void:
 	speech_balloon.visible = false
 
 func _physics_process(delta: float) -> void:
-	if Input.is_action_just_pressed("attachtoladder") and talk_to_me == true:
+	if talk_to_me == true and Input.is_action_just_pressed("attachtoladder"):
 		canvaslayer.visible = true
 		animation.play("Conversation")
-		if Input.is_action_pressed("zgetsbigger"):
-			animation.pause()
-		elif Input.is_action_pressed("xgetssmaller"):
-			animation.set_speed_scale(2.5)
-		else:
-			animation.set_speed_scale(1.0)
-			
+		animation.set_speed_scale(1.0)
+	elif Input.is_action_just_pressed("zgetsbigger"):
+		animation.play_backwards("Conversation")
+		animation.set_speed_scale(3.0)
+	elif Input.is_action_just_pressed("xgetssmaller"):
+		animation.play("Conversation")
+		animation.set_speed_scale(3.0)
+	elif Input.is_action_just_pressed("changeimage"):
+		animation.pause()
+		
 	elif talk_to_me == false:
 		canvaslayer.visible = false
 
