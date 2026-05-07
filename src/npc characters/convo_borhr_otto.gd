@@ -24,15 +24,12 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("attachtoladder") and talk_to_me == true:
 		canvaslayer.visible = true
 		animation.play("Conversation")
-		
-		#animation.seek(0)
-		#animation.stop()
-		if Input.is_action_just_pressed("climbdown"):
+		if Input.is_action_pressed("climbdown"):
 			#jump_to_next_keyframe(animationplaything)
 			#animation.advance(1)
-			animation.stop()
+			animation.pause()
 			#animation.seek(+1)
-		elif Input.is_action_just_pressed("shoot"):
+		elif Input.is_action_pressed("shoot"):
 			animation.set_speed_scale(2.5)
 		else:
 			animation.set_speed_scale(1.0)
