@@ -14,6 +14,7 @@ var talk_to_me = false
 
 func _ready() -> void:
 	animation.get_animation("Conversation")
+	animation.seek(0)
 	canvaslayer.visible = false
 	speech_balloon.visible = false
 
@@ -25,6 +26,7 @@ func _physics_process(delta: float) -> void:
 		#animation.stop()
 		if Input.is_action_just_pressed("climbdown"):
 			animation.advance(1)
+			#animation.seek(+1)
 	elif talk_to_me == false:
 		canvaslayer.visible = false
 
