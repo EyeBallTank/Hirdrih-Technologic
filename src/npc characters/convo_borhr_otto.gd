@@ -19,8 +19,8 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("attachtoladder") and talk_to_me == true:
 		canvaslayer.visible = true
-		#animation.play("Conversation")
-		animation.seek(0)
+		animation.play("Conversation")
+		#animation.seek(0)
 		#animation.stop()
 		if Input.is_action_just_pressed("climbdown"):
 			animation.advance(4)
