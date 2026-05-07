@@ -25,10 +25,7 @@ func _physics_process(delta: float) -> void:
 		canvaslayer.visible = true
 		animation.play("Conversation")
 		if Input.is_action_pressed("zgetsbigger"):
-			#jump_to_next_keyframe(animationplaything)
-			#animation.advance(1)
 			animation.pause()
-			#animation.seek(+1)
 		elif Input.is_action_pressed("xgetssmaller"):
 			animation.set_speed_scale(2.5)
 		else:
