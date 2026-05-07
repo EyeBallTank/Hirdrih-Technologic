@@ -27,10 +27,10 @@ func _physics_process(delta: float) -> void:
 		animation.set_speed_scale(1.0)
 	elif Input.is_action_just_pressed("zgetsbigger"):
 		animation.play_backwards("Conversation")
-		animation.set_speed_scale(3.0)
+		animation.set_speed_scale(3.3)
 	elif Input.is_action_just_pressed("xgetssmaller"):
 		animation.play("Conversation")
-		animation.set_speed_scale(3.0)
+		animation.set_speed_scale(3.3)
 	elif Input.is_action_just_pressed("changeimage"):
 		animation.pause()
 		
