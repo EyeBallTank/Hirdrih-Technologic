@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://b7u46a0ulyjcs"]
+[gd_scene load_steps=34 format=3 uid="uid://b7u46a0ulyjcs"]
 
 [ext_resource type="Script" path="res://src/npc characters/convo_borhr_otto.gd" id="1_jxdl1"]
 [ext_resource type="Texture2D" uid="uid://do3dpjiov5bqw" path="res://assets/sprites/npc actors/hirdrih/CONVO SPRITE BORHR OTTO.png" id="1_nhqex"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dfyd0qdgvddbu" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT OTTO.png" id="4_n0jgr"]
 [ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="5_6wkjy"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_dqemf"]
+[ext_resource type="Texture2D" uid="uid://bhj1hfq0ro0ek" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT OTTO ANGRY.png" id="8_2yevx"]
 [ext_resource type="Texture2D" uid="uid://b7dve5f7wcjox" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BUTTONS.png" id="8_ijjdg"]
 [ext_resource type="Texture2D" uid="uid://by55i57cjocoo" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BAR.png" id="8_l2hkr"]
 [ext_resource type="Texture2D" uid="uid://0agtp3rilyp1" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST MARKER.png" id="9_skub6"]
@@ -37,6 +38,10 @@ region = Rect2(0, 0, 54, 57)
 atlas = ExtResource("4_n0jgr")
 region = Rect2(0, 0, 54, 57)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_7bhno"]
+atlas = ExtResource("8_2yevx")
+region = Rect2(0, 0, 54, 57)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_lwhdg"]
 animations = [{
 "frames": [{
@@ -53,6 +58,14 @@ animations = [{
 }],
 "loop": false,
 "name": &"otto",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7bhno")
+}],
+"loop": false,
+"name": &"otto_angry",
 "speed": 0.0
 }]
 
@@ -174,10 +187,10 @@ tracks/0/path = NodePath("CanvasLayer/NPCPortrait:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 3.9, 4, 11.9, 12),
+"times": PackedFloat32Array(0, 3.9, 4, 11.9, 12.0333),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [&"otto", &"otto", &"borhr", &"borhr", &"otto"]
+"values": [&"otto", &"otto", &"borhr", &"borhr", &"otto_angry"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
