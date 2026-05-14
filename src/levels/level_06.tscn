@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=4 uid="uid://dvpp0ncynvjit"]
+[gd_scene load_steps=55 format=4 uid="uid://dvpp0ncynvjit"]
 
 [ext_resource type="Texture2D" uid="uid://0k433g8pk10o" path="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png" id="1_q6ayw"]
 [ext_resource type="Texture2D" uid="uid://hu7cmp7hfpqa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 01.png" id="2_svb3t"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cudsdl1kjgcmy" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES PASSABLE.png" id="6_mg21p"]
 [ext_resource type="Texture2D" uid="uid://cypcswn06yqnm" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 02.png" id="6_uel5l"]
 [ext_resource type="PackedScene" uid="uid://0ubg1yl6f1qq" path="res://src/player/magic_arrow.tscn" id="7_g6wo6"]
+[ext_resource type="Texture2D" uid="uid://diwmboxea4r6o" path="res://assets/sprites/tile sets/FULL SOLID OUTLINES FOR ALL TILES.png" id="7_g8fa1"]
 [ext_resource type="Texture2D" uid="uid://d0mpvt2we3kn5" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES PROPS 01.png" id="7_hgv10"]
 [ext_resource type="Texture2D" uid="uid://ba6yat1pt3471" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES PROPS 02.png" id="8_3f65h"]
 [ext_resource type="Texture2D" uid="uid://cdcolvcy2nkpa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES SOLID.png" id="9_6egc3"]
@@ -219,6 +220,19 @@ texture_region_size = Vector2i(18, 18)
 0:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
 1:0/0 = 0
 1:0/0/physics_layer_2/polygon_0/points = PackedVector2Array(-9, -9, 9, -9, 9, 9, -9, 9)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_in7p3"]
+texture = ExtResource("7_g8fa1")
+texture_region_size = Vector2i(18, 18)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oo8e2"]
 texture = ExtResource("6_uel5l")
@@ -785,6 +799,7 @@ sources/7 = SubResource("TileSetAtlasSource_c6p8o")
 sources/8 = SubResource("TileSetAtlasSource_2ppn3")
 sources/11 = SubResource("TileSetAtlasSource_kg303")
 sources/12 = SubResource("TileSetAtlasSource_mmp54")
+sources/3 = SubResource("TileSetAtlasSource_in7p3")
 
 [sub_resource type="Curve2D" id="Curve2D_f2qaw"]
 resource_local_to_scene = true
