@@ -536,7 +536,7 @@ position = Vector2(1.5, -23)
 shape = SubResource("RectangleShape2D_vkhlk")
 
 [node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
-position = Vector2(26, -34)
+position = Vector2(35, -41)
 texture = ExtResource("3_i821x")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
