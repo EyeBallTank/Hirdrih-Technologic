@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://c4mcnuxjplwn8"]
+[gd_scene load_steps=44 format=4 uid="uid://c4mcnuxjplwn8"]
 
 [ext_resource type="Texture2D" uid="uid://cufy446jw1r4p" path="res://assets/sprites/level backgrounds/nortubel/nortubel background.png" id="1_ewlqd"]
 [ext_resource type="Texture2D" uid="uid://cn6mtjgxbet6r" path="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES CLIMBABLE.png" id="2_qdk2l"]
@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="30_40sd1"]
 [ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="30_gkc11"]
 [ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="31_kxtny"]
+[ext_resource type="PackedScene" uid="uid://b235fegiodhle" path="res://src/npc characters/Convo_Carrie_Katrin_Melvin_Stella.tscn" id="32_ea52p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_qdk2l")
@@ -923,6 +924,9 @@ spriteforopen = "opennortubel"
 position = Vector2(-34, -135)
 spritenameforactive = "activenortubel"
 spritenameforinactive = "inactivenortubel"
+
+[node name="Convo_Borhr_Otto" parent="." instance=ExtResource("32_ea52p")]
+position = Vector2(-142, -226)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
