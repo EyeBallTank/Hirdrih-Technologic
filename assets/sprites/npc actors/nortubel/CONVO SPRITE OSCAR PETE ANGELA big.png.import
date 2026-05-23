@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctm06in0i2dxh"
-path="res://.godot/imported/NORT CAST NPC.png-be1ecba6543c5148fc5e8950d0ce531b.ctex"
+uid="uid://d0o88pv3mbmoj"
+path="res://.godot/imported/CONVO SPRITE OSCAR PETE ANGELA big.png-03f45e259340abdaa27b48afafbea6fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/nortubel/NORT CAST NPC.png"
-dest_files=["res://.godot/imported/NORT CAST NPC.png-be1ecba6543c5148fc5e8950d0ce531b.ctex"]
+source_file="res://assets/sprites/npc actors/nortubel/CONVO SPRITE OSCAR PETE ANGELA big.png"
+dest_files=["res://.godot/imported/CONVO SPRITE OSCAR PETE ANGELA big.png-03f45e259340abdaa27b48afafbea6fd.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj2cxnycjsmlu"
-path="res://.godot/imported/STELLA NPC SPRITES.png-68ac050a9d91fd6437fc2ec625e9cc27.ctex"
+uid="uid://dl3iup4i48qxf"
+path="res://.godot/imported/CONVO SPRITE CARRIE KATRIN MELVIN STELLA.png-cd84b9fcd774a149626bb14cb64f2eb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/nortubel/STELLA NPC SPRITES.png"
-dest_files=["res://.godot/imported/STELLA NPC SPRITES.png-68ac050a9d91fd6437fc2ec625e9cc27.ctex"]
+source_file="res://assets/sprites/npc actors/nortubel/CONVO SPRITE CARRIE KATRIN MELVIN STELLA.png"
+dest_files=["res://.godot/imported/CONVO SPRITE CARRIE KATRIN MELVIN STELLA.png-cd84b9fcd774a149626bb14cb64f2eb6.ctex"]
 
 [params]
 
