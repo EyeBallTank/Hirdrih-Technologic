@@ -1,18 +1,18 @@
-[gd_scene load_steps=37 format=3 uid="uid://b235fegiodhle"]
+[gd_scene load_steps=37 format=3 uid="uid://dstwyap0d3sx2"]
 
-[ext_resource type="Script" path="res://src/npc characters/convo_borhr_otto.gd" id="1_vim4b"]
-[ext_resource type="Texture2D" uid="uid://3fa5mpf3isje" path="res://assets/sprites/npc actors/nortubel/CONVO SPRITE CARRIE KATRIN MELVIN STELLA big.png" id="2_j0aib"]
-[ext_resource type="Texture2D" uid="uid://ca1wk765afu85" path="res://assets/sprites/SPRITE CHAR HEIGHT TEST.png" id="3_464s3"]
-[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="3_i821x"]
-[ext_resource type="Texture2D" uid="uid://by55i57cjocoo" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BAR.png" id="4_sc8gi"]
-[ext_resource type="Texture2D" uid="uid://0agtp3rilyp1" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST MARKER.png" id="5_764qa"]
-[ext_resource type="Texture2D" uid="uid://ca15fllf3j1fx" path="res://assets/sprites/npc actors/nortubel/NPC PORTRAITS CARRIE KATRIN MELVIN STELLA OSCAR PETE ANGELA.png" id="7_3ru1i"]
-[ext_resource type="Texture2D" uid="uid://b7dve5f7wcjox" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BUTTONS.png" id="9_gw20v"]
-[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="10_tqc5w"]
-[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="11_ce8c0"]
+[ext_resource type="Script" path="res://src/npc characters/convo_borhr_otto.gd" id="1_pfjuk"]
+[ext_resource type="Texture2D" uid="uid://ca1wk765afu85" path="res://assets/sprites/SPRITE CHAR HEIGHT TEST.png" id="2_ati7l"]
+[ext_resource type="Texture2D" uid="uid://d0o88pv3mbmoj" path="res://assets/sprites/npc actors/nortubel/CONVO SPRITE OSCAR PETE ANGELA big.png" id="3_amc7v"]
+[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="4_xnjxi"]
+[ext_resource type="Texture2D" uid="uid://by55i57cjocoo" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BAR.png" id="5_lt75j"]
+[ext_resource type="Texture2D" uid="uid://0agtp3rilyp1" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST MARKER.png" id="6_25bmc"]
+[ext_resource type="Texture2D" uid="uid://ca15fllf3j1fx" path="res://assets/sprites/npc actors/nortubel/NPC PORTRAITS CARRIE KATRIN MELVIN STELLA OSCAR PETE ANGELA.png" id="7_6dcq8"]
+[ext_resource type="Texture2D" uid="uid://b7dve5f7wcjox" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BUTTONS.png" id="8_k5cle"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="9_ifbt6"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="10_s1jce"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4qm5r"]
-atlas = ExtResource("3_464s3")
+atlas = ExtResource("2_ati7l")
 region = Rect2(0, 0, 24, 47)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ovk66"]
@@ -26,15 +26,15 @@ animations = [{
 "speed": 0.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xkb3g"]
-atlas = ExtResource("2_j0aib")
-region = Rect2(0, 0, 124, 98)
+[sub_resource type="AtlasTexture" id="AtlasTexture_bxqq2"]
+atlas = ExtResource("3_amc7v")
+region = Rect2(0, 0, 83, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p25ly"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_xkb3g")
+"texture": SubResource("AtlasTexture_bxqq2")
 }],
 "loop": false,
 "name": &"new_animation",
@@ -45,23 +45,23 @@ animations = [{
 size = Vector2(63, 46)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jgy44"]
-atlas = ExtResource("7_3ru1i")
+atlas = ExtResource("7_6dcq8")
 region = Rect2(0, 57, 54, 57)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p48v1"]
-atlas = ExtResource("7_3ru1i")
+atlas = ExtResource("7_6dcq8")
 region = Rect2(54, 171, 54, 57)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s4qde"]
-atlas = ExtResource("7_3ru1i")
+atlas = ExtResource("7_6dcq8")
 region = Rect2(0, 114, 54, 57)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uohhm"]
-atlas = ExtResource("7_3ru1i")
+atlas = ExtResource("7_6dcq8")
 region = Rect2(0, 171, 54, 57)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jrmo3"]
-atlas = ExtResource("7_3ru1i")
+atlas = ExtResource("7_6dcq8")
 region = Rect2(0, 0, 54, 57)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lwhdg"]
@@ -108,11 +108,11 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4x7f4"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(22, 33, 22, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fnb2i"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(0, 33, 22, 11)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0qx5s"]
@@ -135,11 +135,11 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7cl3i"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(22, 22, 22, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8bhm8"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(0, 22, 22, 11)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mefn1"]
@@ -162,11 +162,11 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b28aw"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(22, 11, 22, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qod1d"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(0, 11, 22, 11)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kwd5l"]
@@ -189,11 +189,11 @@ animations = [{
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_km6tm"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(22, 0, 22, 11)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hd3fq"]
-atlas = ExtResource("9_gw20v")
+atlas = ExtResource("8_k5cle")
 region = Rect2(0, 0, 22, 11)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i6qcb"]
@@ -516,9 +516,9 @@ _data = {
 "RESET": SubResource("Animation_ksy2k")
 }
 
-[node name="Convo_Carrie_Katrin_Melvin_Stella" type="Area2D"]
+[node name="Convo_Oscar_Pete_Angela" type="Area2D"]
 collision_layer = 8
-script = ExtResource("1_vim4b")
+script = ExtResource("1_pfjuk")
 
 [node name="height test" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -526,7 +526,7 @@ position = Vector2(2, -24)
 sprite_frames = SubResource("SpriteFrames_ovk66")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(2, -18.5)
+position = Vector2(2, -15)
 scale = Vector2(0.377551, 0.377551)
 sprite_frames = SubResource("SpriteFrames_p25ly")
 animation = &"new_animation"
@@ -536,20 +536,20 @@ position = Vector2(1.5, -23)
 shape = SubResource("RectangleShape2D_vkhlk")
 
 [node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
-position = Vector2(35, -41)
-texture = ExtResource("3_i821x")
+position = Vector2(29, -36)
+texture = ExtResource("4_xnjxi")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="ConvoTimelineTestBar" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(575.875, 631.44)
 scale = Vector2(4.67616, 4.67616)
-texture = ExtResource("4_sc8gi")
+texture = ExtResource("5_lt75j")
 
 [node name="ConvoTimelineTestMarker" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(52.1, 631.4)
 scale = Vector2(4.676, 4.676)
-texture = ExtResource("5_764qa")
+texture = ExtResource("6_25bmc")
 
 [node name="NPCPortrait" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(141, 264)
@@ -586,7 +586,7 @@ offset_left = 22.0
 offset_top = 445.0
 offset_right = 1131.0
 offset_bottom = 610.0
-texture = ExtResource("10_tqc5w")
+texture = ExtResource("9_ifbt6")
 
 [node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect01"]
 layout_mode = 0
@@ -595,7 +595,7 @@ offset_top = 16.0
 offset_right = 1083.0
 offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("11_ce8c0")
+theme_override_fonts/font = ExtResource("10_s1jce")
 theme_override_font_sizes/font_size = 23
 text = "CONVO_CARRIE_KATRIN_MELVIN_STELLA_05"
 
@@ -604,7 +604,7 @@ offset_left = 22.0
 offset_top = 445.0
 offset_right = 1131.0
 offset_bottom = 610.0
-texture = ExtResource("10_tqc5w")
+texture = ExtResource("9_ifbt6")
 
 [node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect02"]
 layout_mode = 0
@@ -613,7 +613,7 @@ offset_top = 16.0
 offset_right = 1083.0
 offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("11_ce8c0")
+theme_override_fonts/font = ExtResource("10_s1jce")
 theme_override_font_sizes/font_size = 23
 text = "CONVO_CARRIE_KATRIN_MELVIN_STELLA_04"
 
@@ -622,7 +622,7 @@ offset_left = 22.0
 offset_top = 445.0
 offset_right = 1131.0
 offset_bottom = 610.0
-texture = ExtResource("10_tqc5w")
+texture = ExtResource("9_ifbt6")
 
 [node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect03"]
 layout_mode = 0
@@ -631,7 +631,7 @@ offset_top = 16.0
 offset_right = 1083.0
 offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("11_ce8c0")
+theme_override_fonts/font = ExtResource("10_s1jce")
 theme_override_font_sizes/font_size = 23
 text = "CONVO_CARRIE_KATRIN_MELVIN_STELLA_03"
 
@@ -640,7 +640,7 @@ offset_left = 22.0
 offset_top = 445.0
 offset_right = 1131.0
 offset_bottom = 610.0
-texture = ExtResource("10_tqc5w")
+texture = ExtResource("9_ifbt6")
 
 [node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect04"]
 layout_mode = 0
@@ -649,7 +649,7 @@ offset_top = 16.0
 offset_right = 1083.0
 offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("11_ce8c0")
+theme_override_fonts/font = ExtResource("10_s1jce")
 theme_override_font_sizes/font_size = 23
 text = "CONVO_CARRIE_KATRIN_MELVIN_STELLA_02"
 
@@ -658,7 +658,7 @@ offset_left = 22.0
 offset_top = 445.0
 offset_right = 1131.0
 offset_bottom = 610.0
-texture = ExtResource("10_tqc5w")
+texture = ExtResource("9_ifbt6")
 
 [node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect05"]
 layout_mode = 0
@@ -667,7 +667,7 @@ offset_top = 16.0
 offset_right = 1083.0
 offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("11_ce8c0")
+theme_override_fonts/font = ExtResource("10_s1jce")
 theme_override_font_sizes/font_size = 23
 text = "CONVO_CARRIE_KATRIN_MELVIN_STELLA_01"
 
@@ -676,7 +676,7 @@ offset_left = 23.0
 offset_top = 399.0
 offset_right = 415.0
 offset_bottom = 440.0
-texture = ExtResource("10_tqc5w")
+texture = ExtResource("9_ifbt6")
 region_rect = Rect2(0, 0, 224, 41)
 
 [node name="Label2" type="Label" parent="CanvasLayer/NameTitle"]
@@ -686,7 +686,7 @@ offset_top = 3.0
 offset_right = 1065.0
 offset_bottom = 83.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("11_ce8c0")
+theme_override_fonts/font = ExtResource("10_s1jce")
 theme_override_font_sizes/font_size = 20
 text = "Carrie Decarde"
 
