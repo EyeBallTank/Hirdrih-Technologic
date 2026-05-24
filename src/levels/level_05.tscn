@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=4 uid="uid://c4mcnuxjplwn8"]
+[gd_scene load_steps=48 format=4 uid="uid://c4mcnuxjplwn8"]
 
 [ext_resource type="Texture2D" uid="uid://cufy446jw1r4p" path="res://assets/sprites/level backgrounds/nortubel/nortubel background.png" id="1_ewlqd"]
 [ext_resource type="Texture2D" uid="uid://cn6mtjgxbet6r" path="res://assets/sprites/tile sets/nortubel/MAIN NORTUBEL TILES CLIMBABLE.png" id="2_qdk2l"]
@@ -35,6 +35,7 @@
 [ext_resource type="PackedScene" uid="uid://dstwyap0d3sx2" path="res://src/npc characters/Convo_Oscar_Pete_Angela.tscn" id="32_poqgc"]
 [ext_resource type="PackedScene" uid="uid://cvu3empj5q8ik" path="res://src/npc characters/Convo_Neandra_Shelly.tscn" id="34_ba4bj"]
 [ext_resource type="PackedScene" uid="uid://cq8roqpwswx8l" path="res://src/npc characters/Convo_Pamela_Zarina.tscn" id="35_a8krb"]
+[ext_resource type="PackedScene" uid="uid://c8q1ki8ufsqlv" path="res://src/npc characters/Convo_Egas_Luisa.tscn" id="36_7plwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_qdk2l")
@@ -938,7 +939,10 @@ position = Vector2(17, -286)
 position = Vector2(207, -279)
 
 [node name="Convo_Pamela_Zarina" parent="." instance=ExtResource("35_a8krb")]
-position = Vector2(-141, -223)
+position = Vector2(297, -284)
+
+[node name="Convo_Egas_Luisa" parent="." instance=ExtResource("36_7plwl")]
+position = Vector2(-142, -224)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

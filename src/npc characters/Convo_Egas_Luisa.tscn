@@ -185,7 +185,7 @@ tracks/0/path = NodePath("CanvasLayer/ConvoTimelineTestBar:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 15.9, 16),
+"times": PackedFloat32Array(0, 19.9, 20),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -197,7 +197,7 @@ tracks/1/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 15.9),
+"times": PackedFloat32Array(0, 19.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(52.1, 631.4), Vector2(575.543, 631.4)]
@@ -209,7 +209,7 @@ tracks/2/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 15.9),
+"times": PackedFloat32Array(0, 19.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(4.676, 4.676), Vector2(353.638, 4.676)]
@@ -221,7 +221,7 @@ tracks/3/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 15.9, 16),
+"times": PackedFloat32Array(0, 19.9, 20),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -233,7 +233,7 @@ tracks/4/path = NodePath("CanvasLayer/NPCPortrait:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 15.9, 16),
+"times": PackedFloat32Array(0, 19.9, 20),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -245,10 +245,10 @@ tracks/5/path = NodePath("CanvasLayer/NameTitle/Label2:text")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0, 3.9, 4, 7.9, 8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 3.9, 4, 7.9, 8, 11.9, 12, 15.9, 16),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": ["Luisa Jesus", "Luisa Jesus", "Egas de Moniz", "Egas de Moniz", "Luisa Jesus"]
+"values": ["Luisa Jesus", "Luisa Jesus", "Egas de Moniz", "Egas de Moniz", "Luisa Jesus", "Luisa Jesus", "Egas de Moniz", "Egas de Moniz", "Luisa Jesus"]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -281,10 +281,10 @@ tracks/8/path = NodePath("CanvasLayer/NinePatchRect03:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 11.9, 12),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true]
+"values": [true, true, false]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
@@ -293,10 +293,10 @@ tracks/9/path = NodePath("CanvasLayer/NinePatchRect02:visible")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 15.9, 16),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true]
+"values": [true, true, false]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
@@ -305,10 +305,10 @@ tracks/10/path = NodePath("CanvasLayer/NinePatchRect01:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 19.9, 20),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true]
+"values": [true, true, false]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
@@ -317,10 +317,10 @@ tracks/11/path = NodePath("CanvasLayer/NPCPortrait:animation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 3.9, 4, 7.9, 8),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 3.9, 4, 7.9, 8, 11.9, 12, 15.9, 16),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [&"luisa", &"luisa", &"egas", &"egas", &"luisa"]
+"values": [&"luisa", &"luisa", &"egas", &"egas", &"luisa", &"luisa", &"egas", &"egas", &"luisa"]
 }
 
 [sub_resource type="Animation" id="Animation_ksy2k"]
