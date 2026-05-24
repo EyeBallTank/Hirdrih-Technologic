@@ -245,10 +245,10 @@ tracks/5/path = NodePath("CanvasLayer/NameTitle/Label2:text")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 3.9, 4, 7.9, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": ["Luisa Jesus"]
+"values": ["Luisa Jesus", "Luisa Jesus", "Egas de Moniz", "Egas de Moniz", "Luisa Jesus"]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -257,10 +257,10 @@ tracks/6/path = NodePath("CanvasLayer/NinePatchRect05:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 3.9, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true]
+"values": [true, true, false]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -269,10 +269,10 @@ tracks/7/path = NodePath("CanvasLayer/NinePatchRect04:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 7.9, 8),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
-"values": [true]
+"values": [true, true, false]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
@@ -317,10 +317,10 @@ tracks/11/path = NodePath("CanvasLayer/NPCPortrait:animation")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 3.9, 4, 7.9, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [&"luisa"]
+"values": [&"luisa", &"luisa", &"egas", &"egas", &"luisa"]
 }
 
 [sub_resource type="Animation" id="Animation_ksy2k"]
