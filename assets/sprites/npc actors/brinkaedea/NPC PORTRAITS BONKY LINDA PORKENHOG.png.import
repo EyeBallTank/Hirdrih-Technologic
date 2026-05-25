@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caxwcoh2qsk11"
-path="res://.godot/imported/BONKY SPRITE NPC.png-77f4be8bae250fcdf12b718511f7e7c3.ctex"
+uid="uid://ssojiyo4r0ra"
+path="res://.godot/imported/NPC PORTRAITS BONKY LINDA PORKENHOG.png-5880cc76c6de98b36136530bb81e86d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/brinkaedea/BONKY SPRITE NPC.png"
-dest_files=["res://.godot/imported/BONKY SPRITE NPC.png-77f4be8bae250fcdf12b718511f7e7c3.ctex"]
+source_file="res://assets/sprites/npc actors/brinkaedea/NPC PORTRAITS BONKY LINDA PORKENHOG.png"
+dest_files=["res://.godot/imported/NPC PORTRAITS BONKY LINDA PORKENHOG.png-5880cc76c6de98b36136530bb81e86d3.ctex"]
 
 [params]
 
