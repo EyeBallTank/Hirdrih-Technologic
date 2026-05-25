@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=4 uid="uid://dvpp0ncynvjit"]
+[gd_scene load_steps=57 format=4 uid="uid://dvpp0ncynvjit"]
 
 [ext_resource type="Texture2D" uid="uid://0k433g8pk10o" path="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png" id="1_q6ayw"]
 [ext_resource type="Texture2D" uid="uid://hu7cmp7hfpqa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 01.png" id="2_svb3t"]
@@ -38,6 +38,7 @@
 [ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="35_kw100"]
 [ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="36_or26u"]
 [ext_resource type="PackedScene" uid="uid://bj7ueakcnqjnv" path="res://src/npc characters/Convo_Bonka_Winka_Bonko.tscn" id="38_qa8td"]
+[ext_resource type="PackedScene" uid="uid://da2q5d2nfbohf" path="res://src/npc characters/Convo_Bonky_Linda_Porkenhog.tscn" id="39_xd1to"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_svb3t")
@@ -1024,7 +1025,10 @@ spritenameforactive = "activebrinkaedea"
 spritenameforinactive = "inactivebrinkaedea"
 
 [node name="Convo_Bonka_Winka_Bonko" parent="." instance=ExtResource("38_qa8td")]
-position = Vector2(-289, -91)
+position = Vector2(217, -189)
+
+[node name="Convo_Bonky_Linda_Porkenhog" parent="." instance=ExtResource("39_xd1to")]
+position = Vector2(-282, -91)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
