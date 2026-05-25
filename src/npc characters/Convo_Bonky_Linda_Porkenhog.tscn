@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://da2q5d2nfbohf"]
+[gd_scene load_steps=34 format=3 uid="uid://da2q5d2nfbohf"]
 
 [ext_resource type="Script" path="res://src/npc characters/convo_borhr_otto.gd" id="1_sbt5v"]
 [ext_resource type="Texture2D" uid="uid://ca1wk765afu85" path="res://assets/sprites/SPRITE CHAR HEIGHT TEST.png" id="2_plc82"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="4_lqog0"]
 [ext_resource type="Texture2D" uid="uid://by55i57cjocoo" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BAR.png" id="5_r6bon"]
 [ext_resource type="Texture2D" uid="uid://0agtp3rilyp1" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST MARKER.png" id="6_ecbt4"]
+[ext_resource type="Texture2D" uid="uid://ssojiyo4r0ra" path="res://assets/sprites/npc actors/brinkaedea/NPC PORTRAITS BONKY LINDA PORKENHOG.png" id="7_f4xto"]
 [ext_resource type="Texture2D" uid="uid://b7dve5f7wcjox" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BUTTONS.png" id="8_37o1l"]
 [ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="9_qgtl7"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="10_ylm8g"]
@@ -39,8 +40,44 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
 size = Vector2(63, 46)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_giavi"]
+atlas = ExtResource("7_f4xto")
+region = Rect2(0, 114, 54, 57)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wj15r"]
+atlas = ExtResource("7_f4xto")
+region = Rect2(0, 57, 54, 57)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dgcqr"]
+atlas = ExtResource("7_f4xto")
+region = Rect2(0, 0, 54, 57)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_lwhdg"]
-animations = []
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_giavi")
+}],
+"loop": false,
+"name": &"bonky",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wj15r")
+}],
+"loop": false,
+"name": &"linda",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dgcqr")
+}],
+"loop": false,
+"name": &"porkenhog",
+"speed": 0.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4x7f4"]
 atlas = ExtResource("8_37o1l")
@@ -152,7 +189,7 @@ animations = [{
 
 [sub_resource type="Animation" id="Animation_gkxkj"]
 resource_name = "Conversation"
-length = 20.0
+length = 28.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -160,7 +197,7 @@ tracks/0/path = NodePath("CanvasLayer/ConvoTimelineTestBar:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 27.9, 28),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -172,7 +209,7 @@ tracks/1/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 19.9),
+"times": PackedFloat32Array(0, 27.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(52.1, 631.4), Vector2(575.543, 631.4)]
@@ -184,7 +221,7 @@ tracks/2/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 19.9),
+"times": PackedFloat32Array(0, 27.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(4.676, 4.676), Vector2(353.638, 4.676)]
@@ -196,7 +233,7 @@ tracks/3/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 27.9, 28),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -208,10 +245,118 @@ tracks/4/path = NodePath("CanvasLayer/NPCPortrait:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 27.9, 28),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/NameTitle/Label2:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Porkenhog"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/NPCPortrait:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"porkenhog"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/NinePatchRect07:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/NinePatchRect06:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/NinePatchRect05:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/NinePatchRect04:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/NinePatchRect03:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/NinePatchRect02:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/NinePatchRect01:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_ksy2k"]
@@ -276,6 +421,114 @@ tracks/4/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/NameTitle/Label2:text")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["Porkenhog"]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/NPCPortrait:animation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"porkenhog"]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("CanvasLayer/NinePatchRect07:visible")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("CanvasLayer/NinePatchRect06:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("CanvasLayer/NinePatchRect05:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("CanvasLayer/NinePatchRect04:visible")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("CanvasLayer/NinePatchRect03:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/NinePatchRect02:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("CanvasLayer/NinePatchRect01:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8sxr6"]
 _data = {
@@ -322,7 +575,7 @@ texture = ExtResource("6_ecbt4")
 position = Vector2(141, 264)
 scale = Vector2(4.40741, 4.40741)
 sprite_frames = SubResource("SpriteFrames_lwhdg")
-animation = &""
+animation = &"porkenhog"
 
 [node name="ButtonPlayNormal" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(755.436, 413)
@@ -364,7 +617,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_BONKA_WINKA_BONKO_05"
+text = "CONVO_BONKY_PORKENHOG_LINDA_07"
 
 [node name="NinePatchRect02" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -382,7 +635,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_BONKA_WINKA_BONKO_04"
+text = "CONVO_BONKY_PORKENHOG_LINDA_06"
 
 [node name="NinePatchRect03" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -400,7 +653,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_BONKA_WINKA_BONKO_03"
+text = "CONVO_BONKY_PORKENHOG_LINDA_05"
 
 [node name="NinePatchRect04" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -418,7 +671,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_BONKA_WINKA_BONKO_02"
+text = "CONVO_BONKY_PORKENHOG_LINDA_04"
 
 [node name="NinePatchRect05" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -436,7 +689,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_BONKA_WINKA_BONKO_01"
+text = "CONVO_BONKY_PORKENHOG_LINDA_03"
 
 [node name="NinePatchRect06" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -454,7 +707,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_BONKA_WINKA_BONKO_01"
+text = "CONVO_BONKY_PORKENHOG_LINDA_02"
 
 [node name="NinePatchRect07" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -472,7 +725,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_BONKA_WINKA_BONKO_01"
+text = "CONVO_BONKY_PORKENHOG_LINDA_01"
 
 [node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 23.0
@@ -491,7 +744,7 @@ offset_bottom = 83.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_ylm8g")
 theme_override_font_sizes/font_size = 20
-text = "Winka Millette"
+text = "Porkenhog"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
