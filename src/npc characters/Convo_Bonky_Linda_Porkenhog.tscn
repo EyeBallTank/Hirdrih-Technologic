@@ -1,0 +1,502 @@
+[gd_scene load_steps=30 format=3 uid="uid://da2q5d2nfbohf"]
+
+[ext_resource type="Script" path="res://src/npc characters/convo_borhr_otto.gd" id="1_sbt5v"]
+[ext_resource type="Texture2D" uid="uid://ca1wk765afu85" path="res://assets/sprites/SPRITE CHAR HEIGHT TEST.png" id="2_plc82"]
+[ext_resource type="Texture2D" uid="uid://cq0mu42otd6b0" path="res://assets/sprites/npc actors/brinkaedea/CONVO SPRITE BONKY LINDA PORKENHOG.png" id="3_frd7x"]
+[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="4_lqog0"]
+[ext_resource type="Texture2D" uid="uid://by55i57cjocoo" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BAR.png" id="5_r6bon"]
+[ext_resource type="Texture2D" uid="uid://0agtp3rilyp1" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST MARKER.png" id="6_ecbt4"]
+[ext_resource type="Texture2D" uid="uid://b7dve5f7wcjox" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BUTTONS.png" id="8_37o1l"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="9_qgtl7"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="10_ylm8g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qm5r"]
+atlas = ExtResource("2_plc82")
+region = Rect2(0, 0, 24, 47)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovk66"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qm5r")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p25ly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_frd7x")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
+size = Vector2(63, 46)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lwhdg"]
+animations = []
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4x7f4"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(22, 33, 22, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnb2i"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(0, 33, 22, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0qx5s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4x7f4")
+}],
+"loop": false,
+"name": &"pressed",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnb2i")
+}],
+"loop": false,
+"name": &"unpressed",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cl3i"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(22, 22, 22, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8bhm8"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(0, 22, 22, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mefn1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cl3i")
+}],
+"loop": false,
+"name": &"pressed",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8bhm8")
+}],
+"loop": false,
+"name": &"unpressed",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b28aw"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(22, 11, 22, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qod1d"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(0, 11, 22, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kwd5l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b28aw")
+}],
+"loop": false,
+"name": &"pressed",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qod1d")
+}],
+"loop": false,
+"name": &"unpressed",
+"speed": 0.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_km6tm"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(22, 0, 22, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hd3fq"]
+atlas = ExtResource("8_37o1l")
+region = Rect2(0, 0, 22, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i6qcb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_km6tm")
+}],
+"loop": false,
+"name": &"pressed",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hd3fq")
+}],
+"loop": false,
+"name": &"unpressed",
+"speed": 0.0
+}]
+
+[sub_resource type="Animation" id="Animation_gkxkj"]
+resource_name = "Conversation"
+length = 20.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/ConvoTimelineTestBar:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 19.9, 20),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 19.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(52.1, 631.4), Vector2(575.543, 631.4)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 19.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(4.676, 4.676), Vector2(353.638, 4.676)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 19.9, 20),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/NPCPortrait:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 19.9, 20),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_ksy2k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/ConvoTimelineTestBar:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(52.1, 631.4)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4.676, 4.676)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/NPCPortrait:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8sxr6"]
+_data = {
+"Conversation": SubResource("Animation_gkxkj"),
+"RESET": SubResource("Animation_ksy2k")
+}
+
+[node name="Convo_Bonky_Linda_Porkenhog" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_sbt5v")
+
+[node name="height test" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(2, -24)
+sprite_frames = SubResource("SpriteFrames_ovk66")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -16)
+scale = Vector2(0.377551, 0.377551)
+sprite_frames = SubResource("SpriteFrames_p25ly")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -23)
+shape = SubResource("RectangleShape2D_vkhlk")
+
+[node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
+position = Vector2(26, -37)
+texture = ExtResource("4_lqog0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ConvoTimelineTestBar" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(575.875, 631.44)
+scale = Vector2(4.67616, 4.67616)
+texture = ExtResource("5_r6bon")
+
+[node name="ConvoTimelineTestMarker" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(52.1, 631.4)
+scale = Vector2(4.676, 4.676)
+texture = ExtResource("6_ecbt4")
+
+[node name="NPCPortrait" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(141, 264)
+scale = Vector2(4.40741, 4.40741)
+sprite_frames = SubResource("SpriteFrames_lwhdg")
+animation = &""
+
+[node name="ButtonPlayNormal" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(755.436, 413)
+scale = Vector2(4.676, 4.676)
+sprite_frames = SubResource("SpriteFrames_0qx5s")
+animation = &"unpressed"
+
+[node name="ButtonPlayBackwards" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(858.436, 413)
+scale = Vector2(4.676, 4.676)
+sprite_frames = SubResource("SpriteFrames_mefn1")
+animation = &"unpressed"
+
+[node name="ButtonPlayFaster" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(961.436, 413)
+scale = Vector2(4.676, 4.676)
+sprite_frames = SubResource("SpriteFrames_kwd5l")
+animation = &"unpressed"
+
+[node name="ButtonPlayPause" type="AnimatedSprite2D" parent="CanvasLayer"]
+position = Vector2(1064.44, 413)
+scale = Vector2(4.676, 4.676)
+sprite_frames = SubResource("SpriteFrames_i6qcb")
+animation = &"unpressed"
+
+[node name="NinePatchRect01" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_qgtl7")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect01"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_BONKA_WINKA_BONKO_05"
+
+[node name="NinePatchRect02" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_qgtl7")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect02"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_BONKA_WINKA_BONKO_04"
+
+[node name="NinePatchRect03" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_qgtl7")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect03"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_BONKA_WINKA_BONKO_03"
+
+[node name="NinePatchRect04" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_qgtl7")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect04"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_BONKA_WINKA_BONKO_02"
+
+[node name="NinePatchRect05" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_qgtl7")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect05"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_BONKA_WINKA_BONKO_01"
+
+[node name="NinePatchRect06" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_qgtl7")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect06"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_BONKA_WINKA_BONKO_01"
+
+[node name="NinePatchRect07" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_qgtl7")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect07"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_BONKA_WINKA_BONKO_01"
+
+[node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 399.0
+offset_right = 415.0
+offset_bottom = 440.0
+texture = ExtResource("9_qgtl7")
+region_rect = Rect2(0, 0, 224, 41)
+
+[node name="Label2" type="Label" parent="CanvasLayer/NameTitle"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 1065.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_ylm8g")
+theme_override_font_sizes/font_size = 20
+text = "Winka Millette"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8sxr6")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
