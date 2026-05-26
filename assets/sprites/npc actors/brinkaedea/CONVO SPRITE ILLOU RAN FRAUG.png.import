@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmeobnryothj2"
-path="res://.godot/imported/MONICA SPRITE NPC.png-3d51cd8cc783689b2739fcade5bc5096.ctex"
+uid="uid://yeky71otsteg"
+path="res://.godot/imported/CONVO SPRITE ILLOU RAN FRAUG.png-ba286e53a9709eebcdd337748c453290.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/brinkaedea/MONICA SPRITE NPC.png"
-dest_files=["res://.godot/imported/MONICA SPRITE NPC.png-3d51cd8cc783689b2739fcade5bc5096.ctex"]
+source_file="res://assets/sprites/npc actors/brinkaedea/CONVO SPRITE ILLOU RAN FRAUG.png"
+dest_files=["res://.godot/imported/CONVO SPRITE ILLOU RAN FRAUG.png-ba286e53a9709eebcdd337748c453290.ctex"]
 
 [params]
 

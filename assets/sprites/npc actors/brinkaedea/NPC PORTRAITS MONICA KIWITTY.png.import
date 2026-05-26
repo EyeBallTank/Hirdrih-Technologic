@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caeq7pbt5cjl1"
-path="res://.godot/imported/ILLOU SPRITE NPC 3.png-6fecd313850757c8af174538fd14192c.ctex"
+uid="uid://pmkwc5vvbif2"
+path="res://.godot/imported/NPC PORTRAITS MONICA KIWITTY.png-13681a3587b031390ffbb005d8e5121b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/brinkaedea/ILLOU SPRITE NPC 3.png"
-dest_files=["res://.godot/imported/ILLOU SPRITE NPC 3.png-6fecd313850757c8af174538fd14192c.ctex"]
+source_file="res://assets/sprites/npc actors/brinkaedea/NPC PORTRAITS MONICA KIWITTY.png"
+dest_files=["res://.godot/imported/NPC PORTRAITS MONICA KIWITTY.png-13681a3587b031390ffbb005d8e5121b.ctex"]
 
 [params]
 
