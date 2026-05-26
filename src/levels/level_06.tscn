@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=4 uid="uid://dvpp0ncynvjit"]
+[gd_scene load_steps=59 format=4 uid="uid://dvpp0ncynvjit"]
 
 [ext_resource type="Texture2D" uid="uid://0k433g8pk10o" path="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png" id="1_q6ayw"]
 [ext_resource type="Texture2D" uid="uid://hu7cmp7hfpqa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 01.png" id="2_svb3t"]
@@ -40,6 +40,7 @@
 [ext_resource type="PackedScene" uid="uid://bj7ueakcnqjnv" path="res://src/npc characters/Convo_Bonka_Winka_Bonko.tscn" id="38_qa8td"]
 [ext_resource type="PackedScene" uid="uid://da2q5d2nfbohf" path="res://src/npc characters/Convo_Bonky_Linda_Porkenhog.tscn" id="39_xd1to"]
 [ext_resource type="PackedScene" uid="uid://0p727oo4q0bk" path="res://src/npc characters/NPC_Clarinetto.tscn" id="40_s63ww"]
+[ext_resource type="PackedScene" uid="uid://bkwbld5g2p5js" path="res://src/npc characters/Convo_Illou_Ran_Fraug.tscn" id="41_56lts"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_svb3t")
@@ -1032,11 +1033,14 @@ position = Vector2(217, -189)
 position = Vector2(-216, -217)
 
 [node name="NPCClarinetto" parent="." instance=ExtResource("40_s63ww")]
-position = Vector2(-247, -92)
+position = Vector2(-262, -224)
 
 [node name="Sprite" parent="NPCClarinetto" index="1"]
 position = Vector2(-3.81567, -18.875)
 scale = Vector2(0.386364, 0.386364)
+
+[node name="Convo_Bonka_Winka_Bonko2" parent="." instance=ExtResource("41_56lts")]
+position = Vector2(-261, -97)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
