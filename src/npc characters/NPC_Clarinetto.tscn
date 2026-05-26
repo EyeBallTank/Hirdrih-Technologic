@@ -1,0 +1,108 @@
+[gd_scene load_steps=12 format=3 uid="uid://0p727oo4q0bk"]
+
+[ext_resource type="Script" path="res://src/npc characters/npc_time_decider.gd" id="1_n8b1p"]
+[ext_resource type="Texture2D" uid="uid://ca1wk765afu85" path="res://assets/sprites/SPRITE CHAR HEIGHT TEST.png" id="2_4ihx1"]
+[ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="3_qnbne"]
+[ext_resource type="Texture2D" uid="uid://cgiy5uhm6r6xn" path="res://assets/sprites/npc actors/brinkaedea/NPC SPRITE CLARINETTO.png" id="3_uppd2"]
+[ext_resource type="Texture2D" uid="uid://dam4am2hkeqij" path="res://assets/sprites/npc actors/brinkaedea/NPC PORTRAIT CLARINETTO.png" id="5_5qphb"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="5_mu6to"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_iyx1b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qm5r"]
+atlas = ExtResource("2_4ihx1")
+region = Rect2(0, 0, 24, 47)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qg53o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qm5r")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p25ly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_uppd2")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
+size = Vector2(35, 40)
+
+[node name="NPCClarinetto" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_n8b1p")
+
+[node name="height test" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(2, -23.5)
+sprite_frames = SubResource("SpriteFrames_qg53o")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4.1995, -17.875)
+scale = Vector2(0.366162, 0.366162)
+sprite_frames = SubResource("SpriteFrames_p25ly")
+animation = &"new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -20)
+shape = SubResource("RectangleShape2D_vkhlk")
+
+[node name="NpcSpeechBalloonSprite" type="Sprite2D" parent="."]
+position = Vector2(13, -40)
+texture = ExtResource("3_qnbne")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="NPCPortrait" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(141, 264)
+scale = Vector2(4.40741, 4.40741)
+texture = ExtResource("5_5qphb")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 631.0
+texture = ExtResource("5_mu6to")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRect"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 96.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_iyx1b")
+theme_override_font_sizes/font_size = 23
+text = "NPC_DIALOGUE_TEXT_CLARINETTO"
+
+[node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 23.0
+offset_top = 399.0
+offset_right = 415.0
+offset_bottom = 440.0
+texture = ExtResource("5_mu6to")
+region_rect = Rect2(0, 0, 224, 41)
+
+[node name="Label2" type="Label" parent="CanvasLayer/NameTitle"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 3.0
+offset_right = 1065.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_iyx1b")
+theme_override_font_sizes/font_size = 20
+text = "Clarinetto"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
