@@ -1039,8 +1039,8 @@ position = Vector2(-262, -224)
 position = Vector2(-3.81567, -18.875)
 scale = Vector2(0.386364, 0.386364)
 
-[node name="Convo_Bonka_Winka_Bonko2" parent="." instance=ExtResource("41_56lts")]
-position = Vector2(-261, -97)
+[node name="Convo_Illou_Ran_Fraug" parent="." instance=ExtResource("41_56lts")]
+position = Vector2(-242, -94)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

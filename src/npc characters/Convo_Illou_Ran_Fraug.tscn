@@ -452,7 +452,7 @@ _data = {
 "RESET": SubResource("Animation_ksy2k")
 }
 
-[node name="Convo_Bonka_Winka_Bonko" type="Area2D"]
+[node name="Convo_Illou_Ran_Fraug" type="Area2D"]
 collision_layer = 8
 script = ExtResource("1_0ub8m")
 
