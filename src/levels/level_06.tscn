@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=4 uid="uid://dvpp0ncynvjit"]
+[gd_scene load_steps=61 format=4 uid="uid://dvpp0ncynvjit"]
 
 [ext_resource type="Texture2D" uid="uid://0k433g8pk10o" path="res://assets/sprites/level backgrounds/brinkaedea/brinkaedea background.png" id="1_q6ayw"]
 [ext_resource type="Texture2D" uid="uid://hu7cmp7hfpqa" path="res://assets/sprites/tile sets/brinkaedea/MAIN BRINKAEDEA TILES CLIMBABLE 01.png" id="2_svb3t"]
@@ -42,6 +42,7 @@
 [ext_resource type="PackedScene" uid="uid://0p727oo4q0bk" path="res://src/npc characters/NPC_Clarinetto.tscn" id="40_s63ww"]
 [ext_resource type="PackedScene" uid="uid://bkwbld5g2p5js" path="res://src/npc characters/Convo_Illou_Ran_Fraug.tscn" id="41_56lts"]
 [ext_resource type="PackedScene" uid="uid://sqh5lrt2kpdg" path="res://src/npc characters/Convo_Monica_Kiwitty.tscn" id="42_3xeou"]
+[ext_resource type="PackedScene" uid="uid://d3iglloqsqd6q" path="res://src/enemies/hirdrih_servant.tscn" id="43_lfbmy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_svb3t")
@@ -1055,6 +1056,7 @@ spritenameforinactive = "inactivebrinkaedea"
 position = Vector2(883, 252.3)
 
 [node name="Convo_Bonky_Linda_Porkenhog" parent="." instance=ExtResource("39_xd1to")]
+visible = false
 position = Vector2(615, 144)
 
 [node name="NPCClarinetto" parent="." instance=ExtResource("40_s63ww")]
@@ -1069,6 +1071,12 @@ position = Vector2(928, -17.7)
 
 [node name="Convo_Monica_Kiwitty" parent="." instance=ExtResource("42_3xeou")]
 position = Vector2(994, -17.8)
+
+[node name="HirdrihServant" parent="." instance=ExtResource("43_lfbmy")]
+position = Vector2(1583, 299)
+
+[node name="HirdrihServant2" parent="." instance=ExtResource("43_lfbmy")]
+position = Vector2(1775, 299)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
