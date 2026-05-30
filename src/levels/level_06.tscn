@@ -967,7 +967,7 @@ looping = true
 spritename = "BRINKAEDEA VERTICAL"
 
 [node name="PickableArrow" parent="." instance=ExtResource("18_ar2o3")]
-position = Vector2(963, 245)
+position = Vector2(10, 173)
 
 [node name="CurrentUI" parent="." instance=ExtResource("19_gg4bv")]
 
