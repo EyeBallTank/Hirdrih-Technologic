@@ -899,7 +899,7 @@ position = Vector2(1054, 277)
 spritename = "brinkaedea"
 
 [node name="HealthItem" parent="." instance=ExtResource("10_3xf2v")]
-position = Vector2(1656, -195)
+position = Vector2(1189, 232)
 spritename = "brinkaedea"
 
 [node name="Redkey" parent="." instance=ExtResource("11_bcdh2")]
@@ -1045,10 +1045,10 @@ position = Vector2(-3.81567, -18.875)
 scale = Vector2(0.386364, 0.386364)
 
 [node name="Convo_Illou_Ran_Fraug" parent="." instance=ExtResource("41_56lts")]
-position = Vector2(1785, -296)
+position = Vector2(928, -17.7)
 
 [node name="Convo_Monica_Kiwitty" parent="." instance=ExtResource("42_3xeou")]
-position = Vector2(1676, -153)
+position = Vector2(994, -17.8)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
