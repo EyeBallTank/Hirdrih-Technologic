@@ -1019,7 +1019,7 @@ position = Vector2(1941, -180)
 spritename = "brinkaedea"
 
 [node name="JumpPad" parent="." instance=ExtResource("35_0eela")]
-position = Vector2(477, 280)
+position = Vector2(381, 280)
 
 [node name="PushableBarrier" parent="." instance=ExtResource("35_kw100")]
 position = Vector2(1758, -193)
