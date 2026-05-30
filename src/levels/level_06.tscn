@@ -934,7 +934,7 @@ looping = true
 spritename = "BRINKAEDEA HORIZONTAL"
 
 [node name="Path2D" parent="." instance=ExtResource("17_be12s")]
-position = Vector2(682, 154)
+position = Vector2(681, 154)
 curve = SubResource("Curve2D_ybwxu")
 time_of_path = 3.0
 looping = true
