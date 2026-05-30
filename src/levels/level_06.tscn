@@ -921,7 +921,7 @@ position = Vector2(1054, 277)
 spritename = "brinkaedea"
 
 [node name="Coin8" parent="." instance=ExtResource("9_judhj")]
-position = Vector2(1523, -112)
+position = Vector2(1475, -87)
 spritename = "brinkaedea"
 
 [node name="HealthItem" parent="." instance=ExtResource("10_3xf2v")]
@@ -990,7 +990,7 @@ position = Vector2(737, -11)
 position = Vector2(837, -10)
 
 [node name="ClickableBox" parent="." instance=ExtResource("21_uqr5u")]
-position = Vector2(1520, -112)
+position = Vector2(1474, -88)
 
 [node name="ClickableMoxingObject" parent="." instance=ExtResource("22_t4i01")]
 position = Vector2(763, 20)
