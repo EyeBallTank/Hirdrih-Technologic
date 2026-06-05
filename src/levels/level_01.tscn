@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=62 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="14_cd0ll"]
 [ext_resource type="PackedScene" uid="uid://okeygmbcw0gr" path="res://src/npc characters/hint_book_scene_02.tscn" id="14_t8ss8"]
 [ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="15_r4gfa"]
+[ext_resource type="PackedScene" uid="uid://btb8o5xdutyjr" path="res://src/npc characters/hint_book_scene_05.tscn" id="17_tfp73"]
 [ext_resource type="PackedScene" uid="uid://bqtgekff4fdnm" path="res://src/level objects/mov_plat_verti.tscn" id="19_dm0jd"]
 [ext_resource type="PackedScene" uid="uid://e4v4r1jgolmy" path="res://src/interface/current_ui.tscn" id="19_qpm7p"]
 [ext_resource type="PackedScene" uid="uid://t17qn6yhp3h1" path="res://src/level objects/pickable_arrow.tscn" id="20_6gdw4"]
@@ -51,6 +52,9 @@
 [ext_resource type="PackedScene" uid="uid://cuosdmdpbep1p" path="res://src/npc characters/NPC_Suki.tscn" id="49_dd1qg"]
 [ext_resource type="PackedScene" uid="uid://cby8d871xxysq" path="res://src/npc characters/NPC_Borhr.tscn" id="50_36713"]
 [ext_resource type="PackedScene" uid="uid://cknyis0yao17m" path="res://src/npc characters/NPC_Otto.tscn" id="51_5wahu"]
+[ext_resource type="PackedScene" uid="uid://djd1dv8h7rnh7" path="res://src/npc characters/hint_book_scene_03.tscn" id="52_l8e37"]
+[ext_resource type="PackedScene" uid="uid://cqj6jjkijxvjv" path="res://src/npc characters/hint_book_scene_04.tscn" id="53_fwvyx"]
+[ext_resource type="PackedScene" uid="uid://desqg3kwc6hd1" path="res://src/npc characters/hint_book_scene_06.tscn" id="55_s3lp6"]
 
 [sub_resource type="Curve2D" id="Curve2D_f2qaw"]
 resource_local_to_scene = true
@@ -144,11 +148,11 @@ position = Vector2(511, -332)
 texture = ExtResource("7_ecqel")
 
 [node name="TutorialBoardSprite05" type="Sprite2D" parent="."]
-position = Vector2(1267, -506)
+position = Vector2(1273, -536)
 texture = ExtResource("8_klkwu")
 
 [node name="TutorialBoardSprite06" type="Sprite2D" parent="."]
-position = Vector2(1546, -505)
+position = Vector2(1569, -496)
 texture = ExtResource("9_ne254")
 
 [node name="TutorialBoardSprite07" type="Sprite2D" parent="."]
@@ -172,6 +176,18 @@ position = Vector2(279, -236)
 
 [node name="HintBookScene02" parent="." instance=ExtResource("14_t8ss8")]
 position = Vector2(539, -240)
+
+[node name="HintBookScene03" parent="." instance=ExtResource("52_l8e37")]
+position = Vector2(749, -562)
+
+[node name="HintBookScene04" parent="." instance=ExtResource("53_fwvyx")]
+position = Vector2(1272, -493)
+
+[node name="HintBookScene05" parent="." instance=ExtResource("17_tfp73")]
+position = Vector2(1518, -496)
+
+[node name="HintBookScene06" parent="." instance=ExtResource("55_s3lp6")]
+position = Vector2(2177, -488)
 
 [node name="FrontTiles" type="TileMapLayer" parent="."]
 z_index = 17
