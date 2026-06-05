@@ -102,7 +102,6 @@ A vehicle that can be used to come accross different worlds and universes.
 
 
 
-
 ","
 == LEON E OTTO ==
 
@@ -200,11 +199,10 @@ Um veículo que pode ser utilizado para viajar entre diferentes mundos e univers
 
 
 
-
 "
 HIRDRIH_TUTORIAL_TEXT_1,"Control the Magic Arrow with arrow keys. E to click and Q to switch
-between arrow and Leon/Otto.","Controla a Seta Mágica com botões de setas. E para clicar e
-Q para mudar entre a seta e o Leon/Otto."
+between arrow and Leon/Otto.","Controla a Seta Mágica com botões de setas. “E” para clicar e
+“Q” para mudar entre a seta e o Leon/Otto."
 TIME_DECIDER_LINE_T,"The viruses have yet again broken into our world.
 You and your brother need to find out exactly what's 
 causing these corruptions.","Os vírus invadiram o nosso mundo mais uma vez.
@@ -395,9 +393,10 @@ CONVO_MONICA_KIWITTY_04,"Well, that seems like a good idea.
 Though personally, I prefer making my own recipes.","Parece uma boa ideia.
 Mas para mim, prefiro fazer as minhas próprias receitas."
 HIRDRIH_TUTORIAL_TEXT_2,The Magic Arrow can interact with some objects.,A Seta Mágica consegue interagir com alguns objetos.
-HIRDRIH_TUTORIAL_TEXT_3,Anti-Virus Software protects you for some time.,o Software Anti-Virus protege-te por algum tempo.
+HIRDRIH_TUTORIAL_TEXT_3,Anti-Virus Software protects you for some time.,O Software Anti-Virus protege-te por algum tempo.
 HIRDRIH_TUTORIAL_TEXT_4,E can be used to attack enemies.,"""E"" pode ser usado para atacar inimigos."
-HIRDRIH_TUTORIAL_TEXT_5,Use the Magic Arrow to grab the battery and drop it on the yellow socket.,"Usa a Seta Mágica para pegar na bateria e larga-la
+HIRDRIH_TUTORIAL_TEXT_5,"Use the Magic Arrow to grab the battery and 
+drop it on the yellow socket.","Usa a Seta Mágica para pegar na bateria e larga-la
 no encaixe amarelo."
-HIRDRIH_TUTORIAL_TEXT_6,Press R to climb on stuff and R again to quit.,"Pressione R para subir escadas e R
+HIRDRIH_TUTORIAL_TEXT_6,Press R to climb on stuff and R again to quit.,"Pressione “R” para subir escadas e “R”
 outra vez para sair da escadas."
