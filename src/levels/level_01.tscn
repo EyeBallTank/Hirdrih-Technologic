@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://kkvobhj88d7l"]
+[gd_scene load_steps=58 format=4 uid="uid://kkvobhj88d7l"]
 
 [ext_resource type="Texture2D" uid="uid://deyqdl3pmc1fp" path="res://assets/sprites/LEVEL BACKGROUND SPRITE TEST.png" id="1_7pwmp"]
 [ext_resource type="PackedScene" uid="uid://14kmh83iodhf" path="res://src/player/player_test.tscn" id="1_mapnb"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://d0nge3mx1lyjf" path="res://assets/sprites/TUTORIAL BOARD SPRITE 10.png" id="13_5xc3s"]
 [ext_resource type="PackedScene" uid="uid://bo0jg2beh8fkb" path="res://src/level objects/reddoor.tscn" id="13_l4i53"]
 [ext_resource type="PackedScene" uid="uid://by53laqysl54h" path="res://src/level objects/bluedoor.tscn" id="14_cd0ll"]
+[ext_resource type="PackedScene" uid="uid://okeygmbcw0gr" path="res://src/npc characters/hint_book_scene_02.tscn" id="14_t8ss8"]
 [ext_resource type="PackedScene" uid="uid://boqh3dn4ii0ql" path="res://src/level objects/yellowdoor.tscn" id="15_r4gfa"]
 [ext_resource type="PackedScene" uid="uid://bqtgekff4fdnm" path="res://src/level objects/mov_plat_verti.tscn" id="19_dm0jd"]
 [ext_resource type="PackedScene" uid="uid://e4v4r1jgolmy" path="res://src/interface/current_ui.tscn" id="19_qpm7p"]
@@ -168,31 +169,9 @@ texture = ExtResource("13_5xc3s")
 
 [node name="HintBookScene" parent="." instance=ExtResource("46_iw4ow")]
 position = Vector2(279, -236)
-customtext = "Control the Magic Arrow with arrow keys. E to click."
 
-[node name="HintBookScene2" parent="." instance=ExtResource("46_iw4ow")]
-position = Vector2(338, -236)
-customtext = "Q to switch between arrow and Leon/Otto."
-
-[node name="HintBookScene3" parent="." instance=ExtResource("46_iw4ow")]
-position = Vector2(578, -236)
-customtext = "The Magic Arrow can interact with some objects."
-
-[node name="HintBookScene4" parent="." instance=ExtResource("46_iw4ow")]
-position = Vector2(753, -560)
-customtext = "Anti-Virus Software protects you for some time."
-
-[node name="HintBookScene5" parent="." instance=ExtResource("46_iw4ow")]
-position = Vector2(986, -576)
-customtext = "E can be used to attack enemies."
-
-[node name="HintBookScene6" parent="." instance=ExtResource("46_iw4ow")]
-position = Vector2(1494, -489)
-customtext = "Use the Magic Arrow to grab the battery and drop it on the yellow socket."
-
-[node name="HintBookScene7" parent="." instance=ExtResource("46_iw4ow")]
-position = Vector2(2163, -486)
-customtext = "Press R tp climb on stuff and R again to quit."
+[node name="HintBookScene02" parent="." instance=ExtResource("14_t8ss8")]
+position = Vector2(539, -240)
 
 [node name="FrontTiles" type="TileMapLayer" parent="."]
 z_index = 17
