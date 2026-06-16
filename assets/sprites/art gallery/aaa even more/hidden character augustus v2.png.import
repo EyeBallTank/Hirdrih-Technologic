@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drffl0ab6ik3h"
-path="res://.godot/imported/hidden character augustus.png-37994c52157e23c8371dd66c600bfa57.ctex"
+uid="uid://drgu4h56jivwc"
+path="res://.godot/imported/hidden character augustus v2.png-05eb210984b8a4f16f3bca8e15850684.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/aaa even more/hidden character augustus.png"
-dest_files=["res://.godot/imported/hidden character augustus.png-37994c52157e23c8371dd66c600bfa57.ctex"]
+source_file="res://assets/sprites/art gallery/aaa even more/hidden character augustus v2.png"
+dest_files=["res://.godot/imported/hidden character augustus v2.png-05eb210984b8a4f16f3bca8e15850684.ctex"]
 
 [params]
 
