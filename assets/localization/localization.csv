@@ -101,7 +101,6 @@ Containing information about the languages of various other worlds.
 A vehicle that can be used to come accross different worlds and universes.
 
 
-
 ","
 == LEON E OTTO ==
 
@@ -196,7 +195,6 @@ Contém informação sobre os idiomas de vários outros mundos.
 == NAVE COBRA ==
 
 Um veículo que pode ser utilizado para viajar entre diferentes mundos e universos.
-
 
 
 "
@@ -382,16 +380,16 @@ Talvez já sabes mais do que eu."
 CONVO_ILLOU_RAN_FRAUG_04,"But I will always look forward to what
 you can do with your skills.","Mas estarei sempre ansioso para ver o que
 poderás fazer com as tuas habilidades."
-CONVO_MONICA_KIWITTY_01,"By the way, how's the farm?","Já agora, como está a quinta?"
-CONVO_MONICA_KIWITTY_02,"Nothing much.
-Things are going well.","Nada de interessante.
-As coisas estão a correr bem."
-CONVO_MONICA_KIWITTY_03,"But I just thought: What if I tried selling
-juices and soups and not just the fruits and vegetables?","Mas eu pensei: E se eu tentasse vender sumos e sopas
-e não só as frutas e os vegetais?"
-CONVO_MONICA_KIWITTY_04,"Well, that seems like a good idea.
-Though personally, I prefer making my own recipes.","Parece uma boa ideia.
-Mas para mim, prefiro fazer as minhas próprias receitas."
+CONVO_MONICA_KIWITTY_01,"By the way, how's the restaurant?","Já agora, como está o restaurante?"
+CONVO_MONICA_KIWITTY_02,"Nothing much, but I had ideas for new recipes…","Nada de interessante.
+mas tive ideias para novas receitas…"
+CONVO_MONICA_KIWITTY_03,"What if I combine watermelon with beetroot and a 
+little bit of figs, cucumber, and pineapple?","E se eu combinar melancia com beterraba e um 
+bocadinho de figos, pepino e ananás?"
+CONVO_MONICA_KIWITTY_04,"If I were you, I'd think twice before trying out those recipes.
+Some combinations don't taste nice.","Se fosse a ti, pensaria duas vezes antes de
+tentar essas receitas.
+Algumas combinações não sabem bem."
 HIRDRIH_TUTORIAL_TEXT_2,The Magic Arrow can interact with some objects.,A Seta Mágica consegue interagir com alguns objetos.
 HIRDRIH_TUTORIAL_TEXT_3,Anti-Virus Software protects you for some time.,O Software Anti-Virus protege-te por algum tempo.
 HIRDRIH_TUTORIAL_TEXT_4,E can be used to attack enemies.,"""E"" pode ser usado para atacar inimigos."
