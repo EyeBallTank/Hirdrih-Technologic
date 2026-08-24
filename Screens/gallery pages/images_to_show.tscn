@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=83 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -64,6 +64,19 @@
 [ext_resource type="Texture2D" uid="uid://d1lpbwi1rbtd6" path="res://assets/sprites/art gallery/01 brinkaedea/31 brinkaedea art showcase.png" id="32_j6glq"]
 [ext_resource type="Texture2D" uid="uid://dwooxu8vvrufb" path="res://assets/sprites/art gallery/01 brinkaedea/32 brinkaedea art showcase.png" id="33_78cd5"]
 [ext_resource type="Texture2D" uid="uid://dgwe2a454jctl" path="res://assets/sprites/art gallery/01 brinkaedea/33 brinkaedea art showcase.png" id="34_e068q"]
+[ext_resource type="Texture2D" uid="uid://dep5qsxmi8hcb" path="res://assets/sprites/art gallery/02 krimbstone/01 krimbstone art showcase.png" id="45_mapd3"]
+[ext_resource type="Texture2D" uid="uid://b4w83pqimrytb" path="res://assets/sprites/art gallery/02 krimbstone/02 krimbstone art showcase.png" id="46_bld8p"]
+[ext_resource type="Texture2D" uid="uid://c4pqc267va3qu" path="res://assets/sprites/art gallery/02 krimbstone/03 krimbstone art showcase.png" id="47_s2bie"]
+[ext_resource type="Texture2D" uid="uid://cx07v7kwewnpa" path="res://assets/sprites/art gallery/02 krimbstone/04 krimbstone art showcase.png" id="48_s0tf0"]
+[ext_resource type="Texture2D" uid="uid://dgnfybvlw4mcj" path="res://assets/sprites/art gallery/02 krimbstone/05 krimbstone art showcase.png" id="49_msn5f"]
+[ext_resource type="Texture2D" uid="uid://b6y878eys5ol3" path="res://assets/sprites/art gallery/02 krimbstone/06 krimbstone art showcase.png" id="50_qgm3y"]
+[ext_resource type="Texture2D" uid="uid://b3trorupux4wt" path="res://assets/sprites/art gallery/02 krimbstone/07 krimbstone art showcase.png" id="51_2qbtp"]
+[ext_resource type="Texture2D" uid="uid://cwjn3el3ow1ty" path="res://assets/sprites/art gallery/02 krimbstone/08 krimbstone art showcase.png" id="52_64i66"]
+[ext_resource type="Texture2D" uid="uid://jpmy8xakhejf" path="res://assets/sprites/art gallery/02 krimbstone/09 krimbstone art showcase.png" id="53_onnrr"]
+[ext_resource type="Texture2D" uid="uid://gma56pv3n300" path="res://assets/sprites/art gallery/02 krimbstone/10 krimbstone art showcase.png" id="54_ebp33"]
+[ext_resource type="Texture2D" uid="uid://dk858sat6ehq8" path="res://assets/sprites/art gallery/02 krimbstone/11 krimbstone art showcase.png" id="55_07fh0"]
+[ext_resource type="Texture2D" uid="uid://dj8py0pu6cxkm" path="res://assets/sprites/art gallery/02 krimbstone/12 krimbstone art showcase.png" id="56_rh1qw"]
+[ext_resource type="Texture2D" uid="uid://dsmo8mg015rtf" path="res://assets/sprites/art gallery/02 krimbstone/13 krimbstone art showcase.png" id="57_uf3yq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -220,6 +233,50 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("45_mapd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_bld8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_s2bie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_s0tf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_msn5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_qgm3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_2qbtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_64i66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_onnrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_ebp33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_07fh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_rh1qw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_uf3yq")
+}],
+"loop": false,
+"name": &"krimbstone",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("12_rkwcc")
 }, {
 "duration": 1.0,
@@ -292,7 +349,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"brinkaedea"
+animation = &"krimbstone"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")

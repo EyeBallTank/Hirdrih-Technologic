@@ -32,7 +32,7 @@ func _on_greklovick_button_pressed() -> void:
 
 
 func _on_krimbstone_button_pressed() -> void:
-	pass # Replace with function body.
+		SceneTransition.load_scene("res://Screens/gallery pages/art_galllery_03_krimbstone.tscn")
 
 
 func _on_lahiurn_button_pressed() -> void:
