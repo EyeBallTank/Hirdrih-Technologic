@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=37 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -11,6 +11,26 @@
 [ext_resource type="Texture2D" uid="uid://d3cfefn6uk1mv" path="res://assets/sprites/art gallery/hirdrih/08 hirdrih art showcase.png" id="9_py88i"]
 [ext_resource type="Texture2D" uid="uid://bb82qi30po3ve" path="res://assets/sprites/art gallery/hirdrih/09 hirdrih art showcase.png" id="10_u71qs"]
 [ext_resource type="Texture2D" uid="uid://dd7b7c7dpxr0i" path="res://assets/sprites/art gallery/hirdrih/10 hirdrih art showcase.png" id="11_0kayu"]
+[ext_resource type="Texture2D" uid="uid://bket4ery6ev0q" path="res://assets/sprites/art gallery/hidden silly images/beach image 1  fix.png" id="12_rkwcc"]
+[ext_resource type="Texture2D" uid="uid://bgraclubfxw54" path="res://assets/sprites/art gallery/hidden silly images/beach image 2 v2.png" id="13_vlo70"]
+[ext_resource type="Texture2D" uid="uid://c7u48hgoakkv4" path="res://assets/sprites/art gallery/hidden silly images/beach image 3 fix v2.png" id="14_jdh30"]
+[ext_resource type="Texture2D" uid="uid://bmyclpmo8nbmi" path="res://assets/sprites/art gallery/hidden silly images/beach image 4.png" id="15_252ei"]
+[ext_resource type="Texture2D" uid="uid://bbgkpyiuxcvrn" path="res://assets/sprites/art gallery/hidden silly images/carrie katrin kiss.png" id="16_8jsgh"]
+[ext_resource type="Texture2D" uid="uid://dlrbf5vcyqc1r" path="res://assets/sprites/art gallery/hidden silly images/cutscene 33 nortpartnine ending panel 18.png" id="17_8qpxe"]
+[ext_resource type="Texture2D" uid="uid://ddyh48dongxfp" path="res://assets/sprites/art gallery/hidden silly images/goofy dream 1.png" id="18_1xu5s"]
+[ext_resource type="Texture2D" uid="uid://tqf5wxrh25st" path="res://assets/sprites/art gallery/hidden silly images/goofy dream 2.png" id="19_nwf71"]
+[ext_resource type="Texture2D" uid="uid://djfhp0q4jpa47" path="res://assets/sprites/art gallery/hidden silly images/krimb art another delusional dream v2.png" id="20_e38xj"]
+[ext_resource type="Texture2D" uid="uid://c4prlrqbsx84e" path="res://assets/sprites/art gallery/hidden silly images/nort art 3 boys 1 girl summer.png" id="21_mr7dp"]
+[ext_resource type="Texture2D" uid="uid://q2bwkn1f22uw" path="res://assets/sprites/art gallery/hidden silly images/nort art 3 girls summer.png" id="22_ry6y0"]
+[ext_resource type="Texture2D" uid="uid://cc0nvthk5cup7" path="res://assets/sprites/art gallery/hidden silly images/nort art 4 girls summer.png" id="23_ijexw"]
+[ext_resource type="Texture2D" uid="uid://p3gjjhck0uva" path="res://assets/sprites/art gallery/hidden silly images/nort art 6 char height 2.png" id="24_yy5gd"]
+[ext_resource type="Texture2D" uid="uid://cecxeun2wxglv" path="res://assets/sprites/art gallery/hidden silly images/nort art awkward dream two.png" id="25_7byxf"]
+[ext_resource type="Texture2D" uid="uid://nr4124you3dn" path="res://assets/sprites/art gallery/hidden silly images/nort art awkward dream.png" id="26_mi6hn"]
+[ext_resource type="Texture2D" uid="uid://d2rbce1o7spti" path="res://assets/sprites/art gallery/hidden silly images/nort art delusional dream 2.png" id="27_unb2e"]
+[ext_resource type="Texture2D" uid="uid://d0g86inax8cul" path="res://assets/sprites/art gallery/hidden silly images/nort art summer time.png" id="28_81v4j"]
+[ext_resource type="Texture2D" uid="uid://b1y6ctfdbb4to" path="res://assets/sprites/art gallery/hidden silly images/nort art yet another weird dream.png" id="29_hsl3j"]
+[ext_resource type="Texture2D" uid="uid://c44f8mf6dyvpj" path="res://assets/sprites/art gallery/hidden silly images/oscar katrin lunch.png" id="30_iw0gv"]
+[ext_resource type="Texture2D" uid="uid://b84xmbnkugw2d" path="res://assets/sprites/art gallery/hidden silly images/terrible nightmare.png" id="31_poamp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -59,6 +79,71 @@ animations = [{
 }],
 "loop": false,
 "name": &"hirdrih",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_rkwcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vlo70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jdh30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_252ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8jsgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8qpxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_1xu5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_nwf71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_e38xj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_mr7dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ry6y0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ijexw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_yy5gd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_7byxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_mi6hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_unb2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_81v4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hsl3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_iw0gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_poamp")
+}],
+"loop": false,
+"name": &"test",
 "speed": 0.0
 }]
 

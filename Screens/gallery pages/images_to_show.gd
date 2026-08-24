@@ -5,6 +5,8 @@ extends CharacterBody2D
 @export var movement_speed : float = 500
 var character_direction : Vector2
 
+@export var animation_name = "hirdrih"
+
 @export var number = 9
 var currentFrame: int = 0
 
@@ -12,6 +14,7 @@ var scale_speed = .5
 @onready var start_position = global_position
 
 func ready():
+	sprite.play(animation_name)
 	visible = true
 
 func _physics_process(delta):
