@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
-@onready var sprite = $AnimatedSprite2D
+@onready var animatedsprite = $AnimatedSprite2D
 
 @export var movement_speed : float = 500
 var character_direction : Vector2
 
-@export var animation_name = "hirdrih"
+@export var spritename = "hirdrih"
 
 @export var number = 9
 var currentFrame: int = 0
@@ -14,10 +14,11 @@ var scale_speed = .5
 @onready var start_position = global_position
 
 func ready():
-	sprite.play(animation_name)
+	#animatedsprite.play(spritename)
 	visible = true
 
 func _physics_process(delta):
+	animatedsprite.play(spritename) #apparently it has to be here?
 	character_direction.x = Input.get_axis("left", "right")
 	character_direction.y = Input.get_axis("jump", "climbdown")
 	character_direction = character_direction.normalized()
@@ -33,7 +34,7 @@ func _physics_process(delta):
 		currentFrame += 1
 		if currentFrame > number:
 			currentFrame = 0
-		sprite.frame = currentFrame
+		animatedsprite.frame = currentFrame
 
 	if Input.is_action_just_pressed("interact"):
 		global_position = start_position
