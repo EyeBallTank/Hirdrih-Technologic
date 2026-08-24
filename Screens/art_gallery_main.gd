@@ -12,7 +12,7 @@ func _on_nortubel_button_pressed() -> void:
 
 
 func _on_brinkaedea_button_pressed() -> void:
-	pass # Replace with function body.
+		SceneTransition.load_scene("res://Screens/gallery pages/art_galllery_02_brinkaedea.tscn")
 
 
 func _on_untotern_pressed() -> void:
