@@ -1,4 +1,4 @@
-[gd_scene load_steps=118 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=140 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -112,6 +112,28 @@
 [ext_resource type="Texture2D" uid="uid://dgaor03wcsj8j" path="res://assets/sprites/art gallery/04 massagcoav/20 massagcoav art showcase.png" id="90_j3i43"]
 [ext_resource type="Texture2D" uid="uid://csq1wbpokhxgb" path="res://assets/sprites/art gallery/04 massagcoav/21 massagcoav art showcase.png" id="91_p31k8"]
 [ext_resource type="Texture2D" uid="uid://bigxe8x4hjrwq" path="res://assets/sprites/art gallery/04 massagcoav/22 massagcoav art showcase.png" id="92_mvwl3"]
+[ext_resource type="Texture2D" uid="uid://bnvfuitwh1cf5" path="res://assets/sprites/art gallery/05 nortubel/01 nortubel art showcase.png" id="93_ado7w"]
+[ext_resource type="Texture2D" uid="uid://bhen7q04ip6ux" path="res://assets/sprites/art gallery/05 nortubel/02 nortubel art showcase.png" id="94_s3psv"]
+[ext_resource type="Texture2D" uid="uid://dd1ebf3s6xaon" path="res://assets/sprites/art gallery/05 nortubel/03 nortubel art showcase.png" id="95_8f8n3"]
+[ext_resource type="Texture2D" uid="uid://deit7hlxn0o54" path="res://assets/sprites/art gallery/05 nortubel/04 nortubel art showcase.png" id="96_6vmuc"]
+[ext_resource type="Texture2D" uid="uid://coix6at67jyif" path="res://assets/sprites/art gallery/05 nortubel/05 nortubel art showcase.png" id="97_h5unq"]
+[ext_resource type="Texture2D" uid="uid://bqwxturde0c5v" path="res://assets/sprites/art gallery/05 nortubel/06 nortubel art showcase.png" id="98_ljxrb"]
+[ext_resource type="Texture2D" uid="uid://dikpjglprpx10" path="res://assets/sprites/art gallery/05 nortubel/07 nortubel art showcase.png" id="99_qhowv"]
+[ext_resource type="Texture2D" uid="uid://bhuu8nuc14ids" path="res://assets/sprites/art gallery/05 nortubel/08 nortubel art showcase.png" id="100_5ai3e"]
+[ext_resource type="Texture2D" uid="uid://bwn5ye3tvntku" path="res://assets/sprites/art gallery/05 nortubel/09 nortubel art showcase.png" id="101_2xvwt"]
+[ext_resource type="Texture2D" uid="uid://clx1xbqlal82o" path="res://assets/sprites/art gallery/05 nortubel/10 nortubel art showcase.png" id="102_ekk1d"]
+[ext_resource type="Texture2D" uid="uid://b6sywgp2n2wwt" path="res://assets/sprites/art gallery/05 nortubel/11 nortubel art showcase.png" id="103_mlvxj"]
+[ext_resource type="Texture2D" uid="uid://bo73h5aapfsfs" path="res://assets/sprites/art gallery/05 nortubel/12 nortubel art showcase.png" id="104_pyl68"]
+[ext_resource type="Texture2D" uid="uid://uds4r3p65b3" path="res://assets/sprites/art gallery/05 nortubel/13 nortubel art showcase.png" id="105_8cpa0"]
+[ext_resource type="Texture2D" uid="uid://crnc81thc6if2" path="res://assets/sprites/art gallery/05 nortubel/14 nortubel art showcase.png" id="106_5r15p"]
+[ext_resource type="Texture2D" uid="uid://bxmaehmep07po" path="res://assets/sprites/art gallery/05 nortubel/15 nortubel art showcase.png" id="107_4rdot"]
+[ext_resource type="Texture2D" uid="uid://c7s8w2rv0t6qu" path="res://assets/sprites/art gallery/05 nortubel/16 nortubel art showcase.png" id="108_0g6w6"]
+[ext_resource type="Texture2D" uid="uid://ddue6ndgwnikk" path="res://assets/sprites/art gallery/05 nortubel/17 nortubel art showcase.png" id="109_edv7f"]
+[ext_resource type="Texture2D" uid="uid://bt3ei6d314qc8" path="res://assets/sprites/art gallery/05 nortubel/18 nortubel art showcase.png" id="110_vbsqw"]
+[ext_resource type="Texture2D" uid="uid://flh4ij14koun" path="res://assets/sprites/art gallery/05 nortubel/19 nortubel art showcase.png" id="111_jlfpy"]
+[ext_resource type="Texture2D" uid="uid://ck147mcks6y4j" path="res://assets/sprites/art gallery/05 nortubel/20 nortubel art showcase.png" id="112_olpv7"]
+[ext_resource type="Texture2D" uid="uid://dfoldimc5u3tg" path="res://assets/sprites/art gallery/05 nortubel/21 nortubel art showcase.png" id="113_m0oer"]
+[ext_resource type="Texture2D" uid="uid://bibdgjig1hf11" path="res://assets/sprites/art gallery/05 nortubel/22 nortubel art showcase.png" id="114_1i36y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -427,6 +449,77 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("93_ado7w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_s3psv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_8f8n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_6vmuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_h5unq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_ljxrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_qhowv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_5ai3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_2xvwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_ekk1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_mlvxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_pyl68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_8cpa0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_5r15p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_4rdot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_0g6w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_edv7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_vbsqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_jlfpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_olpv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_m0oer")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_1i36y")
+}],
+"loop": false,
+"name": &"nortubel",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("12_rkwcc")
 }, {
 "duration": 1.0,
@@ -499,7 +592,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"massagcoav"
+animation = &"nortubel"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
