@@ -92,7 +92,7 @@
 [ext_resource type="Texture2D" uid="uid://bet2tik8d0q2i" path="res://assets/sprites/art gallery/03 lahiurn/13 lahiurn art showcase.png" id="70_omolh"]
 [ext_resource type="Texture2D" uid="uid://cwqp0mdjpuvpq" path="res://assets/sprites/art gallery/04 massagcoav/01 massagcoav art showcase.png" id="71_f7wt4"]
 [ext_resource type="Texture2D" uid="uid://bty1ktklbe15i" path="res://assets/sprites/art gallery/04 massagcoav/02 massagcoav art showcase.png" id="72_ojvgj"]
-[ext_resource type="Texture2D" uid="uid://bt8eguv0wi0x2" path="res://assets/sprites/art gallery/04 massagcoav/03 massagcoav art showcase.png" id="73_f51dn"]
+[ext_resource type="Texture2D" uid="uid://cxhkq3txjb081" path="res://assets/sprites/art gallery/04 massagcoav/03 massagcoav art showcase v2.png" id="73_jeied"]
 [ext_resource type="Texture2D" uid="uid://5m1l0vt3ftel" path="res://assets/sprites/art gallery/04 massagcoav/04 massagcoav art showcase.png" id="74_vmhbq"]
 [ext_resource type="Texture2D" uid="uid://c2iq0oap51yfv" path="res://assets/sprites/art gallery/04 massagcoav/05 massagcoav art showcase.png" id="75_1qv02"]
 [ext_resource type="Texture2D" uid="uid://dxbf6dw56ot2h" path="res://assets/sprites/art gallery/04 massagcoav/06 massagcoav art showcase.png" id="76_2qq4e"]
@@ -362,7 +362,7 @@ animations = [{
 "texture": ExtResource("72_ojvgj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("73_f51dn")
+"texture": ExtResource("73_jeied")
 }, {
 "duration": 1.0,
 "texture": ExtResource("74_vmhbq")

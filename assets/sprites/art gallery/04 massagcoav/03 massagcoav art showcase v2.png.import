@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt8eguv0wi0x2"
-path="res://.godot/imported/03 massagcoav art showcase.png-7c6690b566886bda278c3ab354bd32a9.ctex"
+uid="uid://cxhkq3txjb081"
+path="res://.godot/imported/03 massagcoav art showcase v2.png-b74c3b2a8c1ac06ca2a615c17f88f4b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/04 massagcoav/03 massagcoav art showcase.png"
-dest_files=["res://.godot/imported/03 massagcoav art showcase.png-7c6690b566886bda278c3ab354bd32a9.ctex"]
+source_file="res://assets/sprites/art gallery/04 massagcoav/03 massagcoav art showcase v2.png"
+dest_files=["res://.godot/imported/03 massagcoav art showcase v2.png-b74c3b2a8c1ac06ca2a615c17f88f4b9.ctex"]
 
 [params]
 
