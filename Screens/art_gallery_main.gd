@@ -20,7 +20,7 @@ func _on_untotern_pressed() -> void:
 
 
 func _on_massagcoav_button_pressed() -> void:
-	pass # Replace with function body.
+		SceneTransition.load_scene("res://Screens/gallery pages/art_galllery_05_massagcoav.tscn")
 
 
 func _on_herrko_button_pressed() -> void:

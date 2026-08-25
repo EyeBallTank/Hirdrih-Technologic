@@ -1,13 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://yikljqch3kyj"]
+[gd_scene load_steps=14 format=3 uid="uid://cfymfoa3tgv5d"]
 
-[ext_resource type="Script" path="res://Screens/gallery pages/art_galllery_01_hirdrih.gd" id="1_klav8"]
-[ext_resource type="PackedScene" uid="uid://w3he56eg4uvx" path="res://Screens/gallery pages/images_to_show.tscn" id="2_x5ife"]
-[ext_resource type="Texture2D" uid="uid://c6dr64ddjy5cm" path="res://assets/sprites/texture button 2 normal.png" id="3_q1a5x"]
-[ext_resource type="Texture2D" uid="uid://5yxo2yabds40" path="res://assets/sprites/texture button 3 pressed.png" id="4_4llrq"]
-[ext_resource type="Texture2D" uid="uid://couaifd0r2835" path="res://assets/sprites/texture button 1 hover.png" id="5_rgg6i"]
-[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_7xo6v"]
-[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="7_rqlhl"]
-[ext_resource type="Texture2D" uid="uid://30ki8ts1uwov" path="res://assets/sprites/sprite board text test v2.png" id="8_ylkwy"]
+[ext_resource type="Script" path="res://Screens/gallery pages/art_galllery_01_hirdrih.gd" id="1_ks2p0"]
+[ext_resource type="PackedScene" uid="uid://w3he56eg4uvx" path="res://Screens/gallery pages/images_to_show.tscn" id="2_volte"]
+[ext_resource type="Texture2D" uid="uid://c6dr64ddjy5cm" path="res://assets/sprites/texture button 2 normal.png" id="3_w21t8"]
+[ext_resource type="Texture2D" uid="uid://5yxo2yabds40" path="res://assets/sprites/texture button 3 pressed.png" id="4_3jgpp"]
+[ext_resource type="Texture2D" uid="uid://couaifd0r2835" path="res://assets/sprites/texture button 1 hover.png" id="5_4y6l6"]
+[ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="6_nk51y"]
+[ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="7_3cwls"]
+[ext_resource type="Texture2D" uid="uid://30ki8ts1uwov" path="res://assets/sprites/sprite board text test v2.png" id="8_61ff6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cs2ds"]
 size = Vector2(223.938, 14096.1)
@@ -52,14 +52,14 @@ _data = {
 "showbox": SubResource("Animation_s8eqg")
 }
 
-[node name="ArtGalllery04Lahiurn" type="Control"]
+[node name="ArtGalllery05MassagCoav" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_klav8")
+script = ExtResource("1_ks2p0")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -70,10 +70,10 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.877616, 0.877616, 0.877616, 1)
 
-[node name="ImagesToShow" parent="." instance=ExtResource("2_x5ife")]
+[node name="ImagesToShow" parent="." instance=ExtResource("2_volte")]
 position = Vector2(536, 225)
-spritename = "lahiurn"
-number = 12
+spritename = "massagcoav"
+number = 21
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 2
@@ -100,9 +100,9 @@ offset_left = 3.0
 offset_top = 594.0
 offset_right = 126.0
 offset_bottom = 643.0
-texture_normal = ExtResource("3_q1a5x")
-texture_pressed = ExtResource("4_4llrq")
-texture_hover = ExtResource("5_rgg6i")
+texture_normal = ExtResource("3_w21t8")
+texture_pressed = ExtResource("4_3jgpp")
+texture_hover = ExtResource("5_4y6l6")
 stretch_mode = 0
 
 [node name="Label2" type="Label" parent="QuitButton"]
@@ -112,7 +112,7 @@ offset_top = 7.0
 offset_right = 179.0
 offset_bottom = 49.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_7xo6v")
+theme_override_fonts/font = ExtResource("6_nk51y")
 theme_override_font_sizes/font_size = 23
 text = "QUIT"
 
@@ -122,7 +122,7 @@ offset_left = 33.0
 offset_top = 439.0
 offset_right = 1120.0
 offset_bottom = 584.0
-texture = ExtResource("7_rqlhl")
+texture = ExtResource("7_3cwls")
 region_rect = Rect2(-0.088706, -0.0502968, 224.129, 41.0331)
 
 [node name="Label" type="Label" parent="NinePatchRect"]
@@ -131,7 +131,7 @@ offset_left = 17.0
 offset_top = 17.0
 offset_right = 1072.0
 offset_bottom = 129.0
-theme_override_fonts/font = ExtResource("6_7xo6v")
+theme_override_fonts/font = ExtResource("6_nk51y")
 text = "T_TEXT_FOR_ART_GALLERY_BUTTONS"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -151,7 +151,7 @@ offset_left = 32.0
 offset_top = 214.0
 offset_right = 1128.0
 offset_bottom = 598.0
-texture = ExtResource("8_ylkwy")
+texture = ExtResource("8_61ff6")
 
 [node name="ScrollContainer" type="ScrollContainer" parent="infotext/NinePatchRect"]
 layout_mode = 0
@@ -166,8 +166,8 @@ layout_mode = 2
 [node name="Label" type="Label" parent="infotext/NinePatchRect/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("6_7xo6v")
-text = "T_LAHIURN_WIKI_INFO"
+theme_override_fonts/font = ExtResource("6_nk51y")
+text = "T_MASSAGCOAV_WIKI_INFO"
 
 [node name="language" type="Control" parent="."]
 anchors_preset = 0
@@ -180,9 +180,9 @@ offset_left = 1066.0
 offset_top = 6.0
 offset_right = 1132.0
 offset_bottom = 56.0
-texture_normal = ExtResource("3_q1a5x")
-texture_pressed = ExtResource("4_4llrq")
-texture_hover = ExtResource("5_rgg6i")
+texture_normal = ExtResource("3_w21t8")
+texture_pressed = ExtResource("4_3jgpp")
+texture_hover = ExtResource("5_4y6l6")
 stretch_mode = 0
 
 [node name="Label2" type="Label" parent="language/PTLangButton"]
@@ -192,7 +192,7 @@ offset_top = 10.0
 offset_right = 172.0
 offset_bottom = 77.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_7xo6v")
+theme_override_fonts/font = ExtResource("6_nk51y")
 theme_override_font_sizes/font_size = 23
 text = "PT"
 
@@ -202,9 +202,9 @@ offset_left = 995.0
 offset_top = 6.0
 offset_right = 1061.0
 offset_bottom = 56.0
-texture_normal = ExtResource("3_q1a5x")
-texture_pressed = ExtResource("4_4llrq")
-texture_hover = ExtResource("5_rgg6i")
+texture_normal = ExtResource("3_w21t8")
+texture_pressed = ExtResource("4_3jgpp")
+texture_hover = ExtResource("5_4y6l6")
 stretch_mode = 0
 
 [node name="Label2" type="Label" parent="language/ENLangButton"]
@@ -214,7 +214,7 @@ offset_top = 8.0
 offset_right = 173.0
 offset_bottom = 75.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("6_7xo6v")
+theme_override_fonts/font = ExtResource("6_nk51y")
 theme_override_font_sizes/font_size = 23
 text = "EN"
 

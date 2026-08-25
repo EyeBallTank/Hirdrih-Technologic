@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=118 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -90,6 +90,28 @@
 [ext_resource type="Texture2D" uid="uid://c35rfw4fkgkkp" path="res://assets/sprites/art gallery/03 lahiurn/11 lahiurn art showcase.png" id="68_gpxyu"]
 [ext_resource type="Texture2D" uid="uid://bnv3d0okmhfug" path="res://assets/sprites/art gallery/03 lahiurn/12 lahiurn art showcase.png" id="69_u640u"]
 [ext_resource type="Texture2D" uid="uid://bet2tik8d0q2i" path="res://assets/sprites/art gallery/03 lahiurn/13 lahiurn art showcase.png" id="70_omolh"]
+[ext_resource type="Texture2D" uid="uid://cwqp0mdjpuvpq" path="res://assets/sprites/art gallery/04 massagcoav/01 massagcoav art showcase.png" id="71_f7wt4"]
+[ext_resource type="Texture2D" uid="uid://bty1ktklbe15i" path="res://assets/sprites/art gallery/04 massagcoav/02 massagcoav art showcase.png" id="72_ojvgj"]
+[ext_resource type="Texture2D" uid="uid://bt8eguv0wi0x2" path="res://assets/sprites/art gallery/04 massagcoav/03 massagcoav art showcase.png" id="73_f51dn"]
+[ext_resource type="Texture2D" uid="uid://5m1l0vt3ftel" path="res://assets/sprites/art gallery/04 massagcoav/04 massagcoav art showcase.png" id="74_vmhbq"]
+[ext_resource type="Texture2D" uid="uid://c2iq0oap51yfv" path="res://assets/sprites/art gallery/04 massagcoav/05 massagcoav art showcase.png" id="75_1qv02"]
+[ext_resource type="Texture2D" uid="uid://dxbf6dw56ot2h" path="res://assets/sprites/art gallery/04 massagcoav/06 massagcoav art showcase.png" id="76_2qq4e"]
+[ext_resource type="Texture2D" uid="uid://dbwuaft5chcje" path="res://assets/sprites/art gallery/04 massagcoav/07 massagcoav art showcase.png" id="77_4x8fc"]
+[ext_resource type="Texture2D" uid="uid://dpk3ixnik84oj" path="res://assets/sprites/art gallery/04 massagcoav/08 massagcoav art showcase.png" id="78_df0rc"]
+[ext_resource type="Texture2D" uid="uid://dij1do6j64u32" path="res://assets/sprites/art gallery/04 massagcoav/09 massagcoav art showcase.png" id="79_t36wf"]
+[ext_resource type="Texture2D" uid="uid://ds7vaq15745ng" path="res://assets/sprites/art gallery/04 massagcoav/10 massagcoav art showcase.png" id="80_woqv3"]
+[ext_resource type="Texture2D" uid="uid://dbujbp0i62k8t" path="res://assets/sprites/art gallery/04 massagcoav/11 massagcoav art showcase.png" id="81_277ce"]
+[ext_resource type="Texture2D" uid="uid://bibx22o6fee26" path="res://assets/sprites/art gallery/04 massagcoav/12 massagcoav art showcase.png" id="82_e44on"]
+[ext_resource type="Texture2D" uid="uid://cwrcnsy07ogp4" path="res://assets/sprites/art gallery/04 massagcoav/13 massagcoav art showcase.png" id="83_8n235"]
+[ext_resource type="Texture2D" uid="uid://wh8kxlgl7e38" path="res://assets/sprites/art gallery/04 massagcoav/14 massagcoav art showcase.png" id="84_4j70e"]
+[ext_resource type="Texture2D" uid="uid://dyn50tnaub1p0" path="res://assets/sprites/art gallery/04 massagcoav/15 massagcoav art showcase.png" id="85_qe1h5"]
+[ext_resource type="Texture2D" uid="uid://cdb3y7hithvpg" path="res://assets/sprites/art gallery/04 massagcoav/16 massagcoav art showcase.png" id="86_4t8ku"]
+[ext_resource type="Texture2D" uid="uid://djt8tb1mp2fc5" path="res://assets/sprites/art gallery/04 massagcoav/17 massagcoav art showcase.png" id="87_qkqop"]
+[ext_resource type="Texture2D" uid="uid://noguasju0cwk" path="res://assets/sprites/art gallery/04 massagcoav/18 massagcoav art showcase.png" id="88_5yjs8"]
+[ext_resource type="Texture2D" uid="uid://peoa1hjx5opk" path="res://assets/sprites/art gallery/04 massagcoav/19 massagcoav art showcase.png" id="89_ai5pr"]
+[ext_resource type="Texture2D" uid="uid://dgaor03wcsj8j" path="res://assets/sprites/art gallery/04 massagcoav/20 massagcoav art showcase.png" id="90_j3i43"]
+[ext_resource type="Texture2D" uid="uid://csq1wbpokhxgb" path="res://assets/sprites/art gallery/04 massagcoav/21 massagcoav art showcase.png" id="91_p31k8"]
+[ext_resource type="Texture2D" uid="uid://bigxe8x4hjrwq" path="res://assets/sprites/art gallery/04 massagcoav/22 massagcoav art showcase.png" id="92_mvwl3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -334,6 +356,77 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("71_f7wt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_ojvgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_f51dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_vmhbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_1qv02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_2qq4e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_4x8fc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_df0rc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_t36wf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_woqv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_277ce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_e44on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_8n235")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_4j70e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_qe1h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_4t8ku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_qkqop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_5yjs8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_ai5pr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_j3i43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_p31k8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_mvwl3")
+}],
+"loop": false,
+"name": &"massagcoav",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("12_rkwcc")
 }, {
 "duration": 1.0,
@@ -406,7 +499,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"lahiurn"
+animation = &"massagcoav"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
