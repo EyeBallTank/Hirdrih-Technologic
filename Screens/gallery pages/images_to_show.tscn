@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=96 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -77,6 +77,19 @@
 [ext_resource type="Texture2D" uid="uid://dk858sat6ehq8" path="res://assets/sprites/art gallery/02 krimbstone/11 krimbstone art showcase.png" id="55_07fh0"]
 [ext_resource type="Texture2D" uid="uid://dj8py0pu6cxkm" path="res://assets/sprites/art gallery/02 krimbstone/12 krimbstone art showcase.png" id="56_rh1qw"]
 [ext_resource type="Texture2D" uid="uid://dsmo8mg015rtf" path="res://assets/sprites/art gallery/02 krimbstone/13 krimbstone art showcase.png" id="57_uf3yq"]
+[ext_resource type="Texture2D" uid="uid://bolmuxt7cwc8c" path="res://assets/sprites/art gallery/03 lahiurn/01 lahiurn art showcase.png" id="58_f3ip5"]
+[ext_resource type="Texture2D" uid="uid://7spdul76ifa" path="res://assets/sprites/art gallery/03 lahiurn/02 lahiurn art showcase.png" id="59_c8m6c"]
+[ext_resource type="Texture2D" uid="uid://3xakjo5hwa7j" path="res://assets/sprites/art gallery/03 lahiurn/03 lahiurn art showcase.png" id="60_le0cc"]
+[ext_resource type="Texture2D" uid="uid://doys0e3h0lypn" path="res://assets/sprites/art gallery/03 lahiurn/04 lahiurn art showcase.png" id="61_8flch"]
+[ext_resource type="Texture2D" uid="uid://dall531pxi0yr" path="res://assets/sprites/art gallery/03 lahiurn/05 lahiurn art showcase.png" id="62_c5dld"]
+[ext_resource type="Texture2D" uid="uid://ci44hdekj8d3n" path="res://assets/sprites/art gallery/03 lahiurn/06 lahiurn art showcase.png" id="63_8thxd"]
+[ext_resource type="Texture2D" uid="uid://cxrvml3v82ee1" path="res://assets/sprites/art gallery/03 lahiurn/07 lahiurn art showcase.png" id="64_d83sp"]
+[ext_resource type="Texture2D" uid="uid://b3ps3t0j8pc5f" path="res://assets/sprites/art gallery/03 lahiurn/08 lahiurn art showcase.png" id="65_bd8xb"]
+[ext_resource type="Texture2D" uid="uid://bfnm1aq65718p" path="res://assets/sprites/art gallery/03 lahiurn/09 lahiurn art showcase.png" id="66_87a5k"]
+[ext_resource type="Texture2D" uid="uid://lrn17g788mnh" path="res://assets/sprites/art gallery/03 lahiurn/10 lahiurn art showcase.png" id="67_4bxpr"]
+[ext_resource type="Texture2D" uid="uid://c35rfw4fkgkkp" path="res://assets/sprites/art gallery/03 lahiurn/11 lahiurn art showcase.png" id="68_gpxyu"]
+[ext_resource type="Texture2D" uid="uid://bnv3d0okmhfug" path="res://assets/sprites/art gallery/03 lahiurn/12 lahiurn art showcase.png" id="69_u640u"]
+[ext_resource type="Texture2D" uid="uid://bet2tik8d0q2i" path="res://assets/sprites/art gallery/03 lahiurn/13 lahiurn art showcase.png" id="70_omolh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -277,6 +290,50 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("58_f3ip5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_c8m6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_le0cc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_8flch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_c5dld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_8thxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_d83sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_bd8xb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_87a5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4bxpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_gpxyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_u640u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_omolh")
+}],
+"loop": false,
+"name": &"lahiurn",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("12_rkwcc")
 }, {
 "duration": 1.0,
@@ -349,7 +406,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"krimbstone"
+animation = &"lahiurn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
