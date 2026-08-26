@@ -17,7 +17,7 @@ func _on_brinkaedea_button_pressed() -> void:
 
 
 func _on_untotern_pressed() -> void:
-	pass # Replace with function body.
+		SceneTransition.load_scene("res://Screens/gallery pages/art_galllery_07_untotern.tscn")
 
 
 func _on_massagcoav_button_pressed() -> void:

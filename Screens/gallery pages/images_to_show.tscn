@@ -1,4 +1,4 @@
-[gd_scene load_steps=140 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=163 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -134,6 +134,29 @@
 [ext_resource type="Texture2D" uid="uid://ck147mcks6y4j" path="res://assets/sprites/art gallery/05 nortubel/20 nortubel art showcase.png" id="112_olpv7"]
 [ext_resource type="Texture2D" uid="uid://dfoldimc5u3tg" path="res://assets/sprites/art gallery/05 nortubel/21 nortubel art showcase.png" id="113_m0oer"]
 [ext_resource type="Texture2D" uid="uid://bibdgjig1hf11" path="res://assets/sprites/art gallery/05 nortubel/22 nortubel art showcase.png" id="114_1i36y"]
+[ext_resource type="Texture2D" uid="uid://bskch6m7sxf5q" path="res://assets/sprites/art gallery/06 untotern/01 untotern art showcase.png" id="135_mi1ek"]
+[ext_resource type="Texture2D" uid="uid://dofrqu1iwxgq0" path="res://assets/sprites/art gallery/06 untotern/02 untotern art showcase.png" id="136_j2tjx"]
+[ext_resource type="Texture2D" uid="uid://p5fw6j21agl5" path="res://assets/sprites/art gallery/06 untotern/03 untotern art showcase.png" id="137_k0hpm"]
+[ext_resource type="Texture2D" uid="uid://c1jluhat6y1j1" path="res://assets/sprites/art gallery/06 untotern/04 untotern art showcase.png" id="138_rwsrq"]
+[ext_resource type="Texture2D" uid="uid://cdb26n66sehd3" path="res://assets/sprites/art gallery/06 untotern/05 untotern art showcase.png" id="139_hgtrt"]
+[ext_resource type="Texture2D" uid="uid://cmcgl15ix1s3k" path="res://assets/sprites/art gallery/06 untotern/06 untotern art showcase.png" id="140_7g3cc"]
+[ext_resource type="Texture2D" uid="uid://bckjmxolhraau" path="res://assets/sprites/art gallery/06 untotern/07 untotern art showcase.png" id="141_7n47u"]
+[ext_resource type="Texture2D" uid="uid://c4s2sq6ubac17" path="res://assets/sprites/art gallery/06 untotern/08 untotern art showcase.png" id="142_322sa"]
+[ext_resource type="Texture2D" uid="uid://cmn4oyfj31oxk" path="res://assets/sprites/art gallery/06 untotern/09 untotern art showcase.png" id="143_txs01"]
+[ext_resource type="Texture2D" uid="uid://bbgryqpnbj3b1" path="res://assets/sprites/art gallery/06 untotern/10 untotern art showcase.png" id="144_qf01g"]
+[ext_resource type="Texture2D" uid="uid://cyjx3oijto6at" path="res://assets/sprites/art gallery/06 untotern/11 untotern art showcase.png" id="145_n41x8"]
+[ext_resource type="Texture2D" uid="uid://b8lcks2lp5t7q" path="res://assets/sprites/art gallery/06 untotern/12 untotern art showcase.png" id="146_mfek0"]
+[ext_resource type="Texture2D" uid="uid://dos5t74qc2cg6" path="res://assets/sprites/art gallery/06 untotern/13 untotern art showcase.png" id="147_2s4vk"]
+[ext_resource type="Texture2D" uid="uid://bxfircv84833d" path="res://assets/sprites/art gallery/06 untotern/14 untotern art showcase.png" id="148_hfjfk"]
+[ext_resource type="Texture2D" uid="uid://d2tw47votr0av" path="res://assets/sprites/art gallery/06 untotern/15 untotern art showcase.png" id="149_d31no"]
+[ext_resource type="Texture2D" uid="uid://bs4m04dckxxxo" path="res://assets/sprites/art gallery/06 untotern/16 untotern art showcase.png" id="150_wpevd"]
+[ext_resource type="Texture2D" uid="uid://dpxw7hqeletv" path="res://assets/sprites/art gallery/06 untotern/17 untotern art showcase.png" id="151_sxax6"]
+[ext_resource type="Texture2D" uid="uid://1hupbt2cdfv" path="res://assets/sprites/art gallery/06 untotern/18 untotern art showcase.png" id="152_1ghe0"]
+[ext_resource type="Texture2D" uid="uid://dvqwwgn1hmlcx" path="res://assets/sprites/art gallery/06 untotern/19 untotern art showcase.png" id="153_y01s1"]
+[ext_resource type="Texture2D" uid="uid://yg38qetmcp74" path="res://assets/sprites/art gallery/06 untotern/20 untotern art showcase.png" id="154_ufcxx"]
+[ext_resource type="Texture2D" uid="uid://cw5mjalpb6032" path="res://assets/sprites/art gallery/06 untotern/21 untotern art showcase.png" id="155_h3raf"]
+[ext_resource type="Texture2D" uid="uid://cjxdcyfthosaf" path="res://assets/sprites/art gallery/06 untotern/22 untotern art showcase.png" id="156_5vdni"]
+[ext_resource type="Texture2D" uid="uid://cuv2vfjywcxmm" path="res://assets/sprites/art gallery/06 untotern/23 untotern art showcase.png" id="157_1vbe1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -582,6 +605,80 @@ animations = [{
 "loop": false,
 "name": &"test",
 "speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("135_mi1ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_j2tjx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_k0hpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_rwsrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_hgtrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_7g3cc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_7n47u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_322sa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_txs01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_qf01g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_n41x8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_mfek0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_2s4vk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_hfjfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_d31no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_wpevd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_sxax6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_1ghe0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_y01s1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_ufcxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_h3raf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_5vdni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_1vbe1")
+}],
+"loop": false,
+"name": &"untotern",
+"speed": 0.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u6c1n"]
@@ -592,7 +689,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"nortubel"
+animation = &"untotern"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
