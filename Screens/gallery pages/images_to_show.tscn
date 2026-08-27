@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://ckcqwgx3waa23" path="res://assets/sprites/art gallery/01 brinkaedea/05 brinkaedea art showcase.png" id="6_768jy"]
 [ext_resource type="Texture2D" uid="uid://dam3mvekkl8yp" path="res://assets/sprites/art gallery/hirdrih/06 hirdrih art showcase.png" id="7_gt365"]
 [ext_resource type="Texture2D" uid="uid://co3e2epo5b38n" path="res://assets/sprites/art gallery/01 brinkaedea/06 brinkaedea art showcase v2.png" id="7_xgpeh"]
-[ext_resource type="Texture2D" uid="uid://b54f5u26sdh65" path="res://assets/sprites/art gallery/01 brinkaedea/07 brinkaedea art showcase.png" id="8_878sn"]
 [ext_resource type="Texture2D" uid="uid://3ari1d5td8ep" path="res://assets/sprites/art gallery/hirdrih/07 hirdrih art showcase.png" id="8_fwl4e"]
 [ext_resource type="Texture2D" uid="uid://d3cfefn6uk1mv" path="res://assets/sprites/art gallery/hirdrih/08 hirdrih art showcase.png" id="9_py88i"]
 [ext_resource type="Texture2D" uid="uid://di7c2uju6kg5k" path="res://assets/sprites/art gallery/01 brinkaedea/08 brinkaedea art showcase.png" id="9_v0q4d"]
@@ -66,6 +65,7 @@
 [ext_resource type="Texture2D" uid="uid://dgwe2a454jctl" path="res://assets/sprites/art gallery/01 brinkaedea/33 brinkaedea art showcase.png" id="34_e068q"]
 [ext_resource type="Texture2D" uid="uid://bkj436bfqa15s" path="res://assets/sprites/art gallery/07 herrko/01 herrko art showcase.png" id="35_4278a"]
 [ext_resource type="Texture2D" uid="uid://cy0yxrduwaja6" path="res://assets/sprites/art gallery/08 greklovick/01 greklovick art showcase.png" id="35_mylrl"]
+[ext_resource type="Texture2D" uid="uid://byi8ol754tump" path="res://assets/sprites/art gallery/01 brinkaedea/07 brinkaedea art showcase V2.png" id="35_yfqnf"]
 [ext_resource type="Texture2D" uid="uid://cokb4v2ootrks" path="res://assets/sprites/art gallery/07 herrko/02 herrko art showcase.png" id="36_a6rtq"]
 [ext_resource type="Texture2D" uid="uid://cdod3i74lg3g1" path="res://assets/sprites/art gallery/08 greklovick/02 greklovick art showcase.png" id="36_fdv3p"]
 [ext_resource type="Texture2D" uid="uid://o6f1mjaeum5w" path="res://assets/sprites/art gallery/08 greklovick/03 greklovick art showcase.png" id="37_5u23d"]
@@ -243,7 +243,7 @@ animations = [{
 "texture": ExtResource("7_xgpeh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_878sn")
+"texture": ExtResource("35_yfqnf")
 }, {
 "duration": 1.0,
 "texture": ExtResource("9_v0q4d")
@@ -903,7 +903,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"greklovick"
+animation = &"brinkaedea"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
