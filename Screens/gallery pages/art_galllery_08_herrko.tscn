@@ -71,8 +71,8 @@ grow_vertical = 2
 
 [node name="ImagesToShow" parent="." instance=ExtResource("2_rsy0y")]
 position = Vector2(536, 225)
-spritename = "untotern"
-number = 22
+spritename = "herrko"
+number = 18
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 2
