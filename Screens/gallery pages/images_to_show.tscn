@@ -1,4 +1,4 @@
-[gd_scene load_steps=182 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=214 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -65,45 +65,77 @@
 [ext_resource type="Texture2D" uid="uid://dwooxu8vvrufb" path="res://assets/sprites/art gallery/01 brinkaedea/32 brinkaedea art showcase.png" id="33_78cd5"]
 [ext_resource type="Texture2D" uid="uid://dgwe2a454jctl" path="res://assets/sprites/art gallery/01 brinkaedea/33 brinkaedea art showcase.png" id="34_e068q"]
 [ext_resource type="Texture2D" uid="uid://bkj436bfqa15s" path="res://assets/sprites/art gallery/07 herrko/01 herrko art showcase.png" id="35_4278a"]
+[ext_resource type="Texture2D" uid="uid://cy0yxrduwaja6" path="res://assets/sprites/art gallery/08 greklovick/01 greklovick art showcase.png" id="35_mylrl"]
 [ext_resource type="Texture2D" uid="uid://cokb4v2ootrks" path="res://assets/sprites/art gallery/07 herrko/02 herrko art showcase.png" id="36_a6rtq"]
+[ext_resource type="Texture2D" uid="uid://cdod3i74lg3g1" path="res://assets/sprites/art gallery/08 greklovick/02 greklovick art showcase.png" id="36_fdv3p"]
+[ext_resource type="Texture2D" uid="uid://o6f1mjaeum5w" path="res://assets/sprites/art gallery/08 greklovick/03 greklovick art showcase.png" id="37_5u23d"]
 [ext_resource type="Texture2D" uid="uid://bdsp5xt3w1frv" path="res://assets/sprites/art gallery/07 herrko/03 herrko art showcase.png" id="37_od2q8"]
+[ext_resource type="Texture2D" uid="uid://qwydhs2vyie5" path="res://assets/sprites/art gallery/08 greklovick/04 greklovick art showcase.png" id="38_47t1b"]
 [ext_resource type="Texture2D" uid="uid://b6kxsqexvmhwf" path="res://assets/sprites/art gallery/07 herrko/04 herrko art showcase.png" id="38_y4gm6"]
+[ext_resource type="Texture2D" uid="uid://djguyaw431ufa" path="res://assets/sprites/art gallery/08 greklovick/05 greklovick art showcase.png" id="39_rj5n2"]
 [ext_resource type="Texture2D" uid="uid://cfyd2dqpi05gs" path="res://assets/sprites/art gallery/07 herrko/05 herrko art showcase.png" id="39_v311l"]
 [ext_resource type="Texture2D" uid="uid://bxiabevx421xe" path="res://assets/sprites/art gallery/07 herrko/06 herrko art showcase.png" id="40_vflo3"]
+[ext_resource type="Texture2D" uid="uid://c8x7ex6lxneux" path="res://assets/sprites/art gallery/08 greklovick/06 greklovick art showcase.png" id="40_wqciw"]
+[ext_resource type="Texture2D" uid="uid://bgf1b83aivnwk" path="res://assets/sprites/art gallery/08 greklovick/07 greklovick art showcase.png" id="41_0ql8w"]
 [ext_resource type="Texture2D" uid="uid://ciibp5jcxxoxi" path="res://assets/sprites/art gallery/07 herrko/07 herrko art showcase.png" id="41_i5yq5"]
 [ext_resource type="Texture2D" uid="uid://c0u4fusetn3ui" path="res://assets/sprites/art gallery/07 herrko/08 herrko art showcase.png" id="42_6el7v"]
+[ext_resource type="Texture2D" uid="uid://d1nxnoco8tx0m" path="res://assets/sprites/art gallery/08 greklovick/08 greklovick art showcase.png" id="42_s8w0w"]
 [ext_resource type="Texture2D" uid="uid://biyway16nl8u6" path="res://assets/sprites/art gallery/07 herrko/09 herrko art showcase.png" id="43_urr3m"]
+[ext_resource type="Texture2D" uid="uid://cm7tguewt8wg1" path="res://assets/sprites/art gallery/08 greklovick/09 greklovick art showcase.png" id="43_uwutr"]
+[ext_resource type="Texture2D" uid="uid://bw6wdcv67q87j" path="res://assets/sprites/art gallery/08 greklovick/10 greklovick art showcase.png" id="44_pas1s"]
 [ext_resource type="Texture2D" uid="uid://dni2l4cj1k5me" path="res://assets/sprites/art gallery/07 herrko/10 herrko art showcase.png" id="44_w07j3"]
 [ext_resource type="Texture2D" uid="uid://c6u64lwudivqx" path="res://assets/sprites/art gallery/07 herrko/11 herrko art showcase.png" id="45_33m5m"]
 [ext_resource type="Texture2D" uid="uid://dep5qsxmi8hcb" path="res://assets/sprites/art gallery/02 krimbstone/01 krimbstone art showcase.png" id="45_mapd3"]
+[ext_resource type="Texture2D" uid="uid://b2uoeq8tvoaml" path="res://assets/sprites/art gallery/08 greklovick/11 greklovick art showcase.png" id="45_s5y1y"]
 [ext_resource type="Texture2D" uid="uid://b4w83pqimrytb" path="res://assets/sprites/art gallery/02 krimbstone/02 krimbstone art showcase.png" id="46_bld8p"]
+[ext_resource type="Texture2D" uid="uid://bd4kdald3mc0s" path="res://assets/sprites/art gallery/08 greklovick/12 greklovick art showcase.png" id="46_fkudt"]
 [ext_resource type="Texture2D" uid="uid://bl77lb312ukhw" path="res://assets/sprites/art gallery/07 herrko/12 herrko art showcase.png" id="46_y44qv"]
 [ext_resource type="Texture2D" uid="uid://ctcg3lr60k0mt" path="res://assets/sprites/art gallery/07 herrko/13 herrko art showcase.png" id="47_br1rx"]
+[ext_resource type="Texture2D" uid="uid://d2x3offfajkwt" path="res://assets/sprites/art gallery/08 greklovick/13 greklovick art showcase.png" id="47_jwlol"]
 [ext_resource type="Texture2D" uid="uid://c4pqc267va3qu" path="res://assets/sprites/art gallery/02 krimbstone/03 krimbstone art showcase.png" id="47_s2bie"]
+[ext_resource type="Texture2D" uid="uid://ccj0e3rn6k0dt" path="res://assets/sprites/art gallery/08 greklovick/14 greklovick art showcase.png" id="48_ntwgb"]
 [ext_resource type="Texture2D" uid="uid://cx07v7kwewnpa" path="res://assets/sprites/art gallery/02 krimbstone/04 krimbstone art showcase.png" id="48_s0tf0"]
 [ext_resource type="Texture2D" uid="uid://t5lw42jd5h3h" path="res://assets/sprites/art gallery/07 herrko/14 herrko art showcase.png" id="48_y8j4u"]
+[ext_resource type="Texture2D" uid="uid://dryw17qi8pjjt" path="res://assets/sprites/art gallery/08 greklovick/15 greklovick art showcase.png" id="49_fjr1u"]
 [ext_resource type="Texture2D" uid="uid://y1dv8jnvu3ji" path="res://assets/sprites/art gallery/07 herrko/15 herrko art showcase.png" id="49_ghcn0"]
 [ext_resource type="Texture2D" uid="uid://dgnfybvlw4mcj" path="res://assets/sprites/art gallery/02 krimbstone/05 krimbstone art showcase.png" id="49_msn5f"]
+[ext_resource type="Texture2D" uid="uid://h02u20pax5ff" path="res://assets/sprites/art gallery/08 greklovick/16 greklovick art showcase.png" id="50_4sog0"]
 [ext_resource type="Texture2D" uid="uid://b8f7u0xvnudff" path="res://assets/sprites/art gallery/07 herrko/16 herrko art showcase.png" id="50_dm183"]
 [ext_resource type="Texture2D" uid="uid://b6y878eys5ol3" path="res://assets/sprites/art gallery/02 krimbstone/06 krimbstone art showcase.png" id="50_qgm3y"]
 [ext_resource type="Texture2D" uid="uid://b3trorupux4wt" path="res://assets/sprites/art gallery/02 krimbstone/07 krimbstone art showcase.png" id="51_2qbtp"]
 [ext_resource type="Texture2D" uid="uid://bbudrcol3bhcr" path="res://assets/sprites/art gallery/07 herrko/17 herrko art showcase.png" id="51_25npj"]
+[ext_resource type="Texture2D" uid="uid://dqg4cc65tsgek" path="res://assets/sprites/art gallery/08 greklovick/17 greklovick art showcase.png" id="51_r4v5w"]
 [ext_resource type="Texture2D" uid="uid://dtr3r5bvf116v" path="res://assets/sprites/art gallery/07 herrko/18 herrko art showcase.png" id="52_7vifo"]
 [ext_resource type="Texture2D" uid="uid://cwjn3el3ow1ty" path="res://assets/sprites/art gallery/02 krimbstone/08 krimbstone art showcase.png" id="52_64i66"]
+[ext_resource type="Texture2D" uid="uid://cyxk74intvwj8" path="res://assets/sprites/art gallery/08 greklovick/18 greklovick art showcase.png" id="52_ect4q"]
 [ext_resource type="Texture2D" uid="uid://dlale4hb67wk0" path="res://assets/sprites/art gallery/07 herrko/19 herrko art showcase.png" id="53_cyinl"]
 [ext_resource type="Texture2D" uid="uid://jpmy8xakhejf" path="res://assets/sprites/art gallery/02 krimbstone/09 krimbstone art showcase.png" id="53_onnrr"]
+[ext_resource type="Texture2D" uid="uid://cljky7ygsy23r" path="res://assets/sprites/art gallery/08 greklovick/19 greklovick art showcase.png" id="53_qoayq"]
+[ext_resource type="Texture2D" uid="uid://cum2dtvbq7h7k" path="res://assets/sprites/art gallery/08 greklovick/20 greklovick art showcase.png" id="54_3eev4"]
 [ext_resource type="Texture2D" uid="uid://gma56pv3n300" path="res://assets/sprites/art gallery/02 krimbstone/10 krimbstone art showcase.png" id="54_ebp33"]
+[ext_resource type="Texture2D" uid="uid://d21kqisjikiso" path="res://assets/sprites/art gallery/08 greklovick/21 greklovick art showcase.png" id="55_4q20o"]
 [ext_resource type="Texture2D" uid="uid://dk858sat6ehq8" path="res://assets/sprites/art gallery/02 krimbstone/11 krimbstone art showcase.png" id="55_07fh0"]
+[ext_resource type="Texture2D" uid="uid://c8psssnxsbte" path="res://assets/sprites/art gallery/08 greklovick/22 greklovick art showcase.png" id="56_58nst"]
 [ext_resource type="Texture2D" uid="uid://dj8py0pu6cxkm" path="res://assets/sprites/art gallery/02 krimbstone/12 krimbstone art showcase.png" id="56_rh1qw"]
+[ext_resource type="Texture2D" uid="uid://bh5jma1q48wu3" path="res://assets/sprites/art gallery/08 greklovick/23 greklovick art showcase.png" id="57_fnpum"]
 [ext_resource type="Texture2D" uid="uid://dsmo8mg015rtf" path="res://assets/sprites/art gallery/02 krimbstone/13 krimbstone art showcase.png" id="57_uf3yq"]
+[ext_resource type="Texture2D" uid="uid://dx07nt2ryarjf" path="res://assets/sprites/art gallery/08 greklovick/24 greklovick art showcase.png" id="58_5oe36"]
 [ext_resource type="Texture2D" uid="uid://bolmuxt7cwc8c" path="res://assets/sprites/art gallery/03 lahiurn/01 lahiurn art showcase.png" id="58_f3ip5"]
 [ext_resource type="Texture2D" uid="uid://7spdul76ifa" path="res://assets/sprites/art gallery/03 lahiurn/02 lahiurn art showcase.png" id="59_c8m6c"]
+[ext_resource type="Texture2D" uid="uid://de3pdw7ysib68" path="res://assets/sprites/art gallery/08 greklovick/25 greklovick art showcase.png" id="59_kiga0"]
+[ext_resource type="Texture2D" uid="uid://b0gsgoflvchxv" path="res://assets/sprites/art gallery/08 greklovick/26 greklovick art showcase.png" id="60_daalw"]
 [ext_resource type="Texture2D" uid="uid://3xakjo5hwa7j" path="res://assets/sprites/art gallery/03 lahiurn/03 lahiurn art showcase.png" id="60_le0cc"]
 [ext_resource type="Texture2D" uid="uid://doys0e3h0lypn" path="res://assets/sprites/art gallery/03 lahiurn/04 lahiurn art showcase.png" id="61_8flch"]
+[ext_resource type="Texture2D" uid="uid://c4lx5sp4mf8o6" path="res://assets/sprites/art gallery/08 greklovick/27 greklovick art showcase.png" id="61_ghf1i"]
 [ext_resource type="Texture2D" uid="uid://dall531pxi0yr" path="res://assets/sprites/art gallery/03 lahiurn/05 lahiurn art showcase.png" id="62_c5dld"]
+[ext_resource type="Texture2D" uid="uid://bxop3ok3yonrq" path="res://assets/sprites/art gallery/08 greklovick/28 greklovick art showcase.png" id="62_hrfi6"]
 [ext_resource type="Texture2D" uid="uid://ci44hdekj8d3n" path="res://assets/sprites/art gallery/03 lahiurn/06 lahiurn art showcase.png" id="63_8thxd"]
+[ext_resource type="Texture2D" uid="uid://crlq0y2iuwtpa" path="res://assets/sprites/art gallery/08 greklovick/29 greklovick art showcase.png" id="63_rhybg"]
 [ext_resource type="Texture2D" uid="uid://cxrvml3v82ee1" path="res://assets/sprites/art gallery/03 lahiurn/07 lahiurn art showcase.png" id="64_d83sp"]
+[ext_resource type="Texture2D" uid="uid://couqoh1nmv4ti" path="res://assets/sprites/art gallery/08 greklovick/30 greklovick art showcase.png" id="64_slwf3"]
 [ext_resource type="Texture2D" uid="uid://b3ps3t0j8pc5f" path="res://assets/sprites/art gallery/03 lahiurn/08 lahiurn art showcase.png" id="65_bd8xb"]
+[ext_resource type="Texture2D" uid="uid://m830kluk074d" path="res://assets/sprites/art gallery/08 greklovick/31 greklovick art showcase.png" id="65_ydh8m"]
+[ext_resource type="Texture2D" uid="uid://icoxaptt7vtu" path="res://assets/sprites/art gallery/08 greklovick/32 greklovick art showcase.png" id="66_86ub0"]
 [ext_resource type="Texture2D" uid="uid://bfnm1aq65718p" path="res://assets/sprites/art gallery/03 lahiurn/09 lahiurn art showcase.png" id="66_87a5k"]
 [ext_resource type="Texture2D" uid="uid://lrn17g788mnh" path="res://assets/sprites/art gallery/03 lahiurn/10 lahiurn art showcase.png" id="67_4bxpr"]
 [ext_resource type="Texture2D" uid="uid://c35rfw4fkgkkp" path="res://assets/sprites/art gallery/03 lahiurn/11 lahiurn art showcase.png" id="68_gpxyu"]
@@ -293,6 +325,107 @@ animations = [{
 }],
 "loop": false,
 "name": &"brinkaedea",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_mylrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_fdv3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_5u23d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_47t1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_rj5n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_wqciw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_0ql8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_s8w0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uwutr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_pas1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_s5y1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_fkudt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_jwlol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_ntwgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_fjr1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_4sog0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_r4v5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ect4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_qoayq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_3eev4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_4q20o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_58nst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_fnpum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_5oe36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_kiga0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_daalw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_ghf1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_hrfi6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_rhybg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_slwf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ydh8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_86ub0")
+}],
+"loop": false,
+"name": &"greklovick",
 "speed": 0.0
 }, {
 "frames": [{
@@ -770,7 +903,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"herrko"
+animation = &"greklovick"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
