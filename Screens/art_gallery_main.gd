@@ -25,7 +25,7 @@ func _on_massagcoav_button_pressed() -> void:
 
 
 func _on_herrko_button_pressed() -> void:
-	pass # Replace with function body.
+		SceneTransition.load_scene("res://Screens/gallery pages/art_galllery_08_herrko.tscn")
 
 
 func _on_greklovick_button_pressed() -> void:

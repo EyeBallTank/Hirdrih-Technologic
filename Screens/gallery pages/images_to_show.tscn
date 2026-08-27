@@ -1,4 +1,4 @@
-[gd_scene load_steps=163 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=182 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -64,14 +64,33 @@
 [ext_resource type="Texture2D" uid="uid://d1lpbwi1rbtd6" path="res://assets/sprites/art gallery/01 brinkaedea/31 brinkaedea art showcase.png" id="32_j6glq"]
 [ext_resource type="Texture2D" uid="uid://dwooxu8vvrufb" path="res://assets/sprites/art gallery/01 brinkaedea/32 brinkaedea art showcase.png" id="33_78cd5"]
 [ext_resource type="Texture2D" uid="uid://dgwe2a454jctl" path="res://assets/sprites/art gallery/01 brinkaedea/33 brinkaedea art showcase.png" id="34_e068q"]
+[ext_resource type="Texture2D" uid="uid://bkj436bfqa15s" path="res://assets/sprites/art gallery/07 herrko/01 herrko art showcase.png" id="35_4278a"]
+[ext_resource type="Texture2D" uid="uid://cokb4v2ootrks" path="res://assets/sprites/art gallery/07 herrko/02 herrko art showcase.png" id="36_a6rtq"]
+[ext_resource type="Texture2D" uid="uid://bdsp5xt3w1frv" path="res://assets/sprites/art gallery/07 herrko/03 herrko art showcase.png" id="37_od2q8"]
+[ext_resource type="Texture2D" uid="uid://b6kxsqexvmhwf" path="res://assets/sprites/art gallery/07 herrko/04 herrko art showcase.png" id="38_y4gm6"]
+[ext_resource type="Texture2D" uid="uid://cfyd2dqpi05gs" path="res://assets/sprites/art gallery/07 herrko/05 herrko art showcase.png" id="39_v311l"]
+[ext_resource type="Texture2D" uid="uid://bxiabevx421xe" path="res://assets/sprites/art gallery/07 herrko/06 herrko art showcase.png" id="40_vflo3"]
+[ext_resource type="Texture2D" uid="uid://ciibp5jcxxoxi" path="res://assets/sprites/art gallery/07 herrko/07 herrko art showcase.png" id="41_i5yq5"]
+[ext_resource type="Texture2D" uid="uid://c0u4fusetn3ui" path="res://assets/sprites/art gallery/07 herrko/08 herrko art showcase.png" id="42_6el7v"]
+[ext_resource type="Texture2D" uid="uid://biyway16nl8u6" path="res://assets/sprites/art gallery/07 herrko/09 herrko art showcase.png" id="43_urr3m"]
+[ext_resource type="Texture2D" uid="uid://dni2l4cj1k5me" path="res://assets/sprites/art gallery/07 herrko/10 herrko art showcase.png" id="44_w07j3"]
+[ext_resource type="Texture2D" uid="uid://c6u64lwudivqx" path="res://assets/sprites/art gallery/07 herrko/11 herrko art showcase.png" id="45_33m5m"]
 [ext_resource type="Texture2D" uid="uid://dep5qsxmi8hcb" path="res://assets/sprites/art gallery/02 krimbstone/01 krimbstone art showcase.png" id="45_mapd3"]
 [ext_resource type="Texture2D" uid="uid://b4w83pqimrytb" path="res://assets/sprites/art gallery/02 krimbstone/02 krimbstone art showcase.png" id="46_bld8p"]
+[ext_resource type="Texture2D" uid="uid://bl77lb312ukhw" path="res://assets/sprites/art gallery/07 herrko/12 herrko art showcase.png" id="46_y44qv"]
+[ext_resource type="Texture2D" uid="uid://ctcg3lr60k0mt" path="res://assets/sprites/art gallery/07 herrko/13 herrko art showcase.png" id="47_br1rx"]
 [ext_resource type="Texture2D" uid="uid://c4pqc267va3qu" path="res://assets/sprites/art gallery/02 krimbstone/03 krimbstone art showcase.png" id="47_s2bie"]
 [ext_resource type="Texture2D" uid="uid://cx07v7kwewnpa" path="res://assets/sprites/art gallery/02 krimbstone/04 krimbstone art showcase.png" id="48_s0tf0"]
+[ext_resource type="Texture2D" uid="uid://t5lw42jd5h3h" path="res://assets/sprites/art gallery/07 herrko/14 herrko art showcase.png" id="48_y8j4u"]
+[ext_resource type="Texture2D" uid="uid://y1dv8jnvu3ji" path="res://assets/sprites/art gallery/07 herrko/15 herrko art showcase.png" id="49_ghcn0"]
 [ext_resource type="Texture2D" uid="uid://dgnfybvlw4mcj" path="res://assets/sprites/art gallery/02 krimbstone/05 krimbstone art showcase.png" id="49_msn5f"]
+[ext_resource type="Texture2D" uid="uid://b8f7u0xvnudff" path="res://assets/sprites/art gallery/07 herrko/16 herrko art showcase.png" id="50_dm183"]
 [ext_resource type="Texture2D" uid="uid://b6y878eys5ol3" path="res://assets/sprites/art gallery/02 krimbstone/06 krimbstone art showcase.png" id="50_qgm3y"]
 [ext_resource type="Texture2D" uid="uid://b3trorupux4wt" path="res://assets/sprites/art gallery/02 krimbstone/07 krimbstone art showcase.png" id="51_2qbtp"]
+[ext_resource type="Texture2D" uid="uid://bbudrcol3bhcr" path="res://assets/sprites/art gallery/07 herrko/17 herrko art showcase.png" id="51_25npj"]
+[ext_resource type="Texture2D" uid="uid://dtr3r5bvf116v" path="res://assets/sprites/art gallery/07 herrko/18 herrko art showcase.png" id="52_7vifo"]
 [ext_resource type="Texture2D" uid="uid://cwjn3el3ow1ty" path="res://assets/sprites/art gallery/02 krimbstone/08 krimbstone art showcase.png" id="52_64i66"]
+[ext_resource type="Texture2D" uid="uid://dlale4hb67wk0" path="res://assets/sprites/art gallery/07 herrko/19 herrko art showcase.png" id="53_cyinl"]
 [ext_resource type="Texture2D" uid="uid://jpmy8xakhejf" path="res://assets/sprites/art gallery/02 krimbstone/09 krimbstone art showcase.png" id="53_onnrr"]
 [ext_resource type="Texture2D" uid="uid://gma56pv3n300" path="res://assets/sprites/art gallery/02 krimbstone/10 krimbstone art showcase.png" id="54_ebp33"]
 [ext_resource type="Texture2D" uid="uid://dk858sat6ehq8" path="res://assets/sprites/art gallery/02 krimbstone/11 krimbstone art showcase.png" id="55_07fh0"]
@@ -274,6 +293,68 @@ animations = [{
 }],
 "loop": false,
 "name": &"brinkaedea",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_4278a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_a6rtq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_od2q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_y4gm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_v311l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_vflo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_i5yq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_6el7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_urr3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_w07j3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_33m5m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_y44qv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_br1rx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_y8j4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ghcn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_dm183")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_25npj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_7vifo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_cyinl")
+}],
+"loop": false,
+"name": &"herrko",
 "speed": 0.0
 }, {
 "frames": [{
@@ -689,7 +770,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"untotern"
+animation = &"herrko"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
