@@ -234,7 +234,7 @@ offset_bottom = 60.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("5_7jhra")
 theme_override_font_sizes/font_size = 23
-text = "OTHER"
+text = "T_OTHER_BUTTON"
 
 [node name="QuitButton" type="TextureButton" parent="."]
 layout_mode = 0
