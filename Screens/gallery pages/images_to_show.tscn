@@ -1,4 +1,4 @@
-[gd_scene load_steps=214 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=215 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -208,6 +208,7 @@
 [ext_resource type="Texture2D" uid="uid://cw5mjalpb6032" path="res://assets/sprites/art gallery/06 untotern/21 untotern art showcase.png" id="155_h3raf"]
 [ext_resource type="Texture2D" uid="uid://cjxdcyfthosaf" path="res://assets/sprites/art gallery/06 untotern/22 untotern art showcase.png" id="156_5vdni"]
 [ext_resource type="Texture2D" uid="uid://cuv2vfjywcxmm" path="res://assets/sprites/art gallery/06 untotern/23 untotern art showcase.png" id="157_1vbe1"]
+[ext_resource type="Texture2D" uid="uid://f5a3mlapurv3" path="res://assets/sprites/art gallery/images of other characters as a single image.png" id="166_ipq1m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -757,6 +758,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("166_ipq1m")
+}],
+"loop": false,
+"name": &"other",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("12_rkwcc")
 }, {
 "duration": 1.0,
@@ -903,7 +912,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"brinkaedea"
+animation = &"other"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
