@@ -236,6 +236,28 @@ theme_override_fonts/font = ExtResource("5_7jhra")
 theme_override_font_sizes/font_size = 23
 text = "T_OTHER_BUTTON"
 
+[node name="SillyButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 876.0
+offset_top = 377.0
+offset_right = 992.0
+offset_bottom = 451.0
+texture_normal = ExtResource("2_ek2xt")
+texture_pressed = ExtResource("3_n4a32")
+texture_hover = ExtResource("4_q2vga")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="SillyButton"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 18.0
+offset_right = 204.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_7jhra")
+theme_override_font_sizes/font_size = 23
+text = "???"
+
 [node name="QuitButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 31.0
