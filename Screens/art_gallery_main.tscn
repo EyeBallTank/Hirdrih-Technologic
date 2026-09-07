@@ -299,4 +299,5 @@ text = "QUIT"
 [connection signal="pressed" from="KrimbstoneButton" to="." method="_on_krimbstone_button_pressed"]
 [connection signal="pressed" from="LahiurnButton" to="." method="_on_lahiurn_button_pressed"]
 [connection signal="pressed" from="OtherButton" to="." method="_on_other_button_pressed"]
+[connection signal="pressed" from="SillyButton" to="." method="_on_silly_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

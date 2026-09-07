@@ -45,6 +45,9 @@ func _on_other_button_pressed() -> void:
 
 
 
-
 func _on_quit_button_pressed() -> void:
 	SceneTransition.load_scene("res://Screens/main_menu.tscn")
+
+
+func _on_silly_button_pressed() -> void:
+		SceneTransition.load_scene("res://Screens/gallery pages/art_galllery_11_silly.tscn")

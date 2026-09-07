@@ -1,4 +1,4 @@
-[gd_scene load_steps=215 format=3 uid="uid://w3he56eg4uvx"]
+[gd_scene load_steps=234 format=3 uid="uid://w3he56eg4uvx"]
 
 [ext_resource type="Script" path="res://Screens/gallery pages/images_to_show.gd" id="1_lcmba"]
 [ext_resource type="Texture2D" uid="uid://csqb05x5020oa" path="res://assets/sprites/art gallery/hirdrih/01 hirdrih art showcase v3.png" id="2_1kgtg"]
@@ -209,6 +209,25 @@
 [ext_resource type="Texture2D" uid="uid://cjxdcyfthosaf" path="res://assets/sprites/art gallery/06 untotern/22 untotern art showcase.png" id="156_5vdni"]
 [ext_resource type="Texture2D" uid="uid://cuv2vfjywcxmm" path="res://assets/sprites/art gallery/06 untotern/23 untotern art showcase.png" id="157_1vbe1"]
 [ext_resource type="Texture2D" uid="uid://f5a3mlapurv3" path="res://assets/sprites/art gallery/images of other characters as a single image.png" id="166_ipq1m"]
+[ext_resource type="Texture2D" uid="uid://0ylinbnflmcx" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 001.png" id="167_3r086"]
+[ext_resource type="Texture2D" uid="uid://b7kmy3q5cvea1" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 002.png" id="168_5qf4u"]
+[ext_resource type="Texture2D" uid="uid://1hhowqy1nftk" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 003.png" id="169_bxw5t"]
+[ext_resource type="Texture2D" uid="uid://cxd0uud0giyyd" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 004 v2.png" id="170_wmnf0"]
+[ext_resource type="Texture2D" uid="uid://c4f2ibbqdrjfq" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 005.png" id="171_ygwax"]
+[ext_resource type="Texture2D" uid="uid://dqcvtajwytlo1" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 006.png" id="172_kypyy"]
+[ext_resource type="Texture2D" uid="uid://bbn5l1icg1umx" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 007.png" id="173_fjruf"]
+[ext_resource type="Texture2D" uid="uid://cyndys6nbkaur" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 008.png" id="174_sa0oi"]
+[ext_resource type="Texture2D" uid="uid://q8d8l5v8k837" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 009.png" id="175_dauey"]
+[ext_resource type="Texture2D" uid="uid://dascg3en42kv7" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 010.png" id="176_vu0ei"]
+[ext_resource type="Texture2D" uid="uid://bnlt0b6ojc0nd" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 011.png" id="177_b4kng"]
+[ext_resource type="Texture2D" uid="uid://da24cuerc8onv" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 012.png" id="178_w51os"]
+[ext_resource type="Texture2D" uid="uid://dre8twbvnnd7a" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 013.png" id="179_xm1oj"]
+[ext_resource type="Texture2D" uid="uid://gwvo2qocdade" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 014.png" id="180_n16mk"]
+[ext_resource type="Texture2D" uid="uid://c6oy24b2m1hms" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 015.png" id="181_o61hv"]
+[ext_resource type="Texture2D" uid="uid://dnso5lnevc6v7" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 016.png" id="182_yp0j6"]
+[ext_resource type="Texture2D" uid="uid://bajvcp6rgyjfq" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 017.png" id="183_3lo1l"]
+[ext_resource type="Texture2D" uid="uid://d2pc0665qqkhd" path="res://assets/sprites/art gallery/hidden silly images/a nice collection 018.png" id="184_ur14m"]
+[ext_resource type="Texture2D" uid="uid://dxl1w1vo3ngwq" path="res://assets/sprites/art gallery/hidden silly images/cecille and marta together.png" id="190_1tc78"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk531"]
 atlas = ExtResource("3_s72yf")
@@ -766,6 +785,60 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("167_3r086")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_5qf4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_bxw5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_wmnf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_ygwax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_kypyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_fjruf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_sa0oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_dauey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_vu0ei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_b4kng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_w51os")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_xm1oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_n16mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_o61hv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_yp0j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_3lo1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_ur14m")
+}, {
+"duration": 1.0,
 "texture": ExtResource("12_rkwcc")
 }, {
 "duration": 1.0,
@@ -779,6 +852,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("16_8jsgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_1tc78")
 }, {
 "duration": 1.0,
 "texture": ExtResource("17_8qpxe")
@@ -912,7 +988,7 @@ script = ExtResource("1_lcmba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_o0jxm")
-animation = &"brinkaedea"
+animation = &"test"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u6c1n")
