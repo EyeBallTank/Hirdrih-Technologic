@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb82qi30po3ve"
-path="res://.godot/imported/09 hirdrih art showcase.png-d6cf653cee00d1a6de69b5c89d8807af.ctex"
+uid="uid://c1lrtpwgo8jb3"
+path="res://.godot/imported/09 hirdrih art showcase v2.png-ff0686a1a79909b0930a94abe2c1856f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/art gallery/hirdrih/09 hirdrih art showcase.png"
-dest_files=["res://.godot/imported/09 hirdrih art showcase.png-d6cf653cee00d1a6de69b5c89d8807af.ctex"]
+source_file="res://assets/sprites/art gallery/hirdrih/09 hirdrih art showcase v2.png"
+dest_files=["res://.godot/imported/09 hirdrih art showcase v2.png-ff0686a1a79909b0930a94abe2c1856f.ctex"]
 
 [params]
 

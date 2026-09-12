@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://d3cfefn6uk1mv" path="res://assets/sprites/art gallery/hirdrih/08 hirdrih art showcase.png" id="9_py88i"]
 [ext_resource type="Texture2D" uid="uid://di7c2uju6kg5k" path="res://assets/sprites/art gallery/01 brinkaedea/08 brinkaedea art showcase.png" id="9_v0q4d"]
 [ext_resource type="Texture2D" uid="uid://k0e02twila86" path="res://assets/sprites/art gallery/01 brinkaedea/09 brinkaedea art showcase.png" id="10_3vd78"]
-[ext_resource type="Texture2D" uid="uid://bb82qi30po3ve" path="res://assets/sprites/art gallery/hirdrih/09 hirdrih art showcase.png" id="10_u71qs"]
 [ext_resource type="Texture2D" uid="uid://dd7b7c7dpxr0i" path="res://assets/sprites/art gallery/hirdrih/10 hirdrih art showcase.png" id="11_0kayu"]
 [ext_resource type="Texture2D" uid="uid://dx410odojda7q" path="res://assets/sprites/art gallery/01 brinkaedea/10 brinkaedea art showcase.png" id="11_k35tk"]
 [ext_resource type="Texture2D" uid="uid://cw8kyw4cgmqxk" path="res://assets/sprites/art gallery/01 brinkaedea/11 brinkaedea art showcase.png" id="12_27xdo"]
@@ -164,6 +163,7 @@
 [ext_resource type="Texture2D" uid="uid://csq1wbpokhxgb" path="res://assets/sprites/art gallery/04 massagcoav/21 massagcoav art showcase.png" id="91_p31k8"]
 [ext_resource type="Texture2D" uid="uid://bigxe8x4hjrwq" path="res://assets/sprites/art gallery/04 massagcoav/22 massagcoav art showcase.png" id="92_mvwl3"]
 [ext_resource type="Texture2D" uid="uid://bnvfuitwh1cf5" path="res://assets/sprites/art gallery/05 nortubel/01 nortubel art showcase.png" id="93_ado7w"]
+[ext_resource type="Texture2D" uid="uid://c1lrtpwgo8jb3" path="res://assets/sprites/art gallery/hirdrih/09 hirdrih art showcase v2.png" id="94_f775c"]
 [ext_resource type="Texture2D" uid="uid://bhen7q04ip6ux" path="res://assets/sprites/art gallery/05 nortubel/02 nortubel art showcase.png" id="94_s3psv"]
 [ext_resource type="Texture2D" uid="uid://dd1ebf3s6xaon" path="res://assets/sprites/art gallery/05 nortubel/03 nortubel art showcase.png" id="95_8f8n3"]
 [ext_resource type="Texture2D" uid="uid://deit7hlxn0o54" path="res://assets/sprites/art gallery/05 nortubel/04 nortubel art showcase.png" id="96_6vmuc"]
@@ -536,7 +536,7 @@ animations = [{
 "texture": ExtResource("9_py88i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_u71qs")
+"texture": ExtResource("94_f775c")
 }, {
 "duration": 1.0,
 "texture": ExtResource("11_0kayu")
