@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://boqh3dn4ii0ql"]
+[gd_scene load_steps=17 format=3 uid="uid://boqh3dn4ii0ql"]
 
 [ext_resource type="Script" path="res://src/level objects/yellowdoor.gd" id="1_per3i"]
 [ext_resource type="Texture2D" uid="uid://doualq6mp2v0u" path="res://assets/sprites/DOOR COLORS SPRITE TEST.png" id="2_qcr1v"]
 [ext_resource type="Texture2D" uid="uid://clj4btks2jxdp" path="res://assets/sprites/level objects/brinkaedea/A COLORED DOORS BRINKAEDEA.png" id="2_wis12"]
 [ext_resource type="Texture2D" uid="uid://dy31uisisp055" path="res://assets/sprites/level objects/nortubel/A COLORED DOORS NORTUBEL.png" id="4_qinci"]
+[ext_resource type="Texture2D" uid="uid://dreepfwwailcr" path="res://assets/sprites/level objects/untotern/A COLORED DOORS UNTOTERN.png" id="5_1nrui"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iq4go"]
 atlas = ExtResource("2_wis12")
@@ -16,6 +17,10 @@ region = Rect2(18, 0, 18, 36)
 [sub_resource type="AtlasTexture" id="AtlasTexture_od8j0"]
 atlas = ExtResource("4_qinci")
 region = Rect2(0, 0, 18, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_san57"]
+atlas = ExtResource("5_1nrui")
+region = Rect2(18, 0, 18, 36)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8oa05"]
 animations = [{
@@ -41,6 +46,14 @@ animations = [{
 }],
 "loop": false,
 "name": &"nortubel",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_san57")
+}],
+"loop": false,
+"name": &"untotern",
 "speed": 0.0
 }]
 
@@ -195,7 +208,7 @@ script = ExtResource("1_per3i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8oa05")
-animation = &"nortubel"
+animation = &"untotern"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_rijbg")

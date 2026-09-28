@@ -236,13 +236,16 @@ position = Vector2(580, -488)
 position = Vector2(-5, -571)
 
 [node name="RedDoor" parent="." instance=ExtResource("14_sldkn")]
-position = Vector2(531, -486)
+position = Vector2(-54, -158)
+spritename = "untotern"
 
 [node name="BlueDoor" parent="." instance=ExtResource("15_opstp")]
-position = Vector2(621, -378)
+position = Vector2(-24, -157)
+spritename = "untotern"
 
 [node name="YellowDoor" parent="." instance=ExtResource("16_1r4p6")]
-position = Vector2(603, -378)
+position = Vector2(7, -157)
+spritename = "untotern"
 
 [node name="Path2D" parent="." instance=ExtResource("17_85rmp")]
 position = Vector2(-55, -383)
