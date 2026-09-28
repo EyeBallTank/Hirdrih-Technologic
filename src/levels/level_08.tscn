@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://c4epnqayi3uev"]
+[gd_scene load_steps=40 format=4 uid="uid://c4epnqayi3uev"]
 
 [ext_resource type="Texture2D" uid="uid://o6bofgr1riem" path="res://assets/sprites/level backgrounds/untotern/untotern background.png" id="1_bhta3"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_6aiq4"]
@@ -25,6 +25,7 @@
 [ext_resource type="AudioStream" uid="uid://bexc1ayhk10hb" path="res://assets/sounds/music/level 08 untotern level 2.ogg" id="24_munfr"]
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="25_islrh"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="26_p3p1o"]
+[ext_resource type="PackedScene" uid="uid://meckl50d6ugr" path="res://src/level objects/jump pad.tscn" id="27_odsun"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="27_tpf1q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
@@ -327,6 +328,9 @@ position = Vector2(550, -433)
 
 [node name="GreenTwoButton" parent="." instance=ExtResource("27_tpf1q")]
 position = Vector2(497, -378)
+
+[node name="JumpPad" parent="." instance=ExtResource("27_odsun")]
+position = Vector2(-162, -165)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
