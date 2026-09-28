@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgago2kikiajh"
-path="res://.godot/imported/health pickup untotern 2.png-bcda8e5b20fb7917ec749dfe7fd1f540.ctex"
+uid="uid://co3ltoryhsvn3"
+path="res://.godot/imported/A HEALTH PICKUP UNTOTERN.png-48d208c984269f74e0bdd73e371f6219.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level items/untotern/health pickup untotern 2.png"
-dest_files=["res://.godot/imported/health pickup untotern 2.png-bcda8e5b20fb7917ec749dfe7fd1f540.ctex"]
+source_file="res://assets/sprites/level items/untotern/A HEALTH PICKUP UNTOTERN.png"
+dest_files=["res://.godot/imported/A HEALTH PICKUP UNTOTERN.png-48d208c984269f74e0bdd73e371f6219.ctex"]
 
 [params]
 

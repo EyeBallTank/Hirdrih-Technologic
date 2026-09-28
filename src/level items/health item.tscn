@@ -1,9 +1,10 @@
-[gd_scene load_steps=25 format=3 uid="uid://rkxohx8p0k83"]
+[gd_scene load_steps=29 format=3 uid="uid://rkxohx8p0k83"]
 
 [ext_resource type="Script" path="res://src/level items/health_item.gd" id="1_rf0u1"]
 [ext_resource type="Texture2D" uid="uid://cbmli5gwhyqe5" path="res://assets/sprites/HEALTH ITEM ANIMATION SPRITE TEST.png" id="2_5veo5"]
 [ext_resource type="Texture2D" uid="uid://beog0lri61yjs" path="res://assets/sprites/level items/brinkaedea/A HEALTH PICKUP BRINKAEDEA.png" id="2_tsk1o"]
 [ext_resource type="Texture2D" uid="uid://yk7smbtxquao" path="res://assets/sprites/level items/nortubel/A HEALTH PICKUP NORTUBEL.png" id="4_k3ny4"]
+[ext_resource type="Texture2D" uid="uid://co3ltoryhsvn3" path="res://assets/sprites/level items/untotern/A HEALTH PICKUP UNTOTERN.png" id="5_4bnp1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kyl8k"]
 atlas = ExtResource("2_tsk1o")
@@ -60,6 +61,18 @@ region = Rect2(0, 25, 22, 25)
 [sub_resource type="AtlasTexture" id="AtlasTexture_0kurj"]
 atlas = ExtResource("4_k3ny4")
 region = Rect2(0, 50, 22, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6ouo"]
+atlas = ExtResource("5_4bnp1")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua7p0"]
+atlas = ExtResource("5_4bnp1")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jmtu"]
+atlas = ExtResource("5_4bnp1")
+region = Rect2(0, 48, 24, 24)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e4oso"]
 animations = [{
@@ -230,6 +243,38 @@ animations = [{
 "loop": true,
 "name": &"nortubel",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6ouo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6ouo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6ouo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua7p0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jmtu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua7p0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jmtu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ua7p0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jmtu")
+}],
+"loop": true,
+"name": &"untotern",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
@@ -343,7 +388,7 @@ script = ExtResource("1_rf0u1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")
-animation = &"nortubel"
+animation = &"untotern"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fswyh")

@@ -218,13 +218,16 @@ position = Vector2(0, -2)
 position = Vector2(0, -0.5)
 
 [node name="Coin" parent="." instance=ExtResource("9_yp658")]
-position = Vector2(70, -416)
+position = Vector2(-136, -164)
+spritename = "untotern"
 
 [node name="HealthItem" parent="." instance=ExtResource("10_n5rlg")]
-position = Vector2(618, -485)
+position = Vector2(-131, -213)
+spritename = "untotern"
 
 [node name="HealthItem2" parent="." instance=ExtResource("10_n5rlg")]
 position = Vector2(316, -513)
+spritename = "untotern"
 
 [node name="Redkey" parent="." instance=ExtResource("11_a5g15")]
 position = Vector2(625, -433)

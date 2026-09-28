@@ -1,9 +1,10 @@
-[gd_scene load_steps=47 format=3 uid="uid://cxsgrjmyftcxj"]
+[gd_scene load_steps=54 format=3 uid="uid://cxsgrjmyftcxj"]
 
 [ext_resource type="Script" path="res://src/level items/coin.gd" id="1_pd4oa"]
 [ext_resource type="Texture2D" uid="uid://de7jkqs5bx1rj" path="res://assets/sprites/level items/brinkaedea/A COIN BRINKAEDEA.png" id="2_gyy3u"]
 [ext_resource type="Texture2D" uid="uid://y8208cv0twn1" path="res://assets/sprites/COIN ANIMATION SPRITE TEST.png" id="2_ooon7"]
 [ext_resource type="Texture2D" uid="uid://bymljjm147he" path="res://assets/sprites/level items/nortubel/A COIN NORTUBEL.png" id="4_34ny2"]
+[ext_resource type="Texture2D" uid="uid://xi1s1hfbrkar" path="res://assets/sprites/level items/untotern/A COIN UNTOTERN.png" id="5_o50ny"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8v55a"]
 atlas = ExtResource("2_gyy3u")
@@ -147,6 +148,30 @@ region = Rect2(16, 15, 16, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h34y8"]
 atlas = ExtResource("4_34ny2")
+region = Rect2(32, 15, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_elxe5"]
+atlas = ExtResource("5_o50ny")
+region = Rect2(0, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_delcn"]
+atlas = ExtResource("5_o50ny")
+region = Rect2(16, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njrki"]
+atlas = ExtResource("5_o50ny")
+region = Rect2(32, 0, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wubuk"]
+atlas = ExtResource("5_o50ny")
+region = Rect2(0, 15, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0siau"]
+atlas = ExtResource("5_o50ny")
+region = Rect2(16, 15, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4ojp"]
+atlas = ExtResource("5_o50ny")
 region = Rect2(32, 15, 16, 15)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_e4oso"]
@@ -414,6 +439,29 @@ animations = [{
 "loop": true,
 "name": &"nortubel",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_elxe5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_delcn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njrki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wubuk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0siau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4ojp")
+}],
+"loop": true,
+"name": &"untotern",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fswyh"]
@@ -527,7 +575,7 @@ script = ExtResource("1_pd4oa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e4oso")
-animation = &"nortubel"
+animation = &"untotern"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_fswyh")

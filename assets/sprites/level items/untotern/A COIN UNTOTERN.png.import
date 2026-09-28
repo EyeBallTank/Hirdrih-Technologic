@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqospxurc0iom"
-path="res://.godot/imported/shield coin untotern.png-e1438bfeaf38e51d237b3cfe93763c74.ctex"
+uid="uid://xi1s1hfbrkar"
+path="res://.godot/imported/A COIN UNTOTERN.png-06597a7099095f54a30b47b89b982cbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level items/untotern/shield coin untotern.png"
-dest_files=["res://.godot/imported/shield coin untotern.png-e1438bfeaf38e51d237b3cfe93763c74.ctex"]
+source_file="res://assets/sprites/level items/untotern/A COIN UNTOTERN.png"
+dest_files=["res://.godot/imported/A COIN UNTOTERN.png-06597a7099095f54a30b47b89b982cbe.ctex"]
 
 [params]
 
