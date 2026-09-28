@@ -231,12 +231,15 @@ spritename = "untotern"
 
 [node name="Redkey" parent="." instance=ExtResource("11_a5g15")]
 position = Vector2(-42, -124)
+spritename = "untotern"
 
 [node name="Bluekey" parent="." instance=ExtResource("12_8n55d")]
 position = Vector2(-15, -122)
+spritename = "untotern"
 
 [node name="Yellowkey" parent="." instance=ExtResource("13_psemg")]
 position = Vector2(13, -121)
+spritename = "untotern"
 
 [node name="RedDoor" parent="." instance=ExtResource("14_sldkn")]
 position = Vector2(-54, -158)
