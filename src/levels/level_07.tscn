@@ -290,6 +290,7 @@ animationname = "RESET_2"
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_h38vn")]
 position = Vector2(-37, -218)
 spritename = "untotern"
+nextlevel = "res://src/levels/level_08.tscn"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 libraries = {

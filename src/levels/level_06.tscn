@@ -1002,6 +1002,7 @@ animationname = "RESET_2"
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_arqo6")]
 position = Vector2(2018, 315)
 spritename = "brinkaedea"
+nextlevel = "res://src/levels/level_07.tscn"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
 libraries = {
