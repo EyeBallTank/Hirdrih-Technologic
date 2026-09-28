@@ -146,7 +146,7 @@ sources/0 = SubResource("TileSetAtlasSource_rj02y")
 [sub_resource type="Curve2D" id="Curve2D_f2qaw"]
 resource_local_to_scene = true
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 177, -4, 0, 0, 0, 0, -4, -4)
+"points": PackedVector2Array(0, 0, 0, 0, 177, -4, 0, 0, 0, 0, 83, -3)
 }
 point_count = 2
 
@@ -248,11 +248,11 @@ position = Vector2(1, -151)
 spritename = "untotern"
 
 [node name="Path2D" parent="." instance=ExtResource("17_b5lyl")]
-position = Vector2(-55, -383)
+position = Vector2(-251, -198)
 curve = SubResource("Curve2D_f2qaw")
 time_of_path = 4.0
 looping = true
-spritename = "HIRDRIH HORIZONTAL"
+spritename = "UNTOTERN VERTICAL"
 
 [node name="PickableArrow" parent="." instance=ExtResource("18_qlptq")]
 position = Vector2(-81, -133)
