@@ -230,13 +230,13 @@ position = Vector2(316, -513)
 spritename = "untotern"
 
 [node name="Redkey" parent="." instance=ExtResource("11_a5g15")]
-position = Vector2(625, -433)
+position = Vector2(-42, -124)
 
 [node name="Bluekey" parent="." instance=ExtResource("12_8n55d")]
-position = Vector2(580, -488)
+position = Vector2(-15, -122)
 
 [node name="Yellowkey" parent="." instance=ExtResource("13_psemg")]
-position = Vector2(-5, -571)
+position = Vector2(13, -121)
 
 [node name="RedDoor" parent="." instance=ExtResource("14_sldkn")]
 position = Vector2(-54, -158)
