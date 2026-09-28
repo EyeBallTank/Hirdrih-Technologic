@@ -331,6 +331,8 @@ position = Vector2(497, -378)
 
 [node name="JumpPad" parent="." instance=ExtResource("27_odsun")]
 position = Vector2(-162, -165)
+spritename = "UNTOTERN NORMAL"
+spritejump = "UNTOTERN NORMAL"
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
