@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://euxkt00rk0rk"
-path="res://.godot/imported/door test untotern.png-fc5a0152b4b410ea7478409db6ddb4fb.ctex"
+uid="uid://doh0cosdj5x7c"
+path="res://.godot/imported/A END DOOR UNTOTERN.png-48aa02581c5220db05ea6cbd80236202.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level objects/untotern/door test untotern.png"
-dest_files=["res://.godot/imported/door test untotern.png-fc5a0152b4b410ea7478409db6ddb4fb.ctex"]
+source_file="res://assets/sprites/level objects/untotern/A END DOOR UNTOTERN.png"
+dest_files=["res://.godot/imported/A END DOOR UNTOTERN.png-48aa02581c5220db05ea6cbd80236202.ctex"]
 
 [params]
 
