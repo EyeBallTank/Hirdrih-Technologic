@@ -223,11 +223,11 @@ position = Vector2(-129, -183)
 spritename = "untotern"
 
 [node name="HealthItem" parent="." instance=ExtResource("10_4a8uy")]
-position = Vector2(618, -485)
+position = Vector2(619, -485)
 spritename = "untotern"
 
 [node name="HealthItem2" parent="." instance=ExtResource("10_4a8uy")]
-position = Vector2(316, -513)
+position = Vector2(-161, -135)
 spritename = "untotern"
 
 [node name="Redkey" parent="." instance=ExtResource("11_y1jy5")]
