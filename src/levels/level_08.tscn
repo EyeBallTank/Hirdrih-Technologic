@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=4 uid="uid://c4epnqayi3uev"]
+[gd_scene load_steps=43 format=4 uid="uid://c4epnqayi3uev"]
 
 [ext_resource type="Texture2D" uid="uid://o6bofgr1riem" path="res://assets/sprites/level backgrounds/untotern/untotern background.png" id="1_bhta3"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_6aiq4"]
@@ -27,6 +27,9 @@
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="26_p3p1o"]
 [ext_resource type="PackedScene" uid="uid://meckl50d6ugr" path="res://src/level objects/jump pad.tscn" id="27_odsun"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="27_tpf1q"]
+[ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="28_45ud7"]
+[ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="29_nrd38"]
+[ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="30_k5065"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_6aiq4")
@@ -339,6 +342,15 @@ position = Vector2(497, -378)
 position = Vector2(-162, -165)
 spritename = "UNTOTERN NORMAL"
 spritejump = "UNTOTERN NORMAL"
+
+[node name="PushableCharacter" parent="." instance=ExtResource("28_45ud7")]
+position = Vector2(12, -214)
+
+[node name="PushableBarrier" parent="." instance=ExtResource("29_nrd38")]
+position = Vector2(27, -129)
+
+[node name="PushableButton" parent="." instance=ExtResource("30_k5065")]
+position = Vector2(32, -160)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
