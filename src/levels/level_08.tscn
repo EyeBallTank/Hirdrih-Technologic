@@ -345,12 +345,17 @@ spritejump = "UNTOTERN NORMAL"
 
 [node name="PushableCharacter" parent="." instance=ExtResource("28_45ud7")]
 position = Vector2(12, -214)
+spritename = "untotern"
 
 [node name="PushableBarrier" parent="." instance=ExtResource("29_nrd38")]
 position = Vector2(27, -129)
+spriteforclosed = "defaultuntotern"
+spriteforopen = "openuntotern"
 
 [node name="PushableButton" parent="." instance=ExtResource("30_k5065")]
 position = Vector2(32, -160)
+spritenameforactive = "activeuntotern"
+spritenameforinactive = "inactiveuntotern"
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

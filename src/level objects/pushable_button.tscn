@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://bhh06pctg58g6"]
+[gd_scene load_steps=19 format=3 uid="uid://bhh06pctg58g6"]
 
 [ext_resource type="Texture2D" uid="uid://lxkfak0kc5wu" path="res://assets/sprites/PUSHABLE BUTTON SPRITE.png" id="1_fdfyi"]
 [ext_resource type="Script" path="res://src/level objects/pushable_button.gd" id="1_nbpva"]
 [ext_resource type="Texture2D" uid="uid://cllg5qros3yj7" path="res://assets/sprites/level objects/nortubel/PUSHABLE BUTTON SPRITE NORTUBEL.png" id="3_3n78b"]
 [ext_resource type="Texture2D" uid="uid://btg2ecopvlq8g" path="res://assets/sprites/level objects/brinkaedea/PUSHABLE BUTTON SPRITE BRINKAEDEA.png" id="4_6mg07"]
+[ext_resource type="Texture2D" uid="uid://ccj80hjaigxbf" path="res://assets/sprites/level objects/untotern/PUSHABLE BUTTON SPRITE UNTOTERN.png" id="5_1loix"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a62nt"]
 atlas = ExtResource("4_6mg07")
@@ -17,6 +18,10 @@ region = Rect2(0, 0, 36, 18)
 atlas = ExtResource("3_3n78b")
 region = Rect2(0, 0, 36, 18)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_xk87w"]
+atlas = ExtResource("5_1loix")
+region = Rect2(0, 0, 36, 18)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_xylmi"]
 atlas = ExtResource("4_6mg07")
 region = Rect2(0, 18, 36, 18)
@@ -27,6 +32,10 @@ region = Rect2(0, 18, 36, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xbcvx"]
 atlas = ExtResource("3_3n78b")
+region = Rect2(0, 18, 36, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loo4n"]
+atlas = ExtResource("5_1loix")
 region = Rect2(0, 18, 36, 18)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bl744"]
@@ -57,6 +66,14 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_xk87w")
+}],
+"loop": false,
+"name": &"activeuntotern",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_xylmi")
 }],
 "loop": false,
@@ -77,6 +94,14 @@ animations = [{
 }],
 "loop": false,
 "name": &"inactivenortubel",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loo4n")
+}],
+"loop": false,
+"name": &"inactiveuntotern",
 "speed": 0.0
 }]
 
@@ -140,7 +165,7 @@ script = ExtResource("1_nbpva")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_bl744")
-animation = &"activebrinkaedea"
+animation = &"inactiveuntotern"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 4)

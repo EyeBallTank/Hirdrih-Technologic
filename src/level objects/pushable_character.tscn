@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b8mesd33vmisn"]
+[gd_scene load_steps=22 format=3 uid="uid://b8mesd33vmisn"]
 
 [ext_resource type="Script" path="res://src/level objects/pushable_character.gd" id="1_6h66c"]
 [ext_resource type="Texture2D" uid="uid://cgjbrliy8v8he" path="res://assets/sprites/PUSHABLE HIRDRIH SPRITE TEST.png" id="1_lcucw"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cama45aurtcme" path="res://src/level objects/top_of_pushable.tscn" id="3_aeart"]
 [ext_resource type="Texture2D" uid="uid://crlhpq88ecwv4" path="res://assets/sprites/level objects/nortubel/A PUSHABLE NORTUBEL.png" id="4_rb5xj"]
 [ext_resource type="Texture2D" uid="uid://cxbimhuhy4abb" path="res://assets/sprites/SELECTED PUSHABLE HIRDRIH SPRITE TEST.png" id="4_wo44f"]
+[ext_resource type="Texture2D" uid="uid://belfo2eeyxh3g" path="res://assets/sprites/level objects/untotern/A PUSHABLE UNTOTERN.png" id="5_ytisr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jyi5j"]
 atlas = ExtResource("1_lcucw")
@@ -13,6 +14,10 @@ region = Rect2(0, 0, 26, 36)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p67kn"]
 atlas = ExtResource("4_rb5xj")
+region = Rect2(0, 0, 26, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yif3l"]
+atlas = ExtResource("5_ytisr")
 region = Rect2(0, 0, 26, 34)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0odhe"]
@@ -39,6 +44,14 @@ animations = [{
 }],
 "loop": false,
 "name": &"nortubel",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yif3l")
+}],
+"loop": false,
+"name": &"untotern",
 "speed": 0.0
 }]
 
@@ -201,7 +214,7 @@ script = ExtResource("1_6h66c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0odhe")
-animation = &"nortubel"
+animation = &"untotern"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
