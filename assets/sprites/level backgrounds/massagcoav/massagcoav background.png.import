@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wu7j4mo7er4p"
-path="res://.godot/imported/massagcoav bg.png-4538b71deb9c8b9ccf4658de91967da5.ctex"
+uid="uid://xedep8lurfb2"
+path="res://.godot/imported/massagcoav background.png-597801b1e7dd956ec6dbc09529123180.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level backgrounds/massagcoav/massagcoav bg.png"
-dest_files=["res://.godot/imported/massagcoav bg.png-4538b71deb9c8b9ccf4658de91967da5.ctex"]
+source_file="res://assets/sprites/level backgrounds/massagcoav/massagcoav background.png"
+dest_files=["res://.godot/imported/massagcoav background.png-597801b1e7dd956ec6dbc09529123180.ctex"]
 
 [params]
 
