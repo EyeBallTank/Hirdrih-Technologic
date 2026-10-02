@@ -49,7 +49,7 @@ func _on_button_for_level_9_pressed() -> void:
 
 
 func _on_button_for_level_10_pressed() -> void:
-	pass # Replace with function body.
+	SceneTransition.load_scene("res://src/levels/level_10.tscn")
 
 
 func _on_button_for_level_11_pressed() -> void:
