@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd5iue7gkv888"
-path="res://.godot/imported/KALUB SPRITE NPC.png-66ed9fb06fe66995317a9b75e3c83224.ctex"
+uid="uid://r6klx3kxeers"
+path="res://.godot/imported/NPC PORTRAITS KALUB ALISS VLADDY.png-b34d2221209a876294c11c1282c4b671.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/untotern/KALUB SPRITE NPC.png"
-dest_files=["res://.godot/imported/KALUB SPRITE NPC.png-66ed9fb06fe66995317a9b75e3c83224.ctex"]
+source_file="res://assets/sprites/npc actors/untotern/NPC PORTRAITS KALUB ALISS VLADDY.png"
+dest_files=["res://.godot/imported/NPC PORTRAITS KALUB ALISS VLADDY.png-b34d2221209a876294c11c1282c4b671.ctex"]
 
 [params]
 

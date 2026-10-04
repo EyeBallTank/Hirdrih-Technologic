@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o15u8ohtj3ab"
-path="res://.godot/imported/ALISS SPRITE NPC.png-409ff84139f07a5e003586b6266fdabc.ctex"
+uid="uid://bsumjsbsqfq4w"
+path="res://.godot/imported/CONVO SPRITE KALUB ALISS VLADDY.png-3ac9ccf2fc403bccf285aca10db39f24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/npc actors/untotern/ALISS SPRITE NPC.png"
-dest_files=["res://.godot/imported/ALISS SPRITE NPC.png-409ff84139f07a5e003586b6266fdabc.ctex"]
+source_file="res://assets/sprites/npc actors/untotern/CONVO SPRITE KALUB ALISS VLADDY.png"
+dest_files=["res://.godot/imported/CONVO SPRITE KALUB ALISS VLADDY.png-3ac9ccf2fc403bccf285aca10db39f24.ctex"]
 
 [params]
 
