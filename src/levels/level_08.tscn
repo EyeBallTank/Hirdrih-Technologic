@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://c4epnqayi3uev"]
+[gd_scene load_steps=47 format=4 uid="uid://c4epnqayi3uev"]
 
 [ext_resource type="Texture2D" uid="uid://o6bofgr1riem" path="res://assets/sprites/level backgrounds/untotern/untotern background.png" id="1_bhta3"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_6aiq4"]
@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://co2xh45cb0251" path="res://src/npc characters/NPC_Belshazzar.tscn" id="31_ffpjn"]
 [ext_resource type="PackedScene" uid="uid://djek2edmsrmvs" path="res://src/npc characters/NPC_Tutankanubi.tscn" id="32_3uqg8"]
 [ext_resource type="PackedScene" uid="uid://bdnx8rxaw0hdu" path="res://src/npc characters/Convo_Gobli_Wilbuur.tscn" id="33_tcpsg"]
+[ext_resource type="PackedScene" uid="uid://beqbx37stx2sb" path="res://src/npc characters/Convo_Sola_Moono.tscn" id="34_ts6t2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_6aiq4")
@@ -367,7 +368,10 @@ position = Vector2(-171, -281)
 position = Vector2(-129, -309)
 
 [node name="Convo_Gobli_Wilbuur" parent="." instance=ExtResource("33_tcpsg")]
-position = Vector2(-45, -172)
+position = Vector2(-73, -293)
+
+[node name="Convo_Sola_Moono" parent="." instance=ExtResource("34_ts6t2")]
+position = Vector2(-54, -175)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
