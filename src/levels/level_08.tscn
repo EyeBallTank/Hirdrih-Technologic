@@ -299,7 +299,7 @@ position = Vector2(171, -539)
 animationname = "RESET_2"
 
 [node name="EndLevelDoor" parent="." instance=ExtResource("23_2tgt7")]
-position = Vector2(-20, -210)
+position = Vector2(53, -204)
 spritename = "untotern"
 
 [node name="MusicPlayer" type="AnimationPlayer" parent="."]
@@ -358,8 +358,8 @@ position = Vector2(32, -160)
 spritenameforactive = "activeuntotern"
 spritenameforinactive = "inactiveuntotern"
 
-[node name="NPCClarinetto" parent="." instance=ExtResource("31_ffpjn")]
-position = Vector2(-57, -172)
+[node name="NPCBelshazzar" parent="." instance=ExtResource("31_ffpjn")]
+position = Vector2(-41, -171)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
