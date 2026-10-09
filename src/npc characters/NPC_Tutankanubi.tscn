@@ -46,6 +46,7 @@ collision_layer = 8
 script = ExtResource("1_551f5")
 
 [node name="height test" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(2, -23.5)
 sprite_frames = SubResource("SpriteFrames_qg53o")
 
