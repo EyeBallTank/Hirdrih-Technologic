@@ -3047,8 +3047,7 @@ The horrible homeworld of evil aliens.
 
 Barely considered a country anymore.
 The mad world of the Zharks, essentially a factory
-and slaughterhouse where Zharks are produced.
-","
+and slaughterhouse where Zharks are produced.","
 == YIEGOUR SARVOTSKY ==
 
 Um mercenário ciborgue considerado o melhor dos Mercenários Grek.
@@ -3360,8 +3359,7 @@ O terrível planeta de aliens maléficos
 
 Nem é considerado um país hoje em dia.
 O mundo insano dos Zharks, essencialmente uma fábrica
-e matadouro onde são produzidos os Zharks.
-"
+e matadouro onde são produzidos os Zharks."
 T_OTHER_GALLERY_WIKI_TEXT,"
 == BLACKSTAR SOLDIERS ==
 
@@ -3391,7 +3389,6 @@ A strange machine with nothing but hate.
 A strange head and her weird daughter.
 Depending on what form she's on, the daughter's name
 is either Maravila or Marravilha.
-
 ","
 == SOLDADOS BLACKSTAR ==
 
@@ -3421,7 +3418,6 @@ Uma máquina estranha que não tem nada além de ódio.
 Uma cabeça estranha e a sua filha esquisita.
 Dependendo da forma que assume, o nome da filha
 é Maravila ou Marravilha.
-
 "
 T_OTHER_BUTTON,OTHER,OUTROS
 T_SILLY_GALLERY_WIKI_TEXT,"A great number of these images portray events that never happened
@@ -3438,9 +3434,11 @@ Serão as imagens produtos de sonhos?
 Algo fabricado para homenagear, venerar ou até humilhar estas pessoas?
 Anomalias fora da realidade ou descobertas de mundos alternativos?
 A verdadeira resposta talvez nunca será encontrada."
-NPC_DIALOGUE_TEXT_BELSHAZZAR,"You two should leave this place and return to your world.
-Even the dead here cannot escape the suffering.","Vocês os dois deviam sair deste lugar e voltar para o vosso mundo.
-Nem os mortos conseguem escapar ao sofrimento."
+NPC_DIALOGUE_TEXT_BELSHAZZAR,"Even the dead here cannot escape the suffering.
+I was lucky to escape eternal torment.
+Cannot say the same for the others.","Nem os mortos conseguem escapar ao sofrimento.
+Tive sorte em escapar.
+Não posso dizer o mesmo dos outros."
 NPC_DIALOGUE_TEXT_TUTANKANUBI,"I was promised something great.
 I still feel it.
 Taken from me long ago.","Fui prometido algo grandioso.
