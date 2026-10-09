@@ -252,7 +252,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 3.9, 4, 7.9, 8, 11.9, 12, 15.9, 16),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": ["Kalub Stoker", "Kalub Stoker", "Aliss Stoker", "Aliss Stoker", "Kalub Stoker", "Kalub Stoker", "Aliss Stoker", "Aliss Stoker", "Vladdy"]
+"values": ["Gobli Gremleena", "Gobli Gremleena", "Wilbuur Whatlye", "Wilbuur Whatlye", "Gobli Gremleena", "Gobli Gremleena", "Wilbuur Whatlye", "Wilbuur Whatlye", "Gobli Gremleena"]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -264,7 +264,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0, 3.9, 4, 7.9, 8, 11.9, 12, 15.9, 16),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [&"kalub", &"kalub", &"aliss", &"aliss", &"kalub", &"kalub", &"aliss", &"aliss", &"vladdy"]
+"values": [&"gobli", &"gobli", &"wilbuur", &"wilbuur", &"gobli", &"gobli", &"wilbuur", &"wilbuur", &"gobli"]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -561,7 +561,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_rxwsv")
 theme_override_font_sizes/font_size = 23
-text = "Eeeeeeek!"
+text = "CONVO_NPC_GOBLI_WILBUUR_05"
 
 [node name="NinePatchRect02" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -579,7 +579,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_rxwsv")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_04"
+text = "CONVO_NPC_GOBLI_WILBUUR_04"
 
 [node name="NinePatchRect03" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -597,7 +597,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_rxwsv")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_03"
+text = "CONVO_NPC_GOBLI_WILBUUR_03"
 
 [node name="NinePatchRect04" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -615,7 +615,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_rxwsv")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_02"
+text = "CONVO_NPC_GOBLI_WILBUUR_02"
 
 [node name="NinePatchRect05" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -633,7 +633,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_rxwsv")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_01"
+text = "CONVO_NPC_GOBLI_WILBUUR_01"
 
 [node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 23.0
