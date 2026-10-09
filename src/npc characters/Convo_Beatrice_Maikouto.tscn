@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cvvyda2040vxg"]
+[gd_scene load_steps=36 format=3 uid="uid://cvvyda2040vxg"]
 
 [ext_resource type="Script" path="res://src/npc characters/convo_borhr_otto.gd" id="1_87sej"]
 [ext_resource type="Texture2D" uid="uid://ca1wk765afu85" path="res://assets/sprites/SPRITE CHAR HEIGHT TEST.png" id="2_lryrm"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://0agtp3rilyp1" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST MARKER.png" id="6_2l4ef"]
 [ext_resource type="Texture2D" uid="uid://c4k6re60x2qa5" path="res://assets/sprites/npc actors/untotern/NPC PORTRAITS BEATRICE MAIKOUTO.png" id="7_8bf0r"]
 [ext_resource type="Texture2D" uid="uid://b7dve5f7wcjox" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BUTTONS.png" id="8_1lxx5"]
+[ext_resource type="Texture2D" uid="uid://pmounrxqsmfb" path="res://assets/sprites/npc actors/hirdrih/NPC PORTRAIT LEON.png" id="8_vat5w"]
 [ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="9_ebgeq"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="10_on8kh"]
 
@@ -48,6 +49,10 @@ size = Vector2(63, 46)
 atlas = ExtResource("7_8bf0r")
 region = Rect2(0, 0, 54, 57)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_1quhm"]
+atlas = ExtResource("8_vat5w")
+region = Rect2(0, 0, 54, 57)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ka30"]
 atlas = ExtResource("7_8bf0r")
 region = Rect2(54, 0, 54, 57)
@@ -60,6 +65,14 @@ animations = [{
 }],
 "loop": false,
 "name": &"beatrice",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1quhm")
+}],
+"loop": false,
+"name": &"leon",
 "speed": 0.0
 }, {
 "frames": [{
@@ -181,7 +194,7 @@ animations = [{
 
 [sub_resource type="Animation" id="Animation_gkxkj"]
 resource_name = "Conversation"
-length = 20.0
+length = 24.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -189,7 +202,7 @@ tracks/0/path = NodePath("CanvasLayer/ConvoTimelineTestBar:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 23.9333, 24.0333),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -201,7 +214,7 @@ tracks/1/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 19.9),
+"times": PackedFloat32Array(0, 23.9333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(52.1, 631.4), Vector2(575.543, 631.4)]
@@ -213,7 +226,7 @@ tracks/2/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 19.9),
+"times": PackedFloat32Array(0, 23.9333),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(4.676, 4.676), Vector2(353.638, 4.676)]
@@ -225,7 +238,7 @@ tracks/3/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 23.9333, 24.0333),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -237,7 +250,7 @@ tracks/4/path = NodePath("CanvasLayer/NPCPortrait:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 23.9333, 24.0333),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -261,10 +274,10 @@ tracks/6/path = NodePath("CanvasLayer/NPCPortrait:animation")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 3.9, 4, 7.93333, 8, 11.9, 12, 15.9, 16),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 3.9, 4, 11.9, 12, 19.9, 20),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [&"sola", &"sola", &"moono", &"moono", &"sola", &"sola", &"moono", &"moono", &"sola"]
+"values": [&"beatrice", &"beatrice", &"maikouto", &"maikouto", &"beatrice", &"beatrice", &"leon"]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -325,6 +338,18 @@ tracks/11/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/NinePatchRectLast:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 23.9, 24),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, true]
 }
 
 [sub_resource type="Animation" id="Animation_ksy2k"]
@@ -473,6 +498,18 @@ tracks/11/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("CanvasLayer/NinePatchRectLast:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8sxr6"]
 _data = {
@@ -544,6 +581,24 @@ position = Vector2(1064.44, 413)
 scale = Vector2(4.676, 4.676)
 sprite_frames = SubResource("SpriteFrames_i6qcb")
 animation = &"unpressed"
+
+[node name="NinePatchRectLast" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 22.0
+offset_top = 445.0
+offset_right = 1131.0
+offset_bottom = 610.0
+texture = ExtResource("9_ebgeq")
+
+[node name="Label2" type="Label" parent="CanvasLayer/NinePatchRectLast"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 16.0
+offset_right = 1083.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10_on8kh")
+theme_override_font_sizes/font_size = 23
+text = "CONVO_NPC_SOLA_MOONO_05"
 
 [node name="NinePatchRect01" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
