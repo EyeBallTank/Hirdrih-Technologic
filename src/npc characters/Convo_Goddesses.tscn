@@ -70,7 +70,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"goddesses",
-"speed": 30.0
+"speed": 3.0
 }]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4x7f4"]
@@ -183,7 +183,7 @@ animations = [{
 
 [sub_resource type="Animation" id="Animation_gkxkj"]
 resource_name = "Conversation"
-length = 20.0
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -191,7 +191,7 @@ tracks/0/path = NodePath("CanvasLayer/ConvoTimelineTestBar:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 4.9, 5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -203,7 +203,7 @@ tracks/1/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 19.9),
+"times": PackedFloat32Array(0, 4.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(52.1, 631.4), Vector2(575.543, 631.4)]
@@ -215,7 +215,7 @@ tracks/2/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 19.9),
+"times": PackedFloat32Array(0, 4.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(4.676, 4.676), Vector2(353.638, 4.676)]
@@ -227,7 +227,7 @@ tracks/3/path = NodePath("CanvasLayer/ConvoTimelineTestMarker:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 4.9, 5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -239,7 +239,7 @@ tracks/4/path = NodePath("CanvasLayer/NPCPortrait:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 4.9, 5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -254,7 +254,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": ["Bastupatra, Minusa & Zitla"]
+"values": ["Minusa, Bastupatra & Zitla"]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -275,7 +275,7 @@ tracks/7/path = NodePath("CanvasLayer/NinePatchRect05:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(0, 19.9, 20),
+"times": PackedFloat32Array(0, 4.9, 5),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 1,
 "values": [true, true, false]
@@ -426,6 +426,7 @@ position = Vector2(141, 264)
 scale = Vector2(4.40741, 4.40741)
 sprite_frames = SubResource("SpriteFrames_lwhdg")
 animation = &"winka"
+autoplay = "goddesses"
 
 [node name="ButtonPlayNormal" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(755.436, 413)
