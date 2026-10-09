@@ -572,7 +572,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_52yit")
 theme_override_font_sizes/font_size = 23
-text = "Eeeeeeek!"
+text = "CONVO_NPC_CORNELIUS_TAAF_MARCUS_05"
 
 [node name="NinePatchRect02" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -590,7 +590,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_52yit")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_04"
+text = "CONVO_NPC_CORNELIUS_TAAF_MARCUS_04"
 
 [node name="NinePatchRect03" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -608,7 +608,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_52yit")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_03"
+text = "CONVO_NPC_CORNELIUS_TAAF_MARCUS_03"
 
 [node name="NinePatchRect04" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -626,7 +626,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_52yit")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_02"
+text = "CONVO_NPC_CORNELIUS_TAAF_MARCUS_02"
 
 [node name="NinePatchRect05" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -644,7 +644,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_52yit")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_01"
+text = "CONVO_NPC_CORNELIUS_TAAF_MARCUS_01"
 
 [node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 23.0
