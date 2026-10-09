@@ -3388,8 +3388,7 @@ A strange machine with nothing but hate.
 
 A strange head and her weird daughter.
 Depending on what form she's on, the daughter's name
-is either Maravila or Marravilha.
-","
+is either Maravila or Marravilha.","
 == SOLDADOS BLACKSTAR ==
 
 Ninguém sabe se estes soldados são humanos, alienígenas, robôs ou algo mais.
@@ -3417,8 +3416,7 @@ Uma máquina estranha que não tem nada além de ódio.
 
 Uma cabeça estranha e a sua filha esquisita.
 Dependendo da forma que assume, o nome da filha
-é Maravila ou Marravilha.
-"
+é Maravila ou Marravilha."
 T_OTHER_BUTTON,OTHER,OUTROS
 T_SILLY_GALLERY_WIKI_TEXT,"A great number of these images portray events that never happened
 and interpret these individuals in ways not accurate to their personalities or appearances.
@@ -3448,3 +3446,13 @@ CONVO_KALUB_ALISS_VLADDY_01,We're trying to find where we come from…,Estamos a
 CONVO_KALUB_ALISS_VLADDY_02,And why we're here…,E porque estamos aqui…
 CONVO_KALUB_ALISS_VLADDY_03,For we may never be the same again…,Talvez nunca mais sejamos os mesmos…
 CONVO_KALUB_ALISS_VLADDY_04,And we may never return home.,E talvez nunca mais voltaremos a casa.
+CONVO_HELLHOUND_CAIN_01,"Be careful with my sisters.
+Seems they became hostile.","Tem cuidado com as minhas irmãs.
+Parece que se tornaram hostis."
+CONVO_HELLHOUND_CAIN_02,"But I'm not gonna bite you.
+Can't say the same for this cursed child.","Mas eu não te vou morder.
+Não posso dizer o mesmo desta criança amaldiçoada."
+CONVO_HELLHOUND_CAIN_03,"Hehehehehheeh ksssss yahaha
+Bite bite! DIE!","Hehehehehheeh ksssss yahaha
+Morde, morde! MORRA!"
+CONVO_HELLHOUND_CAIN_04,"A goddess' dark secret, you are.","O segredo sombrio duma deusa, é o que tu és."
