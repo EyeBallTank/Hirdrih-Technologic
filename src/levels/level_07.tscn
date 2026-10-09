@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://dud0pgsva7far"]
+[gd_scene load_steps=40 format=4 uid="uid://dud0pgsva7far"]
 
 [ext_resource type="Texture2D" uid="uid://o6bofgr1riem" path="res://assets/sprites/level backgrounds/untotern/untotern background.png" id="1_lohtr"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_ni2wt"]
@@ -25,6 +25,7 @@
 [ext_resource type="AudioStream" uid="uid://ctlv5cnyxt747" path="res://assets/sounds/music/level 07 untotern 1.ogg" id="24_avpyc"]
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="25_s78de"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="26_8sgdg"]
+[ext_resource type="PackedScene" uid="uid://djqbdb0rljdjn" path="res://src/npc characters/Convo_Kalub_Aliss_Vladdy.tscn" id="27_4wb3m"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="27_w7mwe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
@@ -334,6 +335,9 @@ position = Vector2(550, -433)
 
 [node name="GreenTwoButton" parent="." instance=ExtResource("27_w7mwe")]
 position = Vector2(497, -378)
+
+[node name="Convo_Kalub_Aliss_Vladdy" parent="." instance=ExtResource("27_4wb3m")]
+position = Vector2(-44, -187)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
