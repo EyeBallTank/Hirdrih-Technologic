@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://15tv0o5xllrs" path="res://assets/sprites/npc actors/NPC SPEECH BALLOON SPRITE.png" id="4_h37dy"]
 [ext_resource type="Texture2D" uid="uid://by55i57cjocoo" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BAR.png" id="5_mxpx4"]
 [ext_resource type="Texture2D" uid="uid://0agtp3rilyp1" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST MARKER.png" id="6_v0qy7"]
-[ext_resource type="Texture2D" uid="uid://r6klx3kxeers" path="res://assets/sprites/npc actors/untotern/NPC PORTRAITS KALUB ALISS VLADDY.png" id="7_f8akh"]
+[ext_resource type="Texture2D" uid="uid://biw7t7tvpxnfc" path="res://assets/sprites/npc actors/untotern/NPC PORTRAITS CAIN HELLHOUND.png" id="7_8675q"]
 [ext_resource type="Texture2D" uid="uid://b7dve5f7wcjox" path="res://assets/sprites/npc actors/CONVO TIMELINE TEST BUTTONS.png" id="8_dhsxx"]
 [ext_resource type="Texture2D" uid="uid://bmkqfj1nom6rb" path="res://assets/sprites/sprite board text test.png" id="9_ec3tg"]
 [ext_resource type="FontFile" uid="uid://dodq4dp8dwf52" path="res://assets/font/nineteen-ninety-seven-font/NineteenNinetySeven-11XB.ttf" id="10_gh6fd"]
@@ -44,42 +44,42 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkhlk"]
 size = Vector2(63, 46)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_blqxi"]
-atlas = ExtResource("7_f8akh")
-region = Rect2(0, 57, 54, 57)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_uanx1"]
-atlas = ExtResource("7_f8akh")
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfa3g"]
+atlas = ExtResource("7_8675q")
 region = Rect2(0, 0, 54, 57)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vqwyl"]
-atlas = ExtResource("7_f8akh")
+[sub_resource type="AtlasTexture" id="AtlasTexture_m65i3"]
+atlas = ExtResource("7_8675q")
+region = Rect2(0, 57, 54, 57)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmmda"]
+atlas = ExtResource("7_8675q")
 region = Rect2(0, 114, 54, 57)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lwhdg"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_blqxi")
+"texture": SubResource("AtlasTexture_qfa3g")
 }],
 "loop": false,
-"name": &"aliss",
+"name": &"cain",
 "speed": 0.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_uanx1")
+"texture": SubResource("AtlasTexture_m65i3")
 }],
 "loop": false,
-"name": &"kalub",
+"name": &"hellhound_left",
 "speed": 0.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vqwyl")
+"texture": SubResource("AtlasTexture_tmmda")
 }],
 "loop": false,
-"name": &"vladdy",
+"name": &"hellhound_right",
 "speed": 0.0
 }]
 
@@ -276,7 +276,7 @@ tracks/6/keys = {
 "times": PackedFloat32Array(0, 3.9, 4, 7.9, 8, 11.9, 12, 15.9, 16),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
-"values": [&"kalub", &"kalub", &"aliss", &"aliss", &"kalub", &"kalub", &"aliss", &"aliss", &"vladdy"]
+"values": [&"hellhound_left", &"hellhound_left", &"hellhound_right", &"hellhound_right", &"cain", &"cain", &"hellhound_left", &"hellhound_left", &"cain"]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
@@ -497,6 +497,7 @@ collision_layer = 8
 script = ExtResource("1_rsjil")
 
 [node name="height test" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(2, -24)
 sprite_frames = SubResource("SpriteFrames_ovk66")
 
@@ -572,7 +573,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_gh6fd")
 theme_override_font_sizes/font_size = 23
-text = "Eeeeeeek!"
+text = "Pffft hehehehe"
 
 [node name="NinePatchRect02" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -590,7 +591,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_gh6fd")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_04"
+text = "CONVO_HELLHOUND_CAIN_04"
 
 [node name="NinePatchRect03" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -608,7 +609,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_gh6fd")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_03"
+text = "CONVO_HELLHOUND_CAIN_03"
 
 [node name="NinePatchRect04" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -626,7 +627,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_gh6fd")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_02"
+text = "CONVO_HELLHOUND_CAIN_02"
 
 [node name="NinePatchRect05" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 22.0
@@ -644,7 +645,7 @@ offset_bottom = 173.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("10_gh6fd")
 theme_override_font_sizes/font_size = 23
-text = "CONVO_KALUB_ALISS_VLADDY_01"
+text = "CONVO_HELLHOUND_CAIN_01"
 
 [node name="NameTitle" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 23.0
