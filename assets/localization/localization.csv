@@ -2245,8 +2245,7 @@ Strange beings such as:
 5 - A possessed painting
 6 - A strange bio-mechanical head
 7 - The 2 Faced Goat
-8 - The Large Beast of Sinful Delights
-","
+8 - The Large Beast of Sinful Delights","
 == OS SETE MORTOS-VIVOS ==
 
 Estes 7 perderam as suas memórias após a morte e tornarem-se mortos-vivos.
@@ -2433,8 +2432,7 @@ Seres estranhos como:
 5 - Um quadro possuído
 6 - Uma estranha cabeça biomecânica
 7 - A Cabra de 2 Caras
-8 - A Grande Besta dos Prazeres Pecaminosos
-"
+8 - A Grande Besta dos Prazeres Pecaminosos"
 T_HERRKO_WIKI_INFO,"
 == UULGA PRONK ==
 
@@ -2588,7 +2586,6 @@ Younger forms of the two.
 Uulga still had two eyes and Ivan's feet
 haven't developed yet.
 A device could be used to summon these forms.
-
 ","
 == UULGA PRONK ==
 
@@ -2746,7 +2743,6 @@ Formas mais novas dos dois.
 Uulga tinha ainda dois olhos e os pés de Ivan
 ainda não se desenvolveram.
 Um dispositivo poderia ser utilizado para invocar estas formas.
-
 "
 T_GREKLOVICK_WIKI_INFO,"
 == YIEGOUR SARVOTSKY ==
@@ -3054,7 +3050,6 @@ The horrible homeworld of evil aliens.
 Barely considered a country anymore.
 The mad world of the Zharks, essentially a factory
 and slaughterhouse where Zharks are produced.
-
 
 ","
 == YIEGOUR SARVOTSKY ==
@@ -3370,7 +3365,6 @@ Nem é considerado um país hoje em dia.
 O mundo insano dos Zharks, essencialmente uma fábrica
 e matadouro onde são produzidos os Zharks.
 
-
 "
 T_OTHER_GALLERY_WIKI_TEXT,"
 == BLACKSTAR SOLDIERS ==
@@ -3401,7 +3395,6 @@ A strange machine with nothing but hate.
 A strange head and her weird daughter.
 Depending on what form she's on, the daughter's name
 is either Maravila or Marravilha.
-
 
 
 ","
@@ -3435,7 +3428,6 @@ Dependendo da forma que assume, o nome da filha
 é Maravila ou Marravilha.
 
 
-
 "
 T_OTHER_BUTTON,OTHER,OUTROS
 T_SILLY_GALLERY_WIKI_TEXT,"A great number of these images portray events that never happened
@@ -3455,3 +3447,8 @@ A verdadeira resposta talvez nunca será encontrada."
 NPC_DIALOGUE_TEXT_BELSHAZZAR,"You two should leave this place and return to your world.
 Even the dead here cannot escape the suffering.","Vocês os dois deviam sair deste lugar e voltar para o vosso mundo.
 Nem os mortos conseguem escapar ao sofrimento."
+NPC_DIALOGUE_TEXT_TUTANKANUBI,"I was promised something great.
+I still feel it.
+Taken from me long ago.","Fui prometido algo grandioso.
+Ainda o sinto.
+Foi me tirado há muito tempo."
