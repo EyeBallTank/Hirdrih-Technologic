@@ -1066,7 +1066,6 @@ spritenameforinactive = "inactivebrinkaedea"
 position = Vector2(883, 252.3)
 
 [node name="Convo_Bonky_Linda_Porkenhog" parent="." instance=ExtResource("39_xd1to")]
-visible = false
 position = Vector2(615, 144)
 
 [node name="NPCClarinetto" parent="." instance=ExtResource("40_s63ww")]
