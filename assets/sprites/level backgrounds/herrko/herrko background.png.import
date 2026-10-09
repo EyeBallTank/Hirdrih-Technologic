@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq6scrn813ih0"
-path="res://.godot/imported/herrkolevel1 bg forest 3.png-3beae3062310806000eb87d6034e3311.ctex"
+uid="uid://cpp2xhpyfwge4"
+path="res://.godot/imported/herrko background.png-beea9f7d94d5656ff4918283705a323e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level backgrounds/herrko/herrkolevel1 bg forest 3.png"
-dest_files=["res://.godot/imported/herrkolevel1 bg forest 3.png-3beae3062310806000eb87d6034e3311.ctex"]
+source_file="res://assets/sprites/level backgrounds/herrko/herrko background.png"
+dest_files=["res://.godot/imported/herrko background.png-beea9f7d94d5656ff4918283705a323e.ctex"]
 
 [params]
 
