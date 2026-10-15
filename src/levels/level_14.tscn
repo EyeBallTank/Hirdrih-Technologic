@@ -1,6 +1,6 @@
 [gd_scene load_steps=43 format=4 uid="uid://xua50qp75io1"]
 
-[ext_resource type="Texture2D" uid="uid://blcyjmgel1mqb" path="res://assets/sprites/level backgrounds/herrko/tsoovukot background.png" id="1_2jd5g"]
+[ext_resource type="Texture2D" uid="uid://bjojgse4gwuxm" path="res://assets/sprites/level backgrounds/greklovick/greklovick background.png" id="1_m7lbb"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_kr8eh"]
 [ext_resource type="Texture2D" uid="uid://bgoyu8arp3gch" path="res://assets/sprites/basic four tiles test.png" id="3_u67ub"]
 [ext_resource type="Texture2D" uid="uid://m8bieeq1ed0d" path="res://assets/sprites/tiles that block pushable sprites.png" id="4_rjx7v"]
@@ -22,7 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://cggqkyfykildb" path="res://src/level objects/clickable_box.tscn" id="20_3dgr2"]
 [ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="21_br2rc"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="22_xyeyf"]
-[ext_resource type="AudioStream" uid="uid://cgaxuvdapy2lj" path="res://assets/sounds/music/level 13 tsoovukot.ogg" id="23_b31di"]
+[ext_resource type="AudioStream" uid="uid://b2xg7rglmd88e" path="res://assets/sounds/music/level 14 greklovick.ogg" id="23_y4bny"]
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="24_3a4c3"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="25_1iwdr"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="26_x4l12"]
@@ -156,7 +156,7 @@ point_count = 2
 
 [sub_resource type="Animation" id="Animation_jjat1"]
 resource_name = "PlayMusic"
-length = 84.0
+length = 76.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -202,7 +202,7 @@ scroll_offset = Vector2(-2630, 75)
 [node name="LevelBackgroundSpriteTest" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(1784, 233)
 scale = Vector2(0.991151, 0.99115)
-texture = ExtResource("1_2jd5g")
+texture = ExtResource("1_m7lbb")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAAA=")
@@ -308,7 +308,7 @@ libraries = {
 autoplay = "PlayMusic"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("23_b31di")
+stream = ExtResource("23_y4bny")
 volume_db = 1.559
 bus = &"Music"
 
