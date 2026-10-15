@@ -22,7 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://cggqkyfykildb" path="res://src/level objects/clickable_box.tscn" id="20_tfhjk"]
 [ext_resource type="PackedScene" uid="uid://1bdovuopaqg8" path="res://src/level objects/clickable_moving_object.tscn" id="21_5qiyu"]
 [ext_resource type="PackedScene" uid="uid://c08yalyhib3i5" path="res://src/level objects/end_level_door.tscn" id="22_xhi0c"]
-[ext_resource type="AudioStream" uid="uid://cw6b4f3swghne" path="res://assets/sounds/music/level 15 zharkryazneniye.ogg" id="23_lxkh3"]
+[ext_resource type="AudioStream" uid="uid://b33q747hbg1qi" path="res://assets/sounds/music/level 16 pluto.ogg" id="23_v4mc2"]
 [ext_resource type="PackedScene" uid="uid://bj3cs8jc8ema" path="res://src/level objects/green_barrier.tscn" id="24_ii0aj"]
 [ext_resource type="PackedScene" uid="uid://khhapdhns8db" path="res://src/level objects/green_one_button.tscn" id="25_7jssu"]
 [ext_resource type="PackedScene" uid="uid://dv4c7bsmmlr52" path="res://src/level objects/green_two_button.tscn" id="26_cdw6f"]
@@ -156,7 +156,7 @@ point_count = 2
 
 [sub_resource type="Animation" id="Animation_jjat1"]
 resource_name = "PlayMusic"
-length = 66.0
+length = 73.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -308,7 +308,7 @@ libraries = {
 autoplay = "PlayMusic"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("23_lxkh3")
+stream = ExtResource("23_v4mc2")
 volume_db = 4.868
 bus = &"Music"
 
