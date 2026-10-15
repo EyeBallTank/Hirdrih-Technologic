@@ -309,7 +309,7 @@ autoplay = "PlayMusic"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("23_y4bny")
-volume_db = 9.968
+volume_db = 6.87
 bus = &"Music"
 
 [node name="SpiderChip3" parent="." instance=ExtResource("19_cmvpd")]
