@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fg3v8fflgrgc"
-path="res://.godot/imported/grek city bg.png-83dbbd6a4303dd3994fdb4ce8e3fbec8.ctex"
+uid="uid://bjojgse4gwuxm"
+path="res://.godot/imported/greklovick background.png-529484855a52e8d85beb0c74c4fc31d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level backgrounds/greklovick/grek city bg.png"
-dest_files=["res://.godot/imported/grek city bg.png-83dbbd6a4303dd3994fdb4ce8e3fbec8.ctex"]
+source_file="res://assets/sprites/level backgrounds/greklovick/greklovick background.png"
+dest_files=["res://.godot/imported/greklovick background.png-529484855a52e8d85beb0c74c4fc31d1.ctex"]
 
 [params]
 
