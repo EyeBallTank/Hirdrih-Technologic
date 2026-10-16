@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://81ci2egdkufm"
-path="res://.godot/imported/krimbstone bg.png-0b3e5ddc83d53c6005726518bd43b0c1.ctex"
+uid="uid://dcb4im6w0byke"
+path="res://.godot/imported/krimbstone background.png-48683ca785af4a0b4696454b853c3af4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/level backgrounds/krimbstone/krimbstone bg.png"
-dest_files=["res://.godot/imported/krimbstone bg.png-0b3e5ddc83d53c6005726518bd43b0c1.ctex"]
+source_file="res://assets/sprites/level backgrounds/krimbstone/krimbstone background.png"
+dest_files=["res://.godot/imported/krimbstone background.png-48683ca785af4a0b4696454b853c3af4.ctex"]
 
 [params]
 
