@@ -80,7 +80,7 @@ func _on_button_for_level_17_pressed() -> void:
 
 
 func _on_button_for_level_18_pressed() -> void:
-	pass # Replace with function body.
+	SceneTransition.load_scene("res://src/levels/level_18.tscn")
 
 
 func _on_button_for_level_19_pressed() -> void:
