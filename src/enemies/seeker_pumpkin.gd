@@ -47,6 +47,7 @@ func _physics_process(delta):
 				animatedsprite.play("shoot")
 				canmove = true
 				animatedsprite.play("shield")
+				animationplayer.play("RESET")
 		ATTACK:
 			pass
 		DEAD:
@@ -55,7 +56,8 @@ func _physics_process(delta):
 func attack():
 	var redball = projectile.instantiate()
 	get_parent().add_child(redball)
-	animatedsprite.play("shoot")
+	redball.global_position = marker2d.global_position
+	animationplayer.play("ATTACK")
 	spritetimer.start(0.5)
 
 func die():
