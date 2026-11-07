@@ -1,28 +1,53 @@
-[gd_scene load_steps=10 format=3 uid="uid://c8aqgrxpn6mds"]
+[gd_scene load_steps=13 format=3 uid="uid://c8aqgrxpn6mds"]
 
-[ext_resource type="Texture2D" uid="uid://b5g4xh13b2ghy" path="res://assets/sprites/ENEMY HIRDRIH SERV SPRITE PROPER.png" id="2_1ouv3"]
+[ext_resource type="Script" path="res://src/enemies/seeker_pumpkin.gd" id="1_2nsaq"]
+[ext_resource type="Texture2D" uid="uid://b1te41kef3krj" path="res://assets/sprites/enemies/seeker pumpkin sheet.png" id="1_gwdqs"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wnoy5"]
-atlas = ExtResource("2_1ouv3")
-region = Rect2(0, 0, 36, 36)
+[sub_resource type="AtlasTexture" id="AtlasTexture_jq3ba"]
+atlas = ExtResource("1_gwdqs")
+region = Rect2(0, 216, 88, 72)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_82gxw"]
-atlas = ExtResource("2_1ouv3")
-region = Rect2(36, 0, 36, 36)
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo33w"]
+atlas = ExtResource("1_gwdqs")
+region = Rect2(0, 144, 88, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rodb"]
+atlas = ExtResource("1_gwdqs")
+region = Rect2(0, 72, 88, 72)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2u0te"]
+atlas = ExtResource("1_gwdqs")
+region = Rect2(0, 0, 88, 72)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_urenc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wnoy5")
+"texture": SubResource("AtlasTexture_jq3ba")
 }],
 "loop": false,
-"name": &"idle",
+"name": &"dead",
 "speed": 0.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_82gxw")
+"texture": SubResource("AtlasTexture_vo33w")
+}],
+"loop": false,
+"name": &"dying",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rodb")
+}],
+"loop": false,
+"name": &"shield",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2u0te")
 }],
 "loop": false,
 "name": &"shoot",
@@ -30,10 +55,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f7neb"]
-size = Vector2(14, 34)
+size = Vector2(32, 27)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2rp6"]
-size = Vector2(22, 36)
+size = Vector2(26, 23)
 
 [sub_resource type="Animation" id="Animation_lnl2f"]
 resource_name = "RESET"
@@ -237,13 +262,14 @@ _data = {
 [node name="SeekerPumpkin" type="CharacterBody2D"]
 collision_layer = 16
 collision_mask = 2
+script = ExtResource("1_2nsaq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_urenc")
 animation = &"shoot"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(11, 1)
+position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_f7neb")
 
 [node name="hurtbox" type="Area2D" parent="." groups=["EnemyHurtboxArea"]]
@@ -251,7 +277,7 @@ collision_layer = 1048576
 collision_mask = 524288
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
-position = Vector2(10, 1)
+position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_r2rp6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
