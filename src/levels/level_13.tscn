@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://p1tkltvyn44f"]
+[gd_scene load_steps=44 format=4 uid="uid://p1tkltvyn44f"]
 
 [ext_resource type="Texture2D" uid="uid://blcyjmgel1mqb" path="res://assets/sprites/level backgrounds/herrko/tsoovukot background.png" id="1_4fkst"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_5a46t"]
@@ -30,6 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://b8mesd33vmisn" path="res://src/level objects/pushable_character.tscn" id="28_1ge57"]
 [ext_resource type="PackedScene" uid="uid://bby01ihxgb7cg" path="res://src/level objects/pushable_barrier.tscn" id="29_6d3bn"]
 [ext_resource type="PackedScene" uid="uid://bhh06pctg58g6" path="res://src/level objects/pushable_button.tscn" id="30_k0ljh"]
+[ext_resource type="PackedScene" uid="uid://c8aqgrxpn6mds" path="res://src/enemies/seeker_pumpkin.tscn" id="31_2u0q7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_5a46t")
@@ -205,7 +206,7 @@ scale = Vector2(0.991151, 0.99115)
 texture = ExtResource("1_4fkst")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAAA=")
+tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAADz//j/AQABAAAAAADy//j/AQABAAAAAADx//j/AQABAAAAAADw//j/AQABAAAAAADv//j/AQABAAAAAADu//j/AQABAAAAAADt//j/AQABAAAAAADs//j/AQABAAAAAADr//j/AQABAAAAAADq//j/AQABAAAAAADp//j/AQABAAAAAADo//j/AQABAAAAAADn//j/AQABAAAAAADm//j/AQABAAAAAADl//j/AQABAAAAAADk//j/AQABAAAAAADj//j/AQABAAAAAADi//j/AQABAAAAAADh//j/AQABAAAAAADh//T/AQABAAAAAADh//X/AQABAAAAAADh//b/AQABAAAAAADh//f/AQABAAAAAADz//b/AQABAAAAAADz//f/AQABAAAAAAA=")
 tile_set = SubResource("TileSet_0olp1")
 
 [node name="FrontTiles" type="TileMapLayer" parent="."]
@@ -356,6 +357,9 @@ spriteforopen = "openuntotern"
 position = Vector2(32, -160)
 spritenameforactive = "activeuntotern"
 spritenameforinactive = "inactiveuntotern"
+
+[node name="SeekerPumpkin" parent="." instance=ExtResource("31_2u0q7")]
+position = Vector2(-339, -178)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]
