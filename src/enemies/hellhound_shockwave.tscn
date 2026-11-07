@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhqxr4a3kdftr"]
+
+[ext_resource type="Script" path="res://src/enemies/seeker_pumpkin_projectile.gd" id="1_uk3h2"]
+[ext_resource type="Texture2D" uid="uid://dq6k6a2mvyiba" path="res://assets/sprites/enemies/hellhound flame shockwave.png" id="3_iiw5w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f7n7g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31hx6"]
+atlas = ExtResource("3_iiw5w")
+region = Rect2(0, 0, 19, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nsnof"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31hx6")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ut02n"]
+size = Vector2(15, 24)
+
+[sub_resource type="Animation" id="Animation_fs30k"]
+resource_name = "RESET"
+length = 5.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ljiql"]
+_data = {
+"RESET": SubResource("Animation_fs30k")
+}
+
+[node name="HellhoundShockwave" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_uk3h2")
+
+[node name="Nothing" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f7n7g")
+disabled = true
+
+[node name="SpriteThing01" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -12)
+sprite_frames = SubResource("SpriteFrames_nsnof")
+frame_progress = 0.0733849
+
+[node name="Hitbox" type="Area2D" parent="SpriteThing01" groups=["enemyhitbox"]]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpriteThing01/Hitbox"]
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_ut02n")
+
+[node name="SpriteThing02" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -12)
+sprite_frames = SubResource("SpriteFrames_nsnof")
+frame_progress = 0.0733849
+flip_h = true
+
+[node name="Hitbox" type="Area2D" parent="SpriteThing02" groups=["enemyhitbox"]]
+position = Vector2(3, 0)
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpriteThing02/Hitbox"]
+position = Vector2(-1.5, 0)
+shape = SubResource("RectangleShape2D_ut02n")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ljiql")
+}
