@@ -11,4 +11,4 @@ var knockback_dir = 1
 @onready var marker2d = $Marker2D
 @onready var animationplayer = $AnimationPlayer
 
-@onready var projectile = preload("res://src/enemies/enemy_serv_projectile.tscn")
+@onready var projectile = preload("res://src/enemies/seeker_pumpkin_projectile.tscn")
