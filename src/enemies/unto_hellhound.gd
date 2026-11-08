@@ -40,3 +40,6 @@ func detect_turn_around():
 	if not floorraycast.is_colliding() and is_on_floor():
 		direction *= -1
 		scale.x = -scale.x
+
+func die():
+	queue_free()
