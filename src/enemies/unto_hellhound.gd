@@ -92,13 +92,11 @@ func die():
 
 func _on_hurtbox_body_entered(body: Node2D) -> void:
 	if body.name == "PlayerProjectile":
-		animationplayer.play("dying")
 		#canattack = false
 		state = DEAD
 
 
 func _on_hurtbox_area_entered(area: Area2D) -> void:
 	if area.is_in_group("PlayerProjectileHitbox"):
-		animationplayer.play("dying")
 		#canattack = false
 		state = DEAD
