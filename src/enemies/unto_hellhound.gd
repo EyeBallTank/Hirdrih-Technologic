@@ -54,6 +54,7 @@ func _physics_process(delta):
 		ATTACK:
 			pass
 		DEAD:
+			animationplayer.play("dead")
 			velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 			if not is_on_floor():
 				velocity.y += gravity * delta
@@ -67,6 +68,12 @@ func hellhound_jump():
 	elif velocity.y > 0:
 		animatedsprite.play("slam")
 
+func summon_shockwave():
+	var redball = projectile.instantiate()
+	get_parent().add_child(redball)
+	redball.global_position = marker2d.global_position
+	#animationplayer.play("ATTACK")
+	#spritetimer.start(0.5)
 
 func see_to_attack():
 	if not eyesraycast.is_colliding(): return false
@@ -81,3 +88,17 @@ func detect_turn_around():
 
 func die():
 	queue_free()
+
+
+func _on_hurtbox_body_entered(body: Node2D) -> void:
+	if body.name == "PlayerProjectile":
+		animationplayer.play("dying")
+		#canattack = false
+		state = DEAD
+
+
+func _on_hurtbox_area_entered(area: Area2D) -> void:
+	if area.is_in_group("PlayerProjectileHitbox"):
+		animationplayer.play("dying")
+		#canattack = false
+		state = DEAD
