@@ -12,3 +12,16 @@ var knockback_dir = 1
 @onready var animationplayer = $AnimationPlayer
 
 @onready var projectile = preload("res://src/enemies/hellhound_shockwave.tscn")
+
+@export var jump_power = 10.0
+var jump_multiplier = -35.0
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+enum {MOVE, ATTACK, DEAD}
+
+var state = MOVE
+
+func _ready():
+	animatedsprite.play("moving")
+	animationplayer.play("RESET")
+	timer.start()
