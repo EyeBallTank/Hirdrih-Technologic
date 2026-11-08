@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=4 uid="uid://dud0pgsva7far"]
+[gd_scene load_steps=45 format=4 uid="uid://dud0pgsva7far"]
 
 [ext_resource type="Texture2D" uid="uid://o6bofgr1riem" path="res://assets/sprites/level backgrounds/untotern/untotern background.png" id="1_lohtr"]
 [ext_resource type="Texture2D" uid="uid://da3dka07r2r6a" path="res://assets/sprites/CLIMB TILES SPRITE TEST.png" id="2_ni2wt"]
@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://d11dofxsxn6wk" path="res://src/npc characters/Convo_Goddesses.tscn" id="29_0tle4"]
 [ext_resource type="PackedScene" uid="uid://cvvyda2040vxg" path="res://src/npc characters/Convo_Beatrice_Maikouto.tscn" id="30_8qxuc"]
 [ext_resource type="PackedScene" uid="uid://ihoxqdsp7vya" path="res://src/npc characters/Convo_Cornelius_Taaf_Marcus.tscn" id="31_wpfrr"]
+[ext_resource type="PackedScene" uid="uid://cifm0o5wmfr62" path="res://src/enemies/unto_hellhound.tscn" id="32_aabim"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slerl"]
 texture = ExtResource("2_ni2wt")
@@ -206,7 +207,7 @@ scale = Vector2(0.991151, 0.99115)
 texture = ExtResource("1_lohtr")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAAA=")
+tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAADz//j/AQABAAAAAADz//n/AQABAAAAAADz//r/AQABAAAAAADy//r/AQABAAAAAADx//r/AQABAAAAAADw//r/AQABAAAAAADv//r/AQABAAAAAADu//r/AQABAAAAAADt//r/AQABAAAAAADs//r/AQABAAAAAADr//r/AQABAAAAAADq//r/AQABAAAAAADp//r/AQABAAAAAADo//r/AQABAAAAAADn//r/AQABAAAAAADm//r/AQABAAAAAADl//r/AQABAAAAAADk//r/AQABAAAAAADj//r/AQABAAAAAADj//n/AQABAAAAAADj//j/AQABAAAAAADj//f/AQABAAAAAAA=")
 tile_set = SubResource("TileSet_0olp1")
 
 [node name="FrontTiles" type="TileMapLayer" parent="."]
@@ -214,7 +215,7 @@ z_index = 17
 tile_set = SubResource("TileSet_sodwt")
 
 [node name="PlayerTest" parent="." instance=ExtResource("6_yxqep")]
-position = Vector2(-103, -153)
+position = Vector2(-225, -174)
 
 [node name="MagicArrow" parent="PlayerTest" instance=ExtResource("7_ckpfj")]
 position = Vector2(0, -2)
@@ -354,6 +355,9 @@ position = Vector2(254, -280)
 
 [node name="Convo_Cornelius_Taaf_Marcus" parent="." instance=ExtResource("31_wpfrr")]
 position = Vector2(-15, -180)
+
+[node name="UntoHellhound" parent="." instance=ExtResource("32_aabim")]
+position = Vector2(-464, -143)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

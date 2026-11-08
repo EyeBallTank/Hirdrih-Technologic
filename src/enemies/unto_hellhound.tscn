@@ -291,6 +291,7 @@ collision_mask = 2
 script = ExtResource("1_m2rsx")
 
 [node name="height test" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(4, 0)
 sprite_frames = SubResource("SpriteFrames_hpfb1")
 
