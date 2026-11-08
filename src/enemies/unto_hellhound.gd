@@ -34,13 +34,15 @@ func _ready():
 	timer.start()
 
 func _physics_process(delta):
-	velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
-	if not is_on_floor():
-		velocity.y += gravity * delta
-	move_and_slide()
+
 	match state:
 		MOVE:
 			animatedsprite.play("moving")
+			velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
+			if not is_on_floor():
+				velocity.y += gravity * delta
+			move_and_slide()
+		
 			if canmove == true:
 				var found_wall = is_on_wall()
 				if found_wall:
@@ -52,7 +54,14 @@ func _physics_process(delta):
 		ATTACK:
 			pass
 		DEAD:
-			pass
+			velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
+			if not is_on_floor():
+				velocity.y += gravity * delta
+			move_and_slide()
+
+
+func hellhound_jump():
+	velocity.y = jump_power * jump_multiplier
 
 
 
