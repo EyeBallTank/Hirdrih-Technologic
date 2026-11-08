@@ -1,8 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://cifm0o5wmfr62"]
+[gd_scene load_steps=18 format=3 uid="uid://cifm0o5wmfr62"]
 
 [ext_resource type="Script" path="res://src/enemies/unto_hellhound.gd" id="1_m2rsx"]
 [ext_resource type="Texture2D" uid="uid://ca1wk765afu85" path="res://assets/sprites/SPRITE CHAR HEIGHT TEST.png" id="2_bmh02"]
-[ext_resource type="Texture2D" uid="uid://cbxssmkweqr2n" path="res://assets/sprites/npc actors/untotern/CONVO SPRITE CAIN HELLHOUND.png" id="3_7eteg"]
+[ext_resource type="Texture2D" uid="uid://bx05fgaaf7ao5" path="res://assets/sprites/enemies/hellhound sprites.png" id="3_6y1cy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4qm5r"]
 atlas = ExtResource("2_bmh02")
@@ -19,26 +19,76 @@ animations = [{
 "speed": 0.0
 }]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8a7hu"]
-atlas = ExtResource("3_7eteg")
-region = Rect2(0, 0, 76, 139)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ydxo2"]
+atlas = ExtResource("3_6y1cy")
+region = Rect2(0, 390, 212, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knbuk"]
+atlas = ExtResource("3_6y1cy")
+region = Rect2(212, 390, 212, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fsbkj"]
+atlas = ExtResource("3_6y1cy")
+region = Rect2(0, 195, 212, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d74rw"]
+atlas = ExtResource("3_6y1cy")
+region = Rect2(0, 0, 212, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vyr2x"]
+atlas = ExtResource("3_6y1cy")
+region = Rect2(212, 0, 212, 195)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5sa7"]
+atlas = ExtResource("3_6y1cy")
+region = Rect2(212, 195, 212, 195)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_urenc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8a7hu")
+"texture": SubResource("AtlasTexture_ydxo2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_knbuk")
 }],
 "loop": false,
-"name": &"new_animation",
+"name": &"dying",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fsbkj")
+}],
+"loop": false,
+"name": &"jumpup",
+"speed": 0.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d74rw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vyr2x")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5sa7")
+}],
+"loop": false,
+"name": &"slam",
 "speed": 0.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f7neb"]
-size = Vector2(17, 43)
+size = Vector2(16, 43)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2rp6"]
-size = Vector2(24, 47)
+size = Vector2(20, 44)
 
 [sub_resource type="Animation" id="Animation_lnl2f"]
 resource_name = "RESET"
@@ -245,6 +295,7 @@ collision_mask = 2
 script = ExtResource("1_m2rsx")
 
 [node name="height test" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(4, 0)
 sprite_frames = SubResource("SpriteFrames_hpfb1")
 
@@ -254,7 +305,7 @@ sprite_frames = SubResource("SpriteFrames_urenc")
 animation = &"shoot"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(9.5, 1.5)
+position = Vector2(-1, 1.5)
 shape = SubResource("RectangleShape2D_f7neb")
 
 [node name="hurtbox" type="Area2D" parent="." groups=["EnemyHurtboxArea"]]
@@ -262,7 +313,7 @@ collision_layer = 1048576
 collision_mask = 524288
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
-position = Vector2(9, -0.5)
+position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_r2rp6")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -271,7 +322,7 @@ libraries = {
 }
 
 [node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(-5, -3)
+position = Vector2(12, 23)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
