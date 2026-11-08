@@ -207,7 +207,7 @@ scale = Vector2(0.991151, 0.99115)
 texture = ExtResource("1_lohtr")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAADz//j/AQABAAAAAADz//n/AQABAAAAAADz//r/AQABAAAAAADy//r/AQABAAAAAADx//r/AQABAAAAAADw//r/AQABAAAAAADv//r/AQABAAAAAADu//r/AQABAAAAAADt//r/AQABAAAAAADs//r/AQABAAAAAADr//r/AQABAAAAAADq//r/AQABAAAAAADp//r/AQABAAAAAADo//r/AQABAAAAAADn//r/AQABAAAAAADm//r/AQABAAAAAADl//r/AQABAAAAAADk//r/AQABAAAAAADj//r/AQABAAAAAADj//n/AQABAAAAAADj//j/AQABAAAAAADj//f/AQABAAAAAAA=")
+tile_map_data = PackedByteArray("AAD8//n/AQABAAAAAAD7//n/AQABAAAAAAD6//n/AQABAAAAAAD5//n/AQABAAAAAAD4//n/AQABAAAAAAD4//j/AQABAAAAAADz//j/AQABAAAAAADz//n/AQABAAAAAADz//r/AQABAAAAAADy//r/AQABAAAAAADx//r/AQABAAAAAADw//r/AQABAAAAAADv//r/AQABAAAAAADu//r/AQABAAAAAADt//r/AQABAAAAAADs//r/AQABAAAAAADr//r/AQABAAAAAADq//r/AQABAAAAAADp//r/AQABAAAAAADo//r/AQABAAAAAADn//r/AQABAAAAAADm//r/AQABAAAAAADl//r/AQABAAAAAADk//r/AQABAAAAAADj//r/AQABAAAAAADj//n/AQABAAAAAADj//j/AQABAAAAAADj//f/AQABAAAAAADw//j/AQABAAAAAADv//j/AQABAAAAAADu//j/AQABAAAAAADt//j/AQABAAAAAADs//j/AQABAAAAAADr//j/AQABAAAAAAA=")
 tile_set = SubResource("TileSet_0olp1")
 
 [node name="FrontTiles" type="TileMapLayer" parent="."]
@@ -357,7 +357,7 @@ position = Vector2(254, -280)
 position = Vector2(-15, -180)
 
 [node name="UntoHellhound" parent="." instance=ExtResource("32_aabim")]
-position = Vector2(-464, -143)
+position = Vector2(-379, -188)
 
 [editable path="PlayerTest"]
 [editable path="PlayerTest/MagicArrow"]

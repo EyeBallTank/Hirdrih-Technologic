@@ -21,7 +21,8 @@ var knockback_dir = 1
 var jump_multiplier = -35.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var canmove = true
-
+@export var speed = 10.0
+var speed_multiplier = 30.0
 
 enum {MOVE, ATTACK, DEAD}
 
@@ -33,8 +34,10 @@ func _ready():
 	timer.start()
 
 func _physics_process(delta):
+	velocity.x = move_toward(velocity.x, 0, speed * speed_multiplier)
 	if not is_on_floor():
 		velocity.y += gravity * delta
+	move_and_slide()
 	match state:
 		MOVE:
 			animatedsprite.play("moving")
