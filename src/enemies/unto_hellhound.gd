@@ -30,6 +30,17 @@ func _ready():
 	animationplayer.play("RESET")
 	timer.start()
 
+func _physics_process(delta):
+	match state:
+		MOVE:
+			pass
+		ATTACK:
+			pass
+		DEAD:
+			pass
+
+
+
 func see_to_attack():
 	if not eyesraycast.is_colliding(): return false
 	var collider = eyesraycast.get_collider()
