@@ -62,7 +62,10 @@ func _physics_process(delta):
 
 func hellhound_jump():
 	velocity.y = jump_power * jump_multiplier
-
+	if velocity.y > 0:
+		animatedsprite.play("jumpup")
+	elif velocity.y > 0:
+		animatedsprite.play("slam")
 
 
 func see_to_attack():
