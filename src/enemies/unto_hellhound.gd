@@ -20,6 +20,8 @@ var knockback_dir = 1
 @export var jump_power = 10.0
 var jump_multiplier = -35.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var canmove = true
+
 
 enum {MOVE, ATTACK, DEAD}
 
@@ -33,7 +35,15 @@ func _ready():
 func _physics_process(delta):
 	match state:
 		MOVE:
-			pass
+			animatedsprite.play("moving")
+			if canmove == true:
+				var found_wall = is_on_wall()
+				if found_wall:
+					direction *= -1
+					scale.x = -scale.x
+				velocity = direction * 60
+				move_and_slide()
+				detect_turn_around()
 		ATTACK:
 			pass
 		DEAD:
